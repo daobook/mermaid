@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, xinetzone
+# This file is distributed under the same license as the mermaid package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mermaid \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-05 16:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../examples.md:1
+msgid "Examples"
+msgstr ""
+
+#: ../../examples.md:3
+msgid ""
+"This page contains a collection of examples of diagrams and charts that "
+"can be created through mermaid and its myriad applications."
+msgstr ""
+
+#: ../../examples.md:5
+msgid ""
+"**If you wish to learn how to support mermaid on your webpage, read the "
+"[Beginner's Guide](/usage?id=usage).**"
+msgstr ""
+
+#: ../../examples.md:7
+msgid ""
+"**If you wish to learn about mermaid's syntax, Read the [Diagram "
+"Syntax](/flowchart?id=flowcharts-basic-syntax) section.**"
+msgstr ""
+
+#: ../../examples.md:9
+msgid "Basic Pie Chart"
+msgstr ""
+
+#: ../../examples.md:22
+msgid "Basic sequence diagram"
+msgstr ""
+
+#: ../../examples.md:36
+msgid "Basic flowchart"
+msgstr ""
+
+#: ../../examples.md:47
+msgid "Larger flowchart with some styling"
+msgstr ""
+
+#: ../../examples.md:74
+msgid "SequenceDiagram: Loops, alt and opt"
+msgstr ""
+
+#: ../../examples.md:93
+msgid "SequenceDiagram: Message to self in loop"
+msgstr ""
+

@@ -1,0 +1,1430 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, xinetzone
+# This file is distributed under the same license as the mermaid package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mermaid \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-05 16:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../Setup.md:3
+msgid "mermaidAPI"
+msgstr ""
+
+#: ../../Setup.md:5
+msgid "Edit this Page[\\[N|Solid\\](img/GitHub-Mark-32px.png)][1]"
+msgstr ""
+
+#: ../../Setup.md:8
+msgid ""
+"This is the API to be used when optionally handling the integration with "
+"the web page, instead of using the default integration provided by "
+"mermaid.js."
+msgstr ""
+
+#: ../../Setup.md:11
+msgid ""
+"The core of this api is the [**render**][2] function which, given a graph"
+" definition as text, renders the graph/diagram and returns an svg element"
+" for the graph."
+msgstr ""
+
+#: ../../Setup.md:14
+msgid ""
+"It is is then up to the user of the API to make use of the svg, either "
+"insert it somewhere in the page or do something completely different."
+msgstr ""
+
+#: ../../Setup.md:17
+msgid ""
+"In addition to the render function, a number of behavioral configuration "
+"options are available."
+msgstr ""
+
+#: ../../Setup.md:19
+msgid "Configuration"
+msgstr ""
+
+#: ../../Setup.md:21
+msgid ""
+"**Configuration methods in Mermaid version 8.6.0 have been updated, to "
+"learn more\\[[click here][3]].**"
+msgstr ""
+
+#: ../../Setup.md:24
+msgid "**What follows are config instructions for older versions**"
+msgstr ""
+
+#: ../../Setup.md:26
+msgid ""
+"These are the default options which can be overridden with the "
+"initialization call like so:"
+msgstr ""
+
+#: ../../Setup.md:28
+msgid ""
+"**Example 1:**<pre> mermaid.initialize({ flowchart:{ htmlLabels: false } "
+"}); </pre>"
+msgstr ""
+
+#: ../../Setup.md:30
+msgid ""
+"**Example 2:**<pre> <script> var config = { startOnLoad:true, flowchart:{"
+" useMaxWidth:true, htmlLabels:true, curve:'cardinal', },"
+msgstr ""
+
+#: ../../Setup.md:35
+msgid "}; mermaid.initialize(config); </script> </pre>"
+msgstr ""
+
+#: ../../Setup.md:37
+msgid ""
+"A summary of all options and their defaults is found [here][4]. A "
+"description of each option follows below."
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:40
+msgid "theme"
+msgstr ""
+
+#: ../../Setup.md:42
+msgid "Theme , the CSS style sheet"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Parameter"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Description"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Type"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Required"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Values"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Built in Themes"
+msgstr ""
+
+#: ../../Setup.md
+msgid "string"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Optional"
+msgstr ""
+
+#: ../../Setup.md
+msgid "'default', 'forest', 'dark', 'neutral', 'null'"
+msgstr ""
+
+#: ../../Setup.md:48
+msgid ""
+"**Notes:** To disable any pre-defined mermaid theme, use \"null\".<pre> "
+"\"theme\": \"forest\", \"themeCSS\": \".node rect { fill: red; }\" </pre>"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:51
+msgid "fontFamily"
+msgstr ""
+
+#: ../../Setup.md
+msgid "specifies the font to be used in the rendered diagrams"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Any Possible CSS FontFamily"
+msgstr ""
+
+#: ../../Setup.md:57
+msgid "**Notes:** Default value: '\"trebuchet ms\", verdana, arial, sans-serif;'."
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:59
+msgid "logLevel"
+msgstr ""
+
+#: ../../Setup.md
+msgid "This option decides the amount of logging to be used."
+msgstr ""
+
+#: ../../Setup.md
+msgid "string | number"
+msgstr ""
+
+#: ../../Setup.md
+msgid "1, 2, 3, 4, 5"
+msgstr ""
+
+#: ../../Setup.md:65 ../../Setup.md:146 ../../Setup.md:167 ../../Setup.md:193
+#: ../../Setup.md:203 ../../Setup.md:216 ../../Setup.md:329 ../../Setup.md:339
+#: ../../Setup.md:362 ../../Setup.md:566 ../../Setup.md:578 ../../Setup.md:669
+#: ../../Setup.md:689 ../../Setup.md:701 ../../Setup.md:714 ../../Setup.md:726
+#: ../../Setup.md:752 ../../Setup.md:765 ../../Setup.md:778 ../../Setup.md:795
+#: ../../Setup.md:808 ../../Setup.md:838 ../../Setup.md:867 ../../Setup.md:877
+#: ../../Setup.md:894 ../../Setup.md:911
+msgid "**Notes:**"
+msgstr ""
+
+#: ../../Setup.md:67
+msgid "Debug: 1"
+msgstr ""
+
+#: ../../Setup.md:68
+msgid "Info: 2"
+msgstr ""
+
+#: ../../Setup.md:69
+msgid "Warn: 3"
+msgstr ""
+
+#: ../../Setup.md:70
+msgid "Error: 4"
+msgstr ""
+
+#: ../../Setup.md:71
+msgid "Fatal: 5 (default)"
+msgstr ""
+
+#: ../../Setup.md:73
+msgid "securityLevel"
+msgstr ""
+
+#: ../../Setup.md
+msgid "securitylevel"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Level of trust for parsed diagram"
+msgstr ""
+
+#: ../../Setup.md
+msgid "'strict', 'loose', 'antiscript'"
+msgstr ""
+
+#: ../../Setup.md:79 ../../Setup.md:100 ../../Setup.md:113 ../../Setup.md:123
+#: ../../Setup.md:180 ../../Setup.md:739
+msgid "**Notes**:"
+msgstr ""
+
+#: ../../Setup.md:81
+msgid ""
+"**strict**: (**default**) tags in text are encoded, click functionality "
+"is disabled"
+msgstr ""
+
+#: ../../Setup.md:82
+msgid "**loose**: tags in text are allowed, click functionality is enabled"
+msgstr ""
+
+#: ../../Setup.md:83
+msgid ""
+"**antiscript**: html tags in text are allowed, (only script element is "
+"removed), click functionality is enabled"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:86
+msgid "startOnLoad"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Dictates whether mermaid starts on Page load"
+msgstr ""
+
+#: ../../Setup.md
+msgid "boolean"
+msgstr ""
+
+#: ../../Setup.md
+msgid "true, false"
+msgstr ""
+
+#: ../../Setup.md:92 ../../Setup.md:321
+msgid "**Notes:** Default value: true"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:94
+msgid "arrowMarkerAbsolute"
+msgstr ""
+
+#: ../../Setup.md
+msgid ""
+"Controls whether or arrow markers in html code are absolute paths or "
+"anchors"
+msgstr ""
+
+#: ../../Setup.md:102
+msgid "This matters if you are using base tag settings."
+msgstr ""
+
+#: ../../Setup.md:104 ../../Setup.md:128 ../../Setup.md:366 ../../Setup.md:718
+msgid "Default value: false"
+msgstr ""
+
+#: ../../Setup.md:106
+msgid "secure"
+msgstr ""
+
+#: ../../Setup.md:108
+msgid ""
+"This option controls which currentConfig keys are considered _secure_ and"
+" can only be changed via call to mermaidAPI.initialize. Calls to "
+"mermaidAPI.reinitialize cannot make changes to the `secure` keys in the "
+"current currentConfig. This prevents malicious graph directives from "
+"overriding a site's default security."
+msgstr ""
+
+#: ../../Setup.md:115
+msgid "Default value: ['secure', 'securityLevel', 'startOnLoad', 'maxTextSize']"
+msgstr ""
+
+#: ../../Setup.md:117
+msgid "deterministicIds"
+msgstr ""
+
+#: ../../Setup.md:119
+msgid ""
+"This option controls if the generated ids of nodes in the SVG are "
+"generated randomly or based on a seed. If set to false, the IDs are "
+"generated based on the current date and thus are not deterministic. This "
+"is the default behaviour."
+msgstr ""
+
+#: ../../Setup.md:125
+msgid ""
+"This matters if your files are checked into sourcecontrol e.g. git and "
+"should not change unless content is changed."
+msgstr ""
+
+#: ../../Setup.md:130
+msgid "deterministicIDSeed"
+msgstr ""
+
+#: ../../Setup.md:132
+msgid ""
+"This option is the optional seed for deterministic ids. if set to "
+"undefined but deterministicIds is true, a simple number iterator is used."
+" You can set this attribute to base the seed on a static string."
+msgstr ""
+
+#: ../../Setup.md:136
+msgid "flowchart"
+msgstr ""
+
+#: ../../Setup.md:138
+msgid "The object containing configurations specific for flowcharts"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:140 ../../Setup.md:789
+msgid "diagramPadding"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Amount of padding around the diagram as a whole"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Integer"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Any Positive Value"
+msgstr ""
+
+#: ../../Setup.md:148 ../../Setup.md:797
+msgid ""
+"The amount of padding around the diagram as a whole so that embedded "
+"diagrams have margins, expressed in pixels"
+msgstr ""
+
+#: ../../Setup.md:151
+msgid "Default value: 8"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:153
+msgid "htmlLabels"
+msgstr ""
+
+#: ../../Setup.md
+msgid ""
+"Flag for setting whether or not a html tag should be used for rendering "
+"labels on the edges."
+msgstr ""
+
+#: ../../Setup.md:159
+msgid "**Notes:** Default value: true."
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:161
+msgid "nodeSpacing"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Defines the spacing between nodes on the same level"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Any positive Number"
+msgstr ""
+
+#: ../../Setup.md:169
+msgid ""
+"Pertains to horizontal spacing for TB (top to bottom) or BT (bottom to "
+"top) graphs, and the vertical spacing for LR as well as RL graphs.\\*\\*"
+msgstr ""
+
+#: ../../Setup.md:172
+msgid "Default value: 50"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:174
+msgid "rankSpacing"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Defines the spacing between nodes on different levels"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Any Positive Number"
+msgstr ""
+
+#: ../../Setup.md:182
+msgid ""
+"Pertains to vertical spacing for TB (top to bottom) or BT (bottom to "
+"top), and the horizontal spacing for LR as well as RL graphs."
+msgstr ""
+
+#: ../../Setup.md:185
+msgid "Default value 50"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:187
+msgid "curve"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Defines how mermaid renders curves for flowcharts."
+msgstr ""
+
+#: ../../Setup.md
+msgid "'basis', 'linear', 'cardinal'"
+msgstr ""
+
+#: ../../Setup.md:195
+msgid "Default Value: 'basis'"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:197 ../../Setup.md:345 ../../Setup.md:572
+#: ../../Setup.md:695 ../../Setup.md:720 ../../Setup.md:746 ../../Setup.md:759
+#: ../../Setup.md:871 ../../Setup.md:888 ../../Setup.md:905
+msgid "useMaxWidth"
+msgstr ""
+
+#: ../../Setup.md
+msgid "See notes"
+msgstr ""
+
+#: ../../Setup.md
+msgid "4"
+msgstr ""
+
+#: ../../Setup.md:205 ../../Setup.md:580 ../../Setup.md:703 ../../Setup.md:728
+#: ../../Setup.md:754 ../../Setup.md:767
+msgid ""
+"When this flag is set the height and width is set to 100% and is then "
+"scaling with the available space if not the absolute space required is "
+"used."
+msgstr ""
+
+#: ../../Setup.md:208 ../../Setup.md:354 ../../Setup.md:583 ../../Setup.md:706
+#: ../../Setup.md:731 ../../Setup.md:757 ../../Setup.md:770 ../../Setup.md:882
+#: ../../Setup.md:899 ../../Setup.md:916
+msgid "Default value: true"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:210 ../../Setup.md:733 ../../Setup.md:772
+msgid "defaultRenderer"
+msgstr ""
+
+#: ../../Setup.md
+msgid "dagre-d3, dagre-wrapper"
+msgstr ""
+
+#: ../../Setup.md:218 ../../Setup.md:741 ../../Setup.md:780
+msgid ""
+"Decides which rendering engine that is to be used for the rendering. "
+"Legal values are: dagre-d3 dagre-wrapper - wrapper for dagre implemented "
+"in mermaid"
+msgstr ""
+
+#: ../../Setup.md:221 ../../Setup.md:744 ../../Setup.md:783
+msgid "Default value: 'dagre-d3'"
+msgstr ""
+
+#: ../../Setup.md:223
+msgid "sequence"
+msgstr ""
+
+#: ../../Setup.md:225
+msgid "The object containing configurations specific for sequence diagrams"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:227
+msgid "activationWidth"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Width of the activation rect"
+msgstr ""
+
+#: ../../Setup.md:233
+msgid "**Notes:** Default value :10"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:235 ../../Setup.md:599
+msgid "diagramMarginX"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Margin to the right and left of the sequence diagram"
+msgstr ""
+
+#: ../../Setup.md:241 ../../Setup.md:257 ../../Setup.md:510 ../../Setup.md:605
+#: ../../Setup.md:621
+msgid "**Notes:** Default value: 50"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:243 ../../Setup.md:607
+msgid "diagramMarginY"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Margin to the over and under the sequence diagram"
+msgstr ""
+
+#: ../../Setup.md:249 ../../Setup.md:281 ../../Setup.md:297 ../../Setup.md:613
+#: ../../Setup.md:645 ../../Setup.md:661
+msgid "**Notes:** Default value: 10"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:251
+msgid "actorMargin"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Margin between actors"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:259 ../../Setup.md:623
+msgid "width"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Width of actor boxes"
+msgstr ""
+
+#: ../../Setup.md:265 ../../Setup.md:629
+msgid "**Notes:** Default value: 150"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:267 ../../Setup.md:631
+msgid "height"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Height of actor boxes"
+msgstr ""
+
+#: ../../Setup.md:273 ../../Setup.md:637
+msgid "**Notes:** Default value: 65"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:275 ../../Setup.md:639
+msgid "boxMargin"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Margin around loop boxes"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:283 ../../Setup.md:647
+msgid "boxTextMargin"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Margin around the text in loop/alt/opt boxes"
+msgstr ""
+
+#: ../../Setup.md:289 ../../Setup.md:653
+msgid "**Notes:** Default value: 5"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:291 ../../Setup.md:655
+msgid "noteMargin"
+msgstr ""
+
+#: ../../Setup.md
+msgid "margin around notes"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:299 ../../Setup.md:663
+msgid "messageMargin"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Space between messages"
+msgstr ""
+
+#: ../../Setup.md:305 ../../Setup.md:534
+msgid "**Notes:** Default value: 35"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:307 ../../Setup.md:675
+msgid "messageAlign"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Multiline message alignment"
+msgstr ""
+
+#: ../../Setup.md
+msgid "'left', 'center', 'right'"
+msgstr ""
+
+#: ../../Setup.md:313 ../../Setup.md:426 ../../Setup.md:681
+msgid "**Notes:** Default value: 'center'"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:315
+msgid "mirrorActors"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Mirror actors under diagram"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:323
+msgid "forceMenus"
+msgstr ""
+
+#: ../../Setup.md
+msgid "forces actor popup menus to always be visible (to support E2E testing)."
+msgstr ""
+
+#: ../../Setup.md
+msgid "Boolean"
+msgstr ""
+
+#: ../../Setup.md
+msgid "True, False"
+msgstr ""
+
+#: ../../Setup.md:331
+msgid "Default value: false."
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:333 ../../Setup.md:683
+msgid "bottomMarginAdj"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Prolongs the edge of the diagram downwards"
+msgstr ""
+
+#: ../../Setup.md:341 ../../Setup.md:691
+msgid "Depending on css styling this might need adjustment."
+msgstr ""
+
+#: ../../Setup.md:343 ../../Setup.md:693
+msgid "Default value: 1"
+msgstr ""
+
+#: ../../Setup.md
+msgid "See Notes"
+msgstr ""
+
+#: ../../Setup.md:351
+msgid ""
+"**Notes:** When this flag is set to true, the height and width is set to "
+"100% and is then scaling with the available space. If set to false, the "
+"absolute space required is used."
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:356 ../../Setup.md:708
+msgid "rightAngles"
+msgstr ""
+
+#: ../../Setup.md
+msgid "display curve arrows as right angles"
+msgstr ""
+
+#: ../../Setup.md:364
+msgid ""
+"This will display arrows that start and begin at the same node as right "
+"angles, rather than a curve"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:368
+msgid "showSequenceNumbers"
+msgstr ""
+
+#: ../../Setup.md
+msgid "This will show the node numbers"
+msgstr ""
+
+#: ../../Setup.md:374
+msgid "**Notes:** Default value: false"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:376
+msgid "actorFontSize"
+msgstr ""
+
+#: ../../Setup.md
+msgid "This sets the font size of the actor's description"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Require"
+msgstr ""
+
+#: ../../Setup.md:382
+msgid "**Notes:** **Default value 14**.."
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:384
+msgid "actorFontFamily"
+msgstr ""
+
+#: ../../Setup.md
+msgid "This sets the font family of the actor's description"
+msgstr ""
+
+#: ../../Setup.md:390
+msgid "**Notes:** Default value: \"'Open-Sans\", \"sans-serif\"'"
+msgstr ""
+
+#: ../../Setup.md:392
+msgid "actorFontWeight"
+msgstr ""
+
+#: ../../Setup.md:394
+msgid "This sets the font weight of the actor's description"
+msgstr ""
+
+#: ../../Setup.md:396 ../../Setup.md:448
+msgid "**Notes:** Default value: 400."
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:398
+msgid "noteFontSize"
+msgstr ""
+
+#: ../../Setup.md
+msgid "This sets the font size of actor-attached notes"
+msgstr ""
+
+#: ../../Setup.md:404
+msgid "**Notes:** Default value: 14"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:406
+msgid "noteFontFamily"
+msgstr ""
+
+#: ../../Setup.md
+msgid "This sets the font family of actor-attached notes."
+msgstr ""
+
+#: ../../Setup.md:412
+msgid "**Notes:** Default value: ''\"trebuchet ms\", verdana, arial, sans-serif'"
+msgstr ""
+
+#: ../../Setup.md:414
+msgid "noteFontWeight"
+msgstr ""
+
+#: ../../Setup.md:416
+msgid "This sets the font weight of the note's description"
+msgstr ""
+
+#: ../../Setup.md:418
+msgid "**Notes:** Default value: 400"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:420
+msgid "noteAlign"
+msgstr ""
+
+#: ../../Setup.md
+msgid "This sets the text alignment of actor-attached notes"
+msgstr ""
+
+#: ../../Setup.md
+msgid "required"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:428
+msgid "messageFontSize"
+msgstr ""
+
+#: ../../Setup.md
+msgid "This sets the font size of actor messages"
+msgstr ""
+
+#: ../../Setup.md:434
+msgid "**Notes:** Default value: 16"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:436
+msgid "messageFontFamily"
+msgstr ""
+
+#: ../../Setup.md
+msgid "This sets the font family of actor messages"
+msgstr ""
+
+#: ../../Setup.md:442
+msgid "**Notes:** Default value: '\"trebuchet ms\", verdana, arial, sans-serif'"
+msgstr ""
+
+#: ../../Setup.md:444
+msgid "messageFontWeight"
+msgstr ""
+
+#: ../../Setup.md:446
+msgid "This sets the font weight of the message's description"
+msgstr ""
+
+#: ../../Setup.md:450
+msgid "wrap"
+msgstr ""
+
+#: ../../Setup.md:452
+msgid "This sets the auto-wrap state for the diagram"
+msgstr ""
+
+#: ../../Setup.md:454
+msgid "**Notes:** Default value: false."
+msgstr ""
+
+#: ../../Setup.md:456
+msgid "wrapPadding"
+msgstr ""
+
+#: ../../Setup.md:458
+msgid "This sets the auto-wrap padding for the diagram (sides only)"
+msgstr ""
+
+#: ../../Setup.md:460
+msgid "**Notes:** Default value: 0."
+msgstr ""
+
+#: ../../Setup.md:462
+msgid "labelBoxWidth"
+msgstr ""
+
+#: ../../Setup.md:464
+msgid "This sets the width of the loop-box (loop, alt, opt, par)"
+msgstr ""
+
+#: ../../Setup.md:466
+msgid "**Notes:** Default value: 50."
+msgstr ""
+
+#: ../../Setup.md:468
+msgid "labelBoxHeight"
+msgstr ""
+
+#: ../../Setup.md:470
+msgid "This sets the height of the loop-box (loop, alt, opt, par)"
+msgstr ""
+
+#: ../../Setup.md:472
+msgid "**Notes:** Default value: 20."
+msgstr ""
+
+#: ../../Setup.md:474
+msgid "gantt"
+msgstr ""
+
+#: ../../Setup.md:476
+msgid "The object containing configurations specific for gantt diagrams"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:478 ../../Setup.md:480
+msgid "titleTopMargin"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Margin top for the text over the gantt diagram"
+msgstr ""
+
+#: ../../Setup.md:486
+msgid "**Notes:** Default value: 25"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:488
+msgid "barHeight"
+msgstr ""
+
+#: ../../Setup.md
+msgid "The height of the bars in the graph"
+msgstr ""
+
+#: ../../Setup.md:494
+msgid "**Notes:** Default value: 20"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:496
+msgid "barGap"
+msgstr ""
+
+#: ../../Setup.md
+msgid "The margin between the different activities in the gantt diagram"
+msgstr ""
+
+#: ../../Setup.md:502 ../../Setup.md:558
+msgid "**Notes:** Default value: 4"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:504
+msgid "topPadding"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Margin between title and gantt diagram and between axis and gantt diagram."
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:512
+msgid "rightPadding"
+msgstr ""
+
+#: ../../Setup.md
+msgid "The space allocated for the section name to the right of the activities"
+msgstr ""
+
+#: ../../Setup.md:518 ../../Setup.md:526
+msgid "**Notes:** Default value: 75"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:520
+msgid "leftPadding"
+msgstr ""
+
+#: ../../Setup.md
+msgid "The space allocated for the section name to the left of the activities"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:528
+msgid "gridLineStartPadding"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Vertical starting position of the grid lines"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:536 ../../Setup.md:861
+msgid "fontSize"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Font size"
+msgstr ""
+
+#: ../../Setup.md:542 ../../Setup.md:550
+msgid "**Notes:** Default value: 11"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:544
+msgid "sectionFontSize"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Font size for sections"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:552
+msgid "numberSectionStyles"
+msgstr ""
+
+#: ../../Setup.md
+msgid "The number of alternating section styles"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:560
+msgid "axisFormat"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Datetime format of the axis"
+msgstr ""
+
+#: ../../Setup.md
+msgid "3"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Date in yy-mm-dd"
+msgstr ""
+
+#: ../../Setup.md:568
+msgid "This might need adjustment to match your locale and preferences"
+msgstr ""
+
+#: ../../Setup.md:570
+#, python-format
+msgid "Default value: '%Y-%m-%d'."
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:585
+msgid "topAxis"
+msgstr ""
+
+#: ../../Setup.md:591
+msgid ""
+"**Notes:** when this flag is set date labels will be added to the top of "
+"the chart"
+msgstr ""
+
+#: ../../Setup.md:593
+msgid "**Default value false**."
+msgstr ""
+
+#: ../../Setup.md:595
+msgid "journey"
+msgstr ""
+
+#: ../../Setup.md:597
+msgid "The object containing configurations specific for journey diagrams"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Margin to the over and under the sequence diagram."
+msgstr ""
+
+#: ../../Setup.md:615
+msgid "leftMargin"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Margin around notes"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:671
+msgid "Space between messages."
+msgstr ""
+
+#: ../../Setup.md:673
+msgid "Default value: 35"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Curved Arrows become Right Angles"
+msgstr ""
+
+#: ../../Setup.md:716
+msgid ""
+"This will display arrows that start and begin at the same node as right "
+"angles, rather than a curves"
+msgstr ""
+
+#: ../../Setup.md:785
+msgid "er"
+msgstr ""
+
+#: ../../Setup.md:787
+msgid ""
+"The object containing configurations specific for entity relationship "
+"diagrams"
+msgstr ""
+
+#: ../../Setup.md:800
+msgid "Default value: 20"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:802
+msgid "layoutDirection"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Directional bias for layout of entities."
+msgstr ""
+
+#: ../../Setup.md
+msgid "\"TB\", \"BT\", \"LR\", \"RL\""
+msgstr ""
+
+#: ../../Setup.md:810
+msgid ""
+"'TB' for Top-Bottom, 'BT'for Bottom-Top, 'LR' for Left-Right, or 'RL' for"
+" Right to Left."
+msgstr ""
+
+#: ../../Setup.md:812
+msgid "T = top, B = bottom, L = left, and R = right."
+msgstr ""
+
+#: ../../Setup.md:814
+msgid "Default value: 'TB'"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:816
+msgid "minEntityWidth"
+msgstr ""
+
+#: ../../Setup.md
+msgid "The minimum width of an entity box"
+msgstr ""
+
+#: ../../Setup.md:822
+msgid "**Notes:** Expressed in pixels. Default value: 100"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:824
+msgid "minEntityHeight"
+msgstr ""
+
+#: ../../Setup.md
+msgid "The minimum height of an entity box"
+msgstr ""
+
+#: ../../Setup.md:830
+msgid "**Notes:** Expressed in pixels Default value: 75"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:832
+msgid "entityPadding"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Minimum internal padding betweentext in box and box borders"
+msgstr ""
+
+#: ../../Setup.md:840
+msgid ""
+"The minimum internal padding betweentext in an entity box and the "
+"enclosing box borders, expressed in pixels."
+msgstr ""
+
+#: ../../Setup.md:843
+msgid "Default value: 15"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:845
+msgid "stroke"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Stroke color of box edges and lines"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Any recognized color"
+msgstr ""
+
+#: ../../Setup.md:851
+msgid "**Notes:** Default value: 'gray'"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:853
+msgid "fill"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Fill color of entity boxes"
+msgstr ""
+
+#: ../../Setup.md:859
+msgid "**Notes:** Default value: 'honeydew'"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Font Size in pixels"
+msgstr ""
+
+#: ../../Setup.md:869
+msgid ""
+"Font size (expressed as an integer representing a number of pixels) "
+"Default value: 12"
+msgstr ""
+
+#: ../../Setup.md:879 ../../Setup.md:896 ../../Setup.md:913
+msgid ""
+"When this flag is set to true, the diagram width is locked to 100% and "
+"scaled based on available space. If set to false, the diagram reserves "
+"its absolute width."
+msgstr ""
+
+#: ../../Setup.md:884
+msgid "pie"
+msgstr ""
+
+#: ../../Setup.md:886
+msgid "The object containing configurations specific for pie diagrams"
+msgstr ""
+
+#: ../../Setup.md:901
+msgid "requirement"
+msgstr ""
+
+#: ../../Setup.md:903
+msgid "The object containing configurations specific for req diagrams"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:918 ../../Setup.md:920
+msgid "setSiteConfig"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Function"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Sets the siteConfig to desired values"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Put Request"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Any Values, except ones in secure array"
+msgstr ""
+
+#: ../../Setup.md:926
+msgid ""
+"**Notes:** Sets the siteConfig. The siteConfig is a protected "
+"configuration for repeat use. Calls to reset() will reset the "
+"currentConfig to siteConfig. Calls to reset(configApi.defaultConfig) will"
+" reset siteConfig and currentConfig to the defaultConfig Note: "
+"currentConfig is set in this function \\*Default value: At default, will "
+"mirror Global Config\\*\\*"
+msgstr ""
+
+#: ../../Setup.md:931 ../../Setup.md:939 ../../Setup.md:969 ../../Setup.md:998
+#: ../../Setup.md:1006 ../../Setup.md:1043 ../../Setup.md:1056
+#: ../../Setup.md:1062
+msgid "Parameters"
+msgstr ""
+
+#: ../../Setup.md:933
+msgid "`conf`  The base currentConfig to use as siteConfig"
+msgstr ""
+
+#: ../../Setup.md:935 ../../Setup.md:955
+msgid "Returns **[object][5]** The siteConfig"
+msgstr ""
+
+#: ../../Setup.md:937
+msgid "parse"
+msgstr ""
+
+#: ../../Setup.md:941
+msgid "`text`"
+msgstr ""
+
+#: ../../Setup.md:943 ../../Setup.md:1052
+msgid "Returns **any**"
+msgstr ""
+
+#: ../../Setup.md:945 ../../Setup.md:947
+msgid "getSiteConfig"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Returns the current siteConfig base configuration"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Get Request"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Returns Any Values in siteConfig"
+msgstr ""
+
+#: ../../Setup.md:953
+msgid "**Notes**: Returns **any** values in siteConfig."
+msgstr ""
+
+#: ../../Setup.md:957 ../../Setup.md:959
+msgid "setConfig"
+msgstr ""
+
+#: ../../Setup.md:965
+msgid ""
+"**Notes**: Sets the currentConfig. The parameter conf is sanitized based "
+"on the siteConfig.secure keys. Any values found in conf with key found in"
+" siteConfig.secure will be replaced with the corresponding siteConfig "
+"value."
+msgstr ""
+
+#: ../../Setup.md:971
+msgid "`conf` **any** The potential currentConfig"
+msgstr ""
+
+#: ../../Setup.md:973
+msgid "Returns **any** The currentConfig merged with the sanitized conf"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:975 ../../Setup.md:977
+msgid "getConfig"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Return Values"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Obtains the currentConfig"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Any Values from current Config"
+msgstr ""
+
+#: ../../Setup.md:983
+msgid "**Notes**: Returns **any** the currentConfig"
+msgstr ""
+
+#: ../../Setup.md:985
+msgid "Returns **any** The currentConfig"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:987 ../../Setup.md:989
+msgid "sanitize"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Sets the siteConfig to desired values."
+msgstr ""
+
+#: ../../Setup.md
+msgid "None"
+msgstr ""
+
+#: ../../Setup.md:995
+msgid ""
+"Ensures options parameter does not attempt to override siteConfig secure "
+"keys **Notes**: modifies options in-place"
+msgstr ""
+
+#: ../../Setup.md:1000
+msgid "`options` **any** The potential setConfig parameter"
+msgstr ""
+
+#: ../../Setup.md:1002
+msgid "addDirective"
+msgstr ""
+
+#: ../../Setup.md:1004
+msgid "Pushes in a directive to the configuration"
+msgstr ""
+
+#: ../../Setup.md:1008
+msgid "`directive` **[object][5]** The directive to push in"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:1010 ../../Setup.md:1012
+msgid "reset"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Resets currentConfig to conf"
+msgstr ""
+
+#: ../../Setup.md ../../Setup.md:1018
+msgid "conf"
+msgstr ""
+
+#: ../../Setup.md
+msgid "base set of values, which currentConfig coul be **reset** to."
+msgstr ""
+
+#: ../../Setup.md
+msgid "Dictionary"
+msgstr ""
+
+#: ../../Setup.md
+msgid "Any Values, with respect to the secure Array"
+msgstr ""
+
+#: ../../Setup.md:1024
+msgid ""
+"**Notes**: (default: current siteConfig ) (optional, default "
+"`getSiteConfig()`)"
+msgstr ""
+
+#: ../../Setup.md:1026
+msgid "render"
+msgstr ""
+
+#: ../../Setup.md:1028
+msgid ""
+"Function that renders an svg with a graph from a chart definition. Usage "
+"example below."
+msgstr ""
+
+#: ../../Setup.md:1045
+msgid "`id` **any** The id of the element to be rendered"
+msgstr ""
+
+#: ../../Setup.md:1046
+msgid "`_txt` **any** The graph definition"
+msgstr ""
+
+#: ../../Setup.md:1047
+msgid ""
+"`cb` **any** Callback which is called after rendering is finished with "
+"the svg code as inparam."
+msgstr ""
+
+#: ../../Setup.md:1048
+msgid ""
+"`container` **any** Selector to element in which a div with the graph "
+"temporarily will be   inserted. In one is provided a hidden div will be "
+"inserted in the body of the page instead. The   element will be removed "
+"when rendering is completed."
+msgstr ""
+
+#: ../../Setup.md:1054
+msgid "updateRendererConfigs"
+msgstr ""
+
+#: ../../Setup.md:1058
+msgid "`conf` **any**"
+msgstr ""
+
+#: ../../Setup.md:1060
+msgid "initialize"
+msgstr ""
+
+#: ../../Setup.md:1064
+msgid "`options` **any**"
+msgstr ""
+
+#: ../../Setup.md:1068
+msgid "mermaidAPI configuration defaults"
+msgstr ""
+

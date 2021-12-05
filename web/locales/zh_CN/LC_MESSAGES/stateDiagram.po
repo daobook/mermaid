@@ -1,0 +1,218 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, xinetzone
+# This file is distributed under the same license as the mermaid package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mermaid \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-05 16:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../stateDiagram.md:1
+msgid "State diagrams"
+msgstr ""
+
+#: ../../stateDiagram.md:3
+msgid ""
+"\"A state diagram is a type of diagram used in computer science and "
+"related fields to describe the behavior of systems. State diagrams "
+"require that the system described is composed of a finite number of "
+"states; sometimes, this is indeed the case, while at other times this is "
+"a reasonable abstraction.\" Wikipedia"
+msgstr ""
+
+#: ../../stateDiagram.md:5
+msgid ""
+"Mermaid can render state diagrams. The syntax tries to be compliant with "
+"the syntax used in plantUml as this will make it easier for users to "
+"share diagrams between mermaid and plantUml."
+msgstr ""
+
+#: ../../stateDiagram.md:18
+msgid "Older renderer:"
+msgstr ""
+
+#: ../../stateDiagram.md:31
+msgid ""
+"In state diagrams systems are described in terms of its states and how "
+"the systems state can change to another state via a transitions. The "
+"example diagram above shows three states **Still**, **Moving** and "
+"**Crash**. You start in the state of Still. From Still you can change the"
+" state to Moving. In Moving you can change the state either back to Still"
+" or to Crash. There is no transition from Still to Crash."
+msgstr ""
+
+#: ../../stateDiagram.md:33
+msgid "States"
+msgstr ""
+
+#: ../../stateDiagram.md:35
+msgid ""
+"A state can be declared in multiple ways. The simplest way is to define a"
+" state id as a description."
+msgstr ""
+
+#: ../../stateDiagram.md:42
+msgid "Another way is by using the state keyword with a description as per below:"
+msgstr ""
+
+#: ../../stateDiagram.md:49
+msgid ""
+"Another way to define a state with a description is to define the state "
+"id followed by a colon and the description:"
+msgstr ""
+
+#: ../../stateDiagram.md:56
+msgid "Transitions"
+msgstr ""
+
+#: ../../stateDiagram.md:58
+msgid ""
+"Transitions are path/edges when one state passes into another. This is "
+"represented using text arrow, \"\\-\\-\\>\"."
+msgstr ""
+
+#: ../../stateDiagram.md:60
+msgid ""
+"When you define a transition between two states and the states are not "
+"already defined the undefined states are defined with the id from the "
+"transition. You can later add descriptions to states defined this way."
+msgstr ""
+
+#: ../../stateDiagram.md:67
+msgid ""
+"It is possible to add text to a transition. To describe what it "
+"represents."
+msgstr ""
+
+#: ../../stateDiagram.md:74
+msgid "Start and End"
+msgstr ""
+
+#: ../../stateDiagram.md:76
+msgid ""
+"There are two special states indicating the start and stop of the "
+"diagram. These are written with the [\\*] syntax and the direction of the"
+" transition to it defines it either as a start or a stop state."
+msgstr ""
+
+#: ../../stateDiagram.md:84
+msgid "Composite states"
+msgstr ""
+
+#: ../../stateDiagram.md:86
+msgid ""
+"In a real world use of state diagrams you often end up with diagrams that"
+" are multi-dimensional as one state can have several internal states. "
+"These are called composite states in this terminology."
+msgstr ""
+
+#: ../../stateDiagram.md:89
+msgid ""
+"In order to define a composite state you need to use the state keyword "
+"followed by an id and the body of the composite state between \\{\\}. See"
+" the example below:"
+msgstr ""
+
+#: ../../stateDiagram.md:100
+msgid "You can do this in several layers:"
+msgstr ""
+
+#: ../../stateDiagram.md:121
+msgid "You can also define transitions also between composite states:"
+msgstr ""
+
+#: ../../stateDiagram.md:143
+msgid ""
+"*You can not define transitions between internal states belonging to "
+"different composite states*"
+msgstr ""
+
+#: ../../stateDiagram.md:145
+msgid "Choice"
+msgstr ""
+
+#: ../../stateDiagram.md:147
+msgid ""
+"Sometimes you need to model a choice between two or more paths, you can "
+"do so using &lt;&lt;choice&gt;&gt;."
+msgstr ""
+
+#: ../../stateDiagram.md:158
+msgid "Forks"
+msgstr ""
+
+#: ../../stateDiagram.md:160
+msgid ""
+"It is possible to specify a fork in the diagram using "
+"&lt;&lt;fork&gt;&gt; &lt;&lt;join&gt;&gt;."
+msgstr ""
+
+#: ../../stateDiagram.md:176
+msgid "Notes"
+msgstr ""
+
+#: ../../stateDiagram.md:178
+msgid ""
+"Sometimes nothing says it better then a Post-it note. That is also the "
+"case in state diagrams."
+msgstr ""
+
+#: ../../stateDiagram.md:180
+msgid ""
+"Here you can choose to put the note to the *right of* or to the *left of*"
+" a node."
+msgstr ""
+
+#: ../../stateDiagram.md:193
+msgid "Concurrency"
+msgstr ""
+
+#: ../../stateDiagram.md:195
+msgid "As in plantUml you can specify concurrency using the -- symbol."
+msgstr ""
+
+#: ../../stateDiagram.md:216
+msgid "Setting the direction of the diagram"
+msgstr ""
+
+#: ../../stateDiagram.md:218
+msgid ""
+"With state diagrams you can use the direction statement to set the "
+"direction which the diagram will render like in this example."
+msgstr ""
+
+#: ../../stateDiagram.md:234
+msgid "Comments"
+msgstr ""
+
+#: ../../stateDiagram.md:236
+#, python-format
+msgid ""
+"Comments can be entered within a state diagram chart, which will be "
+"ignored by the parser.  Comments need to be on their own line, and must "
+"be prefaced with `%%` (double percent signs). Any text after the start of"
+" the comment to the next newline will be treated as a comment, including "
+"any diagram syntax"
+msgstr ""
+
+#: ../../stateDiagram.md:249
+msgid "Styling"
+msgstr ""
+
+#: ../../stateDiagram.md:251
+msgid ""
+"Styling of the a state diagram is done by defining a number of css "
+"classes.  During rendering these classes are extracted from the file "
+"located at src/themes/state.scss"
+msgstr ""
+

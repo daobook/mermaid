@@ -1,0 +1,8 @@
+sphinx-intl
+myst-nb
+sphinx-copybutton
+sphinx-book-theme>=0.1.6
+Sphinx>=4.2
+# docutils==0.17
+sphinxcontrib-mermaid
+sphinx-fasvg

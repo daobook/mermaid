@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, xinetzone
+# This file is distributed under the same license as the mermaid package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mermaid \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-05 16:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../n00b-advanced.md:1
+msgid "Advanced n00b mermaid (Coming soon..)"
+msgstr ""
+
+#: ../../n00b-advanced.md:3
+msgid "splitting mermaid code from html"
+msgstr ""
+
+#: ../../n00b-advanced.md:4
+msgid ""
+"A more condensed html code can be achieved by embedding the mermaid code "
+"in its own .js file, which is referenced like so:"
+msgstr ""
+
+#: ../../n00b-advanced.md:12
+msgid "The actual mermaid file could for example look like this:"
+msgstr ""
+
+#: ../../n00b-advanced.md:19
+msgid "mermaid configuration options"
+msgstr ""
+
+#: ../../n00b-advanced.md:21
+msgid "..."
+msgstr ""
+

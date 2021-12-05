@@ -1,0 +1,697 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, xinetzone
+# This file is distributed under the same license as the mermaid package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mermaid \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-05 16:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:6
+msgid "Flowcharts - Basic Syntax"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:8
+msgid "Graph"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:10
+msgid "This statement declares the direction of the Flowchart."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:12
+msgid "This declares the graph is oriented from top to bottom (`TD` or `TB`)."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:19
+msgid "This declares the graph is oriented from left to right (`LR`)."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:26
+msgid "Flowchart Orientation"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:28
+msgid "Possible FlowChart orientations are:"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:30
+msgid "TB - top to bottom"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:31
+msgid "TD - top-down/ same as top to bottom"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:32
+msgid "BT - bottom to top"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:33
+msgid "RL - right to left"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:34
+msgid "LR - left to right"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:38
+msgid "Flowcharts"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:40
+msgid ""
+"This renders a flowchart that allows for features such as: more arrow "
+"types, multi directional arrows, and linking to and from subgraphs."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:42
+msgid ""
+"Apart from the graph type, the syntax is the same. This is currently "
+"experimental but when the beta period is over, both the graph and "
+"flowchart keywords will render in the new way. This means it is ok to "
+"start beta testing flowcharts."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:44
+msgid ""
+"**Important note** Do not type the word \"end\" as a Flowchart node. "
+"Capitalize all or any one the letters to keep the flowchart from "
+"breaking, i.e, \"End\" or \"END\". Or you can apply this "
+"[workaround](https://github.com/mermaid-"
+"js/mermaid/issues/1444#issuecomment-639528897).**"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:46
+msgid "Nodes & shapes"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:48
+msgid "A node (default)"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:55
+msgid "**Note** The id is what is displayed in the box."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:57
+msgid "A node with text"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:59
+msgid ""
+"It is also possible to set text in the box that differs from the id. If "
+"this is done several times, it is the last text found for the node that "
+"will be used. Also if you define edges for the node later on, you can "
+"omit text definitions. The one previously defined will be used when "
+"rendering the box."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:68
+msgid "Node Shapes"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:70
+msgid "A node with round edges"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:77
+msgid "A stadium-shaped node"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:84
+msgid "A node in a subroutine shape"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:91
+msgid "A node in a cylindrical shape"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:98
+msgid "A node in the form of a circle"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:105
+msgid "A node in an asymmetric shape"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:111
+msgid ""
+"Currently only the shape above is possible and not its mirror. *This "
+"might change with future releases.*"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:113
+msgid "A node (rhombus)"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:120
+msgid "A hexagon node"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:127
+msgid "Parallelogram"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:133
+msgid "Parallelogram alt"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:140
+msgid "Trapezoid"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:146
+msgid "Trapezoid alt"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:153
+msgid "Links between nodes"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:155
+msgid ""
+"Nodes can be connected with links/edges. It is possible to have different"
+" types of links or attach a text string to a link."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:157
+msgid "A link with arrow head"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:164
+msgid "An open link"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:171
+msgid "Text on links"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:178
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:192
+msgid "or"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:185
+msgid "A link with arrow head and text"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:199
+msgid "Dotted link"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:206
+msgid "Dotted link with text"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:213
+msgid "Thick link"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:220
+msgid "Thick link with text"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:227
+msgid "Chaining of links"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:229
+msgid "It is possible to declare many links in the same line as per below:"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:235
+msgid ""
+"It is also possible to declare multiple nodes links in the same line as "
+"per below:"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:241
+msgid ""
+"You can then describe dependencies in a very expressive way. Like the "
+"one-liner below:"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:246
+msgid ""
+"If you describe the same diagram using the the basic syntax, it will take"
+" four lines. A word of warning, one could go overboard with this making "
+"the graph harder to read in markdown form. The Swedish word `lagom` comes"
+" to mind. It means, not too much and not too little. This goes for "
+"expressive syntaxes as well."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:258
+msgid "Beta: New arrow types"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:260
+msgid ""
+"When using flowchart instead of graph there are new types of arrows "
+"supported as per below:"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:269
+msgid "Beta: Multi directional arrows"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:271
+msgid ""
+"When using flowchart instead of graph there is the possibility to use "
+"multidirectional arrows."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:280
+msgid "Minimum length of a link"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:282
+msgid ""
+"Each node in the flowchart is ultimately assigned to a rank in the "
+"rendered graph, i.e. to a vertical or horizontal level (depending on the "
+"flowchart orientation), based on the nodes to which it is linked. By "
+"default, links can span any number of ranks, but you can ask for any link"
+" to be longer than the others by adding extra dashes in the link "
+"definition."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:288
+msgid ""
+"In the following example, two extra dashes are added in the link from "
+"node _B_ to node _E_, so that it spans two more ranks than regular links:"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:300
+msgid ""
+"**Note** Links may still be made longer than the requested number of "
+"ranks by the rendering engine to accommodate other requests."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:303
+msgid ""
+"When the link label is written in the middle of the link, the extra "
+"dashes must be added on the right side of the link. The following example"
+" is equivalent to the previous one:"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:316
+msgid ""
+"For dotted or thick links, the characters to add are equals signs or "
+"dots, as summed up in the following table:"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md
+msgid "Length"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md
+msgid "1"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md
+msgid "2"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md
+msgid "3"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md
+msgid "Normal"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md
+msgid "`---`"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md
+msgid "`----`"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md
+msgid "`-----`"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md
+msgid "Normal with arrow"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md
+msgid "`-->`"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md
+msgid "`--->`"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md
+msgid "`---->`"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md
+msgid "Thick"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md
+msgid "`===`"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md
+msgid "`====`"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md
+msgid "`=====`"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md
+msgid "Thick with arrow"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md
+msgid "`==>`"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md
+msgid "`===>`"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md
+msgid "`====>`"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md
+msgid "Dotted"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md
+msgid "`-.-`"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md
+msgid "`-..-`"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md
+msgid "`-...-`"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md
+msgid "Dotted with arrow"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md
+msgid "`-.->`"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md
+msgid "`-..->`"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md
+msgid "`-...->`"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:328
+msgid "Special characters that break syntax"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:330
+msgid ""
+"It is possible to put text within quotes in order to render more "
+"troublesome characters. As in the example below:"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:337
+msgid "Entity codes to escape characters"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:339
+msgid "It is possible to escape characters using the syntax exemplified here."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:346
+msgid "Subgraphs"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:354
+msgid "An example below:"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:370
+msgid "You can also set an explicit id for the subgraph."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:380
+msgid "Beta: flowcharts"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:382
+msgid ""
+"With the graphtype flowcharts it is also possible to set edges to and "
+"from subgraphs as in the graph below."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:401
+msgid "Interaction"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:403
+msgid ""
+"It is possible to bind a click event to a node, the click can lead to "
+"either a javascript callback or to a link which will be opened in a new "
+"browser tab. **Note**: This functionality is disabled when using "
+"`securityLevel='strict'` and enabled when using `securityLevel='loose'`."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:410
+msgid "nodeId is the id of the node"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:411
+msgid ""
+"callback is the name of a javascript function defined on the page "
+"displaying the graph, the function will be called with the nodeId as "
+"parameter."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:413
+msgid "Examples of tooltip usage below:"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:423
+msgid ""
+"The tooltip text is surrounded in double quotes. The styles of the "
+"tooltip are set by the class .mermaidTooltip."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:435
+msgid ""
+"**Success** The tooltip functionality and the ability to link to urls are"
+" available from version 0.5.2."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:437
+msgid ""
+"?> Due to limitations with how Docsify handles JavaScript callback "
+"functions, an alternate working demo for the above code can be viewed at "
+"[this jsfiddle](https://jsfiddle.net/s37cjoau/3/)."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:439
+msgid ""
+"Links are opened in the same browser tab/window by default. It is "
+"possible to change this by adding a link target to the click definition "
+"(`_self`, `_blank`, `_parent` and `_top` are supported):"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:452
+msgid "Beginners tip, a full example using interactive links in a html context:"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:485
+msgid "Comments"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:487
+#, python-format
+msgid ""
+"Comments can be entered within a flow diagram, which will be ignored by "
+"the parser.  Comments need to be on their own line, and must be prefaced "
+"with `%%` (double percent signs). Any text after the start of the comment"
+" to the next newline will be treated as a comment, including any flow "
+"syntax"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:495
+msgid "Styling and classes"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:497
+msgid "Styling links"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:499
+msgid ""
+"It is possible to style links. For instance you might want to style a "
+"link that is going backwards in the flow. As links have no ids in the "
+"same way as nodes, some other way of deciding what style the links should"
+" be attached to is required. Instead of ids, the order number of when the"
+" link was defined in the graph is used. In the example below the style "
+"defined in the linkStyle statement will belong to the fourth link in the "
+"graph:"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:508
+msgid ""
+"You can specify default to apply to all links, or you can give a list of "
+"link order numbers seperated by a comma."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:510
+msgid ""
+"Instead of giving a styles option, you can also use custom d3 curve types"
+" with the following syntax:"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:516
+msgid "If you want to add style options too, instead of writing:"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:523
+msgid "You can combine them into:"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:529
+msgid "Styling a node"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:531
+msgid ""
+"It is possible to apply specific styles such as a thicker border or a "
+"different background color to a node."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:541
+msgid "Classes"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:543
+msgid ""
+"More convenient then defining the style every time is to define a class "
+"of styles and attach this class to the nodes that should have a different"
+" look."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:546
+msgid "a class definition looks like the example below:"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:553
+msgid "Attachment of a class to a node is done as per below:"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:559
+msgid "It is also possible to attach a class to a list of nodes in one statement:"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:565
+msgid ""
+"A shorter form of adding a class is to attach the classname to the node "
+"using the `:::`operator as per below:"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:574
+msgid "Css classes"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:576
+msgid ""
+"It is also possible to predefine classes in css styles that can be "
+"applied from the graph definition as in the example below:"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:579
+msgid "**Example style**"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:591
+msgid "**Example definition**"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:601
+msgid "Default class"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:603
+msgid ""
+"If a class is named default it will be assigned to all classes without "
+"specific class definitions."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:610
+msgid "Basic support for fontawesome"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:612
+msgid "It is possible to add icons from fontawesome."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:614
+msgid "The icons are accessed via the syntax fa:#icon class name#."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:625
+msgid ""
+"Graph declarations with spaces between vertices and link and without "
+"semicolon"
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:627
+msgid ""
+"In graph declarations, the statements also can now end without a "
+"semicolon. After release 0.2.16, ending a graph statement with semicolon "
+"is just optional. So the below graph declaration is also valid along with"
+" the old declarations of the graph."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:629
+msgid ""
+"A single space is allowed between vertices and the link. However there "
+"should not be any space between a vertex and its text and a link and its "
+"text. The old syntax of graph declaration will also work and hence this "
+"new feature is optional and is introduce to improve readability."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:631
+msgid ""
+"Below is the new declaration of the graph edges which is also valid along"
+" with the old declaration of the graph edges."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:642
+msgid "Configuration..."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:644
+msgid "Is it possible to adjust the width of the rendered flowchart."
+msgstr ""
+
+#: ../../diagrams-and-syntax-and-examples/flowchart.md:646
+msgid ""
+"This is done by defining **mermaid.flowchartConfig** or by the CLI to use"
+" a json file with the configuration. How to use the CLI is described in "
+"the mermaidCLI page. mermaid.flowchartConfig can be set to a JSON string "
+"with config parameters or the corresponding object."
+msgstr ""
+

@@ -1,0 +1,707 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, xinetzone
+# This file is distributed under the same license as the mermaid package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mermaid \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-05 16:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../classDiagram.md:1
+msgid "Class diagrams"
+msgstr ""
+
+#: ../../classDiagram.md:3
+msgid ""
+"\"In software engineering, a class diagram in the Unified Modeling "
+"Language (UML) is a type of static structure diagram that describes the "
+"structure of a system by showing the system's classes, their attributes, "
+"operations (or methods), and the relationships among objects.\" Wikipedia"
+msgstr ""
+
+#: ../../classDiagram.md:6
+msgid ""
+"The class diagram is the main building block of object-oriented modeling."
+" It is used for general conceptual modeling of the structure of the "
+"application, and for detailed modeling translating the models into "
+"programming code. Class diagrams can also be used for data modeling. The "
+"classes in a class diagram represent both the main elements, interactions"
+" in the application, and the classes to be programmed."
+msgstr ""
+
+#: ../../classDiagram.md:8
+msgid "Mermaid can render class diagrams."
+msgstr ""
+
+#: ../../classDiagram.md:35
+msgid "Syntax"
+msgstr ""
+
+#: ../../classDiagram.md ../../classDiagram.md:37
+msgid "Class"
+msgstr ""
+
+#: ../../classDiagram.md:39
+msgid ""
+"UML provides mechanisms to represent class members, such as attributes "
+"and methods, and additional information about them. A single instance of "
+"a class in the diagram contains three compartments:"
+msgstr ""
+
+#: ../../classDiagram.md:42
+msgid ""
+"The top compartment contains the name of the class. It is printed in bold"
+" and centered, and the first letter is capitalized. It may also contain "
+"optional annotation text describing the nature of the class."
+msgstr ""
+
+#: ../../classDiagram.md:43
+msgid ""
+"The middle compartment contains the attributes of the class. They are "
+"left-aligned and the first letter is lowercase.   The bottom compartment "
+"contains the operations the class can execute. They are also left-aligned"
+" and the first letter is lowercase."
+msgstr ""
+
+#: ../../classDiagram.md:56
+msgid "Define a class"
+msgstr ""
+
+#: ../../classDiagram.md:58
+msgid "There are two ways to define a class:"
+msgstr ""
+
+#: ../../classDiagram.md:60
+msgid ""
+"Explicitly defining a class using keyword **class** like `class Animal`. "
+"This defines the Animal class"
+msgstr ""
+
+#: ../../classDiagram.md:61
+msgid ""
+"Define two classes via a **relationship** between them `Vehicle <|-- "
+"Car`. This defines two classes Vehicle and Car along with their "
+"relationship."
+msgstr ""
+
+#: ../../classDiagram.md:69
+msgid ""
+"Naming convention: a class name should be composed of alphanumeric "
+"(unicode allowed) and underscore characters."
+msgstr ""
+
+#: ../../classDiagram.md:71
+msgid "Defining Members of a class"
+msgstr ""
+
+#: ../../classDiagram.md:73
+msgid ""
+"UML provides mechanisms to represent class members, such as attributes "
+"and methods, and additional information about them."
+msgstr ""
+
+#: ../../classDiagram.md:75
+msgid ""
+"Mermaid distinguishes between attributes and functions/methods based on "
+"if the **parenthesis** `()` are present or not. The ones with `()` are "
+"treated as functions/methods, and others as attributes."
+msgstr ""
+
+#: ../../classDiagram.md:77
+msgid ""
+"There are two ways to define the members of a class, and regardless of "
+"whichever syntax is used to define the members, the output will still be "
+"same. The two different ways are :"
+msgstr ""
+
+#: ../../classDiagram.md:79
+msgid ""
+"Associate a member of a class using **:** (colon) followed by member "
+"name, useful to define one member at a time. For example:"
+msgstr ""
+
+#: ../../classDiagram.md:90
+msgid ""
+"Associate members of a class using **{}** brackets, where members are "
+"grouped within curly brackets. Suitable for defining multiple members at "
+"once. For example:"
+msgstr ""
+
+#: ../../classDiagram.md:102 ../../classDiagram.md:137
+msgid "Return Type"
+msgstr ""
+
+#: ../../classDiagram.md:104
+msgid ""
+"Optionally you can end the method/function definition with the data type "
+"that will be returned (note: there must be a space between the final `)` "
+"of the method definition and return type example:"
+msgstr ""
+
+#: ../../classDiagram.md:117
+msgid "Generic Types"
+msgstr ""
+
+#: ../../classDiagram.md:119
+msgid ""
+"Members can be defined using generic types, such as `List<int>`, for "
+"fields, parameters and return types by enclosing the type within `~` "
+"(**tilde**). Note: **nested** type declarations (such as "
+"`List<List<int>>`) are not currently supported"
+msgstr ""
+
+#: ../../classDiagram.md:121
+msgid "This can be done as part of either class definition method:"
+msgstr ""
+
+#: ../../classDiagram.md:139
+msgid ""
+"Optionally you can end the method/function definition with the data type "
+"that will be returned"
+msgstr ""
+
+#: ../../classDiagram.md:141
+msgid "Visibility"
+msgstr ""
+
+#: ../../classDiagram.md:143
+msgid ""
+"To specify the visibility of a class member (i.e. any attribute or "
+"method), these notations may be placed before the member's name, but it "
+"is optional:"
+msgstr ""
+
+#: ../../classDiagram.md:145
+msgid "`+` Public"
+msgstr ""
+
+#: ../../classDiagram.md:146
+msgid "`-` Private"
+msgstr ""
+
+#: ../../classDiagram.md:147
+msgid "`#` Protected"
+msgstr ""
+
+#: ../../classDiagram.md:148
+msgid "`~` Package/Internal"
+msgstr ""
+
+#: ../../classDiagram.md:150
+msgid ""
+"_note_ you can also include additional _classifiers_ to a method "
+"definition by adding the following notations to the end of the method, "
+"i.e.: after the `()`:"
+msgstr ""
+
+#: ../../classDiagram.md:151
+msgid "`*` Abstract e.g.: `someAbstractMethod()*`"
+msgstr ""
+
+#: ../../classDiagram.md:152
+msgid "`$` Static e.g.: `someStaticMethod()$`"
+msgstr ""
+
+#: ../../classDiagram.md:154
+msgid ""
+"_note_ you can also include additional _classifiers_ to a field "
+"definition by adding the following notations to the end of the field "
+"name:"
+msgstr ""
+
+#: ../../classDiagram.md:155
+msgid "`$` Static e.g.: `String someField$`"
+msgstr ""
+
+#: ../../classDiagram.md:159
+msgid "Defining Relationship"
+msgstr ""
+
+#: ../../classDiagram.md:161
+msgid ""
+"A relationship is a general term covering the specific types of logical "
+"connections found on class and object diagrams."
+msgstr ""
+
+#: ../../classDiagram.md:167
+msgid ""
+"There are different types of relations defined for classes under UML "
+"which are currently supported:"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "Type"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "Description"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "<|--"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "Inheritance"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "\\*--"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "Composition"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "o--"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "Aggregation"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "-->"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "Association"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "--"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "Link (Solid)"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "..>"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "Dependency"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "..|>"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "Realization"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid ".."
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "Link (Dashed)"
+msgstr ""
+
+#: ../../classDiagram.md:193
+msgid ""
+"We can use the labels to describe nature of relation between two classes."
+" Also, arrowheads can be used in opposite directions as well :"
+msgstr ""
+
+#: ../../classDiagram.md:208
+msgid "Labels on Relations"
+msgstr ""
+
+#: ../../classDiagram.md:210
+msgid "It is possible to add a label text to a relation:"
+msgstr ""
+
+#: ../../classDiagram.md:223
+msgid "Two-way relations"
+msgstr ""
+
+#: ../../classDiagram.md:225
+msgid "Relations can go in multiple ways:"
+msgstr ""
+
+#: ../../classDiagram.md:232
+msgid "Here is the syntax:"
+msgstr ""
+
+#: ../../classDiagram.md:238
+msgid "Where `Relation Type` can be one of:"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "<|"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "\\*"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "o"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid ">"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "<"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "|>"
+msgstr ""
+
+#: ../../classDiagram.md:250
+msgid "And `Link` can be one of:"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "Solid"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "Dashed"
+msgstr ""
+
+#: ../../classDiagram.md:257
+msgid "Cardinality / Multiplicity on relations"
+msgstr ""
+
+#: ../../classDiagram.md:259
+msgid ""
+"Multiplicity or cardinality in class diagrams indicates the number of "
+"instances of one class linked to one instance of the other class. For "
+"example, one company will have one or more employees, but each employee "
+"works for just one company."
+msgstr ""
+
+#: ../../classDiagram.md:261
+msgid "Multiplicity notations are placed near the ends of an association."
+msgstr ""
+
+#: ../../classDiagram.md:263
+msgid "The different cardinality options are :"
+msgstr ""
+
+#: ../../classDiagram.md:265
+msgid "`1` Only 1"
+msgstr ""
+
+#: ../../classDiagram.md:266
+msgid "`0..1` Zero or One"
+msgstr ""
+
+#: ../../classDiagram.md:267
+msgid "`1..*` One or more"
+msgstr ""
+
+#: ../../classDiagram.md:268
+msgid "`*` Many"
+msgstr ""
+
+#: ../../classDiagram.md:269
+msgid "`n` n {where n>1}"
+msgstr ""
+
+#: ../../classDiagram.md:270
+msgid "`0..n` zero to n {where n>1}"
+msgstr ""
+
+#: ../../classDiagram.md:271
+msgid "`1..n` one to n {where n>1}"
+msgstr ""
+
+#: ../../classDiagram.md:273
+msgid ""
+"Cardinality can be easily defined by placing cardinality text within "
+"quotes `\"` before(optional) and after(optional) a given arrow."
+msgstr ""
+
+#: ../../classDiagram.md:286
+msgid "Annotations on classes"
+msgstr ""
+
+#: ../../classDiagram.md:288
+msgid ""
+"It is possible to annotate classes with a specific marker text which is "
+"like meta-data for the class, giving a clear indication about its nature."
+" Some common annotations examples could be:"
+msgstr ""
+
+#: ../../classDiagram.md:290
+msgid "`<<Interface>>` To represent an Interface class"
+msgstr ""
+
+#: ../../classDiagram.md:291
+msgid "`<<abstract>>` To represent an abstract class"
+msgstr ""
+
+#: ../../classDiagram.md:292
+msgid "`<<Service>>` To represent a service class"
+msgstr ""
+
+#: ../../classDiagram.md:293
+msgid "`<<enumeration>>` To represent an enum"
+msgstr ""
+
+#: ../../classDiagram.md:295
+msgid ""
+"Annotations are defined within the opening `<<` and closing `>>`. There "
+"are two ways to add an annotation to a class and regardless of the syntax"
+" used output will be same. The two ways are :"
+msgstr ""
+
+#: ../../classDiagram.md:297
+msgid "In a **_separate line_** after a class is defined. For example:"
+msgstr ""
+
+#: ../../classDiagram.md:307
+msgid "In a **_nested structure_** along with class definition. For example:"
+msgstr ""
+
+#: ../../classDiagram.md:327
+msgid "Comments"
+msgstr ""
+
+#: ../../classDiagram.md:329
+#, python-format
+msgid ""
+"Comments can be entered within a class diagram, which will be ignored by "
+"the parser. Comments need to be on their own line, and must be prefaced "
+"with `%%` (double percent signs). Any text after the start of the comment"
+" to the next newline will be treated as a comment, including any class "
+"diagram syntax"
+msgstr ""
+
+#: ../../classDiagram.md:342
+msgid "Setting the direction of the diagram"
+msgstr ""
+
+#: ../../classDiagram.md:344
+msgid ""
+"With class diagrams you can use the direction statement to set the "
+"direction which the diagram will render like in this example."
+msgstr ""
+
+#: ../../classDiagram.md:364
+msgid "Interaction"
+msgstr ""
+
+#: ../../classDiagram.md:366
+msgid ""
+"It is possible to bind a click event to a node, the click can lead to "
+"either a javascript callback or to a link which will be opened in a new "
+"browser tab. **Note**: This functionality is disabled when using "
+"`securityLevel='strict'` and enabled when using `securityLevel='loose'`."
+msgstr ""
+
+#: ../../classDiagram.md:368
+msgid ""
+"You would define these actions on a separate line after all classes have "
+"been declared."
+msgstr ""
+
+#: ../../classDiagram.md:375
+msgid ""
+"_action_ is either `link` or `callback`, depending on which type of "
+"interaction you want to have called"
+msgstr ""
+
+#: ../../classDiagram.md:376
+msgid "_className_ is the id of the node that the action will be associated with"
+msgstr ""
+
+#: ../../classDiagram.md:377
+msgid "_reference_ is either the url link, or the function name for callback."
+msgstr ""
+
+#: ../../classDiagram.md:378
+msgid ""
+"(_optional_) tooltip is a string to be displayed when hovering over "
+"element (note: The styles of the tooltip are set by the class "
+".mermaidTooltip.)"
+msgstr ""
+
+#: ../../classDiagram.md:379
+msgid "note: callback function will be called with the nodeId as parameter."
+msgstr ""
+
+#: ../../classDiagram.md:381
+msgid "Examples"
+msgstr ""
+
+#: ../../classDiagram.md:383
+msgid "_URL Link:_"
+msgstr ""
+
+#: ../../classDiagram.md:393
+msgid "_Callback:_"
+msgstr ""
+
+#: ../../classDiagram.md:423
+msgid ""
+"**Success** The tooltip functionality and the ability to link to urls are"
+" available from version 0.5.2."
+msgstr ""
+
+#: ../../classDiagram.md:425
+msgid "Beginners tip, a full example using interactive links in an html context:"
+msgstr ""
+
+#: ../../classDiagram.md:470
+msgid "Styling"
+msgstr ""
+
+#: ../../classDiagram.md:472
+msgid "Styling a node"
+msgstr ""
+
+#: ../../classDiagram.md:474
+msgid ""
+"It is possible to apply specific styles such as a thicker border or a "
+"different background color to individual nodes. This is done by "
+"predefining classes in css styles that can be applied from the graph "
+"definition as in the example below:"
+msgstr ""
+
+#: ../../classDiagram.md:487
+msgid "Then attaching that class to a specific node as per below:"
+msgstr ""
+
+#: ../../classDiagram.md:493
+msgid "It is also possible to attach a class to a list of nodes in one statement:"
+msgstr ""
+
+#: ../../classDiagram.md:499
+msgid ""
+"A shorter form of adding a class is to attach the classname to the node "
+"using the `:::` operator as per below:"
+msgstr ""
+
+#: ../../classDiagram.md:506
+msgid "Or:"
+msgstr ""
+
+#: ../../classDiagram.md:516
+msgid ""
+"?> cssClasses cannot be added using this shorthand method at the same "
+"time as a relation statement."
+msgstr ""
+
+#: ../../classDiagram.md:518
+msgid ""
+"?> Due to limitations with existing markup for class diagrams, it is not "
+"currently possible to define css classes within the diagram itself.  "
+"***Coming soon!***"
+msgstr ""
+
+#: ../../classDiagram.md:520
+msgid "Default Styles"
+msgstr ""
+
+#: ../../classDiagram.md:522
+msgid ""
+"The main styling of the class diagram is done with a preset number of css"
+" classes. During rendering these classes are extracted from the file "
+"located at src/themes/class.scss. The classes used here are described "
+"below:"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "g.classGroup text"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "Styles for general class text"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "classGroup .title"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "Styles for general class title"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "g.classGroup rect"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "Styles for class diagram rectangle"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "g.classGroup line"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "Styles for class diagram line"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid ".classLabel .box"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "Styles for class label box"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid ".classLabel .label"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "Styles for class label text"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "composition"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "Styles for composition arrow head and arrow line"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "aggregation"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "Styles for aggregation arrow head and arrow line(dashed or solid)"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "dependency"
+msgstr ""
+
+#: ../../classDiagram.md
+msgid "Styles for dependency arrow head and arrow line"
+msgstr ""
+
+#: ../../classDiagram.md:536
+msgid "Sample stylesheet"
+msgstr ""
+
+#: ../../classDiagram.md:628
+msgid "Configuration"
+msgstr ""
+
+#: ../../classDiagram.md:630
+msgid "`Coming soon`"
+msgstr ""
+

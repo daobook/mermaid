@@ -1,0 +1,617 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, xinetzone
+# This file is distributed under the same license as the mermaid package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mermaid \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-05 16:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../sequenceDiagram.md:1
+msgid "Sequence diagrams"
+msgstr ""
+
+#: ../../sequenceDiagram.md:3
+msgid ""
+"**Edit this Page** [![N|Solid](img/GitHub-Mark-"
+"32px.png)](https://github.com/mermaid-"
+"js/mermaid/blob/develop/docs/sequenceDiagram.md)"
+msgstr ""
+
+#: ../../sequenceDiagram.md:3
+msgid "N|Solid"
+msgstr ""
+
+#: ../../sequenceDiagram.md:4
+msgid ""
+"A Sequence diagram is an interaction diagram that shows how processes "
+"operate with one another and in what order."
+msgstr ""
+
+#: ../../sequenceDiagram.md:6
+msgid "Mermaid can render sequence diagrams."
+msgstr ""
+
+#: ../../sequenceDiagram.md:21
+msgid "Syntax"
+msgstr ""
+
+#: ../../sequenceDiagram.md:23
+msgid "Participants"
+msgstr ""
+
+#: ../../sequenceDiagram.md:25
+msgid ""
+"The participants can be defined implicitly as in the first example on "
+"this page. The participants or actors are rendered in order of appearance"
+" in the diagram source text. Sometimes you might want to show the "
+"participants in a different order than how they appear in the first "
+"message. It is possible to specify the actor's order of appearance by "
+"doing the following:"
+msgstr ""
+
+#: ../../sequenceDiagram.md:38
+msgid "Actors"
+msgstr ""
+
+#: ../../sequenceDiagram.md:40
+msgid ""
+"If you specifically want to use the actor symbol instead of a rectangle "
+"with text you can do so by using actor statements as per below."
+msgstr ""
+
+#: ../../sequenceDiagram.md:57
+msgid "Aliases"
+msgstr ""
+
+#: ../../sequenceDiagram.md:59
+msgid "The actor can have a convenient identifier and a descriptive label."
+msgstr ""
+
+#: ../../sequenceDiagram.md:69
+msgid "Messages"
+msgstr ""
+
+#: ../../sequenceDiagram.md:71
+msgid "Messages can be of two displayed either solid or with a dotted line."
+msgstr ""
+
+#: ../../sequenceDiagram.md:77
+msgid "There are six types of arrows currently supported:"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Type"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Description"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "->"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Solid line without arrow"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "-->"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Dotted line without arrow"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "->>"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Solid line with arrowhead"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "-->>"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Dotted line with arrowhead"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "-x"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Solid line with a cross at the end"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "--x"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Dotted line with a cross at the end."
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "-)"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Solid line with an open arrow at the end (async)"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "--)"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Dotted line with a open arrow at the end (async)"
+msgstr ""
+
+#: ../../sequenceDiagram.md:90
+msgid "Activations"
+msgstr ""
+
+#: ../../sequenceDiagram.md:92
+msgid ""
+"It is possible to activate and deactivate an actor. (de)activation can be"
+" dedicated declarations:"
+msgstr ""
+
+#: ../../sequenceDiagram.md:102
+msgid ""
+"There is also a shortcut notation by appending `+`/`-` suffix to the "
+"message arrow:"
+msgstr ""
+
+#: ../../sequenceDiagram.md:110
+msgid "Activations can be stacked for same actor:"
+msgstr ""
+
+#: ../../sequenceDiagram.md:120
+msgid "Notes"
+msgstr ""
+
+#: ../../sequenceDiagram.md:122
+msgid ""
+"It is possible to add notes to a sequence diagram. This is done by the "
+"notation Note [ right of | left of | over ] [Actor]: Text in note content"
+msgstr ""
+
+#: ../../sequenceDiagram.md:125 ../../sequenceDiagram.md:151
+#: ../../sequenceDiagram.md:181 ../../sequenceDiagram.md:212
+msgid "See the example below:"
+msgstr ""
+
+#: ../../sequenceDiagram.md:133
+msgid "It is also possible to create notes spanning two participants:"
+msgstr ""
+
+#: ../../sequenceDiagram.md:141
+msgid "Loops"
+msgstr ""
+
+#: ../../sequenceDiagram.md:143
+msgid ""
+"It is possible to express loops in a sequence diagram. This is done by "
+"the notation"
+msgstr ""
+
+#: ../../sequenceDiagram.md:161
+msgid "Alt"
+msgstr ""
+
+#: ../../sequenceDiagram.md:163
+msgid ""
+"It is possible to express alternative paths in a sequence diagram. This "
+"is done by the notation"
+msgstr ""
+
+#: ../../sequenceDiagram.md:173
+msgid "or if there is sequence that is optional (if without else)."
+msgstr ""
+
+#: ../../sequenceDiagram.md:196
+msgid "Parallel"
+msgstr ""
+
+#: ../../sequenceDiagram.md:198
+msgid "It is possible to show actions that are happening in parallel."
+msgstr ""
+
+#: ../../sequenceDiagram.md:200
+msgid "This is done by the notation"
+msgstr ""
+
+#: ../../sequenceDiagram.md:225
+msgid "It is also possible to nest parallel blocks."
+msgstr ""
+
+#: ../../sequenceDiagram.md:241
+msgid "Background Highlighting"
+msgstr ""
+
+#: ../../sequenceDiagram.md:243
+msgid ""
+"It is possible to highlight flows by providing colored background rects. "
+"This is done by the notation"
+msgstr ""
+
+#: ../../sequenceDiagram.md:245
+msgid "The colors are defined using rgb and rgba syntax."
+msgstr ""
+
+#: ../../sequenceDiagram.md:259
+msgid "See the examples below:"
+msgstr ""
+
+#: ../../sequenceDiagram.md:280
+msgid "Comments"
+msgstr ""
+
+#: ../../sequenceDiagram.md:282
+#, python-format
+msgid ""
+"Comments can be entered within a sequence diagram, which will be ignored "
+"by the parser.  Comments need to be on their own line, and must be "
+"prefaced with `%%` (double percent signs). Any text after the start of "
+"the comment to the next newline will be treated as a comment, including "
+"any diagram syntax"
+msgstr ""
+
+#: ../../sequenceDiagram.md:291
+msgid "Entity codes to escape characters"
+msgstr ""
+
+#: ../../sequenceDiagram.md:293
+msgid "It is possible to escape characters using the syntax exemplified here."
+msgstr ""
+
+#: ../../sequenceDiagram.md:301
+msgid ""
+"Numbers given are base 10, so `#` can be encoded as `#35;`. It is also "
+"supported to use HTML character names."
+msgstr ""
+
+#: ../../sequenceDiagram.md:303
+msgid ""
+"Because semicolons can be used instead of line breaks to define the "
+"markup, you need to use `#59;` to include a semicolon in message text."
+msgstr ""
+
+#: ../../sequenceDiagram.md:305
+msgid "sequenceNumbers"
+msgstr ""
+
+#: ../../sequenceDiagram.md:307
+msgid ""
+"It is possible to get a sequence number attached to each arrow in a "
+"sequence diagram. This can be configured when adding mermaid to the "
+"website as shown below:"
+msgstr ""
+
+#: ../../sequenceDiagram.md:317
+msgid "It can also be be turned on via the diagram code as in the diagram:"
+msgstr ""
+
+#: ../../sequenceDiagram.md:332
+msgid "Actor Menus"
+msgstr ""
+
+#: ../../sequenceDiagram.md:334
+msgid ""
+"Actors can have popup-menus containing individualized links to external "
+"pages.  For example, if an actor represented a web service, useful links "
+"might include a link to the service health dashboard, repo containing the"
+" code for the service, or a wiki page describing the service."
+msgstr ""
+
+#: ../../sequenceDiagram.md:336
+msgid "This can be configured by adding one or more link lines with the format:"
+msgstr ""
+
+#: ../../sequenceDiagram.md:353
+msgid "Advanced Menu Syntax"
+msgstr ""
+
+#: ../../sequenceDiagram.md:354
+msgid ""
+"There is an advanced syntax that relies on JSON formatting. If you are "
+"comfortable with JSON format, then this exists as well."
+msgstr ""
+
+#: ../../sequenceDiagram.md:356
+msgid "This can be configured by adding the links lines with the format:"
+msgstr ""
+
+#: ../../sequenceDiagram.md:362
+msgid "An example is below:"
+msgstr ""
+
+#: ../../sequenceDiagram.md:375
+msgid "Styling"
+msgstr ""
+
+#: ../../sequenceDiagram.md:377
+msgid ""
+"Styling of a sequence diagram is done by defining a number of css "
+"classes. During rendering these classes are extracted from the file "
+"located at src/themes/sequence.scss"
+msgstr ""
+
+#: ../../sequenceDiagram.md:379
+msgid "Classes used"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Class"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "actor"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Style for the actor box at the top of the diagram."
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "text.actor"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Styles for text in the actor box at the top of the diagram."
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "actor-line"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "The vertical line for an actor."
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "messageLine0"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Styles for the solid message line."
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "messageLine1"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Styles for the dotted message line."
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "messageText"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Defines styles for the text on the message arrows."
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "labelBox"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Defines styles label to left in a loop."
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "labelText"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Styles for the text in label for loops."
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "loopText"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Styles for the text in the loop box."
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "loopLine"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Defines styles for the lines in the loop box."
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "note"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Styles for the note box."
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "noteText"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Styles for the text on in the note boxes."
+msgstr ""
+
+#: ../../sequenceDiagram.md:396
+msgid "Sample stylesheet"
+msgstr ""
+
+#: ../../sequenceDiagram.md:478
+msgid "Configuration"
+msgstr ""
+
+#: ../../sequenceDiagram.md:480
+msgid "Is it possible to adjust the margins for rendering the sequence diagram."
+msgstr ""
+
+#: ../../sequenceDiagram.md:482
+msgid ""
+"This is done by defining `mermaid.sequenceConfig` or by the CLI to use a "
+"json file with the configuration. How to use the CLI is described in the "
+"[mermaidCLI](mermaidCLI) page. `mermaid.sequenceConfig` can be set to a "
+"JSON string with config parameters or the corresponding object."
+msgstr ""
+
+#: ../../sequenceDiagram.md:497
+msgid "Possible configuration parameters:"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Parameter"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Default value"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "mirrorActors"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Turns on/off the rendering of actors below the diagram as well as above it"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "false"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "bottomMarginAdj"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid ""
+"Adjusts how far down the graph ended. Wide borders styles with css could "
+"generate unwanted clipping which is why this config param exists."
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "1"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "actorFontSize"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Sets the font size for the actor's description"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "14"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "actorFontFamily"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Sets the font family for the actor's description"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "\"Open-Sans\", \"sans-serif\""
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "actorFontWeight"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Sets the font weight for the actor's description"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "noteFontSize"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Sets the font size for actor-attached notes"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "noteFontFamily"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Sets the font family for actor-attached notes"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "\"trebuchet ms\", verdana, arial"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "noteFontWeight"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Sets the font weight for actor-attached notes"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "noteAlign"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Sets the text alignment for text in actor-attached notes"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "center"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "messageFontSize"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Sets the font size for actor<->actor messages"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "16"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "messageFontFamily"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Sets the font family for actor<->actor messages"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "messageFontWeight"
+msgstr ""
+
+#: ../../sequenceDiagram.md
+msgid "Sets the font weight for actor<->actor messages"
+msgstr ""
+

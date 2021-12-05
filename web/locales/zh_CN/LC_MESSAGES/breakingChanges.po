@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, xinetzone
+# This file is distributed under the same license as the mermaid package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mermaid \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-05 16:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../breakingChanges.md:1
+msgid "Breaking changes"
+msgstr ""
+
+#: ../../breakingChanges.md:3
+msgid "Breaking changes from history version to latest version:"
+msgstr ""
+
+#: ../../breakingChanges.md:5
+msgid "#1"
+msgstr ""
+
+#: ../../breakingChanges.md:15
+msgid "has been changed to"
+msgstr ""
+
+#: ../../breakingChanges.md:25
+msgid "#2"
+msgstr ""
+
+#: ../../breakingChanges.md:27
+msgid "In old versions you need to add CSS file to your HTML:"
+msgstr ""
+
+#: ../../breakingChanges.md:33
+msgid "or"
+msgstr ""
+
+#: ../../breakingChanges.md:39
+msgid ""
+"Now it is not needed to do so. And there are no more CSS files in "
+"distrubtion files."
+msgstr ""
+
+#: ../../breakingChanges.md:41
+msgid "You just"
+msgstr ""
+
+#: ../../breakingChanges.md:49
+msgid "and it works like a charm."
+msgstr ""
+
+#: ../../breakingChanges.md:51
+msgid "This is because now the CSS is inline with SVG for portability."
+msgstr ""
+

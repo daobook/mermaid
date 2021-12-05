@@ -1,0 +1,173 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, xinetzone
+# This file is distributed under the same license as the mermaid package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mermaid \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-05 16:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../requirementDiagram.md:1
+msgid "Requirement Diagram"
+msgstr ""
+
+#: ../../requirementDiagram.md:3
+msgid ""
+"**Edit this Page** [![N|Solid](img/GitHub-Mark-"
+"32px.png)](https://github.com/mermaid-"
+"js/mermaid/blob/develop/docs/requirementDiagram.md)"
+msgstr ""
+
+#: ../../requirementDiagram.md:3
+msgid "N|Solid"
+msgstr ""
+
+#: ../../requirementDiagram.md:5
+msgid ""
+"A Requirement diagram provides a visualization for requirements and their"
+" connections, to each other and other documented elements. The modeling "
+"specs follow those defined by SysML v1.6."
+msgstr ""
+
+#: ../../requirementDiagram.md:7
+msgid "Rendering requirements is straightforward."
+msgstr ""
+
+#: ../../requirementDiagram.md:26
+msgid "Syntax"
+msgstr ""
+
+#: ../../requirementDiagram.md:28
+msgid ""
+"There are three types of components to a requirement diagram: "
+"requirement, element, and relationship."
+msgstr ""
+
+#: ../../requirementDiagram.md:30
+msgid ""
+"The grammar for defining each is defined below. Words denoted in angle "
+"brackets, such as ```<word>```, are enumerated keywords that have options"
+" elaborated in a table. ```user_defined_...``` is use in any place where "
+"user input is expected."
+msgstr ""
+
+#: ../../requirementDiagram.md:32
+msgid ""
+"An important note on user text: all input can be surrounded in quotes or "
+"not. For example, both ```Id: \"here is an example\"``` and ```Id: here "
+"is an example``` are both valid. However, users must be careful with "
+"unquoted input. The parser will fail if another keyword is detected."
+msgstr ""
+
+#: ../../requirementDiagram.md:34
+msgid "Requirement"
+msgstr ""
+
+#: ../../requirementDiagram.md:35
+msgid ""
+"A requirement definition contains a requirement type, name, id, text, "
+"risk, and verification method. The syntax follows:"
+msgstr ""
+
+#: ../../requirementDiagram.md:46
+msgid "Type, risk, and method are enumerations defined in SysML."
+msgstr ""
+
+#: ../../requirementDiagram.md
+msgid "Keyword"
+msgstr ""
+
+#: ../../requirementDiagram.md
+msgid "Options"
+msgstr ""
+
+#: ../../requirementDiagram.md
+msgid "Type"
+msgstr ""
+
+#: ../../requirementDiagram.md
+msgid ""
+"requirement, functionalRequirement, interfaceRequirement, "
+"performanceRequirement, physicalRequirement, designConstraint"
+msgstr ""
+
+#: ../../requirementDiagram.md
+msgid "Risk"
+msgstr ""
+
+#: ../../requirementDiagram.md
+msgid "Low, Medium, High"
+msgstr ""
+
+#: ../../requirementDiagram.md
+msgid "VerificationMethod"
+msgstr ""
+
+#: ../../requirementDiagram.md
+msgid "Analysis, Inspection, Test, Demonstration"
+msgstr ""
+
+#: ../../requirementDiagram.md:54
+msgid "Element"
+msgstr ""
+
+#: ../../requirementDiagram.md:55
+msgid ""
+"An element definition contains an element name, type, and document "
+"reference. These three are all user defined. The element feature is "
+"intended to be lightweight but allow requirements to be connected to "
+"portions of other documents."
+msgstr ""
+
+#: ../../requirementDiagram.md:65
+msgid "Relationship"
+msgstr ""
+
+#: ../../requirementDiagram.md:66
+msgid ""
+"Relationships are comprised of a source node, destination node, and "
+"relationship type."
+msgstr ""
+
+#: ../../requirementDiagram.md:68
+msgid "Each follows the definition format of"
+msgstr ""
+
+#: ../../requirementDiagram.md:74
+msgid "or"
+msgstr ""
+
+#: ../../requirementDiagram.md:80
+msgid ""
+"\"name of source\" and \"name of destination\" should be names of "
+"requirement or element nodes defined elsewhere."
+msgstr ""
+
+#: ../../requirementDiagram.md:82
+msgid ""
+"A relationship type can be one of contains, copies, derives, satisfies, "
+"verifies, refines, or traces."
+msgstr ""
+
+#: ../../requirementDiagram.md:84
+msgid "Each relationship is labeled in the diagram."
+msgstr ""
+
+#: ../../requirementDiagram.md:86
+msgid "Larger Example"
+msgstr ""
+
+#: ../../requirementDiagram.md:87
+msgid "This example uses all features of the diagram."
+msgstr ""
+

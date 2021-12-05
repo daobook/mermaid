@@ -1,0 +1,478 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, xinetzone
+# This file is distributed under the same license as the mermaid package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mermaid \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-05 19:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../8.6.0_docs.md:1
+msgid "Version 8.6.0 Changes"
+msgstr ""
+
+#: ../../8.6.0_docs.md:3
+msgid ""
+"[New Mermaid Live-Editor Beta](https://mermaid-js.github.io/docs/mermaid-"
+"live-editor-"
+"beta/#/edit/eyJjb2RlIjoiJSV7aW5pdDoge1widGhlbWVcIjogXCJmb3Jlc3RcIiwgXCJsb2dMZXZlbFwiOiAxIH19JSVcbmdyYXBoIFREXG4gIEFbQ2hyaXN0bWFzXSAtLT58R2V0IG1vbmV5fCBCKEdvIHNob3BwaW5nKVxuICBCIC0tPiBDe0xldCBtZSB0aGlua31cbiAgQyAtLT58T25lfCBEW0xhcHRvcF1cbiAgQyAtLT58VHdvfCBFW2lQaG9uZV1cbiAgQyAtLT58VGhyZWV8IEZbZmE6ZmEtY2FyIENhcl1cblx0XHQiLCJtZXJtYWlkIjp7InRoZW1lIjoiZGFyayJ9fQ)"
+msgstr ""
+
+#: ../../8.6.0_docs.md:5
+msgid "[CDN](https://unpkg.com/mermaid/)"
+msgstr ""
+
+#: ../../8.6.0_docs.md:7
+msgid ""
+"With version 8.6.0 comes the release of directives for mermaid, a new "
+"system for modifying configurations, with the aim of establishing "
+"centralized, sane defaults and simple implementation."
+msgstr ""
+
+#: ../../8.6.0_docs.md:9
+msgid ""
+"`directives` allow for a single-use overwriting of `config`, as it has "
+"been discussed in [Configurations](./Setup.md). This allows site Diagram "
+"Authors to instantiate temporary modifications to `config` through the "
+"use of [Directives](), which are parsed before rendering diagram "
+"definitions. This allows the Diagram Authors to alter the appearance of "
+"the diagrams."
+msgstr ""
+
+#: ../../8.6.0_docs.md:12
+msgid ""
+"**A likely application for this is in the creation of diagrams/charts "
+"inside company/organizational webpages, that rely on mermaid for diagram "
+"and chart rendering.**"
+msgstr ""
+
+#: ../../8.6.0_docs.md:14
+msgid ""
+"the `init` directive is the main method of configuration for Site and "
+"Current Levels."
+msgstr ""
+
+#: ../../8.6.0_docs.md:16
+msgid "The three levels of are Configuration, Global, Site and Current."
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Level of Configuration"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Description"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Global Configuration"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Default Mermaid Configurations"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Site Configuration"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Configurations made by site owner"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Current Configuration"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Configurations made by Implementors"
+msgstr ""
+
+#: ../../8.6.0_docs.md:25
+msgid "Limits to Modifying Configurations"
+msgstr ""
+
+#: ../../8.6.0_docs.md:26
+msgid "**secure Array**"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Parameter"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Type"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Required"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Values"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "secure"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Array of parameters excluded from init directive"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Array"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Any parameters"
+msgstr ""
+
+#: ../../8.6.0_docs.md:32
+msgid ""
+"The modifiable parts of the Configuration are limited by the secure "
+"array, which is an array of immutable parameters, this array can be "
+"expanded by site owners."
+msgstr ""
+
+#: ../../8.6.0_docs.md:34
+msgid ""
+"**Notes**: secure arrays work like nesting dolls, with the Global "
+"Configurations’ secure array being the default and immutable list of "
+"immutable parameters, or the smallest doll, to which site owners may add "
+"to, but implementors may not modify it."
+msgstr ""
+
+#: ../../8.6.0_docs.md:36
+msgid "Secure Arrays"
+msgstr ""
+
+#: ../../8.6.0_docs.md:38
+msgid ""
+"Site owners can add to the **secure** array using this command: "
+"mermaidAPI.initialize( { startOnLoad: true, secure: ['parameter1', "
+"'parameter2'] } );"
+msgstr ""
+
+#: ../../8.6.0_docs.md:41
+msgid ""
+"default values for the `secure array` consists of: ['secure', "
+"'securityLevel', 'startOnLoad', 'maxTextSize']. These default values are "
+"immutable."
+msgstr ""
+
+#: ../../8.6.0_docs.md:43
+msgid ""
+"Implementors can only modify configurations using directives, but cannot "
+"change the `secure` array."
+msgstr ""
+
+#: ../../8.6.0_docs.md:45
+msgid "Modifying Configurations and directives:"
+msgstr ""
+
+#: ../../8.6.0_docs.md:46
+msgid "The Two types of directives: are `init` or `initialize` and `wrap`."
+msgstr ""
+
+#: ../../8.6.0_docs.md:52
+#, python-format
+msgid ""
+"Older versions of mermaid will not parse directives because `%%` will "
+"comment out the directive. This makes the update backward compatible."
+msgstr ""
+
+#: ../../8.6.0_docs.md:54
+msgid "Init"
+msgstr ""
+
+#: ../../8.6.0_docs.md:55
+msgid ""
+"`init`, or `initialize`: the init or initialize directive gives the user "
+"the ability to overwrite and change the values for configuration "
+"parameters, with respect to the secure array that is in effect."
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "init"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "modifies configurations"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Directive"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Optional"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Any parameters not included in the secure array"
+msgstr ""
+
+#: ../../8.6.0_docs.md:75
+msgid "**for example**:"
+msgstr ""
+
+#: ../../8.6.0_docs.md:87
+msgid "Wrap"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "wrap"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "a callable text-wrap function"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+#, python-format
+msgid "%%{wrap}%%"
+msgstr ""
+
+#: ../../8.6.0_docs.md:103
+msgid "**an example of text wrapping in a sequence diagram**:"
+msgstr ""
+
+#: ../../8.6.0_docs.md:105
+msgid "![Image showing wrapped text](img/wrapped-text.png)"
+msgstr ""
+
+#: ../../8.6.0_docs.md:105
+msgid "Image showing wrapped text"
+msgstr ""
+
+#: ../../8.6.0_docs.md:108
+msgid "Resetting Configurations:"
+msgstr ""
+
+#: ../../8.6.0_docs.md:109
+msgid ""
+"There are two more functions in the mermaidAPI that can be called by site"
+" owners: **reset** and **globalReset**."
+msgstr ""
+
+#: ../../8.6.0_docs.md:111
+msgid ""
+"**reset**: resets the configuration to whatever the last configuration "
+"was. This can be done to undo more recent changes to the last "
+"mermaidAPI.initialize({...}) configuration."
+msgstr ""
+
+#: ../../8.6.0_docs.md:113
+msgid ""
+"**globalReset** will reset both the current configuration AND the site "
+"configuration back to the global defaults."
+msgstr ""
+
+#: ../../8.6.0_docs.md:115
+msgid ""
+"**Notes**:  both reset and globalReset are only available to site owners,"
+" as such implementors would have to edit their configs with init."
+msgstr ""
+
+#: ../../8.6.0_docs.md:117
+msgid "Additional Utils to mermaid"
+msgstr ""
+
+#: ../../8.6.0_docs.md:118
+msgid ""
+"•\t**memoize**: simple caching for computationally expensive functions. "
+"It reduces the rendering time for computationally intensive diagrams by "
+"about 90%."
+msgstr ""
+
+#: ../../8.6.0_docs.md:120
+msgid ""
+"•\t**assignWithDepth** - this is an improvement on previous functions "
+"with config.js and Object.assign. The purpose of this function is to "
+"provide a sane mechanism for merging objects, similar to object.assign, "
+"but with depth."
+msgstr ""
+
+#: ../../8.6.0_docs.md:122
+msgid "Example of **assignWithDepth**:"
+msgstr ""
+
+#: ../../8.6.0_docs.md:124
+msgid "![Image showing assignWithDepth](img/assignWithDepth.png)"
+msgstr ""
+
+#: ../../8.6.0_docs.md:124
+msgid "Image showing assignWithDepth"
+msgstr ""
+
+#: ../../8.6.0_docs.md:127
+msgid "Example of **object.Assign**:"
+msgstr ""
+
+#: ../../8.6.0_docs.md:129
+msgid ""
+"![Image showing object.assign without depth](img/object.assign-without-"
+"depth.png)"
+msgstr ""
+
+#: ../../8.6.0_docs.md:129
+msgid "Image showing object.assign without depth"
+msgstr ""
+
+#: ../../8.6.0_docs.md:131
+msgid ""
+"•\t**calculateTextDimensions, calculateTextWidth,** and "
+"**calculateTextHeight** - for measuring text dimensions, width and "
+"height."
+msgstr ""
+
+#: ../../8.6.0_docs.md:133
+msgid ""
+"**Notes**:For more information on usage, parameters, and return info for "
+"these new functions take a look at the jsdocs for them in the utils "
+"package."
+msgstr ""
+
+#: ../../8.6.0_docs.md:136
+msgid "New API Requests Introduced in Version 8.6.0"
+msgstr ""
+
+#: ../../8.6.0_docs.md ../../8.6.0_docs.md:138
+msgid "setSiteConfig"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Function"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Parameters"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Returns"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Sets the siteConfig to desired values"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Put Request"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Any Values, except ones in secure array"
+msgstr ""
+
+#: ../../8.6.0_docs.md ../../8.6.0_docs.md:202
+msgid "conf"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "siteConfig"
+msgstr ""
+
+#: ../../8.6.0_docs.md:152
+msgid "getSiteConfig"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Returns the current siteConfig base configuration"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Get Request"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Returns Any Values  in siteConfig"
+msgstr ""
+
+#: ../../8.6.0_docs.md:162
+msgid "setConfig"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Any Values, those in secure array"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "currentConfig merged with the sanitized conf"
+msgstr ""
+
+#: ../../8.6.0_docs.md ../../8.6.0_docs.md:174
+msgid "getConfig"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Return Values"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Obtains the currentConfig"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Any Values from currentConfig"
+msgstr ""
+
+#: ../../8.6.0_docs.md ../../8.6.0_docs.md:185
+msgid "sanitize"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Sets the siteConfig to desired values."
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Put Request(?)"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "None"
+msgstr ""
+
+#: ../../8.6.0_docs.md ../../8.6.0_docs.md:196
+msgid "reset"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Resets currentConfig to conf"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "base set of values, which currentConfig coul be   reset   to."
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Dictionary"
+msgstr ""
+
+#: ../../8.6.0_docs.md
+msgid "Any Values, with respect to the secure Array"
+msgstr ""
+
+#: ../../8.6.0_docs.md:212
+msgid "For more information, read [Setup](Setup.md)."
+msgstr ""
+
+#~ msgid "![Image showing wrapped text](img/wrapped%20text.png)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "![Image showing object.assign without "
+#~ "depth](img/object.assign%20without%20depth.png)"
+#~ msgstr ""
+

@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, xinetzone
+# This file is distributed under the same license as the mermaid package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mermaid \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-05 16:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../pie.md:1
+msgid "Pie chart diagrams"
+msgstr ""
+
+#: ../../pie.md:3
+msgid ""
+"A pie chart (or a circle chart) is a circular statistical graphic, which "
+"is divided into slices to illustrate numerical proportion. In a pie "
+"chart, the arc length of each slice (and consequently its central angle "
+"and area), is proportional to the quantity it represents. While it is "
+"named for its resemblance to a pie which has been sliced, there are "
+"variations on the way it can be presented. The earliest known pie chart "
+"is generally credited to William Playfair's Statistical Breviary of 1801 "
+"-Wikipedia"
+msgstr ""
+
+#: ../../pie.md:6
+msgid "Mermaid can render Pie Chart diagrams."
+msgstr ""
+
+#: ../../pie.md:16
+msgid "Syntax"
+msgstr ""
+
+#: ../../pie.md:17
+msgid "Drawing a pie chart is really simple in mermaid."
+msgstr ""
+
+#: ../../pie.md:18
+msgid "Start with `pie` keyword to begin the diagram"
+msgstr ""
+
+#: ../../pie.md:19
+msgid ""
+"Followed by `title` keyword and its value in string to give a title to "
+"the pie-chart. This is ***OPTIONAL***"
+msgstr ""
+
+#: ../../pie.md:20
+msgid "Followed by dataSet"
+msgstr ""
+
+#: ../../pie.md:21
+msgid "`label` for a section in the pie diagram within `\" \"` quotes."
+msgstr ""
+
+#: ../../pie.md:22
+msgid "Followed by `:` colon as separator"
+msgstr ""
+
+#: ../../pie.md:23
+msgid "Followed by `positive numeric value` (supported upto two decimal places)"
+msgstr ""
+
+#: ../../pie.md:25
+msgid ""
+"[pie]      [title] [titlevalue]  (OPTIONAL)       \"[datakey1]\" : "
+"[dataValue1]       \"[datakey2]\" : [dataValue2]       \"[datakey3]\" : "
+"[dataValue3]       .       ."
+msgstr ""
+
+#: ../../pie.md:33
+msgid "Example"
+msgstr ""
+

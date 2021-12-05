@@ -1,0 +1,808 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, xinetzone
+# This file is distributed under the same license as the mermaid package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mermaid \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-05 16:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../theming.md:1
+msgid "Theme Configuration"
+msgstr ""
+
+#: ../../theming.md:3
+msgid ""
+"**Edit this Page** [![N|Solid](img/GitHub-Mark-"
+"32px.png)](https://github.com/mermaid-"
+"js/mermaid/blob/develop/docs/theming.md)"
+msgstr ""
+
+#: ../../theming.md:3
+msgid "N|Solid"
+msgstr ""
+
+#: ../../theming.md:5
+#, python-format
+msgid ""
+"With Version 8.7.0 Mermaid comes out with a system for dynamic and "
+"integrated configuration of the diagram themes. The objective of this is "
+"to increase the customizability of mermaid and the ease of Styling, with "
+"the customization of themes through the `%%init%%` directive and "
+"`initialize` calls."
+msgstr ""
+
+#: ../../theming.md:7
+msgid ""
+"Themes follow and build upon the Levels of Configuration and employ "
+"`directives` to modify and create custom configurations, as they were "
+"introduced in Version [8.6.0](./8.6.0_docs.md)."
+msgstr ""
+
+#: ../../theming.md:9
+msgid ""
+"**These Theming Configurations, similar to directives, will also be made "
+"applicable in the Live-Editor, to maximize customizability."
+msgstr ""
+
+#: ../../theming.md:11
+msgid "Site-wide Themes"
+msgstr ""
+
+#: ../../theming.md:12
+msgid "Site-wide themes are still declared via `initialize` by site owners."
+msgstr ""
+
+#: ../../theming.md:14
+msgid "Example of `Initalize` call setting `theme` to `base`:"
+msgstr ""
+
+#: ../../theming.md:20
+#, python-format
+msgid ""
+"**Notes**: Only site owners can use the `mermaidAPI.initialize` call, to "
+"set values. Site-Users will have to use `%%init%%` to modify or create "
+"the theme for their diagrams."
+msgstr ""
+
+#: ../../theming.md:22
+msgid "Themes at the Local or Current Level"
+msgstr ""
+
+#: ../../theming.md:23
+msgid ""
+"When Generating a diagram using on a webpage that supports mermaid. It is"
+" also possible to override site-wide theme settings locally, for a "
+"specific diagram, using directives, as long as it is not prohibited by "
+"the `secure` array."
+msgstr ""
+
+#: ../../theming.md:33
+#, python-format
+msgid ""
+"Here is an example of how `%%init%%` can set the theme to 'base', this "
+"assumes that `themeVariables` are set to default:"
+msgstr ""
+
+#: ../../theming.md:53
+msgid "Making a Custom Theme  with `themeVariables`"
+msgstr ""
+
+#: ../../theming.md:55
+#, python-format
+msgid ""
+"The easiest way to make a custom theme is to start with the base theme, "
+"and just modify theme variables through `themeVariables`, via `%%init%%`."
+msgstr ""
+
+#: ../../theming.md
+msgid "Parameter"
+msgstr ""
+
+#: ../../theming.md
+msgid "Description"
+msgstr ""
+
+#: ../../theming.md
+msgid "Type"
+msgstr ""
+
+#: ../../theming.md
+msgid "Required"
+msgstr ""
+
+#: ../../theming.md
+msgid "Objects contained"
+msgstr ""
+
+#: ../../theming.md
+msgid "themeVariables"
+msgstr ""
+
+#: ../../theming.md
+#, python-format
+msgid "Array containing objects, modifiable with the `%%init%%` directive"
+msgstr ""
+
+#: ../../theming.md
+msgid "Array"
+msgstr ""
+
+#: ../../theming.md
+msgid "primaryColor, lineColor, textColor"
+msgstr ""
+
+#: ../../theming.md:62
+#, python-format
+msgid ""
+"Here is an example of overriding `primaryColor` through `themeVariables` "
+"and giving everything a different look, using `%%init%%`."
+msgstr ""
+
+#: ../../theming.md:83
+msgid "**Notes:** Leaving it empty will set all variable values to default."
+msgstr ""
+
+#: ../../theming.md:86
+msgid "Color and Color Calculation:"
+msgstr ""
+
+#: ../../theming.md:88
+msgid ""
+"Color definitions have certain interactions in mermaid, this is in order "
+"to ensure visibility for diagrams. mermaid will adjust some variables "
+"automatically, when colors are changed in order to compensate and "
+"maintain readability."
+msgstr ""
+
+#: ../../theming.md:90
+msgid ""
+"**The Default Value Column** to the right of the Variable column will "
+"denote the Variable paired/associated with the Variable on the left and "
+"the nature of this pairing or association. If it for instance says "
+"primaryColor it means that it gets primaryColor as default value. If it "
+"says \"based on primaryColor\" it means that it is calculated/ derived "
+"from primaryColor. This calculation can be primary color inversion, a "
+"change of hue, darkening or lightening by 10%, etc."
+msgstr ""
+
+#: ../../theming.md:92
+#, python-format
+msgid ""
+"You can create your own themes, by changing any of the given variables "
+"below. If you are using a dark background, set dark mode to true to "
+"adjust the colors. It is possible to override the calculations using the "
+"variable names below, with `%%init%%` if you wish to style it "
+"differently."
+msgstr ""
+
+#: ../../theming.md:95
+msgid "Theme Variables Reference Table"
+msgstr ""
+
+#: ../../theming.md
+msgid "Variable"
+msgstr ""
+
+#: ../../theming.md
+msgid "Default/Base/Factor value"
+msgstr ""
+
+#: ../../theming.md
+msgid "Calc"
+msgstr ""
+
+#: ../../theming.md
+msgid "darkMode"
+msgstr ""
+
+#: ../../theming.md
+msgid "false"
+msgstr ""
+
+#: ../../theming.md
+msgid ""
+"Boolean Value that dictates how to calculate colors. \"true\" will "
+"activate darkmode."
+msgstr ""
+
+#: ../../theming.md
+msgid "background"
+msgstr ""
+
+#: ../../theming.md
+msgid "#f4f4f4"
+msgstr ""
+
+#: ../../theming.md
+msgid ""
+"Used to calculate color for items that should either be background "
+"colored or contrasting to the background."
+msgstr ""
+
+#: ../../theming.md
+msgid "primaryColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "#fff4dd"
+msgstr ""
+
+#: ../../theming.md
+msgid ""
+"Color to be used as background in nodes, other colors will be derived "
+"from this"
+msgstr ""
+
+#: ../../theming.md
+msgid "fontFamily"
+msgstr ""
+
+#: ../../theming.md
+msgid "\"trebuchet ms\", verdana, arial"
+msgstr ""
+
+#: ../../theming.md
+msgid "fontSize"
+msgstr ""
+
+#: ../../theming.md
+msgid "16px"
+msgstr ""
+
+#: ../../theming.md
+msgid "Font Size, in pixels"
+msgstr ""
+
+#: ../../theming.md
+msgid "secondaryColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "based on primaryColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "*"
+msgstr ""
+
+#: ../../theming.md
+msgid "tertiaryColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "primaryBorderColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "Color to be used as border in nodes using primaryColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "primaryTextColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "based on darkMode #ddd/#333"
+msgstr ""
+
+#: ../../theming.md
+msgid "Color to be used as text color in nodes using primaryColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "secondaryBorderColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "based on secondaryColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "Color to be used as border in nodes using secondaryColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "secondaryTextColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "Color to be used as text color in nodes using secondaryColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "tertiaryBorderColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "based on tertiaryColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "Color to be used as border in nodes using tertiaryColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "tertiaryTextColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "Color to be used as text color in nodes using tertiaryColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "noteBkgColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "#fff5ad"
+msgstr ""
+
+#: ../../theming.md
+msgid "Color used as background in notes"
+msgstr ""
+
+#: ../../theming.md
+msgid "noteTextColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "#333"
+msgstr ""
+
+#: ../../theming.md
+msgid "Text color in note rectangles."
+msgstr ""
+
+#: ../../theming.md
+msgid "noteBorderColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "based on noteBkgColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "Border color in note rectangles."
+msgstr ""
+
+#: ../../theming.md
+msgid "lineColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "based on background"
+msgstr ""
+
+#: ../../theming.md
+msgid "textColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "based on primaryTextColor"
+msgstr ""
+
+#: ../../theming.md
+msgid ""
+"Text in diagram over the background for instance text on labels and on "
+"signals in sequence diagram or the title in gantt diagram"
+msgstr ""
+
+#: ../../theming.md
+msgid "mainBkg"
+msgstr ""
+
+#: ../../theming.md
+msgid ""
+"Background in flowchart objects like rects/circles, class diagram "
+"classes, sequence diagram  etc"
+msgstr ""
+
+#: ../../theming.md
+msgid "errorBkgColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "Color for syntax error message"
+msgstr ""
+
+#: ../../theming.md
+msgid "errorTextColor"
+msgstr ""
+
+#: ../../theming.md:125
+msgid "What follows are Variables, specific to different diagrams and charts."
+msgstr ""
+
+#: ../../theming.md:127
+#, python-format
+msgid ""
+"Some Theme Variables serve as, or affect the Default Values for Specific "
+"Diagram Variables, unless changed using `%%init%%` ."
+msgstr ""
+
+#: ../../theming.md:129 ../../theming.md:243
+msgid "Flowchart"
+msgstr ""
+
+#: ../../theming.md
+msgid "Default/ Associated Value"
+msgstr ""
+
+#: ../../theming.md
+msgid "nodeBorder"
+msgstr ""
+
+#: ../../theming.md
+msgid "Node Border Color"
+msgstr ""
+
+#: ../../theming.md
+msgid "clusterBkg"
+msgstr ""
+
+#: ../../theming.md
+msgid "Background in subgraphs"
+msgstr ""
+
+#: ../../theming.md
+msgid "clusterBorder"
+msgstr ""
+
+#: ../../theming.md
+msgid "Cluster Border Color"
+msgstr ""
+
+#: ../../theming.md
+msgid "defaultLinkColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "Link Color"
+msgstr ""
+
+#: ../../theming.md
+msgid "titleColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "Title Color"
+msgstr ""
+
+#: ../../theming.md
+msgid "edgeLabelBackground"
+msgstr ""
+
+#: ../../theming.md
+msgid "nodeTextColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "Color for text inside Nodes."
+msgstr ""
+
+#: ../../theming.md:141
+msgid "sequence diagram"
+msgstr ""
+
+#: ../../theming.md
+msgid "name"
+msgstr ""
+
+#: ../../theming.md
+msgid "Default value"
+msgstr ""
+
+#: ../../theming.md
+msgid "actorBorder"
+msgstr ""
+
+#: ../../theming.md
+msgid "Actor Border Color"
+msgstr ""
+
+#: ../../theming.md
+msgid "actorBkg"
+msgstr ""
+
+#: ../../theming.md
+msgid "Actor Background Color"
+msgstr ""
+
+#: ../../theming.md
+msgid "actorTextColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "Actor Text Color"
+msgstr ""
+
+#: ../../theming.md
+msgid "actorLineColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "grey"
+msgstr ""
+
+#: ../../theming.md
+msgid "Actor Line Color"
+msgstr ""
+
+#: ../../theming.md
+msgid "labelBoxBkgColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "Label Box Background Color"
+msgstr ""
+
+#: ../../theming.md
+msgid "signalColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "Signal Color"
+msgstr ""
+
+#: ../../theming.md
+msgid "signalTextColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "Signal Text Color"
+msgstr ""
+
+#: ../../theming.md
+msgid "labelBoxBorderColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "Label Box Border Color"
+msgstr ""
+
+#: ../../theming.md
+msgid "labelTextColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "Label Text Color"
+msgstr ""
+
+#: ../../theming.md
+msgid "loopTextColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "Loop ext Color"
+msgstr ""
+
+#: ../../theming.md
+msgid "activationBorderColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "Activation Border Color"
+msgstr ""
+
+#: ../../theming.md
+msgid "activationBkgColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "Activation Background Color"
+msgstr ""
+
+#: ../../theming.md
+msgid "sequenceNumberColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "based on lineColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "Sequence Number Color"
+msgstr ""
+
+#: ../../theming.md:159
+msgid "state colors"
+msgstr ""
+
+#: ../../theming.md
+msgid "labelColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "altBackground"
+msgstr ""
+
+#: ../../theming.md
+msgid "Used for background in deep composite states"
+msgstr ""
+
+#: ../../theming.md:166
+msgid "class colors"
+msgstr ""
+
+#: ../../theming.md
+msgid "classText"
+msgstr ""
+
+#: ../../theming.md
+msgid "Color of Text in class diagrams"
+msgstr ""
+
+#: ../../theming.md:172
+msgid "User journey colors"
+msgstr ""
+
+#: ../../theming.md
+msgid "fillType0"
+msgstr ""
+
+#: ../../theming.md
+msgid "Fill for 1st section in journey diagram"
+msgstr ""
+
+#: ../../theming.md
+msgid "fillType1"
+msgstr ""
+
+#: ../../theming.md
+msgid "Fill for 2nd section in journey diagram"
+msgstr ""
+
+#: ../../theming.md
+msgid "fillType2"
+msgstr ""
+
+#: ../../theming.md
+msgid "Fill for 3rd section in journey diagram"
+msgstr ""
+
+#: ../../theming.md
+msgid "fillType3"
+msgstr ""
+
+#: ../../theming.md
+msgid "based on  secondaryColor"
+msgstr ""
+
+#: ../../theming.md
+msgid "Fill for 4th section in journey diagram"
+msgstr ""
+
+#: ../../theming.md
+msgid "fillType4"
+msgstr ""
+
+#: ../../theming.md
+msgid "Fill for 5th section in journey diagram"
+msgstr ""
+
+#: ../../theming.md
+msgid "fillType5"
+msgstr ""
+
+#: ../../theming.md
+msgid "Fill for 6th section in journey diagram"
+msgstr ""
+
+#: ../../theming.md
+msgid "fillType6"
+msgstr ""
+
+#: ../../theming.md
+msgid "Fill for 7th section in journey diagram"
+msgstr ""
+
+#: ../../theming.md
+msgid "fillType7"
+msgstr ""
+
+#: ../../theming.md
+msgid "Fill for 8th section in journey diagram"
+msgstr ""
+
+#: ../../theming.md:185
+msgid "**Notes: Values are meant to create an alternating look."
+msgstr ""
+
+#: ../../theming.md:188
+#, python-format
+msgid ""
+"Here is an example of overriding `primaryColor` and giving everything a "
+"different look, using `%%init%%`."
+msgstr ""
+
+#: ../../theming.md:207
+msgid ""
+"**This got a bit too dark and bit too colorful. With some easy steps this"
+" can be fixed:"
+msgstr ""
+
+#: ../../theming.md:209
+msgid "Make the primary color a little lighter"
+msgstr ""
+
+#: ../../theming.md:210
+msgid "set the tertiary color to a reddish shade as well"
+msgstr ""
+
+#: ../../theming.md:211
+msgid ""
+"make the edge label background differ from the subgraph by setting the "
+"edgeLabelBackground"
+msgstr ""
+
+#: ../../theming.md:232
+msgid ""
+"The Theming Engine does not admit color codes and will only accept proper"
+" color values. Color Names is not supported so for instance, the color "
+"value 'red' will not work, but '#ff0000' will work."
+msgstr ""
+
+#: ../../theming.md:234
+msgid "Common theming activities"
+msgstr ""
+
+#: ../../theming.md:236
+msgid "How to change the color of the arrows"
+msgstr ""
+
+#: ../../theming.md:238
+msgid "Examples:"
+msgstr ""
+
+#: ../../theming.md:240
+msgid ""
+"When adjusting a theme it might be helpful to look at how your preferred "
+"theme goes with the diagrams, to evaluate whether everything is visible "
+"and looks good. In the following examples, the directive `init` is used, "
+"with the `theme` being declared as `base`. For more information on using "
+"directives, read the documentation for [Version 8.6.0](/8.6.0_docs.md)"
+msgstr ""
+
+#: ../../theming.md:279
+msgid "Flowchart (beta)"
+msgstr ""
+
+#: ../../theming.md:298
+msgid "Sequence diagram"
+msgstr ""
+
+#: ../../theming.md:318
+msgid "Class diagram"
+msgstr ""
+
+#: ../../theming.md:345
+msgid "Gantt"
+msgstr ""
+
+#: ../../theming.md:376
+msgid "State diagram"
+msgstr ""
+
+#: ../../theming.md:407
+msgid "State diagram (beta)"
+msgstr ""
+
+#: ../../theming.md:438
+msgid "Entity Relations diagram"
+msgstr ""
+
+#: ../../theming.md:452
+msgid "User journey diagram"
+msgstr ""
+

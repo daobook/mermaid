@@ -1,0 +1,501 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, xinetzone
+# This file is distributed under the same license as the mermaid package.
+# xinetzone <735613050@qq.com>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mermaid \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-05 18:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: xinetzone <735613050@qq.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../README.md:1
+msgid "About Mermaid"
+msgstr "关于 Mermaid"
+
+#: ../../README.md:3
+msgid ""
+"**Mermaid lets you create diagrams and visualizations using text and "
+"code.**"
+msgstr "**Mermaid 让你使用文本和代码创建图表和可视化**。"
+
+#: ../../README.md:5
+msgid ""
+"It is a Javascript based diagramming and charting tool that renders "
+"Markdown-inspired text definitions to create and modify diagrams "
+"dynamically."
+msgstr "它是一个基于 Javascript 的图表工具，可以渲染 Markdown 启发的文本定义，动态地创建和修改图表。"
+
+#: ../../README.md:7
+msgid ""
+"If you are familiar with Markdown you should have no problem learning "
+"[Mermaid's Syntax](./n00b-syntaxReference.md)."
+msgstr "如果你熟悉Markdown，你学习 [Mermaid 语法](./n00b-syntaxReference.md) 应该没有问题。"
+
+#: ../../README.md:10
+msgid "![banner](img/header.png)"
+msgstr ""
+
+#: ../../README.md:10 ../../README.md:17
+msgid "banner"
+msgstr ""
+
+#: ../../README.md:14
+#, python-format
+msgid ""
+"[![Build Status](https://travis-ci.org/mermaid-"
+"js/mermaid.svg?branch=master)](https://travis-ci.org/mermaid-js/mermaid) "
+"[![NPM](https://img.shields.io/npm/v/mermaid)](https://www.npmjs.com/package/mermaid)"
+" [![Coverage Status](https://coveralls.io/repos/github/mermaid-"
+"js/mermaid/badge.svg?branch=master)](https://coveralls.io/github/mermaid-"
+"js/mermaid?branch=master) [![Join our "
+"Slack!](https://img.shields.io/static/v1?message=join%20chat&color=9cf&logo=slack&label=slack)](https://join.slack.com/t"
+"/mermaid-"
+"talk/shared_invite/enQtNzc4NDIyNzk4OTAyLWVhYjQxOTI2OTg4YmE1ZmJkY2Y4MTU3ODliYmIwOTY3NDJlYjA0YjIyZTdkMDMyZTUwOGI0NjEzYmEwODcwOTE)"
+" [![This project is using Percy.io for visual regression "
+"testing.](https://percy.io/static/images/percy-"
+"badge.svg)](https://percy.io/Mermaid/mermaid)"
+msgstr ""
+
+#: ../../README.md:14
+msgid "Build Status"
+msgstr ""
+
+#: ../../README.md:14
+msgid "NPM"
+msgstr ""
+
+#: ../../README.md:14
+msgid "Coverage Status"
+msgstr ""
+
+#: ../../README.md:14
+msgid "Join our Slack!"
+msgstr ""
+
+#: ../../README.md:14
+msgid "This project is using Percy.io for visual regression testing."
+msgstr ""
+
+#: ../../README.md:17
+msgid ""
+"[![banner](img/book-banner-post-release.jpg)](https://mermaid-"
+"js.github.io/mermaid/landing/)"
+msgstr ""
+
+#: ../../README.md:21
+msgid ""
+"The main purpose of Mermaid is to help with Visualizing Documentation, "
+"and helping it catch up with Development."
+msgstr "Mermaid 的主要目的是帮助实现文档的可视化，并帮助它赶上开发进度。"
+
+#: ../../README.md:22
+msgid "Documentation-Rot is a Catch-22 that Mermaid helps to solve."
+msgstr "Documentation-Rot 是 Mermaid 帮助解决的一个难题。"
+
+#: ../../README.md:24
+msgid ""
+"Diagramming and Documentation cost precious developer time and get "
+"outdated quickly. However, not having diagrams or documentation ruins "
+"productivity and hampers organizational learning."
+msgstr "图表和文档花费了开发人员宝贵的时间，并且很快就会过期。然而，没有图表或文档会破坏生产力，阻碍组织的学习。"
+
+#: ../../README.md:27
+msgid ""
+"Mermaid addresses this Catch-22 situation by reducing the time, effort "
+"and tooling that is required to create modifiable diagrams and charts "
+"which in turn results in smarter and more reusable content. Mermaid, as a"
+" text-based diagramming tool allows for quick and easy updates and makes "
+"documentation much easier. It can also be included in production scripts "
+"and other pieces of code as per requirement."
+msgstr ""
+"Mermaid 通过减少创建可修改的图表所需的时间、精力和工具来解决这种 Catch-22 "
+"的情况，这反过来又导致了更智能和更可重复使用的内容。作为一个基于文本的绘图工具，Mermaid "
+"天生就易于维护和更新，它也可以作为生产脚本（或其他代码）的一部分，使得文档编写变得更加简单。"
+
+#: ../../README.md:30
+msgid "Mermaid is a Diagramming tool for everyone."
+msgstr "Mermaid 是一个适合所有人的图表工具。"
+
+#: ../../README.md:32
+msgid ""
+"Even non-programmers can create diagrams through the [Mermaid Live "
+"Editor](https://github.com/mermaid-js/mermaid-live-editor), Visit the "
+"[Tutorials Page](./Tutorials.md) for the Live Editor video tutorials."
+msgstr ""
+"即使是非程序员也可以通过 [Mermaid 实时编辑器](https://github.com/mermaid-js/mermaid-live-"
+"editor) 创建图表，请访问 [教程页面](./Tutorials.md) 了解实时编辑器的视频教程。"
+
+#: ../../README.md:34
+msgid ""
+"Many editors, wikis and other tools also have mermaid integrations and "
+"plugins, making it easy to start using mermaid. A few of those are "
+"described in [Simple start to write diagrams](./n00b-gettingStarted.md)."
+msgstr ""
+"许多编辑器、维基和其他工具也有美人鱼的集成和插件，使之很容易开始使用 mermaid。其中一些在 [简单开始编辑图](./n00b-"
+"gettingStarted.md) 中有所描述。"
+
+#: ../../README.md:36
+msgid ""
+"For a more detailed introduction to Mermaid and some of it's basic uses, "
+"refer to [Overview for Beginners](./n00b-overview.md) and "
+"[Usage](./usage.md)."
+msgstr ""
+"关于 Mermaid 更详细的介绍和它的一些基本用途，请参考 [初学者概述](./n00b-overview.md)和 "
+"[用法](./usage.md)。"
+
+#: ../../README.md:38
+msgid ""
+"🌐 [CDN](https://unpkg.com/mermaid/) | 📖 "
+"[Documentation](https://mermaidjs.github.io) | 🙌 "
+"[Contribution](https://github.com/mermaid-"
+"js/mermaid/blob/develop/docs/development.md) | 📜 [Version "
+"Log](./CHANGELOG.md) | 🔌 [Plug-Ins](./integrations.md)"
+msgstr ""
+"🌐 [CDN](https://unpkg.com/mermaid/) | 📖 [文档](https://mermaidjs.github.io)"
+" | 🙌 [贡献](https://github.com/mermaid-"
+"js/mermaid/blob/develop/docs/development.md) | 📜 [版本 日志](./CHANGELOG.md) "
+"| 🔌 [插件](./integrations.md)"
+
+#: ../../README.md:40
+msgid ""
+"🖖 Keep a steady pulse: mermaid needs more Collaborators, [Read "
+"More](https://github.com/knsv/mermaid/issues/866)."
+msgstr "🖖保持稳定的脉搏：美人鱼需要更多的合作者，[阅读全文](https://github.com/knsv/mermaid/issues/866)。"
+
+#: ../../README.md:42
+msgid ""
+":trophy: **Mermaid was nominated and won the [JS Open Source Awards "
+"(2019)](https://osawards.com/javascript/#nominees) in the category \"The "
+"most exciting use of technology\"!!!**"
+msgstr ""
+":trophy: **Mermaid 被提名并获得了 [JS Open Source Awards "
+"(2019)](https://osawards.com/javascript/#nominees) 的 \"The most exciting "
+"use of technology\" 奖项!!!**"
+
+#: ../../README.md:44
+msgid ""
+"**Thanks to all involved, people committing pull requests, people "
+"answering questions and special thanks to Tyler Long who is helping me "
+"maintain the project 🙏**"
+msgstr "感谢所有参与的人，提交拉取请求的人，回答问题的人，特别感谢帮助我维护项目的 Tyler Long🙏"
+
+#: ../../README.md:47
+msgid "Diagram Types"
+msgstr "图表类型"
+
+#: ../../README.md:49
+msgid "[Flowchart](./flowchart.md)"
+msgstr "[流程图](./flowchart.md)"
+
+#: ../../README.md:59
+msgid "![Flowchart](img/flow.png)"
+msgstr ""
+
+#: ../../README.md:59
+msgid "Flowchart"
+msgstr ""
+
+#: ../../README.md:61
+msgid "[Sequence diagram](./sequenceDiagram.md)"
+msgstr "[序列图](./sequenceDiagram.md)"
+
+#: ../../README.md:77
+msgid "![Sequence diagram](img/sequence.png)"
+msgstr ""
+
+#: ../../README.md:77
+msgid "Sequence diagram"
+msgstr ""
+
+#: ../../README.md:79
+msgid "[Gantt diagram](./gantt.md)"
+msgstr "[甘特图](./gantt.md)"
+
+#: ../../README.md:94
+msgid "![Gantt diagram](img/gantt.png)"
+msgstr ""
+
+#: ../../README.md:94
+#, fuzzy
+msgid "Gantt diagram"
+msgstr "[甘特图](./gantt.md)"
+
+#: ../../README.md:96
+msgid "[Class diagram](./classDiagram.md)"
+msgstr "[类图](./classDiagram.md)"
+
+#: ../../README.md:115
+msgid "![Class diagram](img/class.png)"
+msgstr ""
+
+#: ../../README.md:115
+msgid "Class diagram"
+msgstr ""
+
+#: ../../README.md:117
+msgid "Git graph - :exclamation: experimental"
+msgstr "Git 图 - :exclamation: 实验性"
+
+#: ../../README.md:138
+msgid "![Git graph](img/git.png)"
+msgstr ""
+
+#: ../../README.md:140
+msgid ""
+"[Entity Relationship Diagram - :exclamation: "
+"experimental](./entityRelationshipDiagram.md)"
+msgstr "[实体关系图 - :exclamation: 实验性](./entityRelationshipDiagram.md)"
+
+#: ../../README.md:150
+msgid "![ER diagram](img/simple-er.png)"
+msgstr ""
+
+#: ../../README.md:150
+msgid "ER diagram"
+msgstr ""
+
+#: ../../README.md:152
+msgid "[User Journey Diagram](./user-journey.md)"
+msgstr "[用户体验旅程图](./user-journey.md)"
+
+#: ../../README.md:165
+msgid "![Journey diagram](img/user-journey.png)"
+msgstr ""
+
+#: ../../README.md:165
+msgid "Journey diagram"
+msgstr ""
+
+#: ../../README.md:167
+msgid "Installation"
+msgstr "安装"
+
+#: ../../README.md:169
+msgid ""
+"**In depth guides and examples can be found at [Getting Started](/n00b-"
+"gettingStarted) and [Usage](/usage).**"
+msgstr "**深入的指南和例子可以在 [入门](/n00b-gettingStarted) 和 [用法](/usage) 找到。**"
+
+#: ../../README.md:171
+msgid ""
+"**It would also be helpful to learn more about mermaid's [Syntax](/n00b-"
+"syntaxReference).**"
+msgstr "**了解 mermaid 的 [语法](/n00b-syntaxReference) 也会有帮助。**"
+
+#: ../../README.md:173
+msgid "CDN"
+msgstr ""
+
+#: ../../README.md:179
+msgid "To select a version:"
+msgstr "选择一个版本："
+
+#: ../../README.md:181
+msgid "Replace `<version>` with the desired version number."
+msgstr "用所需的版本号替换 `<version>`。"
+
+#: ../../README.md:183
+msgid ""
+"Latest Version: "
+"[https://unpkg.com/browse/mermaid@8.8.0/](https://unpkg.com/browse/mermaid@8.8.0/)"
+msgstr "最新版本：[https://unpkg.com/browse/mermaid@8.8.0/](https://unpkg.com/browse/mermaid@8.8.0/)"
+
+#: ../../README.md:185
+msgid "Deploying Mermaid"
+msgstr "部署 Mermaid"
+
+#: ../../README.md:187
+msgid "To Deploy Mermaid:"
+msgstr "为了部署 Mermaid："
+
+#: ../../README.md:189
+msgid "You will need to install node v16, which would have npm"
+msgstr "你将需要安装 node v16，这将有 npm"
+
+#: ../../README.md:190
+msgid "Download yarn using npm"
+msgstr "使用 npm 下载 yarn"
+
+#: ../../README.md:191
+msgid "Enter the following command: `yarn add mermaid`"
+msgstr "输入以下命令：``yarn add mermaid``"
+
+#: ../../README.md:192
+msgid ""
+"You can then add mermaid as a dev dependency using this command:  `yarn "
+"add --dev mermaid`"
+msgstr "然后你可以使用这个命令将 mermaid 添加为开发依赖项。``yarn add --dev mermaid``"
+
+#: ../../README.md:195
+msgid "[Mermaid API](./Setup.md):"
+msgstr ""
+
+#: ../../README.md:197
+msgid ""
+"**To deploy mermaid without a bundler, one can insert a `script` tag with"
+" an absolute address and a `mermaidAPI` call into the HTML like so:**"
+msgstr ""
+"**要在没有捆绑程序的情况下部署 mermaid，可以在 HTML 中插入一个带有绝对地址和 "
+"`mermaidAPI` 调用的 `script` 标签，像这样：**"
+
+#: ../../README.md:203
+msgid ""
+"**Doing so will command the mermaid parser to look for the `<div>` tags "
+"with `class=\"mermaid\"`. From these tags mermaid will try to read the "
+"diagram/chart definitions and render them into svg charts.**"
+msgstr ""
+"**这样做将命令 mermaid 分析器寻找带有 `class=\"mermaid\"` 的 `<div>` 标记。"
+"从这些标签中，mermaid 将尝试读取图表/图表的定义，并将它们渲染成 svg 图表。**"
+
+#: ../../README.md:205
+msgid "**Examples can be found at** [Other examples](/examples)"
+msgstr "**实例可在** [其他实例](/examples) 中找到"
+
+#: ../../README.md:207
+msgid "Sibling projects"
+msgstr "同胞项目"
+
+#: ../../README.md:209
+msgid "[Mermaid Live Editor](https://github.com/mermaid-js/mermaid-live-editor)"
+msgstr "[Mermaid 实时编辑器](https://github.com/mermaid-js/mermaid-live-editor)"
+
+#: ../../README.md:210
+msgid "[Mermaid CLI](https://github.com/mermaid-js/mermaid-cli)"
+msgstr "[Mermaid 命令行界面](https://github.com/mermaid-js/mermaid-cli)"
+
+#: ../../README.md:211
+msgid "[Mermaid Webpack Demo](https://github.com/mermaidjs/mermaid-webpack-demo)"
+msgstr "[Mermaid Webpack 演示](https://github.com/mermaidjs/mermaid-webpack-demo)"
+
+#: ../../README.md:212
+msgid "[Mermaid Parcel Demo](https://github.com/mermaidjs/mermaid-parcel-demo)"
+msgstr "[Mermaid Parcel 演示](https://github.com/mermaidjs/mermaid-parcel-demo)"
+
+#: ../../README.md:214
+msgid "Request for Assistance"
+msgstr "请求帮助"
+
+#: ../../README.md:216
+msgid ""
+"Things are piling up and I have a hard time keeping up. It would be great"
+" if we could form a core team of developers to cooperate with the future "
+"development of mermaid."
+msgstr ""
+"事情堆积如山，我很难跟上。如果我们能组成一个核心的开发者团队，配合 mermaid 的未来发展，那就太好了。"
+
+#: ../../README.md:219
+msgid ""
+"As part of this team you would get write access to the repository and "
+"would represent the project when answering questions and issues."
+msgstr ""
+"作为这个团队的一部分，你将获得对资源库的写的访问权，并在回答问题和议题时代表项目。"
+
+#: ../../README.md:222
+msgid "Together we could continue the work with things like:"
+msgstr "我们可以一起继续开展工作，例如："
+
+#: ../../README.md:224
+msgid "Adding more types of diagrams like mindmaps, ert diagrams, etc."
+msgstr "增加更多类型的图表，如 mindmaps、ert 图等。"
+
+#: ../../README.md:225
+msgid "Improving existing diagrams"
+msgstr "完善现有的图表"
+
+#: ../../README.md:227
+msgid "Don't hesitate to contact me if you want to get involved!"
+msgstr "如果你想参与进来，不要犹豫，请与我联系！"
+
+#: ../../README.md:229
+msgid "For contributors"
+msgstr "对于贡献者"
+
+#: ../../README.md:231
+msgid "Setup"
+msgstr "安装"
+
+#: ../../README.md:237
+msgid "Build"
+msgstr "构建"
+
+#: ../../README.md:243
+msgid "Lint"
+msgstr ""
+
+#: ../../README.md:249
+msgid ""
+"We use [eslint](https://eslint.org/). We recommend you to install [editor"
+" plugins](https://eslint.org/docs/user-guide/integrations) to get real "
+"time lint result."
+msgstr ""
+"我们使用[eslint](https://eslint.org/)。"
+"我们建议你安装 [编辑器插件](https://eslint.org/docs/user-guide/integrations)，以获得实时的 lint 结果。"
+
+#: ../../README.md:252
+msgid "Test"
+msgstr "测试"
+
+#: ../../README.md:257
+msgid "Manual test in browser: open `dist/index.html`"
+msgstr "在浏览器中手动测试：打开 `dist/index.html`。"
+
+#: ../../README.md:259
+msgid "Release"
+msgstr "发表"
+
+#: ../../README.md:261
+msgid "For those who have the permission to do so:"
+msgstr "对于那些有权限的人来说："
+
+#: ../../README.md:263
+msgid "Update version number in `package.json`."
+msgstr "更新 `package.json` 中的版本号。"
+
+#: ../../README.md:269
+msgid ""
+"The above command generates files into the `dist` folder and publishes "
+"them to npmjs.org."
+msgstr ""
+"上述命令将文件生成到 `dist` 文件夹，并将其发布到 npmjs.org。"
+
+#: ../../README.md:271
+msgid "Credits"
+msgstr "致谢"
+
+#: ../../README.md:273
+msgid ""
+"Many thanks to the [d3](http://d3js.org/) and "
+"[dagre-d3](https://github.com/cpettitt/dagre-d3) projects for providing "
+"the graphical layout and drawing libraries!"
+msgstr ""
+"非常感谢 [d3](http://d3js.org/) 和 [dagre-d3](https://github.com/cpettitt/dagre-d3) 项目提供的图形布局和绘图库！"
+
+#: ../../README.md:275
+msgid ""
+"Thanks also to the [js-sequence-diagram](http://bramp.github.io/js-"
+"sequence-diagrams) project for usage of the grammar for the sequence "
+"diagrams. Thanks to Jessica Peter for the inspiration and for the "
+"starting point of gantt rendering."
+msgstr ""
+"还要感谢 [js-sequence-diagram](http://bramp.github.io/js-sequence-diagrams) 项目对序列图语法的使用。"
+"感谢 Jessica Peter 的灵感和甘特图渲染的起点。"
+
+#: ../../README.md:277
+msgid "_Mermaid was created by Knut Sveidqvist for easier documentation._"
+msgstr "_Mermaid 是由 Knut Sveidqvist 创建的，以方便记录。_"
+
+#: ../../README.md:279
+msgid ""
+"Here is the full list of the projects "
+"[contributors](https://github.com/knsv/mermaid/graphs/contributors)."
+msgstr ""
+"以下是项目 [贡献者](https://github.com/knsv/mermaid/graphs/contributors) 的完整列表。"

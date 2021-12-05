@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, xinetzone
+# This file is distributed under the same license as the mermaid package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mermaid \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-05 16:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../developer-docs/configuration.md:1
+msgid "Configuration"
+msgstr ""
+
+#: ../../developer-docs/configuration.md:3
+msgid ""
+"When mermaid starts configuration is extracted to a configuration to be "
+"used for a diagram. There a 3 sources for configuration:"
+msgstr ""
+
+#: ../../developer-docs/configuration.md:5
+msgid "The default configuration"
+msgstr ""
+
+#: ../../developer-docs/configuration.md:6
+msgid ""
+"Overrides on the site level, set is set by the initialize call and will  "
+"be applied for all diagrams in the site/app. The term for this is the "
+"**siteConfig**."
+msgstr ""
+
+#: ../../developer-docs/configuration.md:7
+msgid ""
+"Directives - diagram authors can update select configuration parameters "
+"directly int he diagram code via directives and these are applied to the "
+"render config."
+msgstr ""
+
+#: ../../developer-docs/configuration.md:9
+msgid ""
+"**The render config** is configuration that is used when rendering by "
+"applying these configurations."
+msgstr ""
+
+#: ../../developer-docs/configuration.md:11
+msgid "Theme configuration"
+msgstr ""
+
+#: ../../developer-docs/configuration.md:13
+msgid "Starting mermaid"
+msgstr ""
+
+#: ../../developer-docs/configuration.md:22
+msgid "Initialize"
+msgstr ""
+
+#: ../../developer-docs/configuration.md:24
+msgid ""
+"Intialize call is calloed **only once**. It is called by the site "
+"integrator in order to override the default configuration on a site "
+"level."
+msgstr ""
+
+#: ../../developer-docs/configuration.md:26
+msgid "configApi.reset"
+msgstr ""
+
+#: ../../developer-docs/configuration.md:28
+msgid ""
+"This method resets the configuration for a diagram to the site "
+"configuration, the configuration provided by the site integrator. Before "
+"each rendering of a diagram reset is called in the very beginning of "
+"render."
+msgstr ""
+

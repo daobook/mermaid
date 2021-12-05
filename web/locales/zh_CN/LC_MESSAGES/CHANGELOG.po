@@ -1,0 +1,3871 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, xinetzone
+# This file is distributed under the same license as the mermaid package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mermaid \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-05 16:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../CHANGELOG.md:1
+msgid "Change Log"
+msgstr ""
+
+#: ../../CHANGELOG.md:3
+msgid ""
+"Here is the list of the newest versions in Descending Order, beginning "
+"from the latest version."
+msgstr ""
+
+#: ../../CHANGELOG.md:5
+msgid "Unreleased"
+msgstr ""
+
+#: ../../CHANGELOG.md:7
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/8.7.0...HEAD)"
+msgstr ""
+
+#: ../../CHANGELOG.md:9
+msgid "8.7.0 (2020-08-09)"
+msgstr ""
+
+#: ../../CHANGELOG.md:11
+msgid ""
+"🔖 [Release Notes](https://github.com/mermaid-"
+"js/mermaid/releases/tag/8.7.0) | 📜 [Full Changelog](https://github.com"
+"/mermaid-js/mermaid/compare/8.6.0...8.7.0)"
+msgstr ""
+
+#: ../../CHANGELOG.md:14
+#, python-format
+msgid ""
+"This version brings with it a system for [dynamic and integrated "
+"configuration of the diagram themes](./theming.md). The objective of this"
+" is to increase the customizability of mermaid and the ease of Styling, "
+"with the customization of themes through the `%%init%%` directive and "
+"`initialize` calls."
+msgstr ""
+
+#: ../../CHANGELOG.md:17
+msgid ""
+"Themes follow and build upon the Levels of Configuration and employ "
+"`directives` to modify and create custom configurations, as they were "
+"introduced in Version [8.6.0](../getting-started/8.6.0_docs.md)."
+msgstr ""
+
+#: ../../CHANGELOG.md:19
+msgid ""
+"**These Theming Configurations, similar to directives, will also be made "
+"applicable in the Live-Editor, for easier styling.**"
+msgstr ""
+
+#: ../../CHANGELOG.md:21
+msgid "Site-wide Themes"
+msgstr ""
+
+#: ../../CHANGELOG.md:23
+msgid "Site-wide themes are still declared via `initialize` by site owners."
+msgstr ""
+
+#: ../../CHANGELOG.md:25
+msgid "Example of `Initalize` call setting `theme` to `base`:"
+msgstr ""
+
+#: ../../CHANGELOG.md:33
+#, python-format
+msgid ""
+"**Notes**: Only site owners can use the `mermaidAPI.initialize` call, to "
+"set values. Site-Users will have to use `%%init%%` to modify or create "
+"the theme for their diagrams."
+msgstr ""
+
+#: ../../CHANGELOG.md:35
+msgid "Themes at the Local or Current Level"
+msgstr ""
+
+#: ../../CHANGELOG.md:37
+msgid ""
+"When Generating a diagram using on a webpage that supports mermaid. It is"
+" also possible to override site-wide theme settings locally, for a "
+"specific diagram, using directives, as long as it is not prohibited by "
+"the `secure` array."
+msgstr ""
+
+#: ../../CHANGELOG.md:40
+msgid "**Following is an example:**"
+msgstr ""
+
+#: ../../CHANGELOG.md:48
+msgid "Making a Custom Theme with `themeVariables`"
+msgstr ""
+
+#: ../../CHANGELOG.md:50
+#, python-format
+msgid ""
+"The easiest way to make a custom theme is to start with the base theme, "
+"and just modify theme variables through `themeVariables`, via `%%init%%`."
+msgstr ""
+
+#: ../../CHANGELOG.md
+msgid "Parameter"
+msgstr ""
+
+#: ../../CHANGELOG.md
+msgid "Description"
+msgstr ""
+
+#: ../../CHANGELOG.md
+msgid "Type"
+msgstr ""
+
+#: ../../CHANGELOG.md
+msgid "Required"
+msgstr ""
+
+#: ../../CHANGELOG.md
+msgid "Objects contained"
+msgstr ""
+
+#: ../../CHANGELOG.md
+msgid "themeVariables"
+msgstr ""
+
+#: ../../CHANGELOG.md
+#, python-format
+msgid "Array containing objects, modifiable with the `%%init%%` directive"
+msgstr ""
+
+#: ../../CHANGELOG.md
+msgid "Array"
+msgstr ""
+
+#: ../../CHANGELOG.md
+msgid "primaryColor, lineColor, textColor"
+msgstr ""
+
+#: ../../CHANGELOG.md:57
+#, python-format
+msgid ""
+"Here is an example of overriding `primaryColor` and giving everything a "
+"different look, using `%%init%%`."
+msgstr ""
+
+#: ../../CHANGELOG.md:77
+msgid "**Notes:** Leaving it empty will set all variable values to default."
+msgstr ""
+
+#: ../../CHANGELOG.md:80
+msgid "8.6.0 (2020-07-13)"
+msgstr ""
+
+#: ../../CHANGELOG.md:82
+msgid ""
+"🔖 [Release Notes](https://github.com/mermaid-"
+"js/mermaid/releases/tag/8.6.0)"
+msgstr ""
+
+#: ../../CHANGELOG.md:84
+msgid ""
+"[Version 8.6.0](../getting-started/8.6.0_docs.md) introduces New "
+"Configuration Protocols and Directives and a Beta for the [New Mermaid "
+"Live-Editor](https://mermaid-js.github.io/docs/mermaid-live-editor-"
+"beta/#/edit/eyJjb2RlIjoiJSV7aW5pdDoge1widGhlbWVcIjogXCJmb3Jlc3RcIiwgXCJsb2dMZXZlbFwiOiAxIH19JSVcbmdyYXBoIFREXG4gIEFbQ2hyaXN0bWFzXSAtLT58R2V0IG1vbmV5fCBCKEdvIHNob3BwaW5nKVxuICBCIC0tPiBDe0xldCBtZSB0aGlua31cbiAgQyAtLT58T25lfCBEW0xhcHRvcF1cbiAgQyAtLT58VHdvfCBFW2lQaG9uZV1cbiAgQyAtLT58VGhyZWV8IEZbZmE6ZmEtY2FyIENhcl1cblx0XHQiLCJtZXJtYWlkIjp7InRoZW1lIjoiZGFyayJ9fQ)"
+msgstr ""
+
+#: ../../CHANGELOG.md:86
+msgid ""
+"**With version 8.6.0 comes the release of directives for mermaid, a new "
+"system for modifying configurations, with the aim of establishing "
+"centralized, sane defaults and simple implementation.**"
+msgstr ""
+
+#: ../../CHANGELOG.md:88
+msgid ""
+"Directives allow for a diagram specific overriding of config, as it has "
+"been discussed in Configurations. This allows site users to input "
+"modifications to config alongside diagram definitions, when creating "
+"diagrams on a private webpage that supports Mermaid."
+msgstr ""
+
+#: ../../CHANGELOG.md:91
+msgid "8.5.0 (2020-04-11)"
+msgstr ""
+
+#: ../../CHANGELOG.md:93
+msgid ""
+"🔖 [Release Notes](https://github.com/mermaid-js/mermaid/releases/tag"
+"/untagged-31c93788afe260d914bb)"
+msgstr ""
+
+#: ../../CHANGELOG.md:95
+msgid "This version introduces New diagrams!"
+msgstr ""
+
+#: ../../CHANGELOG.md:97
+msgid "**New diagrams in 8.5**"
+msgstr ""
+
+#: ../../CHANGELOG.md:99
+msgid ""
+"With version 8.5 there are some bug fixes and enhancements, plus a new "
+"diagram type, entity relationship diagrams."
+msgstr ""
+
+#: ../../CHANGELOG.md:101
+msgid "![Image showing the new ER diagram type](./img/er.png)"
+msgstr ""
+
+#: ../../CHANGELOG.md:101
+msgid "Image showing the new ER diagram type"
+msgstr ""
+
+#: ../../CHANGELOG.md:103
+msgid "8.2.0 (2019-07-17)"
+msgstr ""
+
+#: ../../CHANGELOG.md:105
+msgid "🏷️ [Tag](https://github.com/mermaid-js/mermaid/tree/8.2.0)"
+msgstr ""
+
+#: ../../CHANGELOG.md:107
+msgid "Version 8.2.0, introduces a security improvement."
+msgstr ""
+
+#: ../../CHANGELOG.md:109
+msgid ""
+"A `securityLevel` configuration has to first be cleared, `securityLevel` "
+"sets the level of trust for the parsed diagrams and limits click "
+"functionality. This was introduced in version 8.2 as a security "
+"improvement, aimed at preventing malicious use."
+msgstr ""
+
+#: ../../CHANGELOG.md:112
+msgid "securityLevel"
+msgstr ""
+
+#: ../../CHANGELOG.md
+msgid "Values"
+msgstr ""
+
+#: ../../CHANGELOG.md
+msgid "securitylevel"
+msgstr ""
+
+#: ../../CHANGELOG.md
+msgid "Level of trust for parsed diagram"
+msgstr ""
+
+#: ../../CHANGELOG.md
+msgid "String"
+msgstr ""
+
+#: ../../CHANGELOG.md
+msgid "Strict, Loose, antiscript"
+msgstr ""
+
+#: ../../CHANGELOG.md:118
+msgid "**Notes:**"
+msgstr ""
+
+#: ../../CHANGELOG.md:120
+msgid ""
+"**strict**: (**default**) tags in text are encoded, click functionality "
+"is disabled"
+msgstr ""
+
+#: ../../CHANGELOG.md:121
+msgid "**loose**: tags in text are allowed, click functionality is enabled"
+msgstr ""
+
+#: ../../CHANGELOG.md:122
+msgid ""
+"**antiscript**: html tags in text are allowed, (only script element is "
+"removed), click functionality is enabled"
+msgstr ""
+
+#: ../../CHANGELOG.md:124
+msgid ""
+"⚠️ **Note**: This changes the default behaviour of mermaid so that after "
+"upgrade to 8.2, if the `securityLevel` is not configured, tags in "
+"flowcharts are encoded as tags and clicking is prohibited."
+msgstr ""
+
+#: ../../CHANGELOG.md:126
+msgid ""
+"If you are taking responsibility for the diagram source security you can "
+"set the `securityLevel` to a value of your choosing. By doing this clicks"
+" and tags are again allowed."
+msgstr ""
+
+#: ../../CHANGELOG.md:129
+msgid "To change `securityLevel` with `mermaidAPI.initialize`:"
+msgstr ""
+
+#: ../../CHANGELOG.md:137 ../../CHANGELOG.md:157 ../../CHANGELOG.md:358
+#: ../../CHANGELOG.md:381 ../../CHANGELOG.md:389 ../../CHANGELOG.md:431
+#: ../../CHANGELOG.md:479 ../../CHANGELOG.md:520 ../../CHANGELOG.md:549
+#: ../../CHANGELOG.md:577 ../../CHANGELOG.md:598 ../../CHANGELOG.md:620
+#: ../../CHANGELOG.md:680 ../../CHANGELOG.md:710 ../../CHANGELOG.md:748
+#: ../../CHANGELOG.md:766 ../../CHANGELOG.md:794 ../../CHANGELOG.md:814
+#: ../../CHANGELOG.md:837 ../../CHANGELOG.md:863 ../../CHANGELOG.md:880
+#: ../../CHANGELOG.md:906 ../../CHANGELOG.md:927 ../../CHANGELOG.md:940
+#: ../../CHANGELOG.md:955
+msgid "**Closed issues:**"
+msgstr ""
+
+#: ../../CHANGELOG.md:139
+msgid ""
+"please add tag for 8.0.0 release "
+"[\\#863](https://github.com/knsv/mermaid/issues/863)"
+msgstr ""
+
+#: ../../CHANGELOG.md:140
+msgid ""
+"classDiagram breaks on any edit "
+"[\\#858](https://github.com/knsv/mermaid/issues/858)"
+msgstr ""
+
+#: ../../CHANGELOG.md:142
+msgid "[8.1.0](https://github.com/knsv/mermaid/tree/8.1.0) (2019-06-25)"
+msgstr ""
+
+#: ../../CHANGELOG.md:144
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/7.0.5...8.1.0)"
+msgstr ""
+
+#: ../../CHANGELOG.md:146 ../../CHANGELOG.md:426 ../../CHANGELOG.md:541
+#: ../../CHANGELOG.md:588 ../../CHANGELOG.md:616 ../../CHANGELOG.md:668
+#: ../../CHANGELOG.md:704 ../../CHANGELOG.md:739 ../../CHANGELOG.md:760
+#: ../../CHANGELOG.md:790 ../../CHANGELOG.md:810 ../../CHANGELOG.md:832
+#: ../../CHANGELOG.md:854 ../../CHANGELOG.md:923
+msgid "**Implemented enhancements:**"
+msgstr ""
+
+#: ../../CHANGELOG.md:148
+msgid ""
+"Theme for dark background "
+"[\\#301](https://github.com/knsv/mermaid/issues/301)"
+msgstr ""
+
+#: ../../CHANGELOG.md:149
+msgid ""
+"\\[Feature request\\] gantt diagram axis format "
+"[\\#269](https://github.com/knsv/mermaid/issues/269)"
+msgstr ""
+
+#: ../../CHANGELOG.md:150
+msgid ""
+"Implement render function for server side rendering using phantomjs "
+"[\\#169](https://github.com/knsv/mermaid/issues/169)"
+msgstr ""
+
+#: ../../CHANGELOG.md:152 ../../CHANGELOG.md:545 ../../CHANGELOG.md:594
+#: ../../CHANGELOG.md:676 ../../CHANGELOG.md:744 ../../CHANGELOG.md:859
+#: ../../CHANGELOG.md:876 ../../CHANGELOG.md:901
+msgid "**Fixed bugs:**"
+msgstr ""
+
+#: ../../CHANGELOG.md:154
+msgid ""
+"mermaid -v filename.mmd gives You must specify at least one source file. "
+"[\\#328](https://github.com/knsv/mermaid/issues/328)"
+msgstr ""
+
+#: ../../CHANGELOG.md:155
+msgid ""
+"Not Able to See Labels even htmlLabels:false added "
+"[\\#268](https://github.com/knsv/mermaid/issues/268)"
+msgstr ""
+
+#: ../../CHANGELOG.md:159
+msgid ""
+"Gantt and sequence diagram do not render "
+"[\\#853](https://github.com/knsv/mermaid/issues/853)"
+msgstr ""
+
+#: ../../CHANGELOG.md:160
+msgid ""
+"margins around flowchart are not balanced "
+"[\\#852](https://github.com/knsv/mermaid/issues/852)"
+msgstr ""
+
+#: ../../CHANGELOG.md:161
+msgid "Smaller bundles [\\#843](https://github.com/knsv/mermaid/issues/843)"
+msgstr ""
+
+#: ../../CHANGELOG.md:162
+msgid "unicode in labels [\\#776](https://github.com/knsv/mermaid/issues/776)"
+msgstr ""
+
+#: ../../CHANGELOG.md:163
+msgid ""
+"Hard-changing drawing  of arrows per edge type "
+"[\\#775](https://github.com/knsv/mermaid/issues/775)"
+msgstr ""
+
+#: ../../CHANGELOG.md:164
+msgid "SequenceDiagram wrong [\\#773](https://github.com/knsv/mermaid/issues/773)"
+msgstr ""
+
+#: ../../CHANGELOG.md:165
+msgid ""
+"Render mermaid on github pages with simple code  "
+"[\\#772](https://github.com/knsv/mermaid/issues/772)"
+msgstr ""
+
+#: ../../CHANGELOG.md:166
+msgid ""
+"FlowChart - large space between text and the image "
+"[\\#754](https://github.com/knsv/mermaid/issues/754)"
+msgstr ""
+
+#: ../../CHANGELOG.md:167
+msgid ""
+"Class Diagram Issues when using Mermaid in Stackedit "
+"[\\#748](https://github.com/knsv/mermaid/issues/748)"
+msgstr ""
+
+#: ../../CHANGELOG.md:168
+msgid "Multi-platform CI [\\#744](https://github.com/knsv/mermaid/issues/744)"
+msgstr ""
+
+#: ../../CHANGELOG.md:169
+msgid ""
+"gantt: sections can't have a colon "
+"[\\#742](https://github.com/knsv/mermaid/issues/742)"
+msgstr ""
+
+#: ../../CHANGELOG.md:170
+msgid ""
+"Yarn build does not add mermaid.min.css to dist "
+"[\\#732](https://github.com/knsv/mermaid/issues/732)"
+msgstr ""
+
+#: ../../CHANGELOG.md:171
+msgid ""
+"Is there a grammar / keyword / more than just the basic examples? "
+"[\\#718](https://github.com/knsv/mermaid/issues/718)"
+msgstr ""
+
+#: ../../CHANGELOG.md:172
+msgid ""
+"Click event and react component "
+"[\\#717](https://github.com/knsv/mermaid/issues/717)"
+msgstr ""
+
+#: ../../CHANGELOG.md:173
+msgid ""
+"Long text going outside the box "
+"[\\#706](https://github.com/knsv/mermaid/issues/706)"
+msgstr ""
+
+#: ../../CHANGELOG.md:174
+msgid ""
+"How to migrate from yUML to mermaid? "
+"[\\#704](https://github.com/knsv/mermaid/issues/704)"
+msgstr ""
+
+#: ../../CHANGELOG.md:175
+msgid ""
+"Issue on Dynamic Creation in PHP "
+"[\\#690](https://github.com/knsv/mermaid/issues/690)"
+msgstr ""
+
+#: ../../CHANGELOG.md:176
+msgid ""
+"`click \"\\#target\"` and `click \"http://url\"` should create regular "
+"links [\\#689](https://github.com/knsv/mermaid/issues/689)"
+msgstr ""
+
+#: ../../CHANGELOG.md:177
+msgid ""
+"Support Chinese punctuation "
+"[\\#687](https://github.com/knsv/mermaid/issues/687)"
+msgstr ""
+
+#: ../../CHANGELOG.md:178
+msgid ""
+"\\[Question\\] Proper way to install on Mac?  "
+"[\\#681](https://github.com/knsv/mermaid/issues/681)"
+msgstr ""
+
+#: ../../CHANGELOG.md:179
+msgid ""
+"Has Mermaid a graphical interface to make diagrams?  "
+"[\\#668](https://github.com/knsv/mermaid/issues/668)"
+msgstr ""
+
+#: ../../CHANGELOG.md:180
+msgid ""
+"mermaid installation on debian  "
+"[\\#649](https://github.com/knsv/mermaid/issues/649)"
+msgstr ""
+
+#: ../../CHANGELOG.md:181
+msgid ""
+"\"Cannot activate\" in sequenceDiagram "
+"[\\#647](https://github.com/knsv/mermaid/issues/647)"
+msgstr ""
+
+#: ../../CHANGELOG.md:182
+msgid ""
+"Link \\(\"click\" statement\\) in flowchart does not work in exported SVG"
+" [\\#646](https://github.com/knsv/mermaid/issues/646)"
+msgstr ""
+
+#: ../../CHANGELOG.md:183
+msgid "How to pass styling  [\\#639](https://github.com/knsv/mermaid/issues/639)"
+msgstr ""
+
+#: ../../CHANGELOG.md:184
+msgid ""
+"The live editor cant show seq diagram with notes for 8.0.0-alpha.3 "
+"[\\#638](https://github.com/knsv/mermaid/issues/638)"
+msgstr ""
+
+#: ../../CHANGELOG.md:185
+msgid ""
+"import mermaid.css with ES6 + NPM "
+"[\\#634](https://github.com/knsv/mermaid/issues/634)"
+msgstr ""
+
+#: ../../CHANGELOG.md:186
+msgid ""
+"Actor line cuts through other elements "
+"[\\#633](https://github.com/knsv/mermaid/issues/633)"
+msgstr ""
+
+#: ../../CHANGELOG.md:187
+msgid ""
+"Graph TD line out of the picture \\(left side\\) "
+"[\\#630](https://github.com/knsv/mermaid/issues/630)"
+msgstr ""
+
+#: ../../CHANGELOG.md:188
+msgid ""
+"Flowchart labels appear \"cutoff\"  "
+"[\\#628](https://github.com/knsv/mermaid/issues/628)"
+msgstr ""
+
+#: ../../CHANGELOG.md:189
+msgid ""
+"Uncaught TypeError: \\_.constant is not a function \\(mermaid.js\\)  "
+"[\\#626](https://github.com/knsv/mermaid/issues/626)"
+msgstr ""
+
+#: ../../CHANGELOG.md:190
+msgid ""
+"Missing tags and releases for newer versions "
+"[\\#623](https://github.com/knsv/mermaid/issues/623)"
+msgstr ""
+
+#: ../../CHANGELOG.md:191
+msgid ""
+"Mermaid and Leo / Leo Vue "
+"[\\#622](https://github.com/knsv/mermaid/issues/622)"
+msgstr ""
+
+#: ../../CHANGELOG.md:192
+msgid ""
+"mermaidAPI gantt Vue.js "
+"[\\#621](https://github.com/knsv/mermaid/issues/621)"
+msgstr ""
+
+#: ../../CHANGELOG.md:193
+msgid ""
+"Gantt sections are not separated by colors - Fix: set numberSectionStyles"
+" to 4 instead of 3 [\\#620](https://github.com/knsv/mermaid/issues/620)"
+msgstr ""
+
+#: ../../CHANGELOG.md:194
+msgid ""
+"how to get mermaidAPI? "
+"[\\#617](https://github.com/knsv/mermaid/issues/617)"
+msgstr ""
+
+#: ../../CHANGELOG.md:195
+msgid ""
+"Error in startOnLoad documentation? "
+"[\\#616](https://github.com/knsv/mermaid/issues/616)"
+msgstr ""
+
+#: ../../CHANGELOG.md:196
+msgid ""
+"Example export to SVG generates error "
+"[\\#614](https://github.com/knsv/mermaid/issues/614)"
+msgstr ""
+
+#: ../../CHANGELOG.md:197
+msgid ""
+"The new online editor does not support previously generated links "
+"[\\#613](https://github.com/knsv/mermaid/issues/613)"
+msgstr ""
+
+#: ../../CHANGELOG.md:198
+msgid ""
+"Grammar / Syntax documentation for flowcharts "
+"[\\#607](https://github.com/knsv/mermaid/issues/607)"
+msgstr ""
+
+#: ../../CHANGELOG.md:199
+msgid ""
+"Mermaid does not work with d3.js "
+"[\\#606](https://github.com/knsv/mermaid/issues/606)"
+msgstr ""
+
+#: ../../CHANGELOG.md:200
+msgid ""
+"Why does this code's flowchart lines get cut-off on screen? "
+"[\\#604](https://github.com/knsv/mermaid/issues/604)"
+msgstr ""
+
+#: ../../CHANGELOG.md:201
+msgid ""
+"click keyword does not fire my callback \\(on the demo Website too\\) "
+"[\\#603](https://github.com/knsv/mermaid/issues/603)"
+msgstr ""
+
+#: ../../CHANGELOG.md:202
+msgid ""
+"Online Editor fails to show exported SVG "
+"[\\#601](https://github.com/knsv/mermaid/issues/601)"
+msgstr ""
+
+#: ../../CHANGELOG.md:203
+msgid "Just saying thanks! [\\#597](https://github.com/knsv/mermaid/issues/597)"
+msgstr ""
+
+#: ../../CHANGELOG.md:204
+msgid ""
+"stylesheet crashed with other library like abcjs "
+"[\\#596](https://github.com/knsv/mermaid/issues/596)"
+msgstr ""
+
+#: ../../CHANGELOG.md:205
+msgid "Missing connection [\\#594](https://github.com/knsv/mermaid/issues/594)"
+msgstr ""
+
+#: ../../CHANGELOG.md:206
+msgid ""
+"How to use mermaid on node.js restful api? "
+"[\\#593](https://github.com/knsv/mermaid/issues/593)"
+msgstr ""
+
+#: ../../CHANGELOG.md:207
+msgid "Remove status code [\\#589](https://github.com/knsv/mermaid/issues/589)"
+msgstr ""
+
+#: ../../CHANGELOG.md:208
+msgid "Golang based editor [\\#588](https://github.com/knsv/mermaid/issues/588)"
+msgstr ""
+
+#: ../../CHANGELOG.md:209
+msgid ""
+"sequenceDiagram -\\> notetext css font is hardcoded "
+"[\\#587](https://github.com/knsv/mermaid/issues/587)"
+msgstr ""
+
+#: ../../CHANGELOG.md:210
+msgid ""
+"Multiple graph in the live editor "
+"[\\#586](https://github.com/knsv/mermaid/issues/586)"
+msgstr ""
+
+#: ../../CHANGELOG.md:211
+msgid ""
+"All \\<svg\\> elements in page are colored black "
+"[\\#584](https://github.com/knsv/mermaid/issues/584)"
+msgstr ""
+
+#: ../../CHANGELOG.md:212
+msgid ""
+"Styling: classes aren't applied to elements. "
+"[\\#582](https://github.com/knsv/mermaid/issues/582)"
+msgstr ""
+
+#: ../../CHANGELOG.md:213
+msgid "Rounded connections [\\#580](https://github.com/knsv/mermaid/issues/580)"
+msgstr ""
+
+#: ../../CHANGELOG.md:214
+msgid ""
+"Arrows are not being shown correctly in the dark theme "
+"[\\#578](https://github.com/knsv/mermaid/issues/578)"
+msgstr ""
+
+#: ../../CHANGELOG.md:215
+msgid ""
+"The documentation for CLI seems outdated. "
+"[\\#572](https://github.com/knsv/mermaid/issues/572)"
+msgstr ""
+
+#: ../../CHANGELOG.md:216
+msgid ""
+"No effect of click event:can not open link "
+"[\\#571](https://github.com/knsv/mermaid/issues/571)"
+msgstr ""
+
+#: ../../CHANGELOG.md:217
+msgid ""
+"Text colors are not correct in VSCODE "
+"[\\#570](https://github.com/knsv/mermaid/issues/570)"
+msgstr ""
+
+#: ../../CHANGELOG.md:218
+msgid ""
+"Nodes aren't aligned properly \\(just need an explanation\\) "
+"[\\#568](https://github.com/knsv/mermaid/issues/568)"
+msgstr ""
+
+#: ../../CHANGELOG.md:219
+msgid ""
+"setting margin around figure in R "
+"[\\#567](https://github.com/knsv/mermaid/issues/567)"
+msgstr ""
+
+#: ../../CHANGELOG.md:220
+msgid ""
+"Arrows should Come out in upward and Downward direction from decision "
+"Node [\\#566](https://github.com/knsv/mermaid/issues/566)"
+msgstr ""
+
+#: ../../CHANGELOG.md:221
+msgid ""
+"TypeError: Cannot read property 'select' of undefined "
+"[\\#563](https://github.com/knsv/mermaid/issues/563)"
+msgstr ""
+
+#: ../../CHANGELOG.md:222
+msgid "A little bug [\\#557](https://github.com/knsv/mermaid/issues/557)"
+msgstr ""
+
+#: ../../CHANGELOG.md:223
+msgid ""
+"Japanese text appears garbled "
+"[\\#554](https://github.com/knsv/mermaid/issues/554)"
+msgstr ""
+
+#: ../../CHANGELOG.md:224
+msgid ""
+"classdiagram not works in mermaid live\\_editor  "
+"[\\#553](https://github.com/knsv/mermaid/issues/553)"
+msgstr ""
+
+#: ../../CHANGELOG.md:225
+msgid ""
+"font awesome in link text? "
+"[\\#546](https://github.com/knsv/mermaid/issues/546)"
+msgstr ""
+
+#: ../../CHANGELOG.md:226
+msgid ""
+"q: heard of the cosmogol standard? "
+"[\\#545](https://github.com/knsv/mermaid/issues/545)"
+msgstr ""
+
+#: ../../CHANGELOG.md:227
+msgid ""
+"Arrow heads missing \\(cli, 7.0.3\\) "
+"[\\#544](https://github.com/knsv/mermaid/issues/544)"
+msgstr ""
+
+#: ../../CHANGELOG.md:228
+msgid ""
+"No Edge Boxes if useHtmlLabels=false "
+"[\\#541](https://github.com/knsv/mermaid/issues/541)"
+msgstr ""
+
+#: ../../CHANGELOG.md:229
+msgid ""
+"how to change mermaid text color or line text block color？ "
+"[\\#534](https://github.com/knsv/mermaid/issues/534)"
+msgstr ""
+
+#: ../../CHANGELOG.md:230
+msgid ""
+"FlowChart visualization broken when downloading from live editor "
+"[\\#533](https://github.com/knsv/mermaid/issues/533)"
+msgstr ""
+
+#: ../../CHANGELOG.md:231
+msgid ""
+"Can't get flowchart to render paths at the top of the diagram; I even "
+"tried the online editor and that shows the same issue. Thoughts? "
+"[\\#532](https://github.com/knsv/mermaid/issues/532)"
+msgstr ""
+
+#: ../../CHANGELOG.md:232
+msgid ""
+"live editor make browser\\(safari on macOS&iOS\\) not longer respond "
+"[\\#531](https://github.com/knsv/mermaid/issues/531)"
+msgstr ""
+
+#: ../../CHANGELOG.md:233
+msgid ""
+"css classes need a prefix/namespace "
+"[\\#527](https://github.com/knsv/mermaid/issues/527)"
+msgstr ""
+
+#: ../../CHANGELOG.md:234
+msgid ""
+"input activate/deactivate cause safari unresponding "
+"[\\#521](https://github.com/knsv/mermaid/issues/521)"
+msgstr ""
+
+#: ../../CHANGELOG.md:235
+msgid ""
+"Cannot Render the Mermaid Graph to PDF ? "
+"[\\#520](https://github.com/knsv/mermaid/issues/520)"
+msgstr ""
+
+#: ../../CHANGELOG.md:236
+msgid ""
+"clicking links works from inset in subgraph but not from nodes "
+"[\\#516](https://github.com/knsv/mermaid/issues/516)"
+msgstr ""
+
+#: ../../CHANGELOG.md:237
+msgid ""
+"Strange syntax error - when importing mermaid.js "
+"[\\#515](https://github.com/knsv/mermaid/issues/515)"
+msgstr ""
+
+#: ../../CHANGELOG.md:238
+msgid "gantt x-axis display [\\#510](https://github.com/knsv/mermaid/issues/510)"
+msgstr ""
+
+#: ../../CHANGELOG.md:239
+msgid ""
+"phantomjs renamed to phantomjs-prebuilt "
+"[\\#508](https://github.com/knsv/mermaid/issues/508)"
+msgstr ""
+
+#: ../../CHANGELOG.md:240
+msgid ""
+"issue when using sphinxcontrib-mermaid extension for sphinx "
+"[\\#507](https://github.com/knsv/mermaid/issues/507)"
+msgstr ""
+
+#: ../../CHANGELOG.md:241
+msgid ""
+"layout of docs page looks broken "
+"[\\#504](https://github.com/knsv/mermaid/issues/504)"
+msgstr ""
+
+#: ../../CHANGELOG.md:242
+msgid ""
+"Problem showing graph with php on localhost "
+"[\\#502](https://github.com/knsv/mermaid/issues/502)"
+msgstr ""
+
+#: ../../CHANGELOG.md:243
+msgid ""
+"logLevel's option doesn't work at 7.0.0 "
+"[\\#501](https://github.com/knsv/mermaid/issues/501)"
+msgstr ""
+
+#: ../../CHANGELOG.md:244
+msgid ""
+"How do I get the log for a render or parse attempt? "
+"[\\#500](https://github.com/knsv/mermaid/issues/500)"
+msgstr ""
+
+#: ../../CHANGELOG.md:245
+msgid ""
+"Mermaid neutral style style to built in latest release "
+"[\\#499](https://github.com/knsv/mermaid/issues/499)"
+msgstr ""
+
+#: ../../CHANGELOG.md:246
+msgid ""
+"Any plans for adding a typescript definition file? "
+"[\\#495](https://github.com/knsv/mermaid/issues/495)"
+msgstr ""
+
+#: ../../CHANGELOG.md:247
+msgid ""
+"Gantt diagrams too narrow "
+"[\\#493](https://github.com/knsv/mermaid/issues/493)"
+msgstr ""
+
+#: ../../CHANGELOG.md:248
+msgid ""
+"Flowchart edge labels placement "
+"[\\#490](https://github.com/knsv/mermaid/issues/490)"
+msgstr ""
+
+#: ../../CHANGELOG.md:249
+msgid ""
+"Very different styles when rendering as png vs. svg "
+"[\\#489](https://github.com/knsv/mermaid/issues/489)"
+msgstr ""
+
+#: ../../CHANGELOG.md:250
+msgid ""
+"New editor that supports mermaid: Caret "
+"[\\#488](https://github.com/knsv/mermaid/issues/488)"
+msgstr ""
+
+#: ../../CHANGELOG.md:251
+msgid "Gant PNG margin  [\\#486](https://github.com/knsv/mermaid/issues/486)"
+msgstr ""
+
+#: ../../CHANGELOG.md:252
+msgid ""
+"ReferenceError: window is not defined "
+"[\\#485](https://github.com/knsv/mermaid/issues/485)"
+msgstr ""
+
+#: ../../CHANGELOG.md:253
+msgid ""
+"Menu and layout bugs in docs "
+"[\\#484](https://github.com/knsv/mermaid/issues/484)"
+msgstr ""
+
+#: ../../CHANGELOG.md:254
+msgid ""
+"Mermaid resets some of the page CSS styles "
+"[\\#482](https://github.com/knsv/mermaid/issues/482)"
+msgstr ""
+
+#: ../../CHANGELOG.md:255
+msgid ""
+"Arrows rendering incorrectly in online editor "
+"[\\#480](https://github.com/knsv/mermaid/issues/480)"
+msgstr ""
+
+#: ../../CHANGELOG.md:256
+msgid ""
+"CSS stroke-dasharray ignored by browsers but not other viewers "
+"[\\#474](https://github.com/knsv/mermaid/issues/474)"
+msgstr ""
+
+#: ../../CHANGELOG.md:257
+msgid ""
+"mermaid - Browser Support issue "
+"[\\#472](https://github.com/knsv/mermaid/issues/472)"
+msgstr ""
+
+#: ../../CHANGELOG.md:258
+msgid ""
+"Totally love mermaid I might pop! "
+"[\\#471](https://github.com/knsv/mermaid/issues/471)"
+msgstr ""
+
+#: ../../CHANGELOG.md:259
+msgid ""
+"Sequence Diagram: Missing x on async arrows \\(png\\) "
+"[\\#469](https://github.com/knsv/mermaid/issues/469)"
+msgstr ""
+
+#: ../../CHANGELOG.md:260
+msgid ""
+"live editor: the svg file rendered from graph is not supported by "
+"browsers [\\#468](https://github.com/knsv/mermaid/issues/468)"
+msgstr ""
+
+#: ../../CHANGELOG.md:261
+msgid "Not found css [\\#462](https://github.com/knsv/mermaid/issues/462)"
+msgstr ""
+
+#: ../../CHANGELOG.md:262
+msgid "Phantomjs Dependency [\\#461](https://github.com/knsv/mermaid/issues/461)"
+msgstr ""
+
+#: ../../CHANGELOG.md:263
+msgid ""
+"Mermaid cli not working for subgraphs "
+"[\\#459](https://github.com/knsv/mermaid/issues/459)"
+msgstr ""
+
+#: ../../CHANGELOG.md:264
+msgid ""
+"Support for notes across multiple participants? "
+"[\\#458](https://github.com/knsv/mermaid/issues/458)"
+msgstr ""
+
+#: ../../CHANGELOG.md:265
+msgid ""
+"Related to Issue \\#329: Phantomjs issues. "
+"[\\#455](https://github.com/knsv/mermaid/issues/455)"
+msgstr ""
+
+#: ../../CHANGELOG.md:266
+msgid "Add a click style [\\#426](https://github.com/knsv/mermaid/issues/426)"
+msgstr ""
+
+#: ../../CHANGELOG.md:267
+msgid ""
+"Add Parallel block \\(par\\) to sequence diagrams "
+"[\\#425](https://github.com/knsv/mermaid/issues/425)"
+msgstr ""
+
+#: ../../CHANGELOG.md:268
+msgid ""
+"updating shapes after the flow chart rendering complete "
+"[\\#424](https://github.com/knsv/mermaid/issues/424)"
+msgstr ""
+
+#: ../../CHANGELOG.md:269
+msgid ""
+"can't catch parse error Maximum call stack size exceeded on safari "
+"[\\#421](https://github.com/knsv/mermaid/issues/421)"
+msgstr ""
+
+#: ../../CHANGELOG.md:270
+msgid ""
+"Arrows endings are missing "
+"[\\#419](https://github.com/knsv/mermaid/issues/419)"
+msgstr ""
+
+#: ../../CHANGELOG.md:271
+msgid ""
+"shouldn't mermaid become more like Markdown ? "
+"[\\#417](https://github.com/knsv/mermaid/issues/417)"
+msgstr ""
+
+#: ../../CHANGELOG.md:272
+msgid ""
+"Live editor show rendered diagram if syntax invalid "
+"[\\#415](https://github.com/knsv/mermaid/issues/415)"
+msgstr ""
+
+#: ../../CHANGELOG.md:273
+msgid ""
+"Linkstyle stroke does not work "
+"[\\#410](https://github.com/knsv/mermaid/issues/410)"
+msgstr ""
+
+#: ../../CHANGELOG.md:274
+msgid ""
+"flowchart id's with dots in them .. break links  "
+"[\\#408](https://github.com/knsv/mermaid/issues/408)"
+msgstr ""
+
+#: ../../CHANGELOG.md:275
+msgid ""
+"Flowchart: Link text beginning with lowercase 'o' causes flowchart to "
+"break [\\#407](https://github.com/knsv/mermaid/issues/407)"
+msgstr ""
+
+#: ../../CHANGELOG.md:276
+msgid ""
+"Some Chinese character will case Safari no responding. "
+"[\\#405](https://github.com/knsv/mermaid/issues/405)"
+msgstr ""
+
+#: ../../CHANGELOG.md:277
+msgid ""
+"Cannot center-justify text in nodes? "
+"[\\#397](https://github.com/knsv/mermaid/issues/397)"
+msgstr ""
+
+#: ../../CHANGELOG.md:278
+msgid ""
+"Edge labels should have white background in live editor "
+"[\\#396](https://github.com/knsv/mermaid/issues/396)"
+msgstr ""
+
+#: ../../CHANGELOG.md:279
+msgid ""
+"Live editor does not support activate/deactivate "
+"[\\#394](https://github.com/knsv/mermaid/issues/394)"
+msgstr ""
+
+#: ../../CHANGELOG.md:280
+msgid "Styling subgraph? [\\#391](https://github.com/knsv/mermaid/issues/391)"
+msgstr ""
+
+#: ../../CHANGELOG.md:281
+msgid ""
+"Update live editor to version 6.0.0 "
+"[\\#387](https://github.com/knsv/mermaid/issues/387)"
+msgstr ""
+
+#: ../../CHANGELOG.md:282
+msgid ""
+"sequence diagram config issue "
+"[\\#385](https://github.com/knsv/mermaid/issues/385)"
+msgstr ""
+
+#: ../../CHANGELOG.md:283
+msgid ""
+"How to add newline in the text "
+"[\\#384](https://github.com/knsv/mermaid/issues/384)"
+msgstr ""
+
+#: ../../CHANGELOG.md:284
+msgid ""
+"PhantomJS crashes on a large graph "
+"[\\#380](https://github.com/knsv/mermaid/issues/380)"
+msgstr ""
+
+#: ../../CHANGELOG.md:285
+msgid ""
+"Finnish support for class diagrams using plantuml syntax  "
+"[\\#377](https://github.com/knsv/mermaid/issues/377)"
+msgstr ""
+
+#: ../../CHANGELOG.md:286
+msgid ""
+"mermaidAPI.render generated different svg code from mermaid.int\\(\\) "
+"[\\#374](https://github.com/knsv/mermaid/issues/374)"
+msgstr ""
+
+#: ../../CHANGELOG.md:287
+msgid ""
+"Put your own action on the chart "
+"[\\#372](https://github.com/knsv/mermaid/issues/372)"
+msgstr ""
+
+#: ../../CHANGELOG.md:288
+msgid ""
+"when declaring participants the elements are generated twice "
+"[\\#370](https://github.com/knsv/mermaid/issues/370)"
+msgstr ""
+
+#: ../../CHANGELOG.md:289
+msgid ""
+"Example Flowchart is cut in display \\(Chrome\\). "
+"[\\#368](https://github.com/knsv/mermaid/issues/368)"
+msgstr ""
+
+#: ../../CHANGELOG.md:290
+msgid ""
+"Add shebang support to diagrams "
+"[\\#365](https://github.com/knsv/mermaid/issues/365)"
+msgstr ""
+
+#: ../../CHANGELOG.md:291
+msgid "Silencing CLI output [\\#352](https://github.com/knsv/mermaid/issues/352)"
+msgstr ""
+
+#: ../../CHANGELOG.md:292
+msgid ""
+"SequenceDiagram: 3+ Alternative Paths "
+"[\\#348](https://github.com/knsv/mermaid/issues/348)"
+msgstr ""
+
+#: ../../CHANGELOG.md:293
+msgid ""
+"Smaller height of actor boxes "
+"[\\#342](https://github.com/knsv/mermaid/issues/342)"
+msgstr ""
+
+#: ../../CHANGELOG.md:294
+msgid ""
+"Question: lib/phantomscript.js - foreignObjects in SVG - related to \\#58"
+" [\\#340](https://github.com/knsv/mermaid/issues/340)"
+msgstr ""
+
+#: ../../CHANGELOG.md:295
+msgid ""
+"npm test fails on osx being blocked at Can not load \"PhantomJS\", it is "
+"not registered! [\\#337](https://github.com/knsv/mermaid/issues/337)"
+msgstr ""
+
+#: ../../CHANGELOG.md:296
+msgid ""
+"Tabs & subgraphs cause rendering error "
+"[\\#336](https://github.com/knsv/mermaid/issues/336)"
+msgstr ""
+
+#: ../../CHANGELOG.md:297
+msgid ""
+"Display question: right angles "
+"[\\#335](https://github.com/knsv/mermaid/issues/335)"
+msgstr ""
+
+#: ../../CHANGELOG.md:298
+msgid ""
+"No Arrows rendered v0.5.8 "
+"[\\#330](https://github.com/knsv/mermaid/issues/330)"
+msgstr ""
+
+#: ../../CHANGELOG.md:299
+msgid ""
+"You had errors in your syntax. Use --help for further information. "
+"[\\#327](https://github.com/knsv/mermaid/issues/327)"
+msgstr ""
+
+#: ../../CHANGELOG.md:300
+msgid ""
+"Allow alternate arrow syntax that doesn't close html comments "
+"[\\#322](https://github.com/knsv/mermaid/issues/322)"
+msgstr ""
+
+#: ../../CHANGELOG.md:301
+msgid "Comment in subgraph [\\#319](https://github.com/knsv/mermaid/issues/319)"
+msgstr ""
+
+#: ../../CHANGELOG.md:302
+msgid "Update graph [\\#311](https://github.com/knsv/mermaid/issues/311)"
+msgstr ""
+
+#: ../../CHANGELOG.md:303
+msgid ""
+"css conflicts with boostrap's css "
+"[\\#308](https://github.com/knsv/mermaid/issues/308)"
+msgstr ""
+
+#: ../../CHANGELOG.md:304
+msgid ""
+"Can not get click event to fire. "
+"[\\#306](https://github.com/knsv/mermaid/issues/306)"
+msgstr ""
+
+#: ../../CHANGELOG.md:305
+msgid ""
+"Fix phantomjs2 compatibility "
+"[\\#304](https://github.com/knsv/mermaid/issues/304)"
+msgstr ""
+
+#: ../../CHANGELOG.md:306
+msgid ""
+"Flowcharts do not work in native IE11 "
+"[\\#303](https://github.com/knsv/mermaid/issues/303)"
+msgstr ""
+
+#: ../../CHANGELOG.md:307
+msgid ""
+"Integration with remark.js - tutorial added "
+"[\\#302](https://github.com/knsv/mermaid/issues/302)"
+msgstr ""
+
+#: ../../CHANGELOG.md:308
+msgid ""
+"Sequence diagram Loops: changing boxMargin spoils the \"loop\" notation "
+"[\\#299](https://github.com/knsv/mermaid/issues/299)"
+msgstr ""
+
+#: ../../CHANGELOG.md:309
+msgid ""
+"src/mermaid.js generates bad code "
+"[\\#297](https://github.com/knsv/mermaid/issues/297)"
+msgstr ""
+
+#: ../../CHANGELOG.md:310
+msgid ""
+"Fresh fork: jasmine tests fail "
+"[\\#294](https://github.com/knsv/mermaid/issues/294)"
+msgstr ""
+
+#: ../../CHANGELOG.md:311
+msgid "CSS clash [\\#292](https://github.com/knsv/mermaid/issues/292)"
+msgstr ""
+
+#: ../../CHANGELOG.md:312
+msgid ""
+"Mermaid does not work in Chrome 48 "
+"[\\#281](https://github.com/knsv/mermaid/issues/281)"
+msgstr ""
+
+#: ../../CHANGELOG.md:313
+msgid ""
+"circle and ellipse cannot change color by classDef "
+"[\\#271](https://github.com/knsv/mermaid/issues/271)"
+msgstr ""
+
+#: ../../CHANGELOG.md:314
+msgid ""
+"npm run watch doesn't work due missing dependencies "
+"[\\#266](https://github.com/knsv/mermaid/issues/266)"
+msgstr ""
+
+#: ../../CHANGELOG.md:315
+msgid "label out of node  [\\#262](https://github.com/knsv/mermaid/issues/262)"
+msgstr ""
+
+#: ../../CHANGELOG.md:316
+msgid "IE11 Support issue [\\#261](https://github.com/knsv/mermaid/issues/261)"
+msgstr ""
+
+#: ../../CHANGELOG.md:317
+msgid ""
+"mermaid without browser "
+"[\\#260](https://github.com/knsv/mermaid/issues/260)"
+msgstr ""
+
+#: ../../CHANGELOG.md:318
+msgid ""
+"Insufficient capacity of gantt diagrams "
+"[\\#226](https://github.com/knsv/mermaid/issues/226)"
+msgstr ""
+
+#: ../../CHANGELOG.md:319
+msgid ""
+"some WARN about installation "
+"[\\#222](https://github.com/knsv/mermaid/issues/222)"
+msgstr ""
+
+#: ../../CHANGELOG.md:320
+msgid ""
+"Live editor offline access "
+"[\\#217](https://github.com/knsv/mermaid/issues/217)"
+msgstr ""
+
+#: ../../CHANGELOG.md:321
+msgid ""
+"suggest: code highlight mode config for editors "
+"[\\#212](https://github.com/knsv/mermaid/issues/212)"
+msgstr ""
+
+#: ../../CHANGELOG.md:322
+msgid ""
+"Uncaught RangeError: Maximum call stack size exceeded "
+"[\\#189](https://github.com/knsv/mermaid/issues/189)"
+msgstr ""
+
+#: ../../CHANGELOG.md:323
+msgid "Styling label texts [\\#50](https://github.com/knsv/mermaid/issues/50)"
+msgstr ""
+
+#: ../../CHANGELOG.md:325 ../../CHANGELOG.md:405 ../../CHANGELOG.md:447
+#: ../../CHANGELOG.md:492 ../../CHANGELOG.md:533 ../../CHANGELOG.md:559
+#: ../../CHANGELOG.md:581 ../../CHANGELOG.md:605 ../../CHANGELOG.md:657
+#: ../../CHANGELOG.md:697 ../../CHANGELOG.md:724 ../../CHANGELOG.md:780
+#: ../../CHANGELOG.md:799 ../../CHANGELOG.md:821 ../../CHANGELOG.md:843
+#: ../../CHANGELOG.md:868 ../../CHANGELOG.md:889 ../../CHANGELOG.md:912
+#: ../../CHANGELOG.md:945 ../../CHANGELOG.md:965
+msgid "**Merged pull requests:**"
+msgstr ""
+
+#: ../../CHANGELOG.md:327
+msgid ""
+"Remove console.log in classDB. "
+"[\\#861](https://github.com/knsv/mermaid/pull/861) "
+"([Arthaey](https://github.com/Arthaey))"
+msgstr ""
+
+#: ../../CHANGELOG.md:328
+msgid ""
+"Bump sshpk from 1.13.1 to 1.16.1 "
+"[\\#851](https://github.com/knsv/mermaid/pull/851) "
+"([dependabot[bot]](https://github.com/apps/dependabot))"
+msgstr ""
+
+#: ../../CHANGELOG.md:329
+msgid ""
+"Significantly smaller bundles "
+"[\\#850](https://github.com/knsv/mermaid/pull/850) "
+"([fabiospampinato](https://github.com/fabiospampinato))"
+msgstr ""
+
+#: ../../CHANGELOG.md:330
+msgid ""
+"Support styling of subgraphs "
+"[\\#845](https://github.com/knsv/mermaid/pull/845) "
+"([Qix-](https://github.com/Qix-))"
+msgstr ""
+
+#: ../../CHANGELOG.md:331
+msgid ""
+"fix dark theme loop labels not visible "
+"[\\#837](https://github.com/knsv/mermaid/pull/837) "
+"([jnnnnn](https://github.com/jnnnnn))"
+msgstr ""
+
+#: ../../CHANGELOG.md:332
+msgid ""
+"fix draw function can only call once "
+"[\\#832](https://github.com/knsv/mermaid/pull/832) "
+"([vaniship](https://github.com/vaniship))"
+msgstr ""
+
+#: ../../CHANGELOG.md:333
+msgid ""
+"Fix dotted lines not appearing in flowcharts when HTML labels disabled "
+"[\\#828](https://github.com/knsv/mermaid/pull/828) "
+"([stanhu](https://github.com/stanhu))"
+msgstr ""
+
+#: ../../CHANGELOG.md:334
+msgid ""
+"Fix issue with XML line breaks inside vertex labels "
+"[\\#824](https://github.com/knsv/mermaid/pull/824) "
+"([jsyang](https://github.com/jsyang))"
+msgstr ""
+
+#: ../../CHANGELOG.md:335
+msgid ""
+"fixed diagrams [\\#810](https://github.com/knsv/mermaid/pull/810) "
+"([0xflotus](https://github.com/0xflotus))"
+msgstr ""
+
+#: ../../CHANGELOG.md:336
+msgid ""
+"Clickable gantt tasks [\\#804](https://github.com/knsv/mermaid/pull/804) "
+"([abzicht](https://github.com/abzicht))"
+msgstr ""
+
+#: ../../CHANGELOG.md:337
+msgid ""
+"linkStyle now supports list of indexes with a few tests "
+"[\\#798](https://github.com/knsv/mermaid/pull/798) ([ivan-"
+"danilov](https://github.com/ivan-danilov))"
+msgstr ""
+
+#: ../../CHANGELOG.md:338
+msgid ""
+"fix class diagram mermaid "
+"[\\#795](https://github.com/knsv/mermaid/pull/795) "
+"([DanShai](https://github.com/DanShai))"
+msgstr ""
+
+#: ../../CHANGELOG.md:339
+msgid ""
+"Added exclude weekdays to definition "
+"[\\#792](https://github.com/knsv/mermaid/pull/792) "
+"([jopapo](https://github.com/jopapo))"
+msgstr ""
+
+#: ../../CHANGELOG.md:340
+msgid ""
+"SVG link rendering [\\#791](https://github.com/knsv/mermaid/pull/791) "
+"([flying-sheep](https://github.com/flying-sheep))"
+msgstr ""
+
+#: ../../CHANGELOG.md:341
+msgid ""
+"Gantt milestones [\\#788](https://github.com/knsv/mermaid/pull/788) "
+"([gijswijs](https://github.com/gijswijs))"
+msgstr ""
+
+#: ../../CHANGELOG.md:342
+msgid ""
+"Remove duplicate code [\\#768](https://github.com/knsv/mermaid/pull/768) "
+"([znxkznxk1030](https://github.com/znxkznxk1030))"
+msgstr ""
+
+#: ../../CHANGELOG.md:343
+msgid ""
+"Render nodes as real links "
+"[\\#765](https://github.com/knsv/mermaid/pull/765) ([flying-"
+"sheep](https://github.com/flying-sheep))"
+msgstr ""
+
+#: ../../CHANGELOG.md:344
+msgid ""
+"Fix issue with marker-end. "
+"[\\#757](https://github.com/knsv/mermaid/pull/757) "
+"([gjlubbertsen](https://github.com/gjlubbertsen))"
+msgstr ""
+
+#: ../../CHANGELOG.md:345
+msgid ""
+"Make Class Diagrams usable in Stackedit and Live Editor "
+"[\\#749](https://github.com/knsv/mermaid/pull/749) "
+"([monsterkrampe](https://github.com/monsterkrampe))"
+msgstr ""
+
+#: ../../CHANGELOG.md:346
+msgid ""
+"Adding trapezoid and inverse trapezoid vertex options. "
+"[\\#741](https://github.com/knsv/mermaid/pull/741) "
+"([adamwulf](https://github.com/adamwulf))"
+msgstr ""
+
+#: ../../CHANGELOG.md:347
+msgid ""
+"Add option for right angles "
+"[\\#721](https://github.com/knsv/mermaid/pull/721) "
+"([paulbland](https://github.com/paulbland))"
+msgstr ""
+
+#: ../../CHANGELOG.md:348
+msgid ""
+"Add nested activation classes "
+"[\\#720](https://github.com/knsv/mermaid/pull/720) "
+"([paulbland](https://github.com/paulbland))"
+msgstr ""
+
+#: ../../CHANGELOG.md:349
+msgid ""
+"wip: class diagram  cardinality display "
+"[\\#705](https://github.com/knsv/mermaid/pull/705) "
+"([Vrixyz](https://github.com/Vrixyz))"
+msgstr ""
+
+#: ../../CHANGELOG.md:350
+msgid ""
+"add comments about CSS in config "
+"[\\#688](https://github.com/knsv/mermaid/pull/688) "
+"([imma90](https://github.com/imma90))"
+msgstr ""
+
+#: ../../CHANGELOG.md:351
+msgid ""
+"SequenceDiagram: Add support for multiple alt else statements "
+"[\\#641](https://github.com/knsv/mermaid/pull/641) "
+"([sechel](https://github.com/sechel))"
+msgstr ""
+
+#: ../../CHANGELOG.md:352
+msgid ""
+"fix \\#426 - add class .clickable on nodes with click function or link "
+"[\\#598](https://github.com/knsv/mermaid/pull/598) "
+"([thomasleveil](https://github.com/thomasleveil))"
+msgstr ""
+
+#: ../../CHANGELOG.md:353
+msgid ""
+"Spec fix 1 [\\#595](https://github.com/knsv/mermaid/pull/595) "
+"([frankschmitt](https://github.com/frankschmitt))"
+msgstr ""
+
+#: ../../CHANGELOG.md:355
+msgid "[7.0.5](https://github.com/knsv/mermaid/tree/7.0.5) (2017-09-01)"
+msgstr ""
+
+#: ../../CHANGELOG.md:356
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/7.0.3...7.0.5)"
+msgstr ""
+
+#: ../../CHANGELOG.md:360
+msgid ""
+"live editor latin error after update "
+"[\\#560](https://github.com/knsv/mermaid/issues/560)"
+msgstr ""
+
+#: ../../CHANGELOG.md:361
+msgid ""
+"Simple full example in online documentation is broken "
+"[\\#558](https://github.com/knsv/mermaid/issues/558)"
+msgstr ""
+
+#: ../../CHANGELOG.md:362
+msgid ""
+"Graph No Arrow Head v7.0.3 "
+"[\\#543](https://github.com/knsv/mermaid/issues/543)"
+msgstr ""
+
+#: ../../CHANGELOG.md:363
+msgid ""
+"Conflict while using mermaid along with core-js "
+"[\\#512](https://github.com/knsv/mermaid/issues/512)"
+msgstr ""
+
+#: ../../CHANGELOG.md:364
+msgid ""
+"Export to pdf on website "
+"[\\#496](https://github.com/knsv/mermaid/issues/496)"
+msgstr ""
+
+#: ../../CHANGELOG.md:365
+msgid ""
+"New downstream project: Mermaid Preview for VSCode "
+"[\\#442](https://github.com/knsv/mermaid/issues/442)"
+msgstr ""
+
+#: ../../CHANGELOG.md:366
+msgid ""
+"Can't Zoom the flowchart ? "
+"[\\#399](https://github.com/knsv/mermaid/issues/399)"
+msgstr ""
+
+#: ../../CHANGELOG.md:367
+msgid ""
+"line labels are not rendered correctly in live editor "
+"[\\#366](https://github.com/knsv/mermaid/issues/366)"
+msgstr ""
+
+#: ../../CHANGELOG.md:368
+msgid "mermaid-loader [\\#361](https://github.com/knsv/mermaid/issues/361)"
+msgstr ""
+
+#: ../../CHANGELOG.md:369
+msgid ""
+"Are there any documentation or examples for classDiagram and gitGraph? "
+"[\\#359](https://github.com/knsv/mermaid/issues/359)"
+msgstr ""
+
+#: ../../CHANGELOG.md:370
+msgid ""
+"\\# character broken in 0.5.8 "
+"[\\#347](https://github.com/knsv/mermaid/issues/347)"
+msgstr ""
+
+#: ../../CHANGELOG.md:371
+msgid ""
+"Documentation issue: CSS example is not visible "
+"[\\#345](https://github.com/knsv/mermaid/issues/345)"
+msgstr ""
+
+#: ../../CHANGELOG.md:372
+msgid ""
+"Include documentation for command line usage "
+"[\\#326](https://github.com/knsv/mermaid/issues/326)"
+msgstr ""
+
+#: ../../CHANGELOG.md:373
+msgid ""
+"Fresh fork: can't build dist "
+"[\\#296](https://github.com/knsv/mermaid/issues/296)"
+msgstr ""
+
+#: ../../CHANGELOG.md:374
+msgid ""
+"Invalid value for \\<svg\\> attribute viewBox=\"0 0 -Infinity -Infinity\""
+" [\\#291](https://github.com/knsv/mermaid/issues/291)"
+msgstr ""
+
+#: ../../CHANGELOG.md:375
+msgid "Webpack require fails [\\#277](https://github.com/knsv/mermaid/issues/277)"
+msgstr ""
+
+#: ../../CHANGELOG.md:376
+msgid ""
+"New documentation - need improved logo "
+"[\\#216](https://github.com/knsv/mermaid/issues/216)"
+msgstr ""
+
+#: ../../CHANGELOG.md:378
+msgid "[7.0.3](https://github.com/knsv/mermaid/tree/7.0.3) (2017-06-04)"
+msgstr ""
+
+#: ../../CHANGELOG.md:379
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/7.0.2...7.0.3)"
+msgstr ""
+
+#: ../../CHANGELOG.md:383
+msgid ""
+"the documentation website is down "
+"[\\#539](https://github.com/knsv/mermaid/issues/539)"
+msgstr ""
+
+#: ../../CHANGELOG.md:384
+msgid ""
+"Good example of interactivity with mermaidAPI "
+"[\\#514](https://github.com/knsv/mermaid/issues/514)"
+msgstr ""
+
+#: ../../CHANGELOG.md:386
+msgid "[7.0.2](https://github.com/knsv/mermaid/tree/7.0.2) (2017-06-01)"
+msgstr ""
+
+#: ../../CHANGELOG.md:387
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/7.0.0...7.0.2)"
+msgstr ""
+
+#: ../../CHANGELOG.md:391
+msgid "CDN is not working [\\#511](https://github.com/knsv/mermaid/issues/511)"
+msgstr ""
+
+#: ../../CHANGELOG.md:392
+msgid ""
+"A sampe sequenceDiagram crashes mermaid-cli "
+"[\\#492](https://github.com/knsv/mermaid/issues/492)"
+msgstr ""
+
+#: ../../CHANGELOG.md:393
+msgid ""
+"Mermaid doesn't delete nodes when called multiple times "
+"[\\#491](https://github.com/knsv/mermaid/issues/491)"
+msgstr ""
+
+#: ../../CHANGELOG.md:394
+msgid ""
+"API crashes on 2nd render\\(\\) call "
+"[\\#478](https://github.com/knsv/mermaid/issues/478)"
+msgstr ""
+
+#: ../../CHANGELOG.md:395
+msgid ""
+"sequenceDiagram: dotted line for alt and empty bracket should be hidden "
+"[\\#456](https://github.com/knsv/mermaid/issues/456)"
+msgstr ""
+
+#: ../../CHANGELOG.md:396
+msgid ""
+"SVG output \\(almost\\) not correct "
+"[\\#434](https://github.com/knsv/mermaid/issues/434)"
+msgstr ""
+
+#: ../../CHANGELOG.md:397
+msgid ""
+"How to set axisFormatter of gantt in mermaid CLI? "
+"[\\#428](https://github.com/knsv/mermaid/issues/428)"
+msgstr ""
+
+#: ../../CHANGELOG.md:398
+msgid ""
+"customizing link style with any color sets `fill` property to `black` "
+"instead of `none` [\\#416](https://github.com/knsv/mermaid/issues/416)"
+msgstr ""
+
+#: ../../CHANGELOG.md:399
+msgid ""
+"New line at the end of SVG file "
+"[\\#400](https://github.com/knsv/mermaid/issues/400)"
+msgstr ""
+
+#: ../../CHANGELOG.md:400
+msgid "CLI doesn't work [\\#389](https://github.com/knsv/mermaid/issues/389)"
+msgstr ""
+
+#: ../../CHANGELOG.md:401
+msgid ""
+"Can't render subgraphs with htmlLabels: false "
+"[\\#367](https://github.com/knsv/mermaid/issues/367)"
+msgstr ""
+
+#: ../../CHANGELOG.md:402
+msgid "Color arrowhead [\\#362](https://github.com/knsv/mermaid/issues/362)"
+msgstr ""
+
+#: ../../CHANGELOG.md:403
+msgid ""
+"CLI: Invisible text, lines in SVG output "
+"[\\#341](https://github.com/knsv/mermaid/issues/341)"
+msgstr ""
+
+#: ../../CHANGELOG.md:407
+msgid ""
+"Support Multi-line Actor Descriptions "
+"[\\#764](https://github.com/knsv/mermaid/pull/764) "
+"([watsoncj](https://github.com/watsoncj))"
+msgstr ""
+
+#: ../../CHANGELOG.md:408
+msgid ""
+"Update Travis config [\\#538](https://github.com/knsv/mermaid/pull/538) "
+"([tylerlong](https://github.com/tylerlong))"
+msgstr ""
+
+#: ../../CHANGELOG.md:409
+msgid ""
+"Fix spelling of 'you' in sequenceDiagram docs "
+"[\\#537](https://github.com/knsv/mermaid/pull/537) "
+"([ctruelson](https://github.com/ctruelson))"
+msgstr ""
+
+#: ../../CHANGELOG.md:410
+msgid ""
+"Improve CLI output [\\#536](https://github.com/knsv/mermaid/pull/536) "
+"([gibson042](https://github.com/gibson042))"
+msgstr ""
+
+#: ../../CHANGELOG.md:411
+msgid ""
+"Modernize mermaid [\\#524](https://github.com/knsv/mermaid/pull/524) "
+"([tylerlong](https://github.com/tylerlong))"
+msgstr ""
+
+#: ../../CHANGELOG.md:412
+msgid ""
+"Modernize mermaid [\\#519](https://github.com/knsv/mermaid/pull/519) "
+"([tylerlong](https://github.com/tylerlong))"
+msgstr ""
+
+#: ../../CHANGELOG.md:413
+msgid ""
+"Update CLI instructions "
+"[\\#509](https://github.com/knsv/mermaid/pull/509) "
+"([filipedeschamps](https://github.com/filipedeschamps))"
+msgstr ""
+
+#: ../../CHANGELOG.md:414
+msgid ""
+"Add style for classDiagram to dark/default theme "
+"[\\#503](https://github.com/knsv/mermaid/pull/503) "
+"([yudenzel](https://github.com/yudenzel))"
+msgstr ""
+
+#: ../../CHANGELOG.md:415
+msgid ""
+"Fix documentation for git graph. "
+"[\\#498](https://github.com/knsv/mermaid/pull/498) "
+"([gomlgs](https://github.com/gomlgs))"
+msgstr ""
+
+#: ../../CHANGELOG.md:416
+msgid ""
+"Fix links in documentations "
+"[\\#497](https://github.com/knsv/mermaid/pull/497) "
+"([saveman71](https://github.com/saveman71))"
+msgstr ""
+
+#: ../../CHANGELOG.md:417
+msgid ""
+"Update README.md with git graph sample "
+"[\\#481](https://github.com/knsv/mermaid/pull/481) "
+"([raghur](https://github.com/raghur))"
+msgstr ""
+
+#: ../../CHANGELOG.md:418
+msgid ""
+"Fix misspelling of “another” "
+"[\\#479](https://github.com/knsv/mermaid/pull/479) "
+"([stevenschobert](https://github.com/stevenschobert))"
+msgstr ""
+
+#: ../../CHANGELOG.md:419
+msgid ""
+"Fixed \\#456 sequenceDiagram: dotted line for alt and empty bracket sho… "
+"[\\#477](https://github.com/knsv/mermaid/pull/477) "
+"([brookhong](https://github.com/brookhong))"
+msgstr ""
+
+#: ../../CHANGELOG.md:420
+msgid ""
+"Add viewbox attr to class diagram "
+"[\\#473](https://github.com/knsv/mermaid/pull/473) "
+"([gnkm](https://github.com/gnkm))"
+msgstr ""
+
+#: ../../CHANGELOG.md:421
+msgid ""
+"add par statement to sequenceDiagram "
+"[\\#470](https://github.com/knsv/mermaid/pull/470) "
+"([u-minor](https://github.com/u-minor))"
+msgstr ""
+
+#: ../../CHANGELOG.md:423
+msgid "[7.0.0](https://github.com/knsv/mermaid/tree/7.0.0) (2017-01-29)"
+msgstr ""
+
+#: ../../CHANGELOG.md:424
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/6.0.0...7.0.0)"
+msgstr ""
+
+#: ../../CHANGELOG.md:428
+msgid ""
+"npm install -g mermaid does not install phantomjs "
+"[\\#329](https://github.com/knsv/mermaid/issues/329)"
+msgstr ""
+
+#: ../../CHANGELOG.md:429
+msgid "activation boxes [\\#313](https://github.com/knsv/mermaid/issues/313)"
+msgstr ""
+
+#: ../../CHANGELOG.md:433
+msgid ""
+"demos on io site not working "
+"[\\#466](https://github.com/knsv/mermaid/issues/466)"
+msgstr ""
+
+#: ../../CHANGELOG.md:434
+msgid ""
+"Can not be generated PNG pictures through CLI with Chinese "
+"[\\#451](https://github.com/knsv/mermaid/issues/451)"
+msgstr ""
+
+#: ../../CHANGELOG.md:435
+msgid ""
+"Round nodes cannot be styled with CSS classes "
+"[\\#443](https://github.com/knsv/mermaid/issues/443)"
+msgstr ""
+
+#: ../../CHANGELOG.md:436
+msgid ""
+"webpack gulp UglifyJsPlugin error. "
+"[\\#440](https://github.com/knsv/mermaid/issues/440)"
+msgstr ""
+
+#: ../../CHANGELOG.md:437
+msgid ""
+"String concatenation isn't working  "
+"[\\#432](https://github.com/knsv/mermaid/issues/432)"
+msgstr ""
+
+#: ../../CHANGELOG.md:438
+msgid ""
+"text flow/wrap in actor box of sequence diagram "
+"[\\#422](https://github.com/knsv/mermaid/issues/422)"
+msgstr ""
+
+#: ../../CHANGELOG.md:439
+msgid ""
+"Online live editor still use old version "
+"[\\#402](https://github.com/knsv/mermaid/issues/402)"
+msgstr ""
+
+#: ../../CHANGELOG.md:440
+msgid ""
+"uncaught TypeError: t.getTransformToElement is not a function "
+"[\\#401](https://github.com/knsv/mermaid/issues/401)"
+msgstr ""
+
+#: ../../CHANGELOG.md:441
+msgid ""
+"Only works when using browserify'd code "
+"[\\#373](https://github.com/knsv/mermaid/issues/373)"
+msgstr ""
+
+#: ../../CHANGELOG.md:442
+msgid ""
+"document the use of shebang line in mmd files "
+"[\\#364](https://github.com/knsv/mermaid/issues/364)"
+msgstr ""
+
+#: ../../CHANGELOG.md:443
+msgid ""
+"Diagrams are small and unreadable in IE 11 - since 0.5.1 "
+"[\\#356](https://github.com/knsv/mermaid/issues/356)"
+msgstr ""
+
+#: ../../CHANGELOG.md:444
+msgid ""
+"\\[Feature Request\\] ER-Diagram Support "
+"[\\#354](https://github.com/knsv/mermaid/issues/354)"
+msgstr ""
+
+#: ../../CHANGELOG.md:445
+msgid ""
+"The need for mermaid.css should be mentioned explicitly in the intro "
+"docs... [\\#273](https://github.com/knsv/mermaid/issues/273)"
+msgstr ""
+
+#: ../../CHANGELOG.md:449
+msgid ""
+"Update index.html [\\#465](https://github.com/knsv/mermaid/pull/465) "
+"([bmsleight](https://github.com/bmsleight))"
+msgstr ""
+
+#: ../../CHANGELOG.md:450
+msgid ""
+"Fix for \\#416, customizing link style with any color sets `fill` "
+"property to `black` instead of `none` "
+"[\\#452](https://github.com/knsv/mermaid/pull/452) "
+"([joshuacolvin](https://github.com/joshuacolvin))"
+msgstr ""
+
+#: ../../CHANGELOG.md:451
+msgid ""
+"Allow .node\\>circle to receive css styles "
+"[\\#449](https://github.com/knsv/mermaid/pull/449) "
+"([bfriedz](https://github.com/bfriedz))"
+msgstr ""
+
+#: ../../CHANGELOG.md:452
+msgid ""
+"Fix spelling [\\#447](https://github.com/knsv/mermaid/pull/447) "
+"([jawn](https://github.com/jawn))"
+msgstr ""
+
+#: ../../CHANGELOG.md:453
+msgid ""
+"added tests and fix cli css style selector lowercase problem "
+"[\\#445](https://github.com/knsv/mermaid/pull/445) "
+"([whyzdev](https://github.com/whyzdev))"
+msgstr ""
+
+#: ../../CHANGELOG.md:454
+msgid ""
+"Update d3.js [\\#441](https://github.com/knsv/mermaid/pull/441) "
+"([hetz](https://github.com/hetz))"
+msgstr ""
+
+#: ../../CHANGELOG.md:455
+msgid ""
+"added tests to reproduce \\#434 in flowchart "
+"[\\#439](https://github.com/knsv/mermaid/pull/439) "
+"([whyzdev](https://github.com/whyzdev))"
+msgstr ""
+
+#: ../../CHANGELOG.md:456
+msgid ""
+"Code Climate config [\\#437](https://github.com/knsv/mermaid/pull/437) "
+"([larkinscott](https://github.com/larkinscott))"
+msgstr ""
+
+#: ../../CHANGELOG.md:457
+msgid ""
+"fix gantt and sequence digram cli cfg "
+"[\\#435](https://github.com/knsv/mermaid/pull/435) "
+"([whyzdev](https://github.com/whyzdev))"
+msgstr ""
+
+#: ../../CHANGELOG.md:458
+msgid ""
+"fix gantt chart cli configuration broken "
+"[\\#433](https://github.com/knsv/mermaid/pull/433) "
+"([whyzdev](https://github.com/whyzdev))"
+msgstr ""
+
+#: ../../CHANGELOG.md:459
+msgid ""
+"fix gantt chart cli configuration parsing including functions "
+"[\\#430](https://github.com/knsv/mermaid/pull/430) "
+"([whyzdev](https://github.com/whyzdev))"
+msgstr ""
+
+#: ../../CHANGELOG.md:460
+msgid ""
+"Uses an empty text node instead of a string for svg group labels "
+"[\\#429](https://github.com/knsv/mermaid/pull/429) "
+"([daveaglick](https://github.com/daveaglick))"
+msgstr ""
+
+#: ../../CHANGELOG.md:461
+msgid ""
+"use tspan via d3.textwrap to place actor text in sequence diagram "
+"[\\#427](https://github.com/knsv/mermaid/pull/427) "
+"([whyzdev](https://github.com/whyzdev))"
+msgstr ""
+
+#: ../../CHANGELOG.md:462
+msgid ""
+"\\#422 use foreignObject/div to place actor label in sequence diagram  "
+"[\\#423](https://github.com/knsv/mermaid/pull/423) "
+"([whyzdev](https://github.com/whyzdev))"
+msgstr ""
+
+#: ../../CHANGELOG.md:463
+msgid ""
+"Clarify the need for a CSS stylesheet "
+"[\\#413](https://github.com/knsv/mermaid/pull/413) "
+"([sifb](https://github.com/sifb))"
+msgstr ""
+
+#: ../../CHANGELOG.md:464
+msgid ""
+"Added hads downstream project "
+"[\\#412](https://github.com/knsv/mermaid/pull/412) "
+"([sinedied](https://github.com/sinedied))"
+msgstr ""
+
+#: ../../CHANGELOG.md:465
+msgid ""
+"update usage and fix \\#273 "
+"[\\#406](https://github.com/knsv/mermaid/pull/406) "
+"([jinntrance](https://github.com/jinntrance))"
+msgstr ""
+
+#: ../../CHANGELOG.md:466
+msgid ""
+"Add https://github.com/raghur/mermaid-filter to downstream projects docs "
+"page [\\#404](https://github.com/knsv/mermaid/pull/404) "
+"([raghur](https://github.com/raghur))"
+msgstr ""
+
+#: ../../CHANGELOG.md:467
+msgid ""
+"New neutral theme [\\#395](https://github.com/knsv/mermaid/pull/395) "
+"([sinedied](https://github.com/sinedied))"
+msgstr ""
+
+#: ../../CHANGELOG.md:468
+msgid ""
+"fix cli issues [\\#390](https://github.com/knsv/mermaid/pull/390) ([ben-"
+"page](https://github.com/ben-page))"
+msgstr ""
+
+#: ../../CHANGELOG.md:469
+msgid ""
+"Add missing space for 'Labels out of bounds' section "
+"[\\#386](https://github.com/knsv/mermaid/pull/386) ([The-"
+"Alchemist](https://github.com/The-Alchemist))"
+msgstr ""
+
+#: ../../CHANGELOG.md:470
+msgid ""
+"Fix typo: `pats` -\\> `paths` "
+"[\\#382](https://github.com/knsv/mermaid/pull/382) "
+"([swhgoon](https://github.com/swhgoon))"
+msgstr ""
+
+#: ../../CHANGELOG.md:471
+msgid ""
+"Added class diagram example to README.md "
+"[\\#379](https://github.com/knsv/mermaid/pull/379) "
+"([HustLion](https://github.com/HustLion))"
+msgstr ""
+
+#: ../../CHANGELOG.md:472
+msgid ""
+"override normal flowchart arrowhead to allow css styling "
+"[\\#376](https://github.com/knsv/mermaid/pull/376) "
+"([dodoinblue](https://github.com/dodoinblue))"
+msgstr ""
+
+#: ../../CHANGELOG.md:473
+msgid ""
+"added sphinx extension [\\#371](https://github.com/knsv/mermaid/pull/371)"
+" ([mgaitan](https://github.com/mgaitan))"
+msgstr ""
+
+#: ../../CHANGELOG.md:474
+msgid ""
+"Fix typo in the sequence diagram documentation "
+"[\\#369](https://github.com/knsv/mermaid/pull/369) "
+"([ggpasqualino](https://github.com/ggpasqualino))"
+msgstr ""
+
+#: ../../CHANGELOG.md:476
+msgid "[6.0.0](https://github.com/knsv/mermaid/tree/6.0.0) (2016-05-29)"
+msgstr ""
+
+#: ../../CHANGELOG.md:477
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.5.8...6.0.0)"
+msgstr ""
+
+#: ../../CHANGELOG.md:481
+msgid ""
+"Docs css: code hard to read "
+"[\\#324](https://github.com/knsv/mermaid/issues/324)"
+msgstr ""
+
+#: ../../CHANGELOG.md:482
+msgid ""
+"About Markpad integration "
+"[\\#323](https://github.com/knsv/mermaid/issues/323)"
+msgstr ""
+
+#: ../../CHANGELOG.md:483
+msgid ""
+"How to link backwards in flowchart? "
+"[\\#321](https://github.com/knsv/mermaid/issues/321)"
+msgstr ""
+
+#: ../../CHANGELOG.md:484
+msgid "Help with editor [\\#310](https://github.com/knsv/mermaid/issues/310)"
+msgstr ""
+
+#: ../../CHANGELOG.md:485
+msgid "+1 [\\#293](https://github.com/knsv/mermaid/issues/293)"
+msgstr ""
+
+#: ../../CHANGELOG.md:486
+msgid ""
+"Basic chart does not render on Chome, but does in Firefox "
+"[\\#290](https://github.com/knsv/mermaid/issues/290)"
+msgstr ""
+
+#: ../../CHANGELOG.md:487
+msgid "Live editor is broken [\\#285](https://github.com/knsv/mermaid/issues/285)"
+msgstr ""
+
+#: ../../CHANGELOG.md:488
+msgid ""
+"\"No such file or directory\" trying to run mermaid 0.5.7 on OS X "
+"[\\#284](https://github.com/knsv/mermaid/issues/284)"
+msgstr ""
+
+#: ../../CHANGELOG.md:489
+msgid ""
+"participant name as \"Long Long Name\" "
+"[\\#283](https://github.com/knsv/mermaid/issues/283)"
+msgstr ""
+
+#: ../../CHANGELOG.md:490
+msgid ""
+"Windows - cli - could not find phantomjs at the specified path "
+"[\\#236](https://github.com/knsv/mermaid/issues/236)"
+msgstr ""
+
+#: ../../CHANGELOG.md:494
+msgid ""
+"The option of gantt for the spaces for the section names. "
+"[\\#353](https://github.com/knsv/mermaid/pull/353) "
+"([zeroyonichihachi](https://github.com/zeroyonichihachi))"
+msgstr ""
+
+#: ../../CHANGELOG.md:495
+msgid ""
+"Gitgraph: Make reset work with parent ref carets "
+"[\\#350](https://github.com/knsv/mermaid/pull/350) "
+"([raghur](https://github.com/raghur))"
+msgstr ""
+
+#: ../../CHANGELOG.md:496
+msgid ""
+"Remove the text-shadows that make the text look blurry "
+"[\\#349](https://github.com/knsv/mermaid/pull/349) "
+"([AsaAyers](https://github.com/AsaAyers))"
+msgstr ""
+
+#: ../../CHANGELOG.md:497
+msgid ""
+"add line interpolation to linkStyle in flowchart "
+"[\\#346](https://github.com/knsv/mermaid/pull/346) "
+"([AlanHohn](https://github.com/AlanHohn))"
+msgstr ""
+
+#: ../../CHANGELOG.md:498
+msgid ""
+"Support git graph diagrams in mermaid "
+"[\\#344](https://github.com/knsv/mermaid/pull/344) "
+"([raghur](https://github.com/raghur))"
+msgstr ""
+
+#: ../../CHANGELOG.md:499
+msgid ""
+"Build and test execution changes "
+"[\\#338](https://github.com/knsv/mermaid/pull/338) "
+"([ssbarnea](https://github.com/ssbarnea))"
+msgstr ""
+
+#: ../../CHANGELOG.md:500
+msgid ""
+"Reformatting of css files "
+"[\\#331](https://github.com/knsv/mermaid/pull/331) "
+"([Jmuccigr](https://github.com/Jmuccigr))"
+msgstr ""
+
+#: ../../CHANGELOG.md:501
+msgid ""
+"\\(WIP\\) Sequence Diagram Title Support "
+"[\\#320](https://github.com/knsv/mermaid/pull/320) "
+"([bronsoja](https://github.com/bronsoja))"
+msgstr ""
+
+#: ../../CHANGELOG.md:502
+msgid ""
+"activations doc + few fixes "
+"[\\#318](https://github.com/knsv/mermaid/pull/318) "
+"([ciekawy](https://github.com/ciekawy))"
+msgstr ""
+
+#: ../../CHANGELOG.md:503
+msgid ""
+"Dark theme for better contrast on darker backgrounds "
+"[\\#317](https://github.com/knsv/mermaid/pull/317) "
+"([crodriguez1a](https://github.com/crodriguez1a))"
+msgstr ""
+
+#: ../../CHANGELOG.md:504
+msgid ""
+"Activations [\\#316](https://github.com/knsv/mermaid/pull/316) "
+"([ciekawy](https://github.com/ciekawy))"
+msgstr ""
+
+#: ../../CHANGELOG.md:505
+msgid ""
+"Support leading comments for sequenceDiagrams "
+"[\\#312](https://github.com/knsv/mermaid/pull/312) "
+"([ashsearle](https://github.com/ashsearle))"
+msgstr ""
+
+#: ../../CHANGELOG.md:506
+msgid ""
+"Show a little lenience for white-space around names "
+"[\\#309](https://github.com/knsv/mermaid/pull/309) "
+"([ashsearle](https://github.com/ashsearle))"
+msgstr ""
+
+#: ../../CHANGELOG.md:507
+msgid ""
+"Update list of downstream projects "
+"[\\#307](https://github.com/knsv/mermaid/pull/307) "
+"([maxArturo](https://github.com/maxArturo))"
+msgstr ""
+
+#: ../../CHANGELOG.md:508
+msgid ""
+"Issue 299: Sequence diagram Loops: changing boxMargin spoils the \"loop\""
+" notation [\\#300](https://github.com/knsv/mermaid/pull/300) "
+"([LarryKlugerDS](https://github.com/LarryKlugerDS))"
+msgstr ""
+
+#: ../../CHANGELOG.md:509
+msgid ""
+"Issue 297 - src/mermaid.js generates bad code "
+"[\\#298](https://github.com/knsv/mermaid/pull/298) "
+"([LarryKlugerDS](https://github.com/LarryKlugerDS))"
+msgstr ""
+
+#: ../../CHANGELOG.md:510
+msgid ""
+"Updated instructions for running tests "
+"[\\#295](https://github.com/knsv/mermaid/pull/295) "
+"([LarryKlugerDS](https://github.com/LarryKlugerDS))"
+msgstr ""
+
+#: ../../CHANGELOG.md:511
+msgid ""
+"Add Markdown Plus to Downstream projects "
+"[\\#288](https://github.com/knsv/mermaid/pull/288) "
+"([tylerlong](https://github.com/tylerlong))"
+msgstr ""
+
+#: ../../CHANGELOG.md:512
+msgid ""
+"Quote phantomPath so that it doesn't fail on window "
+"[\\#286](https://github.com/knsv/mermaid/pull/286) "
+"([raghur](https://github.com/raghur))"
+msgstr ""
+
+#: ../../CHANGELOG.md:514
+msgid "[0.5.8](https://github.com/knsv/mermaid/tree/0.5.8) (2016-01-27)"
+msgstr ""
+
+#: ../../CHANGELOG.md:515
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.5.7...0.5.8)"
+msgstr ""
+
+#: ../../CHANGELOG.md:517
+msgid "[0.5.7](https://github.com/knsv/mermaid/tree/0.5.7) (2016-01-25)"
+msgstr ""
+
+#: ../../CHANGELOG.md:518
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.5.6...0.5.7)"
+msgstr ""
+
+#: ../../CHANGELOG.md:522
+msgid ""
+"Mermaid + LightPaper = ❤️ "
+"[\\#280](https://github.com/knsv/mermaid/issues/280)"
+msgstr ""
+
+#: ../../CHANGELOG.md:523
+msgid "Bower Integration [\\#278](https://github.com/knsv/mermaid/issues/278)"
+msgstr ""
+
+#: ../../CHANGELOG.md:524
+msgid ""
+"Mermaid breaks when variables end in 'v' "
+"[\\#276](https://github.com/knsv/mermaid/issues/276)"
+msgstr ""
+
+#: ../../CHANGELOG.md:525
+msgid ""
+"sequence diagrams don't support participant aliasing "
+"[\\#263](https://github.com/knsv/mermaid/issues/263)"
+msgstr ""
+
+#: ../../CHANGELOG.md:526
+msgid ""
+"One diagram that fails to render stops further execution on the page "
+"[\\#259](https://github.com/knsv/mermaid/issues/259)"
+msgstr ""
+
+#: ../../CHANGELOG.md:527
+msgid ""
+"Where to find line layout algorithm? "
+"[\\#258](https://github.com/knsv/mermaid/issues/258)"
+msgstr ""
+
+#: ../../CHANGELOG.md:528
+msgid ""
+"Compatibility with node.js "
+"[\\#257](https://github.com/knsv/mermaid/issues/257)"
+msgstr ""
+
+#: ../../CHANGELOG.md:529
+msgid ""
+"Label resizing with dynamically loaded fonts "
+"[\\#255](https://github.com/knsv/mermaid/issues/255)"
+msgstr ""
+
+#: ../../CHANGELOG.md:530
+msgid ""
+"SVG arrowheads are broken in the CLI "
+"[\\#249](https://github.com/knsv/mermaid/issues/249)"
+msgstr ""
+
+#: ../../CHANGELOG.md:531
+msgid ""
+"Cannot read property 'replace' of undefined "
+"[\\#239](https://github.com/knsv/mermaid/issues/239)"
+msgstr ""
+
+#: ../../CHANGELOG.md:535
+msgid ""
+"gh-50 Allow styling of edge labels in css "
+"[\\#267](https://github.com/knsv/mermaid/pull/267) "
+"([Anoia](https://github.com/Anoia))"
+msgstr ""
+
+#: ../../CHANGELOG.md:536
+msgid ""
+"Allow sequenceDiagram participant aliasing "
+"[\\#265](https://github.com/knsv/mermaid/pull/265) "
+"([gibson042](https://github.com/gibson042))"
+msgstr ""
+
+#: ../../CHANGELOG.md:538
+msgid "[0.5.6](https://github.com/knsv/mermaid/tree/0.5.6) (2015-11-22)"
+msgstr ""
+
+#: ../../CHANGELOG.md:539
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.5.5...0.5.6)"
+msgstr ""
+
+#: ../../CHANGELOG.md:543
+msgid ""
+"Add download SVG link to the live editor "
+"[\\#144](https://github.com/knsv/mermaid/issues/144)"
+msgstr ""
+
+#: ../../CHANGELOG.md:547
+msgid ""
+"Live Editor: Permalink address not being parsed "
+"[\\#202](https://github.com/knsv/mermaid/issues/202)"
+msgstr ""
+
+#: ../../CHANGELOG.md:551
+msgid ""
+"title doesn't work in sequenceDiagram "
+"[\\#248](https://github.com/knsv/mermaid/issues/248)"
+msgstr ""
+
+#: ../../CHANGELOG.md:552
+msgid ""
+"hypen-minus should be valid in sequence diagram alt/else/etc. "
+"descriptions [\\#247](https://github.com/knsv/mermaid/issues/247)"
+msgstr ""
+
+#: ../../CHANGELOG.md:553
+msgid "Broken in firefox? [\\#245](https://github.com/knsv/mermaid/issues/245)"
+msgstr ""
+
+#: ../../CHANGELOG.md:554
+msgid ""
+"When there is a Chinese symbol in the flowchart, it will crash。 "
+"[\\#238](https://github.com/knsv/mermaid/issues/238)"
+msgstr ""
+
+#: ../../CHANGELOG.md:555
+msgid ""
+"Non-alpha characters included in ALPHA token \\(flow graph jison\\) "
+"[\\#232](https://github.com/knsv/mermaid/issues/232)"
+msgstr ""
+
+#: ../../CHANGELOG.md:556
+msgid ""
+"subgraph not rendering with change to sample "
+"[\\#231](https://github.com/knsv/mermaid/issues/231)"
+msgstr ""
+
+#: ../../CHANGELOG.md:557
+msgid ""
+"sequence diagram requires a new line at the end? "
+"[\\#229](https://github.com/knsv/mermaid/issues/229)"
+msgstr ""
+
+#: ../../CHANGELOG.md:561
+msgid ""
+"Make sequenceDiagram terminal newline optional "
+"[\\#253](https://github.com/knsv/mermaid/pull/253) "
+"([gibson042](https://github.com/gibson042))"
+msgstr ""
+
+#: ../../CHANGELOG.md:562
+msgid ""
+"Support sequenceDiagram \"over\" notes "
+"[\\#252](https://github.com/knsv/mermaid/pull/252) "
+"([gibson042](https://github.com/gibson042))"
+msgstr ""
+
+#: ../../CHANGELOG.md:563
+msgid ""
+"Properly handle \"rest of line\" statements "
+"[\\#251](https://github.com/knsv/mermaid/pull/251) "
+"([gibson042](https://github.com/gibson042))"
+msgstr ""
+
+#: ../../CHANGELOG.md:564
+msgid ""
+"CLI: Propagate exit code from lib \\(i.e., phantomjs\\) "
+"[\\#250](https://github.com/knsv/mermaid/pull/250) "
+"([gibson042](https://github.com/gibson042))"
+msgstr ""
+
+#: ../../CHANGELOG.md:565
+msgid ""
+"flowRender.js - Fix FontAwesome icon insert "
+"[\\#244](https://github.com/knsv/mermaid/pull/244) ([ma-"
+"zal](https://github.com/ma-zal))"
+msgstr ""
+
+#: ../../CHANGELOG.md:566
+msgid ""
+"updated sequence diagram link in live editor "
+"[\\#242](https://github.com/knsv/mermaid/pull/242) "
+"([r-a-v-a-s](https://github.com/r-a-v-a-s))"
+msgstr ""
+
+#: ../../CHANGELOG.md:567
+msgid ""
+"updated links in README.md "
+"[\\#240](https://github.com/knsv/mermaid/pull/240) "
+"([r-a-v-a-s](https://github.com/r-a-v-a-s))"
+msgstr ""
+
+#: ../../CHANGELOG.md:568
+msgid ""
+"Ellipse syntax [\\#237](https://github.com/knsv/mermaid/pull/237) "
+"([spect88](https://github.com/spect88))"
+msgstr ""
+
+#: ../../CHANGELOG.md:569
+msgid ""
+"Allow keywords as suffixes of node ids "
+"[\\#235](https://github.com/knsv/mermaid/pull/235) "
+"([spect88](https://github.com/spect88))"
+msgstr ""
+
+#: ../../CHANGELOG.md:570
+msgid ""
+"Highlighted the editor in the nav "
+"[\\#234](https://github.com/knsv/mermaid/pull/234) "
+"([knsv](https://github.com/knsv))"
+msgstr ""
+
+#: ../../CHANGELOG.md:571
+msgid ""
+"Live editor tweaks [\\#233](https://github.com/knsv/mermaid/pull/233) "
+"([spect88](https://github.com/spect88))"
+msgstr ""
+
+#: ../../CHANGELOG.md:572
+msgid ""
+"Add a Gitter chat badge to README.md "
+"[\\#230](https://github.com/knsv/mermaid/pull/230) ([gitter-"
+"badger](https://github.com/gitter-badger))"
+msgstr ""
+
+#: ../../CHANGELOG.md:574
+msgid "[0.5.5](https://github.com/knsv/mermaid/tree/0.5.5) (2015-10-21)"
+msgstr ""
+
+#: ../../CHANGELOG.md:575
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.5.4...0.5.5)"
+msgstr ""
+
+#: ../../CHANGELOG.md:579
+msgid ""
+"sequence diagram, arrowhead instead of crosshead "
+"[\\#227](https://github.com/knsv/mermaid/issues/227)"
+msgstr ""
+
+#: ../../CHANGELOG.md:583
+msgid ""
+"Fix a typo: crosshead --\\> arrowhead "
+"[\\#228](https://github.com/knsv/mermaid/pull/228) "
+"([tylerlong](https://github.com/tylerlong))"
+msgstr ""
+
+#: ../../CHANGELOG.md:585
+msgid "[0.5.4](https://github.com/knsv/mermaid/tree/0.5.4) (2015-10-19)"
+msgstr ""
+
+#: ../../CHANGELOG.md:586
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.5.3...0.5.4)"
+msgstr ""
+
+#: ../../CHANGELOG.md:590
+msgid ""
+"Set log level from mermaid configuration "
+"[\\#220](https://github.com/knsv/mermaid/issues/220)"
+msgstr ""
+
+#: ../../CHANGELOG.md:591
+msgid ""
+"Links in sequence diagrams "
+"[\\#159](https://github.com/knsv/mermaid/issues/159)"
+msgstr ""
+
+#: ../../CHANGELOG.md:592
+msgid ""
+"Add syntax for double headed arrows "
+"[\\#123](https://github.com/knsv/mermaid/issues/123)"
+msgstr ""
+
+#: ../../CHANGELOG.md:596
+#, python-format
+msgid ""
+"comment characters `%%` cause parse error "
+"[\\#141](https://github.com/knsv/mermaid/issues/141)"
+msgstr ""
+
+#: ../../CHANGELOG.md:600
+msgid ""
+"Marker-end arrow cannot be shown for URL with query parameter "
+"[\\#225](https://github.com/knsv/mermaid/issues/225)"
+msgstr ""
+
+#: ../../CHANGELOG.md:601
+msgid ""
+"Please update bower's D3 version "
+"[\\#221](https://github.com/knsv/mermaid/issues/221)"
+msgstr ""
+
+#: ../../CHANGELOG.md:602
+msgid "Width fixed to 400px [\\#204](https://github.com/knsv/mermaid/issues/204)"
+msgstr ""
+
+#: ../../CHANGELOG.md:603
+msgid ""
+"render to png from the cli does not display the marker-end arrow heads "
+"[\\#181](https://github.com/knsv/mermaid/issues/181)"
+msgstr ""
+
+#: ../../CHANGELOG.md:607
+msgid ""
+"Allow `end` as a substring of vertex id "
+"[\\#224](https://github.com/knsv/mermaid/pull/224) "
+"([spect88](https://github.com/spect88))"
+msgstr ""
+
+#: ../../CHANGELOG.md:608
+msgid ""
+"Remove duplicate npm dependencies: d3 and he "
+"[\\#223](https://github.com/knsv/mermaid/pull/223) "
+"([spect88](https://github.com/spect88))"
+msgstr ""
+
+#: ../../CHANGELOG.md:610
+msgid "[0.5.3](https://github.com/knsv/mermaid/tree/0.5.3) (2015-10-04)"
+msgstr ""
+
+#: ../../CHANGELOG.md:611
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.5.2...0.5.3)"
+msgstr ""
+
+#: ../../CHANGELOG.md:613
+msgid "[0.5.2](https://github.com/knsv/mermaid/tree/0.5.2) (2015-10-04)"
+msgstr ""
+
+#: ../../CHANGELOG.md:614
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.5.1...0.5.2)"
+msgstr ""
+
+#: ../../CHANGELOG.md:618
+msgid ""
+"Support for hyperlink and tooltip "
+"[\\#34](https://github.com/knsv/mermaid/issues/34)"
+msgstr ""
+
+#: ../../CHANGELOG.md:622
+msgid ""
+"Installing “atom-mermaid@0.1.3” failed "
+"[\\#218](https://github.com/knsv/mermaid/issues/218)"
+msgstr ""
+
+#: ../../CHANGELOG.md:623
+msgid "node feature request [\\#211](https://github.com/knsv/mermaid/issues/211)"
+msgstr ""
+
+#: ../../CHANGELOG.md:624
+msgid ""
+"Please add prefix for styles "
+"[\\#208](https://github.com/knsv/mermaid/issues/208)"
+msgstr ""
+
+#: ../../CHANGELOG.md:625
+msgid ""
+"Bad handling of block arguments "
+"[\\#207](https://github.com/knsv/mermaid/issues/207)"
+msgstr ""
+
+#: ../../CHANGELOG.md:626
+msgid ""
+"please consider port to mac osx  "
+"[\\#203](https://github.com/knsv/mermaid/issues/203)"
+msgstr ""
+
+#: ../../CHANGELOG.md:627
+msgid ""
+"allow phantomjs \\>=1.9.x "
+"[\\#201](https://github.com/knsv/mermaid/issues/201)"
+msgstr ""
+
+#: ../../CHANGELOG.md:628
+msgid ""
+"syntax for venn diagrams? "
+"[\\#200](https://github.com/knsv/mermaid/issues/200)"
+msgstr ""
+
+#: ../../CHANGELOG.md:629
+msgid ""
+"Broken CLI Graphs? \\(v0.5.1\\) "
+"[\\#196](https://github.com/knsv/mermaid/issues/196)"
+msgstr ""
+
+#: ../../CHANGELOG.md:630
+msgid ""
+"Static site does not render under HTTPS "
+"[\\#194](https://github.com/knsv/mermaid/issues/194)"
+msgstr ""
+
+#: ../../CHANGELOG.md:631
+msgid "Error on simple graph [\\#192](https://github.com/knsv/mermaid/issues/192)"
+msgstr ""
+
+#: ../../CHANGELOG.md:632
+msgid "Escape \"~\" [\\#191](https://github.com/knsv/mermaid/issues/191)"
+msgstr ""
+
+#: ../../CHANGELOG.md:633
+msgid ""
+"Trying to add link using 'click' to flowchart "
+"[\\#188](https://github.com/knsv/mermaid/issues/188)"
+msgstr ""
+
+#: ../../CHANGELOG.md:634
+msgid ""
+"cli: no lines and arrowheads rendered / only dotted lines "
+"[\\#187](https://github.com/knsv/mermaid/issues/187)"
+msgstr ""
+
+#: ../../CHANGELOG.md:635
+msgid ""
+"text of mermaid div displayed on page "
+"[\\#186](https://github.com/knsv/mermaid/issues/186)"
+msgstr ""
+
+#: ../../CHANGELOG.md:636
+msgid ""
+"using mermaid with laravel "
+"[\\#185](https://github.com/knsv/mermaid/issues/185)"
+msgstr ""
+
+#: ../../CHANGELOG.md:637
+msgid "Atom editor package [\\#183](https://github.com/knsv/mermaid/issues/183)"
+msgstr ""
+
+#: ../../CHANGELOG.md:638
+msgid ""
+"Auto linewrap for notes in sequence diagrams "
+"[\\#178](https://github.com/knsv/mermaid/issues/178)"
+msgstr ""
+
+#: ../../CHANGELOG.md:639
+msgid ""
+"Execute code after initialize "
+"[\\#176](https://github.com/knsv/mermaid/issues/176)"
+msgstr ""
+
+#: ../../CHANGELOG.md:640
+msgid ""
+"Autoscaling for all diagram types "
+"[\\#175](https://github.com/knsv/mermaid/issues/175)"
+msgstr ""
+
+#: ../../CHANGELOG.md:641
+msgid ""
+"Problem wit click event callback "
+"[\\#174](https://github.com/knsv/mermaid/issues/174)"
+msgstr ""
+
+#: ../../CHANGELOG.md:642
+msgid ""
+"How to escape characters? "
+"[\\#170](https://github.com/knsv/mermaid/issues/170)"
+msgstr ""
+
+#: ../../CHANGELOG.md:643
+msgid "it can not work [\\#167](https://github.com/knsv/mermaid/issues/167)"
+msgstr ""
+
+#: ../../CHANGELOG.md:644
+msgid ""
+"Broken subgraph using the CLI "
+"[\\#153](https://github.com/knsv/mermaid/issues/153)"
+msgstr ""
+
+#: ../../CHANGELOG.md:645
+msgid "IE Support issue [\\#142](https://github.com/knsv/mermaid/issues/142)"
+msgstr ""
+
+#: ../../CHANGELOG.md:646
+msgid "Flowchart truncated [\\#140](https://github.com/knsv/mermaid/issues/140)"
+msgstr ""
+
+#: ../../CHANGELOG.md:647
+msgid ""
+"Double Quote as text is not working "
+"[\\#219](https://github.com/knsv/mermaid/issues/219)"
+msgstr ""
+
+#: ../../CHANGELOG.md:648
+msgid ""
+"classDef / class not working with htmlLabels? "
+"[\\#210](https://github.com/knsv/mermaid/issues/210)"
+msgstr ""
+
+#: ../../CHANGELOG.md:649
+msgid ""
+"Links in graph missing "
+"[\\#209](https://github.com/knsv/mermaid/issues/209)"
+msgstr ""
+
+#: ../../CHANGELOG.md:650
+msgid ""
+"Last word in comment boxes getting cut off by word wrap library : \\( "
+"[\\#195](https://github.com/knsv/mermaid/issues/195)"
+msgstr ""
+
+#: ../../CHANGELOG.md:651
+msgid ""
+"Escaping characters in sequence diagram "
+"[\\#193](https://github.com/knsv/mermaid/issues/193)"
+msgstr ""
+
+#: ../../CHANGELOG.md:652
+msgid ""
+"SVG foreignObject rendering "
+"[\\#180](https://github.com/knsv/mermaid/issues/180)"
+msgstr ""
+
+#: ../../CHANGELOG.md:653
+msgid "IE9 issue  [\\#179](https://github.com/knsv/mermaid/issues/179)"
+msgstr ""
+
+#: ../../CHANGELOG.md:654
+msgid ""
+"inoperable in an AMD/requirejs environment: IPython Notebook "
+"[\\#127](https://github.com/knsv/mermaid/issues/127)"
+msgstr ""
+
+#: ../../CHANGELOG.md:655
+msgid ""
+"\\[Parser\\] Hyphen in participant name bring TypeError "
+"[\\#74](https://github.com/knsv/mermaid/issues/74)"
+msgstr ""
+
+#: ../../CHANGELOG.md:659
+msgid ""
+"Update flowchart.md [\\#214](https://github.com/knsv/mermaid/pull/214) "
+"([orschiro](https://github.com/orschiro))"
+msgstr ""
+
+#: ../../CHANGELOG.md:660
+msgid ""
+"Default style when using the CLI "
+"[\\#205](https://github.com/knsv/mermaid/pull/205) "
+"([gillesdemey](https://github.com/gillesdemey))"
+msgstr ""
+
+#: ../../CHANGELOG.md:661
+msgid ""
+"Gantt chart - add minutes and seconds durations "
+"[\\#198](https://github.com/knsv/mermaid/pull/198) "
+"([dbrans](https://github.com/dbrans))"
+msgstr ""
+
+#: ../../CHANGELOG.md:662
+msgid ""
+"Using QUnit for AMD testing "
+"[\\#190](https://github.com/knsv/mermaid/pull/190) "
+"([bollwyvl](https://github.com/bollwyvl))"
+msgstr ""
+
+#: ../../CHANGELOG.md:663
+msgid ""
+"Update phantomscript.js "
+"[\\#182](https://github.com/knsv/mermaid/pull/182) "
+"([phairow](https://github.com/phairow))"
+msgstr ""
+
+#: ../../CHANGELOG.md:665
+msgid "[0.5.1](https://github.com/knsv/mermaid/tree/0.5.1) (2015-06-21)"
+msgstr ""
+
+#: ../../CHANGELOG.md:666
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.5.0...0.5.1)"
+msgstr ""
+
+#: ../../CHANGELOG.md:670
+msgid "To SVG Export [\\#146](https://github.com/knsv/mermaid/issues/146)"
+msgstr ""
+
+#: ../../CHANGELOG.md:671
+msgid ""
+"Possibility to set the width of the generated flowchart "
+"[\\#129](https://github.com/knsv/mermaid/issues/129)"
+msgstr ""
+
+#: ../../CHANGELOG.md:672
+msgid ""
+"Special characters break parsing "
+"[\\#54](https://github.com/knsv/mermaid/issues/54)"
+msgstr ""
+
+#: ../../CHANGELOG.md:673
+msgid ""
+"Responsive graph layout for mobile viewers "
+"[\\#51](https://github.com/knsv/mermaid/issues/51)"
+msgstr ""
+
+#: ../../CHANGELOG.md:674
+msgid "Styling connector lines [\\#31](https://github.com/knsv/mermaid/issues/31)"
+msgstr ""
+
+#: ../../CHANGELOG.md:678
+msgid ""
+"flowchart - styling of edges via css overrides specific styles set in the"
+" graph definition [\\#128](https://github.com/knsv/mermaid/issues/128)"
+msgstr ""
+
+#: ../../CHANGELOG.md:682
+msgid "Live editor is broken [\\#173](https://github.com/knsv/mermaid/issues/173)"
+msgstr ""
+
+#: ../../CHANGELOG.md:683
+msgid ""
+"0.5.0 no longer respects custom date definitions in Gantt diagrams "
+"[\\#171](https://github.com/knsv/mermaid/issues/171)"
+msgstr ""
+
+#: ../../CHANGELOG.md:684
+msgid ""
+"Drop label character restrictions "
+"[\\#162](https://github.com/knsv/mermaid/issues/162)"
+msgstr ""
+
+#: ../../CHANGELOG.md:685
+msgid ""
+"can't nest subgraphs in flowchart "
+"[\\#161](https://github.com/knsv/mermaid/issues/161)"
+msgstr ""
+
+#: ../../CHANGELOG.md:686
+msgid ""
+"Unable to generate gantt diagram with mermaid CLI "
+"[\\#158](https://github.com/knsv/mermaid/issues/158)"
+msgstr ""
+
+#: ../../CHANGELOG.md:687
+msgid ""
+"Inline css by \"mermaid\" "
+"[\\#157](https://github.com/knsv/mermaid/issues/157)"
+msgstr ""
+
+#: ../../CHANGELOG.md:688
+msgid ""
+"Finite State Machine Diagram "
+"[\\#152](https://github.com/knsv/mermaid/issues/152)"
+msgstr ""
+
+#: ../../CHANGELOG.md:689
+msgid ""
+"How to center align gantt diagram "
+"[\\#150](https://github.com/knsv/mermaid/issues/150)"
+msgstr ""
+
+#: ../../CHANGELOG.md:690
+msgid ""
+"Security concern regarding class definition "
+"[\\#148](https://github.com/knsv/mermaid/issues/148)"
+msgstr ""
+
+#: ../../CHANGELOG.md:691
+msgid "File Extension [\\#147](https://github.com/knsv/mermaid/issues/147)"
+msgstr ""
+
+#: ../../CHANGELOG.md:692
+msgid ""
+"`setTimeout` with clusters problematic with programmatic edits and no "
+"callback [\\#133](https://github.com/knsv/mermaid/issues/133)"
+msgstr ""
+
+#: ../../CHANGELOG.md:693
+msgid ""
+"module.exports.cloneCssStyles\\(\\) in combination with Angularjs breaks "
+"display in Chrome and IE "
+"[\\#126](https://github.com/knsv/mermaid/issues/126)"
+msgstr ""
+
+#: ../../CHANGELOG.md:694
+msgid ""
+"Gantt - suitable xAxis for longer project "
+"[\\#125](https://github.com/knsv/mermaid/issues/125)"
+msgstr ""
+
+#: ../../CHANGELOG.md:695
+msgid ""
+"How to get started with this project ? "
+"[\\#64](https://github.com/knsv/mermaid/issues/64)"
+msgstr ""
+
+#: ../../CHANGELOG.md:699
+msgid ""
+"Remove moot `version` property from bower.json "
+"[\\#172](https://github.com/knsv/mermaid/pull/172) "
+"([kkirsche](https://github.com/kkirsche))"
+msgstr ""
+
+#: ../../CHANGELOG.md:701
+msgid "[0.5.0](https://github.com/knsv/mermaid/tree/0.5.0) (2015-06-07)"
+msgstr ""
+
+#: ../../CHANGELOG.md:702
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.4.0...0.5.0)"
+msgstr ""
+
+#: ../../CHANGELOG.md:706
+msgid ""
+"Add a css file, mermaid.css, with default styling "
+"[\\#122](https://github.com/knsv/mermaid/issues/122)"
+msgstr ""
+
+#: ../../CHANGELOG.md:707
+msgid ""
+"software architecture diagram "
+"[\\#36](https://github.com/knsv/mermaid/issues/36)"
+msgstr ""
+
+#: ../../CHANGELOG.md:708
+msgid ""
+"Support for bar charts and pie diagrams "
+"[\\#22](https://github.com/knsv/mermaid/issues/22)"
+msgstr ""
+
+#: ../../CHANGELOG.md:712
+msgid ""
+"uglifyjs wanrings which means we can improve the code "
+"[\\#156](https://github.com/knsv/mermaid/issues/156)"
+msgstr ""
+
+#: ../../CHANGELOG.md:713
+msgid ""
+"New\\(er\\) features unavailable in downloadable js files? "
+"[\\#151](https://github.com/knsv/mermaid/issues/151)"
+msgstr ""
+
+#: ../../CHANGELOG.md:714
+msgid ""
+"Add gh-gapes link to description "
+"[\\#143](https://github.com/knsv/mermaid/issues/143)"
+msgstr ""
+
+#: ../../CHANGELOG.md:715
+msgid ""
+"Some examples not displayed on Firefox 36.0.1 "
+"[\\#138](https://github.com/knsv/mermaid/issues/138)"
+msgstr ""
+
+#: ../../CHANGELOG.md:716
+msgid ""
+"tags ending in a \"v\" don't render "
+"[\\#132](https://github.com/knsv/mermaid/issues/132)"
+msgstr ""
+
+#: ../../CHANGELOG.md:717
+msgid "Links in flowchart [\\#131](https://github.com/knsv/mermaid/issues/131)"
+msgstr ""
+
+#: ../../CHANGELOG.md:718
+msgid ""
+"Using the library for iOS development "
+"[\\#130](https://github.com/knsv/mermaid/issues/130)"
+msgstr ""
+
+#: ../../CHANGELOG.md:719
+msgid ""
+"Add capability for gantt diagrams "
+"[\\#118](https://github.com/knsv/mermaid/issues/118)"
+msgstr ""
+
+#: ../../CHANGELOG.md:720
+msgid ""
+"lower case v causes error in the parser "
+"[\\#108](https://github.com/knsv/mermaid/issues/108)"
+msgstr ""
+
+#: ../../CHANGELOG.md:721
+msgid ""
+"Label's css conflict with boostrap's .label "
+"[\\#67](https://github.com/knsv/mermaid/issues/67)"
+msgstr ""
+
+#: ../../CHANGELOG.md:722
+msgid ""
+"TypeError: Cannot read property 'layout' of undefined "
+"[\\#37](https://github.com/knsv/mermaid/issues/37)"
+msgstr ""
+
+#: ../../CHANGELOG.md:726
+msgid ""
+"Dev 0.5.0 [\\#168](https://github.com/knsv/mermaid/pull/168) "
+"([knsv](https://github.com/knsv))"
+msgstr ""
+
+#: ../../CHANGELOG.md:727
+msgid ""
+"Fix spacing [\\#164](https://github.com/knsv/mermaid/pull/164) "
+"([rhcarvalho](https://github.com/rhcarvalho))"
+msgstr ""
+
+#: ../../CHANGELOG.md:728
+msgid ""
+"Fixing typo: \"Think\" -\\> \"Thick\" "
+"[\\#160](https://github.com/knsv/mermaid/pull/160) "
+"([it0a](https://github.com/it0a))"
+msgstr ""
+
+#: ../../CHANGELOG.md:729
+msgid ""
+"IE, local html, cssRules access is denied "
+"[\\#155](https://github.com/knsv/mermaid/pull/155) "
+"([tylerlong](https://github.com/tylerlong))"
+msgstr ""
+
+#: ../../CHANGELOG.md:730
+msgid ""
+"Add automatically generated change log file. "
+"[\\#139](https://github.com/knsv/mermaid/pull/139) "
+"([skywinder](https://github.com/skywinder))"
+msgstr ""
+
+#: ../../CHANGELOG.md:731
+msgid ""
+"Adding init argument to the global API "
+"[\\#137](https://github.com/knsv/mermaid/pull/137) "
+"([bollwyvl](https://github.com/bollwyvl))"
+msgstr ""
+
+#: ../../CHANGELOG.md:732
+msgid ""
+"Add description of manual calling of init "
+"[\\#136](https://github.com/knsv/mermaid/pull/136) "
+"([bollwyvl](https://github.com/bollwyvl))"
+msgstr ""
+
+#: ../../CHANGELOG.md:733
+msgid ""
+"Allow other forms of node selection for init\\(\\) "
+"[\\#135](https://github.com/knsv/mermaid/pull/135) "
+"([bollwyvl](https://github.com/bollwyvl))"
+msgstr ""
+
+#: ../../CHANGELOG.md:734
+msgid ""
+"Use a library-level variable for assigning ids "
+"[\\#134](https://github.com/knsv/mermaid/pull/134) "
+"([bollwyvl](https://github.com/bollwyvl))"
+msgstr ""
+
+#: ../../CHANGELOG.md:736
+msgid "[0.4.0](https://github.com/knsv/mermaid/tree/0.4.0) (2015-03-01)"
+msgstr ""
+
+#: ../../CHANGELOG.md:737
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.3.5...0.4.0)"
+msgstr ""
+
+#: ../../CHANGELOG.md:741
+msgid ""
+"Assymetric shapes not documented "
+"[\\#82](https://github.com/knsv/mermaid/issues/82)"
+msgstr ""
+
+#: ../../CHANGELOG.md:742
+msgid "Improve arrows [\\#3](https://github.com/knsv/mermaid/issues/3)"
+msgstr ""
+
+#: ../../CHANGELOG.md:746
+msgid ""
+"NoModificationAllowedError "
+"[\\#23](https://github.com/knsv/mermaid/issues/23)"
+msgstr ""
+
+#: ../../CHANGELOG.md:750
+msgid ""
+"subgraph background is black in rendered flowchart PNG via CLI "
+"[\\#121](https://github.com/knsv/mermaid/issues/121)"
+msgstr ""
+
+#: ../../CHANGELOG.md:751
+msgid ""
+"Integrate editor at https://github.com/naseer/mermaid-webapp "
+"[\\#110](https://github.com/knsv/mermaid/issues/110)"
+msgstr ""
+
+#: ../../CHANGELOG.md:752
+msgid ""
+"Internet Explorer Support "
+"[\\#99](https://github.com/knsv/mermaid/issues/99)"
+msgstr ""
+
+#: ../../CHANGELOG.md:754
+msgid "[0.3.5](https://github.com/knsv/mermaid/tree/0.3.5) (2015-02-15)"
+msgstr ""
+
+#: ../../CHANGELOG.md:755
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.3.4...0.3.5)"
+msgstr ""
+
+#: ../../CHANGELOG.md:757
+msgid "[0.3.4](https://github.com/knsv/mermaid/tree/0.3.4) (2015-02-15)"
+msgstr ""
+
+#: ../../CHANGELOG.md:758
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.3.3...0.3.4)"
+msgstr ""
+
+#: ../../CHANGELOG.md:762
+msgid ""
+"Apply styling from css when using the CLI utility "
+"[\\#85](https://github.com/knsv/mermaid/issues/85)"
+msgstr ""
+
+#: ../../CHANGELOG.md:763
+msgid ""
+"Generated SVG works poorly outside web browsers "
+"[\\#58](https://github.com/knsv/mermaid/issues/58)"
+msgstr ""
+
+#: ../../CHANGELOG.md:764
+msgid ""
+"Generating SVG text blob for use in Node "
+"[\\#2](https://github.com/knsv/mermaid/issues/2)"
+msgstr ""
+
+#: ../../CHANGELOG.md:768
+msgid "Subgraph syntax bug? [\\#120](https://github.com/knsv/mermaid/issues/120)"
+msgstr ""
+
+#: ../../CHANGELOG.md:769
+msgid "Live editor [\\#115](https://github.com/knsv/mermaid/issues/115)"
+msgstr ""
+
+#: ../../CHANGELOG.md:770
+msgid ""
+"Error in \"Basic Syntax\" wiki page "
+"[\\#113](https://github.com/knsv/mermaid/issues/113)"
+msgstr ""
+
+#: ../../CHANGELOG.md:771
+msgid "semicolons, anyone? [\\#111](https://github.com/knsv/mermaid/issues/111)"
+msgstr ""
+
+#: ../../CHANGELOG.md:772
+msgid ""
+"undefined `sequenceConfig` fails "
+"[\\#109](https://github.com/knsv/mermaid/issues/109)"
+msgstr ""
+
+#: ../../CHANGELOG.md:773
+msgid ""
+"Sequence Diagrams: Show Actors below as well "
+"[\\#106](https://github.com/knsv/mermaid/issues/106)"
+msgstr ""
+
+#: ../../CHANGELOG.md:774
+msgid ""
+"Allow overriding sequence diagram configuration \\(SVG properties\\) "
+"[\\#103](https://github.com/knsv/mermaid/issues/103)"
+msgstr ""
+
+#: ../../CHANGELOG.md:775
+msgid ""
+"Error when rendering A-- This is the text -- B "
+"[\\#102](https://github.com/knsv/mermaid/issues/102)"
+msgstr ""
+
+#: ../../CHANGELOG.md:776
+msgid ""
+"Clipping in documentation "
+"[\\#97](https://github.com/knsv/mermaid/issues/97)"
+msgstr ""
+
+#: ../../CHANGELOG.md:777
+msgid ""
+"isolate class styling to the svg container "
+"[\\#92](https://github.com/knsv/mermaid/issues/92)"
+msgstr ""
+
+#: ../../CHANGELOG.md:778
+msgid ""
+"Make the new graph declaration more visual "
+"[\\#40](https://github.com/knsv/mermaid/issues/40)"
+msgstr ""
+
+#: ../../CHANGELOG.md:782
+msgid ""
+"Add live editor [\\#119](https://github.com/knsv/mermaid/pull/119) "
+"([naseer](https://github.com/naseer))"
+msgstr ""
+
+#: ../../CHANGELOG.md:783
+msgid ""
+"Adds CSS option to the CLI "
+"[\\#116](https://github.com/knsv/mermaid/pull/116) "
+"([fardog](https://github.com/fardog))"
+msgstr ""
+
+#: ../../CHANGELOG.md:784
+msgid ""
+"Update flowchart.md in response Issue \\#113 "
+"[\\#114](https://github.com/knsv/mermaid/pull/114) "
+"([vijay40](https://github.com/vijay40))"
+msgstr ""
+
+#: ../../CHANGELOG.md:785
+msgid ""
+"Ignore all files except the license and dist/ folder when installing with"
+" Bower. [\\#112](https://github.com/knsv/mermaid/pull/112) "
+"([jasonbellamy](https://github.com/jasonbellamy))"
+msgstr ""
+
+#: ../../CHANGELOG.md:787
+msgid "[0.3.3](https://github.com/knsv/mermaid/tree/0.3.3) (2015-01-25)"
+msgstr ""
+
+#: ../../CHANGELOG.md:788
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.3.2...0.3.3)"
+msgstr ""
+
+#: ../../CHANGELOG.md:792
+msgid ""
+"Support for dotted links "
+"[\\#26](https://github.com/knsv/mermaid/issues/26)"
+msgstr ""
+
+#: ../../CHANGELOG.md:796
+msgid ""
+"Missing arrows in sequence diagram "
+"[\\#98](https://github.com/knsv/mermaid/issues/98)"
+msgstr ""
+
+#: ../../CHANGELOG.md:797
+msgid ""
+"Error with \\>9 linkStyles "
+"[\\#95](https://github.com/knsv/mermaid/issues/95)"
+msgstr ""
+
+#: ../../CHANGELOG.md:801
+msgid ""
+"Require d3 directly to better support Node usage "
+"[\\#107](https://github.com/knsv/mermaid/pull/107) "
+"([markdalgleish](https://github.com/markdalgleish))"
+msgstr ""
+
+#: ../../CHANGELOG.md:802
+msgid ""
+"update doc with -c option "
+"[\\#105](https://github.com/knsv/mermaid/pull/105) "
+"([jjmr](https://github.com/jjmr))"
+msgstr ""
+
+#: ../../CHANGELOG.md:803
+msgid ""
+"Add new parameter to the console client to override the svg configuration"
+" in sequence diagrams [\\#104](https://github.com/knsv/mermaid/pull/104) "
+"([jjmr](https://github.com/jjmr))"
+msgstr ""
+
+#: ../../CHANGELOG.md:804
+msgid ""
+"Text based labels, new shape "
+"[\\#101](https://github.com/knsv/mermaid/pull/101) "
+"([bjowes](https://github.com/bjowes))"
+msgstr ""
+
+#: ../../CHANGELOG.md:805
+msgid ""
+"fix html tags in example usage "
+"[\\#100](https://github.com/knsv/mermaid/pull/100) "
+"([deiwin](https://github.com/deiwin))"
+msgstr ""
+
+#: ../../CHANGELOG.md:807
+msgid "[0.3.2](https://github.com/knsv/mermaid/tree/0.3.2) (2015-01-11)"
+msgstr ""
+
+#: ../../CHANGELOG.md:808
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.3.1...0.3.2)"
+msgstr ""
+
+#: ../../CHANGELOG.md:812
+msgid ""
+"Make link text look like it is on the line "
+"[\\#53](https://github.com/knsv/mermaid/issues/53)"
+msgstr ""
+
+#: ../../CHANGELOG.md:816
+msgid "disable auto render [\\#91](https://github.com/knsv/mermaid/issues/91)"
+msgstr ""
+
+#: ../../CHANGELOG.md:817
+msgid ""
+"Tidy breaks mermaid \\(linebreaks in \\<div\\>\\) "
+"[\\#87](https://github.com/knsv/mermaid/issues/87)"
+msgstr ""
+
+#: ../../CHANGELOG.md:818
+msgid ""
+"Bug: \\<br\\> being rendered as text in node "
+"[\\#73](https://github.com/knsv/mermaid/issues/73)"
+msgstr ""
+
+#: ../../CHANGELOG.md:819
+msgid ""
+"Graph edges appear to render outside of the canvas "
+"[\\#70](https://github.com/knsv/mermaid/issues/70)"
+msgstr ""
+
+#: ../../CHANGELOG.md:823
+msgid ""
+"Merge pull request \\#1 from knsv/master "
+"[\\#96](https://github.com/knsv/mermaid/pull/96) "
+"([gkchic](https://github.com/gkchic))"
+msgstr ""
+
+#: ../../CHANGELOG.md:824
+msgid ""
+"Removed duplicated section in flowchart docs "
+"[\\#94](https://github.com/knsv/mermaid/pull/94) "
+"([kaime](https://github.com/kaime))"
+msgstr ""
+
+#: ../../CHANGELOG.md:825
+msgid ""
+"Grammar changes to sequence page "
+"[\\#93](https://github.com/knsv/mermaid/pull/93) "
+"([gkchic](https://github.com/gkchic))"
+msgstr ""
+
+#: ../../CHANGELOG.md:826
+msgid ""
+"Github buttons [\\#89](https://github.com/knsv/mermaid/pull/89) "
+"([gkchic](https://github.com/gkchic))"
+msgstr ""
+
+#: ../../CHANGELOG.md:827
+msgid ""
+"Template change [\\#88](https://github.com/knsv/mermaid/pull/88) "
+"([gkchic](https://github.com/gkchic))"
+msgstr ""
+
+#: ../../CHANGELOG.md:829
+msgid "[0.3.1](https://github.com/knsv/mermaid/tree/0.3.1) (2015-01-05)"
+msgstr ""
+
+#: ../../CHANGELOG.md:830
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.3.0...0.3.1)"
+msgstr ""
+
+#: ../../CHANGELOG.md:834
+msgid ""
+"Support for sequence diagrams "
+"[\\#16](https://github.com/knsv/mermaid/issues/16)"
+msgstr ""
+
+#: ../../CHANGELOG.md:835
+msgid ""
+"Client utility for mermaid "
+"[\\#6](https://github.com/knsv/mermaid/issues/6)"
+msgstr ""
+
+#: ../../CHANGELOG.md:839
+msgid ""
+"Non ASCII chars in labels "
+"[\\#84](https://github.com/knsv/mermaid/issues/84)"
+msgstr ""
+
+#: ../../CHANGELOG.md:840
+msgid ""
+"'undefined' titles of Quicklinks on the usage page "
+"[\\#80](https://github.com/knsv/mermaid/issues/80)"
+msgstr ""
+
+#: ../../CHANGELOG.md:841
+msgid ""
+"\\[cli\\] Enhancement proposal: not fail --version / --help if phantomjs "
+"isn't installed [\\#71](https://github.com/knsv/mermaid/issues/71)"
+msgstr ""
+
+#: ../../CHANGELOG.md:845
+msgid ""
+"Flowchart doc: Text in the circle now in a circle "
+"[\\#81](https://github.com/knsv/mermaid/pull/81) "
+"([Grahack](https://github.com/Grahack))"
+msgstr ""
+
+#: ../../CHANGELOG.md:846
+msgid ""
+"Fix for issue \\#73 [\\#79](https://github.com/knsv/mermaid/pull/79) "
+"([it0a](https://github.com/it0a))"
+msgstr ""
+
+#: ../../CHANGELOG.md:847
+msgid ""
+"Ink template [\\#78](https://github.com/knsv/mermaid/pull/78) "
+"([gkchic](https://github.com/gkchic))"
+msgstr ""
+
+#: ../../CHANGELOG.md:848
+msgid ""
+"Show help and version even if phantom isn't present. Fixes \\#71 "
+"[\\#75](https://github.com/knsv/mermaid/pull/75) "
+"([fardog](https://github.com/fardog))"
+msgstr ""
+
+#: ../../CHANGELOG.md:849
+msgid ""
+"Add apostrophe & 'and' [\\#72](https://github.com/knsv/mermaid/pull/72) "
+"([sudodoki](https://github.com/sudodoki))"
+msgstr ""
+
+#: ../../CHANGELOG.md:851
+msgid "[0.3.0](https://github.com/knsv/mermaid/tree/0.3.0) (2014-12-22)"
+msgstr ""
+
+#: ../../CHANGELOG.md:852
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.2.16...0.3.0)"
+msgstr ""
+
+#: ../../CHANGELOG.md:856
+msgid "How do I do comments? [\\#47](https://github.com/knsv/mermaid/issues/47)"
+msgstr ""
+
+#: ../../CHANGELOG.md:857
+msgid ""
+"Improve readability with new line as terminator and whitespace "
+"[\\#38](https://github.com/knsv/mermaid/issues/38)"
+msgstr ""
+
+#: ../../CHANGELOG.md:861
+msgid ""
+"This characters failed the lexical parsing "
+"[\\#46](https://github.com/knsv/mermaid/issues/46)"
+msgstr ""
+
+#: ../../CHANGELOG.md:865
+msgid ""
+"Trailing whitespace at the end of lines is not ignored "
+"[\\#55](https://github.com/knsv/mermaid/issues/55)"
+msgstr ""
+
+#: ../../CHANGELOG.md:866
+msgid ""
+"Use classes instead of inline style for easy styling "
+"[\\#24](https://github.com/knsv/mermaid/issues/24)"
+msgstr ""
+
+#: ../../CHANGELOG.md:870
+msgid ""
+"Adds Command Line Interface for generating PNGs from mermaid description "
+"files [\\#69](https://github.com/knsv/mermaid/pull/69) "
+"([fardog](https://github.com/fardog))"
+msgstr ""
+
+#: ../../CHANGELOG.md:871
+msgid ""
+"Allow special symbols for direction along with acronyms "
+"[\\#66](https://github.com/knsv/mermaid/pull/66) "
+"([vijay40](https://github.com/vijay40))"
+msgstr ""
+
+#: ../../CHANGELOG.md:873
+msgid "[0.2.16](https://github.com/knsv/mermaid/tree/0.2.16) (2014-12-15)"
+msgstr ""
+
+#: ../../CHANGELOG.md:874
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.2.15...0.2.16)"
+msgstr ""
+
+#: ../../CHANGELOG.md:878
+msgid ""
+"Lines routed outside visible area "
+"[\\#19](https://github.com/knsv/mermaid/issues/19)"
+msgstr ""
+
+#: ../../CHANGELOG.md:882
+msgid ""
+"Mermaid not rendering properly on Wordpress pages "
+"[\\#59](https://github.com/knsv/mermaid/issues/59)"
+msgstr ""
+
+#: ../../CHANGELOG.md:883
+msgid ""
+"Improve example page with live demo "
+"[\\#52](https://github.com/knsv/mermaid/issues/52)"
+msgstr ""
+
+#: ../../CHANGELOG.md:884
+msgid ""
+"Does not render upon AngularJS Updates "
+"[\\#45](https://github.com/knsv/mermaid/issues/45)"
+msgstr ""
+
+#: ../../CHANGELOG.md:885
+msgid ""
+"Download link in README.MD doesn't work. "
+"[\\#42](https://github.com/knsv/mermaid/issues/42)"
+msgstr ""
+
+#: ../../CHANGELOG.md:886
+msgid ""
+"linkStyle usage is not obvious "
+"[\\#41](https://github.com/knsv/mermaid/issues/41)"
+msgstr ""
+
+#: ../../CHANGELOG.md:887
+msgid ""
+"Move \\*.spec.js in src/ to test/ "
+"[\\#35](https://github.com/knsv/mermaid/issues/35)"
+msgstr ""
+
+#: ../../CHANGELOG.md:891
+msgid ""
+"New grammar will allow statements ending without semicolon as disccused "
+"in Issue \\#38 [\\#63](https://github.com/knsv/mermaid/pull/63) "
+"([vijay40](https://github.com/vijay40))"
+msgstr ""
+
+#: ../../CHANGELOG.md:892
+msgid ""
+"Class based styling [\\#62](https://github.com/knsv/mermaid/pull/62) "
+"([bjowes](https://github.com/bjowes))"
+msgstr ""
+
+#: ../../CHANGELOG.md:893
+msgid ""
+"Fix typos [\\#60](https://github.com/knsv/mermaid/pull/60) "
+"([sublimino](https://github.com/sublimino))"
+msgstr ""
+
+#: ../../CHANGELOG.md:894
+msgid ""
+"Included .DS\\_Store in gitignore "
+"[\\#57](https://github.com/knsv/mermaid/pull/57) "
+"([alvynmcq](https://github.com/alvynmcq))"
+msgstr ""
+
+#: ../../CHANGELOG.md:895
+msgid ""
+"Improves readability discussed in issue \\#38 "
+"[\\#56](https://github.com/knsv/mermaid/pull/56) "
+"([vijay40](https://github.com/vijay40))"
+msgstr ""
+
+#: ../../CHANGELOG.md:896
+msgid ""
+"Added a linting task for gulp "
+"[\\#43](https://github.com/knsv/mermaid/pull/43) "
+"([serv](https://github.com/serv))"
+msgstr ""
+
+#: ../../CHANGELOG.md:898
+msgid "[0.2.15](https://github.com/knsv/mermaid/tree/0.2.15) (2014-12-05)"
+msgstr ""
+
+#: ../../CHANGELOG.md:899
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.2.14...0.2.15)"
+msgstr ""
+
+#: ../../CHANGELOG.md:903
+msgid ""
+"Error with some characters "
+"[\\#25](https://github.com/knsv/mermaid/issues/25)"
+msgstr ""
+
+#: ../../CHANGELOG.md:904
+msgid ""
+"Cap-cased words break parser "
+"[\\#8](https://github.com/knsv/mermaid/issues/8)"
+msgstr ""
+
+#: ../../CHANGELOG.md:908
+msgid ""
+"Question marks don't render properly with /dist/mermaid.full.min.js "
+"[\\#30](https://github.com/knsv/mermaid/issues/30)"
+msgstr ""
+
+#: ../../CHANGELOG.md:909
+msgid ""
+"Provide parse function in browser widthout `require`? "
+"[\\#21](https://github.com/knsv/mermaid/issues/21)"
+msgstr ""
+
+#: ../../CHANGELOG.md:910
+msgid ""
+"Better label text support "
+"[\\#18](https://github.com/knsv/mermaid/issues/18)"
+msgstr ""
+
+#: ../../CHANGELOG.md:914
+msgid ""
+"Include bower\\_components/ to .gitignore "
+"[\\#33](https://github.com/knsv/mermaid/pull/33) "
+"([serv](https://github.com/serv))"
+msgstr ""
+
+#: ../../CHANGELOG.md:915
+msgid ""
+"Fixed reference to Git repo. "
+"[\\#32](https://github.com/knsv/mermaid/pull/32) "
+"([guyellis](https://github.com/guyellis))"
+msgstr ""
+
+#: ../../CHANGELOG.md:917
+msgid "[0.2.14](https://github.com/knsv/mermaid/tree/0.2.14) (2014-12-03)"
+msgstr ""
+
+#: ../../CHANGELOG.md:918
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.2.13...0.2.14)"
+msgstr ""
+
+#: ../../CHANGELOG.md:920
+msgid "[0.2.13](https://github.com/knsv/mermaid/tree/0.2.13) (2014-12-03)"
+msgstr ""
+
+#: ../../CHANGELOG.md:921
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.2.10...0.2.13)"
+msgstr ""
+
+#: ../../CHANGELOG.md:925
+msgid "Publish to NPM [\\#7](https://github.com/knsv/mermaid/issues/7)"
+msgstr ""
+
+#: ../../CHANGELOG.md:929
+msgid ""
+"modified init to be applied more than once "
+"[\\#29](https://github.com/knsv/mermaid/issues/29)"
+msgstr ""
+
+#: ../../CHANGELOG.md:930
+msgid ""
+"Wanted to know build process for the project. "
+"[\\#28](https://github.com/knsv/mermaid/issues/28)"
+msgstr ""
+
+#: ../../CHANGELOG.md:931
+msgid ""
+"can not support Chinese description "
+"[\\#20](https://github.com/knsv/mermaid/issues/20)"
+msgstr ""
+
+#: ../../CHANGELOG.md:932
+msgid ""
+"Support unicode chars in labels "
+"[\\#9](https://github.com/knsv/mermaid/issues/9)"
+msgstr ""
+
+#: ../../CHANGELOG.md:934
+msgid "[0.2.10](https://github.com/knsv/mermaid/tree/0.2.10) (2014-12-01)"
+msgstr ""
+
+#: ../../CHANGELOG.md:935
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.2.9...0.2.10)"
+msgstr ""
+
+#: ../../CHANGELOG.md:937
+msgid "[0.2.9](https://github.com/knsv/mermaid/tree/0.2.9) (2014-12-01)"
+msgstr ""
+
+#: ../../CHANGELOG.md:938
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.2.8...0.2.9)"
+msgstr ""
+
+#: ../../CHANGELOG.md:942
+msgid ""
+"Add link to jsbin playground to README "
+"[\\#11](https://github.com/knsv/mermaid/issues/11)"
+msgstr ""
+
+#: ../../CHANGELOG.md:943
+msgid ""
+"What are the requirements ? "
+"[\\#10](https://github.com/knsv/mermaid/issues/10)"
+msgstr ""
+
+#: ../../CHANGELOG.md:947
+msgid ""
+"Allow unicode chars in labels "
+"[\\#13](https://github.com/knsv/mermaid/pull/13) "
+"([codebeige](https://github.com/codebeige))"
+msgstr ""
+
+#: ../../CHANGELOG.md:949
+msgid "[0.2.8](https://github.com/knsv/mermaid/tree/0.2.8) (2014-12-01)"
+msgstr ""
+
+#: ../../CHANGELOG.md:950
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.2.7...0.2.8)"
+msgstr ""
+
+#: ../../CHANGELOG.md:952
+msgid "[0.2.7](https://github.com/knsv/mermaid/tree/0.2.7) (2014-12-01)"
+msgstr ""
+
+#: ../../CHANGELOG.md:953
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.2.6...0.2.7)"
+msgstr ""
+
+#: ../../CHANGELOG.md:957
+msgid ""
+"Provide parser as separate module "
+"[\\#4](https://github.com/knsv/mermaid/issues/4)"
+msgstr ""
+
+#: ../../CHANGELOG.md:959
+msgid "[0.2.6](https://github.com/knsv/mermaid/tree/0.2.6) (2014-11-27)"
+msgstr ""
+
+#: ../../CHANGELOG.md:960
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.2.5...0.2.6)"
+msgstr ""
+
+#: ../../CHANGELOG.md:962
+msgid "[0.2.5](https://github.com/knsv/mermaid/tree/0.2.5) (2014-11-27)"
+msgstr ""
+
+#: ../../CHANGELOG.md:963
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.2.4...0.2.5)"
+msgstr ""
+
+#: ../../CHANGELOG.md:967
+msgid ""
+"Added new shapes! [\\#1](https://github.com/knsv/mermaid/pull/1) "
+"([bjowes](https://github.com/bjowes))"
+msgstr ""
+
+#: ../../CHANGELOG.md:969
+msgid "[0.2.4](https://github.com/knsv/mermaid/tree/0.2.4) (2014-11-25)"
+msgstr ""
+
+#: ../../CHANGELOG.md:970
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.2.3...0.2.4)"
+msgstr ""
+
+#: ../../CHANGELOG.md:972
+msgid "[0.2.3](https://github.com/knsv/mermaid/tree/0.2.3) (2014-11-24)"
+msgstr ""
+
+#: ../../CHANGELOG.md:973
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.2.2...0.2.3)"
+msgstr ""
+
+#: ../../CHANGELOG.md:975
+msgid "[0.2.2](https://github.com/knsv/mermaid/tree/0.2.2) (2014-11-22)"
+msgstr ""
+
+#: ../../CHANGELOG.md:976
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.2.1...0.2.2)"
+msgstr ""
+
+#: ../../CHANGELOG.md:978
+msgid "[0.2.1](https://github.com/knsv/mermaid/tree/0.2.1) (2014-11-22)"
+msgstr ""
+
+#: ../../CHANGELOG.md:979
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.2.0...0.2.1)"
+msgstr ""
+
+#: ../../CHANGELOG.md:981
+msgid "[0.2.0](https://github.com/knsv/mermaid/tree/0.2.0) (2014-11-22)"
+msgstr ""
+
+#: ../../CHANGELOG.md:982
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.1.1...0.2.0)"
+msgstr ""
+
+#: ../../CHANGELOG.md:984
+msgid "[0.1.1](https://github.com/knsv/mermaid/tree/0.1.1) (2014-11-17)"
+msgstr ""
+
+#: ../../CHANGELOG.md:985
+msgid "[Full Changelog](https://github.com/knsv/mermaid/compare/0.1.0...0.1.1)"
+msgstr ""
+
+#: ../../CHANGELOG.md:987
+msgid "[0.1.0](https://github.com/knsv/mermaid/tree/0.1.0) (2014-11-16)"
+msgstr ""
+

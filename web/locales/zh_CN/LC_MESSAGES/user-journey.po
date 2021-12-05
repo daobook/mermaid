@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, xinetzone
+# This file is distributed under the same license as the mermaid package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mermaid \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-05 16:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../user-journey.md:1
+msgid "User Journey Diagram"
+msgstr ""
+
+#: ../../user-journey.md:3
+msgid ""
+"User journeys describe at a high level of detail exactly what steps "
+"different users take to complete a specific task within a system, "
+"application or website. This technique shows the current (as-is) user "
+"workflow, and reveals areas of improvement for the to-be workflow. "
+"(Wikipedia)"
+msgstr ""
+
+#: ../../user-journey.md:5
+msgid "Mermaid can render user journey diagrams:"
+msgstr ""
+
+#: ../../user-journey.md:19
+msgid ""
+"Each user journey is split into sections, these describe the part of the "
+"task the user is trying to complete."
+msgstr ""
+
+#: ../../user-journey.md:22
+msgid "Tasks syntax is `Task name: <score>: <comma separated list of actors>`"
+msgstr ""
+

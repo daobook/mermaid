@@ -1,0 +1,229 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, xinetzone
+# This file is distributed under the same license as the mermaid package.
+# xinetzone <735613050@qq.com>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mermaid \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-05 16:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: xinetzone <735613050@qq.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../n00b-syntaxReference.md:1
+msgid "Diagram Syntax"
+msgstr "图表语法"
+
+#: ../../n00b-syntaxReference.md:2
+msgid ""
+"Mermaid's syntax is used to create diagrams. You'll find that it is not "
+"too tricky and can be learned in a day. The next sections dive deep into "
+"the syntax of each diagram type."
+msgstr ""
+"Mermaid 的语法是用来创建图表的。你会发现它并不复杂，可以在一天之内学会。"
+"接下来的章节将深入研究每种图表类型的语法。"
+
+#: ../../n00b-syntaxReference.md:4
+msgid ""
+"Syntax, together with Deployment and Configuration constitute the whole "
+"of Mermaid."
+msgstr ""
+"语法，与部署和配置一起构成了 Mermaid 的整体。"
+
+#: ../../n00b-syntaxReference.md:6
+msgid ""
+"Diagram Examples can be found in the [Mermaid Live Editor](https"
+"://mermaid-js.github.io/mermaid-live-editor), it is also a great practice"
+" area."
+msgstr ""
+"图例可以在 [Mermaid 实时编辑器](https://mermaid-js.github.io/mermaid-live-editor) 中找到，它也是一个很好的实践区。"
+
+#: ../../n00b-syntaxReference.md:8
+msgid "Syntax Structure"
+msgstr "语法结构"
+
+#: ../../n00b-syntaxReference.md:9
+msgid ""
+"One would notice that all **Diagrams definitions begin** with a "
+"declaration of the **diagram type**, followed by the definitions of the "
+"diagram and its contents. This declaration notifies the parser which kind"
+" of diagram the code is supposed to generate."
+msgstr ""
+"人们会注意到，所有的 **图定义都以图类型的声明开始**，然后是图的定义和它的内容。这个声明通知解析器，代码应该生成哪种图。"
+
+#: ../../n00b-syntaxReference.md:11
+msgid ""
+"**Example** :  The code below is for an Entity Relationship Diagram, "
+"specified by the `erDiagram` declaration. What follows is the definition "
+"of the different `Entities` represented in it."
+msgstr ""
+"**例子**：下面的代码是一个实体关系图，由 `erDiagram` 声明指定。下面是它所代表的不同 `Entities` 的定义。"
+
+#: ../../n00b-syntaxReference.md:26
+msgid ""
+"The [Getting Started](./n00b-gettingStarted.md) section can also provide "
+"some practical examples of mermaid syntax."
+msgstr ""
+"[入门](./n00b-gettingStarted.md) 部分也可以提供一些 mermaid 语法的实际例子。"
+
+#: ../../n00b-syntaxReference.md:30
+msgid "Diagram Breaking"
+msgstr "图表破坏"
+
+#: ../../n00b-syntaxReference.md:32
+msgid ""
+"One should **beware the use of some words or symbols** that can break "
+"diagrams. These words or symbols are few and often only affect specific "
+"types of diagrams. The table below will continuously be updated."
+msgstr ""
+"人们应该 **小心使用一些可以破坏图表的词语或符号**。"
+"这些词或符号很少，而且往往只影响特定类型的图。下面的表格将不断被更新。"
+
+#: ../../n00b-syntaxReference.md
+msgid "Diagram Breakers"
+msgstr "图表破坏"
+
+#: ../../n00b-syntaxReference.md
+msgid "Reason"
+msgstr "原因"
+
+#: ../../n00b-syntaxReference.md
+msgid "Solution"
+msgstr "解决"
+
+#: ../../n00b-syntaxReference.md
+msgid "**Comments**"
+msgstr "注释"
+
+#: ../../n00b-syntaxReference.md
+#, python-format
+msgid "[`%%{``}%%`](https://github.com/mermaid-js/mermaid/issues/1968)"
+msgstr ""
+
+#: ../../n00b-syntaxReference.md
+msgid "Similar to [Directives](./directives.md) confuses the renderer."
+msgstr "类似于 [Directives](./directives.md) 混淆了渲染器。"
+
+#: ../../n00b-syntaxReference.md
+#, python-format
+msgid "In comments using `%%`, avoid using \"{}\"."
+msgstr "在使用 `%%` 的注释中，避免使用 \"{}\"。"
+
+#: ../../n00b-syntaxReference.md
+msgid "**Flow-Charts**"
+msgstr "流程图"
+
+#: ../../n00b-syntaxReference.md
+msgid "'end'"
+msgstr ""
+
+#: ../../n00b-syntaxReference.md
+msgid "The word \"End\" can cause Flowcharts and Sequence diagrams to break"
+msgstr "词 \"End\" 会导致流程图和序列图的中断"
+
+#: ../../n00b-syntaxReference.md
+msgid "Wrap them in quotation marks to prevent breakage."
+msgstr "用引号把它们包起来，防止破损。"
+
+#: ../../n00b-syntaxReference.md
+msgid ""
+"[Nodes inside Nodes](https://mermaid-js.github.io/mermaid/#/flowchart?id"
+"=special-characters-that-break-syntax)"
+msgstr ""
+"[节点内的节点](https://mermaid-js.github.io/mermaid/#/flowchart?id"
+"=special-characters-that-break-syntax)"
+
+#: ../../n00b-syntaxReference.md
+msgid "Mermaid gets confused with nested shapes"
+msgstr "Mermaid 被嵌套的形状所迷惑"
+
+#: ../../n00b-syntaxReference.md
+msgid "wrap them in quotation marks to prevent breaking"
+msgstr "用引号包住它们，以防止破坏"
+
+#: ../../n00b-syntaxReference.md:45
+msgid "Mermaid Live Editor"
+msgstr ""
+
+#: ../../n00b-syntaxReference.md:46
+msgid ""
+"Now, that you've seen what you should not add to your diagrams, you can "
+"play around with them in the [Mermaid Live Editor](https://mermaid-"
+"js.github.io/mermaid-live-editor)."
+msgstr ""
+
+#: ../../n00b-syntaxReference.md:48
+msgid "Configuration"
+msgstr ""
+
+#: ../../n00b-syntaxReference.md:50
+msgid ""
+"Configuration is the third part of Mermaid, after deployment and syntax. "
+"It deals with the different ways that Mermaid can be customized across "
+"different deployments."
+msgstr ""
+
+#: ../../n00b-syntaxReference.md:52
+msgid ""
+"If you are interested in altering and customizing your Mermaid Diagrams, "
+"you will find the methods and values available for "
+"[Configuration](./Setup.md) here. It includes themes. This section will "
+"introduce the different methods of configuring the behaviors and "
+"appearances of Mermaid Diagrams.  The following are the most commonly "
+"used methods, and they are all tied to Mermaid [Deployment](./n00b-"
+"gettingStarted.md) methods."
+msgstr ""
+
+#: ../../n00b-syntaxReference.md:56
+msgid ""
+"Configuration Section in the [Live Editor](https://mermaid-js.github.io"
+"/mermaid-live-editor)."
+msgstr ""
+
+#: ../../n00b-syntaxReference.md:58
+msgid ""
+"Here you can edit certain values to change the behavior and appearance of"
+" the diagram."
+msgstr ""
+
+#: ../../n00b-syntaxReference.md:60
+msgid ""
+"[The initialize() call](https://mermaid-js.github.io/mermaid/#/n00b-"
+"gettingStarted?id=_3-calling-the-javascript-api),"
+msgstr ""
+
+#: ../../n00b-syntaxReference.md:61
+msgid "Used when Mermaid is called via an API, or through a `<script>` tag."
+msgstr ""
+
+#: ../../n00b-syntaxReference.md:64
+msgid "[Directives](./directives.md),"
+msgstr ""
+
+#: ../../n00b-syntaxReference.md:65
+#, python-format
+msgid ""
+"Allows for the limited reconfiguration of a diagram just before it is "
+"rendered. It can alter the font style, color and other aesthetic aspects "
+"of the diagram. You can pass a directive alongside your definition inside"
+" `%%{ }%%`. It can be done either above or below your diagram definition."
+msgstr ""
+
+#: ../../n00b-syntaxReference.md:67
+msgid "[Theme Manipulation](./theming.md):"
+msgstr ""
+
+#: ../../n00b-syntaxReference.md:68
+msgid ""
+"An application of using Directives to change [Themes](./theming.md). "
+"`Theme` is a value within Mermaid's configuration that dictates the color"
+" scheme for diagrams."
+msgstr ""
+

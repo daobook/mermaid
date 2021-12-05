@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, xinetzone
+# This file is distributed under the same license as the mermaid package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mermaid \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-05 16:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../Configuration.md:1
+msgid "Configuration"
+msgstr ""
+
+#: ../../Configuration.md:3
+msgid ""
+"Configuration is the second half of Mermaid, after deployment. Together "
+"Deployment and Configuration constitute the whole of Mermaid."
+msgstr ""
+
+#: ../../Configuration.md:5
+msgid ""
+"This section will introduce the different methods of configuring of the "
+"behaviors and appearances of Mermaid Diagrams.  The Following are the "
+"most commonly used methods, and are all tied to Mermaid [Deployment"
+"](./n00b-gettingStarted.md) methods."
+msgstr ""
+
+#: ../../Configuration.md:8
+msgid ""
+"Configuration Section in the [Live Editor](https://mermaid-js.github.io"
+"/mermaid-live-editor)."
+msgstr ""
+
+#: ../../Configuration.md:11
+msgid ""
+"The `initialize()` call, for when Mermaid is called via an API, or "
+"through a <script> tag."
+msgstr ""
+
+#: ../../Configuration.md:14
+msgid "[Directives](./directives.md),"
+msgstr ""
+
+#: ../../Configuration.md:16
+#, python-format
+msgid ""
+"allows the limited reconfiguration of a diagram just before it is "
+"rendered. It can alter the font style, color and other aesthetic aspects "
+"of the diagram. you can pass a directive alongside your definition inside"
+" `%%{ }%%`, either above or below your diagram definition."
+msgstr ""
+
+#: ../../Configuration.md:18
+msgid "Theme Creation:"
+msgstr ""
+
+#: ../../Configuration.md:19
+msgid ""
+"An application of using Directives to change [Themes](./theming.md). "
+"`Theme` is an value within mermaid's configuration that dictates the "
+"color scheme for diagrams."
+msgstr ""
+
+#: ../../Configuration.md:22
+msgid ""
+"If you are interested in altering and customizing your Mermaid Diagrams, "
+"you will find the methods and values available for "
+"[Configuration](./Setup.md) here. It includes themes"
+msgstr ""
+

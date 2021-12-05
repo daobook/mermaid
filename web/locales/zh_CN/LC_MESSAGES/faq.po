@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, xinetzone
+# This file is distributed under the same license as the mermaid package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mermaid \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-05 16:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../faq.md:1
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: ../../faq.md:3
+msgid ""
+"[How to add title to "
+"flowchart?](https://github.com/knsv/mermaid/issues/556#issuecomment-363182217)"
+msgstr ""
+
+#: ../../faq.md:4
+msgid ""
+"[How to specify custom CSS "
+"file?](https://github.com/mermaidjs/mermaid.cli/pull/24#issuecomment-373402785)"
+msgstr ""
+
+#: ../../faq.md:5
+msgid ""
+"[How to fix tooltip misplacement "
+"issue?](https://github.com/knsv/mermaid/issues/542#issuecomment-3343564621)"
+msgstr ""
+
+#: ../../faq.md:6
+msgid ""
+"[How to specify gantt diagram xAxis "
+"format?](https://github.com/knsv/mermaid/issues/269#issuecomment-373229136)"
+msgstr ""
+
+#: ../../faq.md:7
+msgid "[How to bind an event?](https://github.com/knsv/mermaid/issues/372)"
+msgstr ""
+
+#: ../../faq.md:8
+msgid ""
+"[How to add newline in the "
+"text?](https://github.com/knsv/mermaid/issues/384#issuecomment-281339381)"
+msgstr ""
+
+#: ../../faq.md:9
+msgid ""
+"[How to have special characters in link "
+"text?](https://github.com/knsv/mermaid/issues/407#issuecomment-329944735)"
+msgstr ""
+
+#: ../../faq.md:10
+msgid ""
+"[How to change Flowchart curve "
+"style?](https://github.com/knsv/mermaid/issues/580#issuecomment-373929046)"
+msgstr ""
+
+#: ../../faq.md:11
+msgid ""
+"[How to create a Flowchart end-Node that says \"End\"](https://github.com"
+"/mermaid-js/mermaid/issues/1444#issuecomment-639528897)"
+msgstr ""
+

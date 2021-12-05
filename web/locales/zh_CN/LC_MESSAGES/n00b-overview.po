@@ -1,0 +1,183 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, xinetzone
+# This file is distributed under the same license as the mermaid package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mermaid \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-05 16:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../n00b-overview.md:1
+msgid "Overview for Beginners"
+msgstr ""
+
+#: ../../n00b-overview.md:3
+msgid "**Explaining with a Diagram**"
+msgstr ""
+
+#: ../../n00b-overview.md:5
+msgid ""
+"A picture is worth a thousand words, a good diagram is undoubtedly worth "
+"more. They make understanding easier."
+msgstr ""
+
+#: ../../n00b-overview.md:7
+msgid "Creating and Maintaining Diagrams"
+msgstr ""
+
+#: ../../n00b-overview.md:9
+msgid ""
+"Anyone who has used Visio, or (God Forbid) Excel to make a Gantt Chart, "
+"knows how hard it is to create, edit and maintain good visualizations."
+msgstr ""
+
+#: ../../n00b-overview.md:11
+msgid ""
+"Diagrams/Charts are significant but also become obsolete/inaccurate very "
+"fast. This catch-22 hobbles the productivity of teams."
+msgstr ""
+
+#: ../../n00b-overview.md:13
+msgid "Doc Rot in Diagrams"
+msgstr ""
+
+#: ../../n00b-overview.md:15
+msgid ""
+"Doc-Rot kills diagrams as quickly as it does text, but it takes hours in "
+"a desktop application to produce a diagram."
+msgstr ""
+
+#: ../../n00b-overview.md:17
+msgid ""
+"Mermaid seeks to change using markdown-inspired syntax. The process is a "
+"quicker, less complicated, and more convenient way of going from concept "
+"to visualization."
+msgstr ""
+
+#: ../../n00b-overview.md:19
+msgid ""
+"It is a relatively straightforward solution to a significant hurdle with "
+"the software teams."
+msgstr ""
+
+#: ../../n00b-overview.md:21
+msgid "Definition of Terms/ Dictionary"
+msgstr ""
+
+#: ../../n00b-overview.md:23
+msgid "**Mermaid text definitions can be saved for later reuse and editing.**"
+msgstr ""
+
+#: ../../n00b-overview.md:25
+msgid ""
+"These are the Mermaid diagram definitions inside `<div>` tags, with the "
+"`class=mermaid`."
+msgstr ""
+
+#: ../../n00b-overview.md:36
+msgid "**render**"
+msgstr ""
+
+#: ../../n00b-overview.md:38
+msgid ""
+"This is the core function of the Mermaid API. It reads all the `Mermaid "
+"Definitions` inside `div` tags and returns an SVG file, based on the "
+"definition."
+msgstr ""
+
+#: ../../n00b-overview.md:41
+msgid "**Nodes**"
+msgstr ""
+
+#: ../../n00b-overview.md:43
+msgid ""
+"These are the boxes that contain text or otherwise discrete pieces of "
+"each diagram, separated generally by arrows, except for Gantt Charts and "
+"User Journey Diagrams. They will be referred often in the instructions. "
+"Read for Diagram Specific [Syntax](./n00b-syntaxReference)"
+msgstr ""
+
+#: ../../n00b-overview.md:45
+msgid "Advantages of using Mermaid"
+msgstr ""
+
+#: ../../n00b-overview.md:47
+msgid "Ease to generate, modify and render diagrams when you make them."
+msgstr ""
+
+#: ../../n00b-overview.md:48
+msgid "The number of integrations and plugins it has."
+msgstr ""
+
+#: ../../n00b-overview.md:49
+msgid "You can add it to your or companies website."
+msgstr ""
+
+#: ../../n00b-overview.md:50
+msgid "Diagrams can be created through comments like this in a script:"
+msgstr ""
+
+#: ../../n00b-overview.md:52
+msgid "The catch-22 of Diagrams and Charts:"
+msgstr ""
+
+#: ../../n00b-overview.md:54
+msgid ""
+"**Diagramming and charting is a large waste of developer's time, but not "
+"having diagrams ruins productivity.**"
+msgstr ""
+
+#: ../../n00b-overview.md:56
+msgid ""
+"Mermaid solves this by reducing the time and effort required to create "
+"diagrams and charts."
+msgstr ""
+
+#: ../../n00b-overview.md:58
+msgid ""
+"Because, the text base for the diagrams allows it to be updated easily. "
+"Also, it can be made part of production scripts (and other pieces of "
+"code). So less time is spent on documenting, as a separate task."
+msgstr ""
+
+#: ../../n00b-overview.md:61
+msgid "Catching up with Development"
+msgstr ""
+
+#: ../../n00b-overview.md:63
+msgid ""
+"Being based on markdown, Mermaid can be used, not only by accomplished "
+"front-end developers, but by most computer savvy people to render "
+"diagrams, at much faster speeds. In fact one can pick up the syntax for "
+"it quite easily from the examples given and there are many tutorials "
+"available in the internet."
+msgstr ""
+
+#: ../../n00b-overview.md:66
+msgid "Mermaid is for everyone."
+msgstr ""
+
+#: ../../n00b-overview.md:67
+msgid ""
+"Video [Tutorials](https://mermaid-js.github.io/mermaid/#/./Tutorials) are"
+" also available for the mermaid [live editor](https://mermaid-"
+"js.github.io/mermaid-live-editor/)."
+msgstr ""
+
+#: ../../n00b-overview.md:69
+msgid ""
+"Alternatively you can use Mermaid [Plug-Ins](https://mermaid-"
+"js.github.io/mermaid/#/./integrations), with tools you already use, like "
+"Google Docs."
+msgstr ""
+

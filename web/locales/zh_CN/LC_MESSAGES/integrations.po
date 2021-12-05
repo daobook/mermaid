@@ -1,0 +1,824 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, xinetzone
+# This file is distributed under the same license as the mermaid package.
+# xinetzone <735613050@qq.com>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mermaid \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-05 16:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: xinetzone <735613050@qq.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../integrations.md:1
+msgid "Integrations"
+msgstr "集成"
+
+#: ../../integrations.md:3
+msgid ""
+"The following list is a compilation of different integrations and plugins"
+" that allow the rendering of mermaid definitions within other "
+"applications."
+msgstr ""
+"以下列表是不同的集成和插件的汇总，允许在其他应用程序中呈现 mermaid 的定义。"
+
+#: ../../integrations.md:5
+msgid ""
+"They also serve as proof of concept, for the variety of things that can "
+"be built with mermaid."
+msgstr ""
+"它们还可以作为概念证明，用于证明可以用 mermaid 建造的各种东西。"
+
+#: ../../integrations.md:8
+msgid "Productivity"
+msgstr "生产能力"
+
+#: ../../integrations.md:10
+msgid ""
+"[GitLab](https://docs.gitlab.com/ee/user/markdown.html#diagrams-and-"
+"flowcharts) (**Native support**)"
+msgstr ""
+
+#: ../../integrations.md:11
+msgid ""
+"[Azure Devops](https://docs.microsoft.com/en-us/azure/devops/project/wiki"
+"/wiki-markdown-guidance?view=azure-devops#add-mermaid-diagrams-to-a-wiki-"
+"page) (**Native support**)"
+msgstr ""
+
+#: ../../integrations.md:12
+msgid ""
+"[Tuleap](https://docs.tuleap.org/user-guide/writing-in-"
+"tuleap.html#graphs) (**Native support**)"
+msgstr ""
+
+#: ../../integrations.md:13
+msgid "[Joplin](https://joplinapp.org) (**Native support**)"
+msgstr ""
+
+#: ../../integrations.md:14
+msgid "[GitHub](https://github.com)"
+msgstr ""
+
+#: ../../integrations.md:15
+msgid ""
+"[GitHub action: Compile mermaid to image](https://github.com/neenjaw"
+"/compile-mermaid-markdown-action)"
+msgstr ""
+
+#: ../../integrations.md:16
+msgid ""
+"[svg-generator](https://github.com/SimonKenyonShepard/mermaidjs-github-"
+"svg-generator)"
+msgstr ""
+
+#: ../../integrations.md:17
+msgid "[GitBook](http://gitbook.com)"
+msgstr ""
+
+#: ../../integrations.md:18
+msgid "[Mermaid Plugin](https://github.com/JozoVilcek/gitbook-plugin-mermaid)"
+msgstr ""
+
+#: ../../integrations.md:19
+msgid ""
+"[Markdown with Mermaid CLI](https://github.com/miao1007/gitbook-plugin-"
+"mermaid-cli)"
+msgstr ""
+
+#: ../../integrations.md:20
+msgid ""
+"[Mermaid plugin for GitBook](https://github.com/wwformat/gitbook-plugin-"
+"mermaid-pdf)"
+msgstr ""
+
+#: ../../integrations.md:21
+msgid "[Atlassian Products](https://www.atlassian.com)"
+msgstr ""
+
+#: ../../integrations.md:22
+msgid ""
+"[Mermaid Plugin for "
+"Confluence](https://marketplace.atlassian.com/apps/1214124/mermaid-"
+"plugin-for-confluence?hosting=server&tab=overview)"
+msgstr ""
+
+#: ../../integrations.md:23
+msgid ""
+"[CloudScript.io Addon](https://marketplace.atlassian.com/apps/1219878"
+"/cloudscript-io-mermaid-addon?hosting=cloud&tab=overview)"
+msgstr ""
+
+#: ../../integrations.md:24
+msgid ""
+"[Auto convert diagrams in Jira](https://github.com/coddingtonbear/jirafs-"
+"mermaid)"
+msgstr ""
+
+#: ../../integrations.md:25
+msgid "[Redmine](https://redmine.org)"
+msgstr ""
+
+#: ../../integrations.md:26
+msgid "[Mermaid Macro](https://www.redmine.org/plugins/redmine_mermaid_macro)"
+msgstr ""
+
+#: ../../integrations.md:27
+msgid "[redmine-mermaid](https://github.com/styz/redmine_mermaid)"
+msgstr ""
+
+#: ../../integrations.md:28
+msgid ""
+"[markdown-for-mermaid-plugin](https://github.com/jamieh-mongolian"
+"/markdown-for-mermaid-plugin)"
+msgstr ""
+
+#: ../../integrations.md:30
+msgid "CRM/ERP/Similar"
+msgstr ""
+
+#: ../../integrations.md:32
+msgid "[coreBOS](http://blog.corebos.org/blog/december2019)"
+msgstr ""
+
+#: ../../integrations.md:34
+msgid "Blogs"
+msgstr ""
+
+#: ../../integrations.md:36
+msgid "[Wordpress](https://wordpress.org)"
+msgstr ""
+
+#: ../../integrations.md:37
+msgid "[WordPress Markdown Editor](https://wordpress.org/plugins/wp-githuber-md)"
+msgstr ""
+
+#: ../../integrations.md:38
+msgid "[WP-ReliableMD](https://wordpress.org/plugins/wp-reliablemd/)"
+msgstr ""
+
+#: ../../integrations.md:39
+msgid "[Hexo](https://hexo.io)"
+msgstr ""
+
+#: ../../integrations.md:40
+msgid ""
+"[hexo-filter-mermaid-diagrams](https://github.com/webappdevelp/hexo-"
+"filter-mermaid-diagrams)"
+msgstr ""
+
+#: ../../integrations.md:41
+msgid "[hexo-tag-mermaid](https://github.com/JameChou/hexo-tag-mermaid)"
+msgstr ""
+
+#: ../../integrations.md:42
+msgid "[hexo-mermaid-diagrams](https://github.com/mslxl/hexo-mermaid-diagrams)"
+msgstr ""
+
+#: ../../integrations.md:44
+msgid "CMS"
+msgstr ""
+
+#: ../../integrations.md:46
+msgid "[VuePress](https://vuepress.vuejs.org/)"
+msgstr ""
+
+#: ../../integrations.md:47
+msgid ""
+"[Plugin for Mermaid.js](https://github.com/eFrane/vuepress-plugin-"
+"mermaidjs)"
+msgstr ""
+
+#: ../../integrations.md:48
+msgid ""
+"[vuepress-plugin-mermaidjs-cli](https://github.com/gwleclerc/vuepress-"
+"plugin-mermaidjs-cli)"
+msgstr ""
+
+#: ../../integrations.md:49
+msgid "[Grav CMS](https://getgrav.org/)"
+msgstr ""
+
+#: ../../integrations.md:50
+msgid ""
+"[Mermaid Diagrams](https://github.com/DanielFlaum/grav-plugin-mermaid-"
+"diagrams)"
+msgstr ""
+
+#: ../../integrations.md:51
+msgid ""
+"[Gitlab Markdown Adapter](https://github.com/Goutte/grav-plugin-gitlab-"
+"markdown-adapter)"
+msgstr ""
+
+#: ../../integrations.md:53
+msgid "Communication"
+msgstr ""
+
+#: ../../integrations.md:55
+msgid "[Discourse](https://discourse.org)"
+msgstr ""
+
+#: ../../integrations.md:56
+msgid ""
+"[Mermaid Plugin](https://github.com/pnewell/discourse-mermaid), "
+"[And](https://github.com/unfoldingWord-dev/discourse-mermaid)"
+msgstr ""
+
+#: ../../integrations.md:57
+msgid "[Mattermost](https://mattermost.com/)"
+msgstr ""
+
+#: ../../integrations.md:58
+msgid "[Mermaid Plugin](https://github.com/SpikeTings/Mermaid)"
+msgstr ""
+
+#: ../../integrations.md:59
+msgid "[phpBB](https://phpbb.com)"
+msgstr ""
+
+#: ../../integrations.md:60
+msgid "[phpbb-ext-mermaid](https://github.com/AlfredoRamos/phpbb-ext-mermaid)"
+msgstr ""
+
+#: ../../integrations.md:61
+msgid "[NodeBB](https://nodebb.org)"
+msgstr ""
+
+#: ../../integrations.md:62
+msgid "[Mermaid Plugin](https://www.npmjs.com/package/nodebb-plugin-mermaid)"
+msgstr ""
+
+#: ../../integrations.md:64
+msgid "Wikis"
+msgstr ""
+
+#: ../../integrations.md:66
+msgid "[MediaWiki](https://www.mediawiki.org)"
+msgstr ""
+
+#: ../../integrations.md:67
+msgid "[Mermaid Extension](https://www.mediawiki.org/wiki/Extension:Mermaid)"
+msgstr ""
+
+#: ../../integrations.md:68
+msgid ""
+"[Flex Diagrams "
+"Extension](https://www.mediawiki.org/wiki/Extension:Flex_Diagrams)"
+msgstr ""
+
+#: ../../integrations.md:69
+msgid "[Semantic Media Wiki](https://semantic-mediawiki.org)"
+msgstr ""
+
+#: ../../integrations.md:70
+msgid "[Mermaid Plugin](https://github.com/SemanticMediaWiki/Mermaid)"
+msgstr ""
+
+#: ../../integrations.md:71
+msgid "[FosWiki](https://foswiki.org)"
+msgstr ""
+
+#: ../../integrations.md:72
+msgid "[Mermaid Plugin](https://foswiki.org/Extensions/MermaidPlugin)"
+msgstr ""
+
+#: ../../integrations.md:73
+msgid "[DokuWiki](https://dokuwiki.org)"
+msgstr ""
+
+#: ../../integrations.md:74
+msgid "[Flowcharts](https://www.dokuwiki.org/plugin:flowcharts?s[]=mermaid)"
+msgstr ""
+
+#: ../../integrations.md:75
+msgid "[ComboStrap](https://combostrap.com/mermaid)"
+msgstr ""
+
+#: ../../integrations.md:76
+msgid "[TiddlyWiki](https://tiddlywiki.com/)"
+msgstr ""
+
+#: ../../integrations.md:77
+msgid "[mermaid-tw5-plugin](https://github.com/michaeljmcd/mermaid-tw5-plugin)"
+msgstr ""
+
+#: ../../integrations.md:79
+msgid "Editor Plugins"
+msgstr ""
+
+#: ../../integrations.md:81
+msgid "[Vs Code](https://code.visualstudio.com/)"
+msgstr ""
+
+#: ../../integrations.md:82
+msgid ""
+"[Markdown Preview Mermaid "
+"Support](https://marketplace.visualstudio.com/items?itemName=bierner"
+".markdown-mermaid)"
+msgstr ""
+
+#: ../../integrations.md:83
+msgid ""
+"[Mermaid "
+"Preview](https://marketplace.visualstudio.com/items?itemName=vstirbu"
+".vscode-mermaid-preview)"
+msgstr ""
+
+#: ../../integrations.md:84
+msgid ""
+"[Mermaid Markdown Syntax "
+"Highlighting](https://marketplace.visualstudio.com/items?itemName"
+"=bpruitt-goddard.mermaid-markdown-syntax-highlighting)"
+msgstr ""
+
+#: ../../integrations.md:85
+msgid ""
+"[Mermaid "
+"Editor](https://marketplace.visualstudio.com/items?itemName=tomoyukim"
+".vscode-mermaid-editor)"
+msgstr ""
+
+#: ../../integrations.md:86
+msgid ""
+"[Mermaid "
+"Export](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly"
+".mermaid-export)"
+msgstr ""
+
+#: ../../integrations.md:87
+msgid ""
+"[Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane"
+".markdown-pdf)"
+msgstr ""
+
+#: ../../integrations.md:88
+msgid ""
+"[Preview](https://marketplace.visualstudio.com/items?itemName=searKing"
+".preview-vscode)"
+msgstr ""
+
+#: ../../integrations.md:89
+msgid ""
+"[Preview Sequence "
+"Diagrams](https://marketplace.visualstudio.com/items?itemName=arichika"
+".previewseqdiag-vscode)"
+msgstr ""
+
+#: ../../integrations.md:90
+msgid "[Markdown-It](https://github.com/markdown-it/markdown-it)"
+msgstr ""
+
+#: ../../integrations.md:91
+msgid ""
+"[Textual UML Parser](https://github.com/manastalukdar/markdown-it-"
+"textual-uml)"
+msgstr ""
+
+#: ../../integrations.md:92
+msgid "[Mermaid Plugin](https://github.com/tylingsoft/markdown-it-mermaid)"
+msgstr ""
+
+#: ../../integrations.md:93
+msgid "[md-it-mermaid](https://github.com/iamcco/md-it-mermaid)"
+msgstr ""
+
+#: ../../integrations.md:94
+msgid ""
+"[markdown-it-mermaid-fence-new](https://github.com/Revomatico/markdown-"
+"it-mermaid-fence-new)"
+msgstr ""
+
+#: ../../integrations.md:95
+msgid ""
+"[markdown-it-mermaid-less](https://github.com/searKing/markdown-it-"
+"mermaid-less)"
+msgstr ""
+
+#: ../../integrations.md:96
+msgid "[Atom](https://atom.io)"
+msgstr ""
+
+#: ../../integrations.md:97
+msgid ""
+"[Markdown Preview Enhanced](https://atom.io/packages/markdown-preview-"
+"enhanced)"
+msgstr ""
+
+#: ../../integrations.md:98
+msgid "[Atom Mermaid](https://atom.io/packages/atom-mermaid)"
+msgstr ""
+
+#: ../../integrations.md:99
+msgid ""
+"[Language Mermaid Syntax Highlighter](https://atom.io/packages/language-"
+"mermaid)"
+msgstr ""
+
+#: ../../integrations.md:100
+msgid "[Sublime Text 3](https://sublimetext.com)"
+msgstr ""
+
+#: ../../integrations.md:101
+msgid "[Mermaid Package](https://packagecontrol.io/packages/Mermaid)"
+msgstr ""
+
+#: ../../integrations.md:102
+msgid "[Astah](http://astah.net)"
+msgstr ""
+
+#: ../../integrations.md:103
+msgid ""
+"[Export to Mermaid](https://github.com/Avens666"
+"/Astah_Jude_UML_export_to_Markdown-mermaid-Plantuml-)"
+msgstr ""
+
+#: ../../integrations.md:104
+msgid "[Light Table](http://lighttable.com/)"
+msgstr ""
+
+#: ../../integrations.md:105
+msgid "[Mermaid Plugin](https://github.com/cldwalker/Mermaid)"
+msgstr ""
+
+#: ../../integrations.md:106
+msgid ""
+"[Draw.io](http://draw.io) - "
+"[Plugin](https://github.com/nopeslide/drawio_mermaid_plugin)"
+msgstr ""
+
+#: ../../integrations.md:107
+msgid ""
+"[Inkdrop](http://inkdrop.app) - [Plugin](https://github.com/inkdropapp"
+"/inkdrop-mermaid)"
+msgstr ""
+
+#: ../../integrations.md:108
+msgid "[Vim](https://vim.org)"
+msgstr ""
+
+#: ../../integrations.md:109
+msgid "[Vim Diagram Syntax](https://github.com/zhaozg/vim-diagram)"
+msgstr ""
+
+#: ../../integrations.md:110
+msgid "[GNU Emacs](https://www.gnu.org/software/emacs/)"
+msgstr ""
+
+#: ../../integrations.md:111
+msgid "[Major mode for .mmd files](https://github.com/abrochard/mermaid-mode)"
+msgstr ""
+
+#: ../../integrations.md:112
+msgid "[Org-Mode integration](https://github.com/arnm/ob-mermaid)"
+msgstr ""
+
+#: ../../integrations.md:113
+msgid "[Brackets](http://brackets.io/)"
+msgstr ""
+
+#: ../../integrations.md:114
+msgid ""
+"[Mermaid Preview](https://s3.amazonaws.com/extend.brackets/alanhohn"
+".mermaid-preview/alanhohn.mermaid-preview-1.0.2.zip)"
+msgstr ""
+
+#: ../../integrations.md:115
+msgid "[Iodide](https://github.com/iodide-project/iodide)"
+msgstr ""
+
+#: ../../integrations.md:116
+msgid ""
+"[iodide-mermaid-plugin](https://github.com/iodide-project/iodide-mermaid-"
+"plugin)"
+msgstr ""
+
+#: ../../integrations.md:117
+msgid "[Google docs](https://docs.google.com/)"
+msgstr ""
+
+#: ../../integrations.md:118
+msgid ""
+"[Mermaid plugin for google "
+"docs](https://workspace.google.com/marketplace/app/mermaid/636321283856)"
+msgstr ""
+
+#: ../../integrations.md:119
+msgid "[Podlite](https://github.com/zag/podlite-desktop)"
+msgstr ""
+
+#: ../../integrations.md:120
+msgid ""
+"[Named block =Diagram](https://github.com/zag/podlite/tree/main/packages"
+"/podlite-diagrams)"
+msgstr ""
+
+#: ../../integrations.md:121
+msgid "[GNU Nano](https://www.nano-editor.org/)"
+msgstr ""
+
+#: ../../integrations.md:122
+msgid "[Nano Mermaid](https://github.com/Yash-Singh1/nano-mermaid)"
+msgstr ""
+
+#: ../../integrations.md:124
+msgid "Document Generation"
+msgstr ""
+
+#: ../../integrations.md:126
+msgid "[Sphinx](https://www.sphinx-doc.org/en/master/)"
+msgstr ""
+
+#: ../../integrations.md:127
+msgid "[sphinxcontrib-mermaid](https://github.com/mgaitan/sphinxcontrib-mermaid)"
+msgstr ""
+
+#: ../../integrations.md:128
+msgid "[remark.js](https://remark.js.org/)"
+msgstr ""
+
+#: ../../integrations.md:129
+msgid "[remark-mermaid](https://github.com/temando/remark-mermaid)"
+msgstr ""
+
+#: ../../integrations.md:130
+msgid "[jSDoc](https://jsdoc.app/)"
+msgstr ""
+
+#: ../../integrations.md:131
+msgid "[jsdoc-mermaid](https://github.com/Jellyvision/jsdoc-mermaid)"
+msgstr ""
+
+#: ../../integrations.md:132
+msgid "[MkDocs](https://mkdocs.org)"
+msgstr ""
+
+#: ../../integrations.md:133
+msgid "[MarkdownMermaid](https://github.com/sebastienwarin/mkdocs-mermaid-plugin)"
+msgstr ""
+
+#: ../../integrations.md:134
+msgid "[Type Doc](https://typedoc.org/)"
+msgstr ""
+
+#: ../../integrations.md:135
+msgid ""
+"[typedoc-plugin-mermaid](https://www.npmjs.com/package/typedoc-plugin-"
+"mermaid)"
+msgstr ""
+
+#: ../../integrations.md:136
+msgid ""
+"[Docsy Hugo Theme](https://www.docsy.dev/docs/adding-content/lookandfeel"
+"/#diagrams-with-mermaid) (Native support in theme)"
+msgstr ""
+
+#: ../../integrations.md:137
+msgid "[Codedoc](https://codedoc.cc/)"
+msgstr ""
+
+#: ../../integrations.md:138
+msgid ""
+"[codedoc-mermaid-plugin](https://www.npmjs.com/package/codedoc-mermaid-"
+"plugin)"
+msgstr ""
+
+#: ../../integrations.md:140
+msgid "Browser Extensions"
+msgstr ""
+
+#: ../../integrations.md
+msgid "Name"
+msgstr ""
+
+#: ../../integrations.md
+msgid "Chrome Web Store"
+msgstr ""
+
+#: ../../integrations.md
+msgid "Firefox Add-ons"
+msgstr ""
+
+#: ../../integrations.md
+msgid "Opera"
+msgstr ""
+
+#: ../../integrations.md
+msgid "Edge"
+msgstr ""
+
+#: ../../integrations.md
+msgid "Source/Repository"
+msgstr ""
+
+#: ../../integrations.md
+msgid "GitHub + Mermaid"
+msgstr ""
+
+#: ../../integrations.md
+msgid "[🎡🔗](https://chrome.google.com/webstore/detail/github-%20-mermaid/goiiopgdnkogdbjmncgedmgpoajilohe)"
+msgstr ""
+
+#: ../../integrations.md
+msgid "[🦊🔗](https://addons.mozilla.org/firefox/addon/github-mermaid/)"
+msgstr ""
+
+#: ../../integrations.md
+msgid "-"
+msgstr ""
+
+#: ../../integrations.md
+msgid "[🐙🔗](https://github.com/BackMarket/github-mermaid-extension)"
+msgstr ""
+
+#: ../../integrations.md
+msgid "Asciidoctor Live Preview"
+msgstr ""
+
+#: ../../integrations.md
+msgid ""
+"[🎡🔗](https://chrome.google.com/webstore/detail/asciidoctorjs-live-"
+"previe/iaalpfgpbocpdfblpnhhgllgbdbchmia)"
+msgstr ""
+
+#: ../../integrations.md
+msgid ""
+"[🌀🔗](https://microsoftedge.microsoft.com/addons/detail/asciidoctorjs-"
+"live-previ/pefkelkanablhjdekgdahplkccnbdggd?hl=en-US)"
+msgstr ""
+
+#: ../../integrations.md
+msgid "Diagram Tab"
+msgstr ""
+
+#: ../../integrations.md
+msgid "[🐙🔗](https://github.com/khafast/diagramtab)"
+msgstr ""
+
+#: ../../integrations.md
+msgid "Markdown Diagrams"
+msgstr ""
+
+#: ../../integrations.md
+msgid ""
+"[🎡🔗](https://chrome.google.com/webstore/detail/markdown-"
+"diagrams/pmoglnmodacnbbofbgcagndelmgaclel/)"
+msgstr ""
+
+#: ../../integrations.md
+msgid "[🦊🔗](https://addons.mozilla.org/en-US/firefox/addon/markdown-diagrams/)"
+msgstr ""
+
+#: ../../integrations.md
+msgid "[🔴🔗](https://addons.opera.com/en/extensions/details/markdown-diagrams/)"
+msgstr ""
+
+#: ../../integrations.md
+msgid ""
+"[🌀🔗](https://microsoftedge.microsoft.com/addons/detail/markdown-"
+"diagrams/hceenoomhhdkjjijnmlclkpenkapfihe)"
+msgstr ""
+
+#: ../../integrations.md
+msgid ""
+"[🐙🔗](https://github.com/marcozaccari/markdown-diagrams-browser-"
+"extension/tree/master/doc/examples)"
+msgstr ""
+
+#: ../../integrations.md
+msgid "Markdown Viewer"
+msgstr ""
+
+#: ../../integrations.md
+msgid ""
+"[🦊🔗](https://addons.mozilla.org/en-US/firefox/addon/markdown-viewer-"
+"chrome/)"
+msgstr ""
+
+#: ../../integrations.md
+msgid "[🐙🔗](https://github.com/simov/markdown-viewer)"
+msgstr ""
+
+#: ../../integrations.md
+msgid "Extensions for Mermaid"
+msgstr ""
+
+#: ../../integrations.md
+msgid ""
+"[🔴🔗](https://addons.opera.com/en/extensions/details/extensions-for-"
+"mermaid/)"
+msgstr ""
+
+#: ../../integrations.md
+msgid "[🐙🔗](https://github.com/Stefan-S/mermaid-extension)"
+msgstr ""
+
+#: ../../integrations.md
+msgid "Chrome Diagrammer"
+msgstr ""
+
+#: ../../integrations.md
+msgid ""
+"[🎡🔗](https://chrome.google.com/webstore/detail/chrome-"
+"diagrammer/bkpbgjmkomfoakfklcjeoegkklgjnnpk)"
+msgstr ""
+
+#: ../../integrations.md
+msgid "Mermaid Diagrams"
+msgstr ""
+
+#: ../../integrations.md
+msgid ""
+"[🎡🔗](https://chrome.google.com/webstore/detail/mermaid-"
+"diagrams/phfcghedmopjadpojhmmaffjmfiakfil)"
+msgstr ""
+
+#: ../../integrations.md
+msgid "Mermaid Markdown"
+msgstr ""
+
+#: ../../integrations.md
+msgid ""
+"[🎡🔗](https://chrome.google.com/webstore/detail/mermaid-"
+"markdown/mboeoikjijmjcjgpccghbcoegikliijg)"
+msgstr ""
+
+#: ../../integrations.md
+msgid "Monkeys"
+msgstr ""
+
+#: ../../integrations.md
+msgid ""
+"[🎡🔗](https://chrome.google.com/webstore/detail/monkeys-mermaid-for-"
+"githu/cplfdpoajbclbgphaphphcldamfkjlgi)"
+msgstr ""
+
+#: ../../integrations.md
+msgid "Mermaid Previewer"
+msgstr ""
+
+#: ../../integrations.md
+msgid ""
+"[🎡🔗](https://chrome.google.com/webstore/detail/mermaid-"
+"previewer/oidjnlhbegipkcklbdfnbkikplpghfdl)"
+msgstr ""
+
+#: ../../integrations.md:157
+msgid "Other"
+msgstr ""
+
+#: ../../integrations.md:158
+msgid "[Jekyll](https://jekyllrb.com/)"
+msgstr ""
+
+#: ../../integrations.md:159
+msgid "[jekyll-mermaid](https://rubygems.org/gems/jekyll-mermaid)"
+msgstr ""
+
+#: ../../integrations.md:160
+msgid ""
+"[jekyll-mermaid-diagrams](https://github.com/fuzhibo/jekyll-mermaid-"
+"diagrams)"
+msgstr ""
+
+#: ../../integrations.md:161
+msgid "[Reveal.js](https://github.com/hakimel/reveal.js)"
+msgstr ""
+
+#: ../../integrations.md:162
+msgid ""
+"[reveal.js-mermaid-plugin](https://github.com/ludwick/reveal.js-mermaid-"
+"plugin)"
+msgstr ""
+
+#: ../../integrations.md:163
+msgid "[Bisheng](https://www.npmjs.com/package/bisheng)"
+msgstr ""
+
+#: ../../integrations.md:164
+msgid "[bisheng-plugin-mermaid](https://github.com/yct21/bisheng-plugin-mermaid)"
+msgstr ""
+
+#: ../../integrations.md:165
+msgid "[Reveal CK](https://github.com/jedcn/reveal-ck)"
+msgstr ""
+
+#: ../../integrations.md:166
+msgid ""
+"[reveal-ck-mermaid-plugin](https://github.com/tmtm/reveal-ck-mermaid-"
+"plugin)"
+msgstr ""
+
+#: ../../integrations.md:167
+msgid ""
+"[mermaid-server: Generate diagrams using a HTTP "
+"request](https://github.com/TomWright/mermaid-server)"
+msgstr ""
+

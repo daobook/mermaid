@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, xinetzone
+# This file is distributed under the same license as the mermaid package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mermaid \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-05 16:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../upgrading.md:1
+msgid "Upgrading"
+msgstr ""
+
+#: ../../upgrading.md:3
+msgid "Some of the interfaces has been upgraded."
+msgstr ""
+
+#: ../../upgrading.md:6
+msgid "From version 0.4.0 to 0.5.0"
+msgstr ""
+
+#: ../../upgrading.md:9
+msgid "Initialization"
+msgstr ""
+
+#: ../../upgrading.md:11
+msgid ""
+"`mermaid_config` is no longer used. Instead a call to mermaid initialize "
+"is done as in the example below:"
+msgstr ""
+
+#: ../../upgrading.md:14
+msgid "version 0.4.0"
+msgstr ""
+
+#: ../../upgrading.md:22
+msgid "version 0.5.0"
+msgstr ""
+

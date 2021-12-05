@@ -1,0 +1,138 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, xinetzone
+# This file is distributed under the same license as the mermaid package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mermaid \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-05 16:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../Tutorials.md:1
+msgid "Tutorials"
+msgstr ""
+
+#: ../../Tutorials.md:3
+msgid ""
+"This is  list of publicly available Tutorials for using Mermaid.JS . This"
+" is intended as a basic introduction for the use of the Live Editor for "
+"generating diagrams, and deploying Mermaid.JS through HTML."
+msgstr ""
+
+#: ../../Tutorials.md:5
+msgid ""
+"**Note that these tutorials might display an older interface, but the "
+"usage of the live-editor will largely be the same.**"
+msgstr ""
+
+#: ../../Tutorials.md:7
+msgid ""
+"For most purposes, you can use the [Live Editor](https://mermaid-"
+"js.github.io/mermaid-live-editor), to quickly and easily render a "
+"diagram."
+msgstr ""
+
+#: ../../Tutorials.md:10
+msgid "Live-Editor Tutorials"
+msgstr ""
+
+#: ../../Tutorials.md:11
+msgid ""
+"The definitions that can be generated the Live-Editor are also backwards-"
+"compatible as of version 8.7.0."
+msgstr ""
+
+#: ../../Tutorials.md:13
+msgid ""
+"[Chris Chinchilla: Hands on - Text-based diagrams with "
+"Mermaid](https://www.youtube.com/watch?v=4_LdV1cs2sA)"
+msgstr ""
+
+#: ../../Tutorials.md:15
+msgid ""
+"[GitLab Unfiltered: How to Create Mermaid "
+"Diagrams](https://www.youtube.com/watch?v=SQ9QmuTHuSI&t=438s)"
+msgstr ""
+
+#: ../../Tutorials.md:17
+msgid ""
+"[GitLab Unfiltered: Emilie adds a mermaid diagram to the "
+"handbook](https://www.youtube.com/watch?v=5RQqht3NNSE)"
+msgstr ""
+
+#: ../../Tutorials.md:19
+msgid ""
+"[World of Zero: I Learn How To Build Flowcharts and Signal Diagram's in "
+"Mermaid.JS](https://www.youtube.com/watch?v=7_2IroEs6Is&t=207s)"
+msgstr ""
+
+#: ../../Tutorials.md:21
+msgid ""
+"[Eddie Jaoude: Can you code your "
+"diagrams?](https://www.youtube.com/watch?v=9HZzKkAqrX8)"
+msgstr ""
+
+#: ../../Tutorials.md:24
+msgid "Mermaid with HTML"
+msgstr ""
+
+#: ../../Tutorials.md:25
+msgid "Examples are provided in [Getting Started](n00b-gettingStarted.md)"
+msgstr ""
+
+#: ../../Tutorials.md:27
+msgid "**CodePen Examples:**"
+msgstr ""
+
+#: ../../Tutorials.md:29
+msgid "https://codepen.io/CarlBoneri/pen/BQwZzq"
+msgstr ""
+
+#: ../../Tutorials.md:31
+msgid "https://codepen.io/tdkn/pen/vZxQzd"
+msgstr ""
+
+#: ../../Tutorials.md:33
+msgid "https://codepen.io/janzeteachesit/pen/OWWZKN"
+msgstr ""
+
+#: ../../Tutorials.md:36
+msgid "Mermaid with Text Area"
+msgstr ""
+
+#: ../../Tutorials.md:38
+msgid "https://codepen.io/Ryuno-Ki/pen/LNxwgR"
+msgstr ""
+
+#: ../../Tutorials.md:40
+msgid "Python Integration with mermaid-js"
+msgstr ""
+
+#: ../../Tutorials.md:41
+msgid ""
+"Here's an example of python integration with mermaid-js which uses the "
+"mermaid.ink service.  This is also working with colab and jupyter lab "
+"notebooks."
+msgstr ""
+
+#: ../../Tutorials.md:66
+msgid "**Output**"
+msgstr ""
+
+#: ../../Tutorials.md:68
+msgid "![image](img/python-mermaid-integration.png)"
+msgstr ""
+
+#: ../../Tutorials.md:68
+msgid "image"
+msgstr ""
+

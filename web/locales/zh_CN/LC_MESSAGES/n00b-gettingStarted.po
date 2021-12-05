@@ -1,0 +1,387 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, xinetzone
+# This file is distributed under the same license as the mermaid package.
+# xinetzone <735613050@qq.com>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mermaid \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-05 16:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: xinetzone <735613050@qq.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../n00b-gettingStarted.md:1
+msgid "A Mermaid User-Guide for Beginners"
+msgstr "Mermaid 用户指南 -- 为初学者而设"
+
+#: ../../n00b-gettingStarted.md:3
+msgid "Mermaid is composed of three parts: Deployment, Syntax and Configuration."
+msgstr "Mermaid 由三部分组成：部署、语法和配置。"
+
+#: ../../n00b-gettingStarted.md:5
+msgid ""
+"This section talks about the different ways to deploy Mermaid. Learning "
+"the [Syntax](./n00b-syntaxReference.md) would be of great help to the "
+"beginner."
+msgstr ""
+"本节讲述了部署 Mermaid 的不同方法。学习 [语法](./n00b-syntaxReference.md) 对初学者会有很大帮助。"
+
+#: ../../n00b-gettingStarted.md:7
+msgid ""
+"Generally the live editor is enough for most general uses of mermaid, and"
+" is a good place to start learning."
+msgstr ""
+"一般来说，实时编辑器足以满足美人鱼的大多数一般用途，是一个开始学习的好地方。"
+
+#: ../../n00b-gettingStarted.md:9
+msgid ""
+"**Absolute beginners are advised to view the Video "
+"[Tutorials](./Tutorials.md) on the Live Editor, to gain a better "
+"understanding of mermaid.**"
+msgstr ""
+"**建议绝对的初学者查看关于实时编辑器的视频 [教程](./Tutorials.md)，以更好地了解 mermaid。**"
+
+#: ../../n00b-gettingStarted.md:11
+msgid "Four ways of using mermaid:"
+msgstr "四种使用 mermaid 的方法："
+
+#: ../../n00b-gettingStarted.md:13
+msgid "Using the Mermaid Live Editor at [mermaid.live](https://mermaid.live)."
+msgstr "在 [mermaid.live](https://mermaid.live) 中使用 Mermaid 实时编辑器。"
+
+#: ../../n00b-gettingStarted.md:14
+msgid ""
+"Using [mermaid plugins](./integrations.md) with programs you are familiar"
+" with."
+msgstr ""
+"在你熟悉的程序中使用 [mermaid 插件](./integrations.md)。"
+
+#: ../../n00b-gettingStarted.md:15
+msgid "Calling the Mermaid Javascript API."
+msgstr "调用 Mermaid Javascript API。"
+
+#: ../../n00b-gettingStarted.md:16
+msgid "Deploying Mermaid as a dependency."
+msgstr "将 Mermaid 作为一个依赖关系进行部署。"
+
+#: ../../n00b-gettingStarted.md:18
+msgid ""
+"**Note: It is our recommendation that you review all approaches, and "
+"choose the one that is best for your project.**"
+msgstr ""
+"**注意：我们建议你审查所有的方法，并选择最适合你项目的方法**。"
+
+#: ../../n00b-gettingStarted.md:20
+msgid "More in depth information can be found at [Usage](./usage.md)."
+msgstr "更深入的信息可以在 [用法](./usage.md) 找到。"
+
+#: ../../n00b-gettingStarted.md:22
+msgid "1. Using the Live Editor"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:24
+msgid "Available at [mermaid.live](https://mermaid.live)"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:26
+msgid "![EditingProcess](./img/Editing-process.png)"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:26
+msgid "EditingProcess"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:28
+msgid ""
+"In the `Code` section one can write or edit raw mermaid code, and "
+"instantly `Preview` the rendered result on the panel beside it."
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:30
+msgid ""
+"The `Configuration` Section is for changing the appearance and behavior "
+"of mermaid diagrams. An easy introduction to mermaid configuration is "
+"found in the [Advanced usage](./n00b-advanced.md) section. A complete "
+"configuration reference cataloging the default values can be found on the"
+" [mermaidAPI](Setup.md) page."
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:32
+msgid "![Code,Config and Preview](./img/Code-Preview-Config.png)"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:32
+msgid "Code,Config and Preview"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:34
+msgid "Editing History"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:36
+msgid ""
+"Your code will be autosaved every minute into the Timeline tab of History"
+" which shows the most recent 30 items."
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:38
+msgid ""
+"You can manually save code by clicking the Save icon in the History "
+"section. It can also be accessed in the Saved tab. This is stored in the "
+"browser storage only."
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:40
+msgid "Saving a Diagram:"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:42
+msgid "You may choose any of the methods below, to save it"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:44
+msgid ""
+"**We recommend that you save your diagram code on top of any method you "
+"choose, in order to make edits and modifications further down the line.**"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:46
+msgid "![Flowchart](./img/Live-Editor-Choices.png)"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:46
+msgid "Flowchart"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:48
+msgid "Editing your diagrams"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:50
+msgid ""
+"Editing is as easy as pasting your **Diagram code**, into the `code` "
+"section of the `Live Editor`."
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:52
+msgid "Loading from Gists"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:54
+msgid ""
+"The Gist you create should have a code.mmd file and optionally a "
+"config.json. "
+"[Example](https://gist.github.com/sidharthv96/6268a23e673a533dcb198f241fd7012a)"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:56
+msgid ""
+"To load a gist into the Editor, you can use https://mermaid-js.github.io"
+"/mermaid-live-"
+"editor/edit?gist=https://gist.github.com/sidharthv96/6268a23e673a533dcb198f241fd7012a"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:58
+msgid ""
+"and to View, https://mermaid-js.github.io/mermaid-live-"
+"editor/view?gist=https://gist.github.com/sidharthv96/6268a23e673a533dcb198f241fd7012a"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:60
+msgid "2. Using Mermaid Plugins:"
+msgstr "2. 使用 Mermaid 插件"
+
+#: ../../n00b-gettingStarted.md:62
+msgid ""
+"You can generate mermaid diagrams from within popular applications using "
+"plug-ins. It can be done in the same way, you would use the Live Editor. "
+"Here's a list of [Mermaid Plugins](./integrations.md)."
+msgstr ""
+"你可以使用插件从流行的应用程序中生成 mermaid。它可以用同样的方式来完成，你会使用实时编辑器。"
+"这里有一个 [mermaid 插件](./integrations.md) 的列表。"
+
+#: ../../n00b-gettingStarted.md:64
+msgid "**This is covered in greater detail in the [Usage section](usage.md)**"
+msgstr "**这一点在 [用法部分](usage.md) 中有更详细的介绍**。"
+
+#: ../../n00b-gettingStarted.md:66
+msgid "3. Calling the Javascript API"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:68
+msgid ""
+"This method can be used with any common web server like Apache, IIS, "
+"nginx, node express."
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:70
+msgid ""
+"You will also need a text editing tool like Notepad++ to generate a .html"
+" file. It is then deployed by a web browser (such as Firefox, Chrome, "
+"Safari, but not Internet Explorer)."
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:72
+msgid ""
+"The API works by pulling rendering instructions from the source "
+"`mermaid.js` in order to render diagrams on the page."
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:74
+msgid "Requirements for the Mermaid API."
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:76
+msgid ""
+"When writing the .html file, we give three instructions inside the html "
+"code to the web browser:"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:78
+msgid ""
+"a. A reference for fetching the online mermaid renderer, through the "
+"`mermaid.js` or `mermaid.min.js`."
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:80
+msgid "b. The mermaid code for the diagram we want to create."
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:82
+msgid ""
+"c. The `mermaid.initialize()` call, which dictates the appearance of "
+"diagrams and also starts the rendering process ."
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:84
+msgid ""
+"**a. A reference to the external CDN in a `<script src>` tag, or a "
+"reference to mermaid.js as a separate file.:**"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:92
+msgid ""
+"**b. The embedded mermaid diagram definition inside a `<div "
+"class=\"mermaid\">`:**"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:103
+msgid ""
+"**Notes**: Every Mermaid chart/graph/diagram definition, should have "
+"separate `<div>` tags."
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:105
+msgid "**c. The `mermaid.initialize()` call.**"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:107
+msgid ""
+"`mermaid.initialize()` call takes all the definitions contained in all "
+"the `<div class=\"mermaid\">` tags that it finds in the html body and "
+"renders them into diagrams. Example:"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:117
+msgid ""
+"**Notes**: Rendering in Mermaid is initalized by `mermaid.initialize()` "
+"call. You can place `mermaid.initialize()` inside `mermaid.min.js` for "
+"brevity. However, doing the opposite lets you control when it starts "
+"looking for `<div>`tags inside the web page with `mermaid.initialize()`. "
+"This is useful when you think that not all `<div>` tags may have loaded "
+"on the execution of `mermaid.min.js` file."
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:120
+msgid ""
+"`startOnLoad` is one of the parameters that can be defined by "
+"`mermaid.initialize()`"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md
+msgid "Parameter"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md
+msgid "Description"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md
+msgid "Type"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md
+msgid "Values"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md
+msgid "startOnLoad"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md
+msgid "Toggle for Rendering upon loading"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md
+msgid "Boolean"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md
+msgid "true, false"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:126
+msgid "Working Examples"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:128
+msgid ""
+"**Here is a full working example of the mermaidAPI being called through "
+"the CDN:**"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:152
+msgid ""
+"**Another Option:** In this example mermaid.js is referenced in `src` as "
+"a separate JavaScript file, in an example Path."
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:177
+msgid "4. Adding Mermaid as a dependency."
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:179
+msgid "install node v16, which would have npm"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:181
+msgid "download yarn using npm by entering the command below: npm install -g yarn"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:184
+msgid "After yarn installs, enter the following command: yarn add mermaid"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:187
+msgid "To add Mermaid as a Dev Dependency yarn add --dev mermaid"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:190
+msgid "**Comments from Knut Sveidqvist, creator of mermaid:**"
+msgstr ""
+
+#: ../../n00b-gettingStarted.md:192
+msgid ""
+"In early versions of mermaid, the `<script src>` tag was invoked in the "
+"`<head>` part of the web page. Nowadays we can place it in the `<body>` "
+"as seen above. Older parts of the documentation frequently reflects the "
+"previous way which still works."
+msgstr ""
+
