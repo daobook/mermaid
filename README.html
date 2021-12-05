@@ -1,0 +1,814 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Mermaid &#8212; mermaid 0.0.1 documentation</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="A Mermaid User-Guide for Beginners" href="n00b-gettingStarted.html" />
+    <link rel="prev" title="📔 Introduction" href="intro/index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">mermaid 0.0.1 documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="intro/index.html">
+   📔 Introduction
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     About Mermaid
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-gettingStarted.html">
+     A Mermaid User-Guide for Beginners
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-syntaxReference.html">
+     Diagram Syntax
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="syntax/index.html">
+   📊 Diagram Syntax
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="flowchart.html">
+     Flowcharts - Basic Syntax
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sequenceDiagram.html">
+     Sequence diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="classDiagram.html">
+     Class diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="stateDiagram.html">
+     State diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="entityRelationshipDiagram.html">
+     Entity Relationship Diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="user-journey.html">
+     User Journey Diagram
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gantt.html">
+     Gantt diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="pie.html">
+     Pie chart diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="requirementDiagram.html">
+     Requirement Diagram
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="examples.html">
+     Examples
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="deploy-config/index.html">
+   ⚙️ Deployment and Configuration
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Tutorials.html">
+     Tutorials
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="usage.html">
+     Usage
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Setup.html">
+     mermaidAPI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="directives.html">
+     Directives
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="theming.html">
+     Theme Configuration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="mermaidCLI.html">
+     mermaid CLI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-advanced.html">
+     Advanced n00b mermaid (Coming soon..)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="misc/index.html">
+   📚 Misc
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="integrations.html">
+     Integrations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="faq.html">
+     Frequently Asked Questions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="contributions-community/index.html">
+   🙌 Contributions and Community
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-overview.html">
+     Overview for Beginners
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="development.html">
+     Development and Contribution 🙌
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CHANGELOG.html">
+     Change Log
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="newDiagram.html">
+     Adding a New Diagram/Chart 📊
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Configuration.html">
+   Configuration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="8.6.0_docs.html">
+   Version 8.6.0 Changes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="SUMMARY.html">
+   Summary
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="breakingChanges.html">
+   Breaking changes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="developer-docs/configuration.html">
+   Configuration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="diagrams-and-syntax-and-examples/flowchart.html">
+   Flowcharts - Basic Syntax
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="upgrading.html">
+   Upgrading
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/README.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#diagram-types">
+   Diagram Types
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#flowchart">
+     <span class="xref myst">
+      Flowchart
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sequence-diagram">
+     <span class="xref myst">
+      Sequence diagram
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gantt-diagram">
+     <span class="xref myst">
+      Gantt diagram
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#class-diagram">
+     <span class="xref myst">
+      Class diagram
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#git-graph-exclamation-experimental">
+     Git graph - :exclamation: experimental
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#entity-relationship-diagram-exclamation-experimental">
+     <span class="xref myst">
+      Entity Relationship Diagram - :exclamation: experimental
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#user-journey-diagram">
+     <span class="xref myst">
+      User Journey Diagram
+     </span>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installation">
+   Installation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cdn">
+     CDN
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#deploying-mermaid">
+   Deploying Mermaid
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mermaid-api">
+     <span class="xref myst">
+      Mermaid API
+     </span>
+     :
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sibling-projects">
+   Sibling projects
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#request-for-assistance">
+     Request for Assistance
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#for-contributors">
+   For contributors
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setup">
+     Setup
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#build">
+     Build
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lint">
+     Lint
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#test">
+     Test
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#release">
+     Release
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#credits">
+   Credits
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="about-mermaid">
+<h1>About Mermaid<a class="headerlink" href="#about-mermaid" title="Permalink to this headline">¶</a></h1>
+<p><strong>Mermaid lets you create diagrams and visualizations using text and code.</strong></p>
+<p>It is a Javascript based diagramming and charting tool that renders Markdown-inspired text definitions to create and modify diagrams dynamically.</p>
+<blockquote>
+<div><p>If you are familiar with Markdown you should have no problem learning <a class="reference internal" href="n00b-syntaxReference.html"><span class="doc std std-doc">Mermaid’s Syntax</span></a>.</p>
+</div></blockquote>
+<p><img alt="banner" src="_images/header.png" /></p>
+<!-- **Edit this Page** [![N|Solid](img/GitHub-Mark-32px.png)](https://github.com/mermaid-js/mermaid/blob/develop/docs/README.md) -->
+<p><a class="reference external" href="https://travis-ci.org/mermaid-js/mermaid"><img alt="Build Status" src="https://travis-ci.org/mermaid-js/mermaid.svg?branch=master" /></a> <a class="reference external" href="https://www.npmjs.com/package/mermaid"><img alt="NPM" src="https://img.shields.io/npm/v/mermaid" /></a> <a class="reference external" href="https://coveralls.io/github/mermaid-js/mermaid?branch=master"><img alt="Coverage Status" src="https://coveralls.io/repos/github/mermaid-js/mermaid/badge.svg?branch=master" /></a> <a class="reference external" href="https://join.slack.com/t/mermaid-talk/shared_invite/enQtNzc4NDIyNzk4OTAyLWVhYjQxOTI2OTg4YmE1ZmJkY2Y4MTU3ODliYmIwOTY3NDJlYjA0YjIyZTdkMDMyZTUwOGI0NjEzYmEwODcwOTE"><img alt="Join our Slack!" src="https://img.shields.io/static/v1?message=join%20chat&amp;color=9cf&amp;logo=slack&amp;label=slack" /></a> <a class="reference external" href="https://percy.io/Mermaid/mermaid"><img alt="This project is using Percy.io for visual regression testing." src="https://percy.io/static/images/percy-badge.svg" /></a></p>
+<!-- Mermaidn book banner -->
+<p><a class="reference external" href="https://mermaid-js.github.io/mermaid/landing/"><img alt="banner" src="_images/book-banner-post-release.jpg" /></a></p>
+<!-- <Main description> -->
+<p>The main purpose of Mermaid is to help with Visualizing Documentation, and helping it catch up with Development.</p>
+<blockquote>
+<div><p>Documentation-Rot is a Catch-22 that Mermaid helps to solve.</p>
+</div></blockquote>
+<p>Diagramming and Documentation cost precious developer time and get outdated quickly.
+However, not having diagrams or documentation ruins productivity and hampers organizational learning.</p>
+<p>Mermaid addresses this Catch-22 situation by reducing the time, effort and tooling that is required to create modifiable diagrams and charts which in turn results in smarter and more reusable content.
+Mermaid, as a text-based diagramming tool allows for quick and easy updates and makes documentation much easier. It can also be included in production scripts and other pieces of code as per requirement.</p>
+<blockquote>
+<div><p>Mermaid is a Diagramming tool for everyone.</p>
+</div></blockquote>
+<p>Even non-programmers can create diagrams through the <a class="reference external" href="https://github.com/mermaid-js/mermaid-live-editor">Mermaid Live Editor</a>, Visit the <a class="reference internal" href="Tutorials.html"><span class="doc std std-doc">Tutorials Page</span></a> for the Live Editor video tutorials.</p>
+<p>Many editors, wikis and other tools also have mermaid integrations and plugins, making it easy to start using mermaid. A few of those are described in <a class="reference internal" href="n00b-gettingStarted.html"><span class="doc std std-doc">Simple start to write diagrams</span></a>.</p>
+<p>For a more detailed introduction to Mermaid and some of it’s basic uses, refer to <a class="reference internal" href="n00b-overview.html"><span class="doc std std-doc">Overview for Beginners</span></a> and <a class="reference internal" href="usage.html"><span class="doc std std-doc">Usage</span></a>.</p>
+<p>🌐 <a class="reference external" href="https://unpkg.com/mermaid/">CDN</a> | 📖 <a class="reference external" href="https://mermaidjs.github.io">Documentation</a> | 🙌 <a class="reference external" href="https://github.com/mermaid-js/mermaid/blob/develop/docs/development.md">Contribution</a> | 📜 <a class="reference internal" href="CHANGELOG.html"><span class="doc std std-doc">Version Log</span></a> | 🔌 <a class="reference internal" href="integrations.html"><span class="doc std std-doc">Plug-Ins</span></a></p>
+<blockquote>
+<div><p>🖖 Keep a steady pulse: mermaid needs more Collaborators, <a class="reference external" href="https://github.com/knsv/mermaid/issues/866">Read More</a>.</p>
+</div></blockquote>
+<p>:trophy: <strong>Mermaid was nominated and won the <a class="reference external" href="https://osawards.com/javascript/#nominees">JS Open Source Awards (2019)</a> in the category “The most exciting use of technology”!!!</strong></p>
+<p><strong>Thanks to all involved, people committing pull requests, people answering questions and special thanks to Tyler Long who is helping me maintain the project 🙏</strong></p>
+<div class="section" id="diagram-types">
+<h2>Diagram Types<a class="headerlink" href="#diagram-types" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="flowchart">
+<h3><a class="reference internal" href="flowchart.html"><span class="doc std std-doc">Flowchart</span></a><a class="headerlink" href="#flowchart" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mmd notranslate"><div class="highlight"><pre><span></span>graph TD;
+    A--&gt;B;
+    A--&gt;C;
+    B--&gt;D;
+    C--&gt;D;
+</pre></div>
+</div>
+<p><img alt="Flowchart" src="_images/flow.png" /></p>
+</div>
+<div class="section" id="sequence-diagram">
+<h3><a class="reference internal" href="sequenceDiagram.html"><span class="doc std std-doc">Sequence diagram</span></a><a class="headerlink" href="#sequence-diagram" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mmd notranslate"><div class="highlight"><pre><span></span>sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&gt;&gt;John: Hello John, how are you?
+    loop Healthcheck
+        John-&gt;&gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts &lt;br/&gt;prevail!
+    John--&gt;&gt;Alice: Great!
+    John-&gt;&gt;Bob: How about you?
+    Bob--&gt;&gt;John: Jolly good!
+</pre></div>
+</div>
+<p><img alt="Sequence diagram" src="_images/sequence.png" /></p>
+</div>
+<div class="section" id="gantt-diagram">
+<h3><a class="reference internal" href="gantt.html"><span class="doc std std-doc">Gantt diagram</span></a><a class="headerlink" href="#gantt-diagram" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mmd notranslate"><div class="highlight"><pre><span></span>gantt
+dateFormat  YYYY-MM-DD
+title Adding GANTT diagram to mermaid
+excludes weekdays 2014-01-10
+
+section A section
+Completed task            :done,    des1, 2014-01-06,2014-01-08
+Active task               :active,  des2, 2014-01-09, 3d
+Future task               :         des3, after des2, 5d
+Future task2               :         des4, after des3, 5d
+</pre></div>
+</div>
+<p><img alt="Gantt diagram" src="_images/gantt.png" /></p>
+</div>
+<div class="section" id="class-diagram">
+<h3><a class="reference internal" href="classDiagram.html"><span class="doc std std-doc">Class diagram</span></a><a class="headerlink" href="#class-diagram" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mmd notranslate"><div class="highlight"><pre><span></span>classDiagram
+Class01 &lt;|-- AveryLongClass : Cool
+Class03 *-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 --&gt; C2 : Where am i?
+Class09 --* C3
+Class09 --|&gt; Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+Class08 &lt;--&gt; C2: Cool label
+</pre></div>
+</div>
+<p><img alt="Class diagram" src="_images/class.png" /></p>
+</div>
+<div class="section" id="git-graph-exclamation-experimental">
+<h3>Git graph - :exclamation: experimental<a class="headerlink" href="#git-graph-exclamation-experimental" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mmd notranslate"><div class="highlight"><pre><span></span>gitGraph:
+options
+{
+    &quot;nodeSpacing&quot;: 150,
+    &quot;nodeRadius&quot;: 10
+}
+end
+commit
+branch newbranch
+checkout newbranch
+commit
+commit
+checkout master
+commit
+commit
+merge newbranch
+
+</pre></div>
+</div>
+<p><img alt="Git graph" src="_images/git.png" /></p>
+</div>
+<div class="section" id="entity-relationship-diagram-exclamation-experimental">
+<h3><a class="reference internal" href="entityRelationshipDiagram.html"><span class="doc std std-doc">Entity Relationship Diagram - :exclamation: experimental</span></a><a class="headerlink" href="#entity-relationship-diagram-exclamation-experimental" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mmd notranslate"><div class="highlight"><pre><span></span>erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ LINE-ITEM : contains
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+
+</pre></div>
+</div>
+<p><img alt="ER diagram" src="_images/simple-er.png" /></p>
+</div>
+<div class="section" id="user-journey-diagram">
+<h3><a class="reference internal" href="user-journey.html"><span class="doc std std-doc">User Journey Diagram</span></a><a class="headerlink" href="#user-journey-diagram" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mmd notranslate"><div class="highlight"><pre><span></span>journey
+    title My working day
+    section Go to work
+      Make tea: 5: Me
+      Go upstairs: 3: Me
+      Do work: 1: Me, Cat
+    section Go home
+      Go downstairs: 5: Me
+      Sit down: 5: Me
+</pre></div>
+</div>
+<p><img alt="Journey diagram" src="_images/user-journey.png" /></p>
+</div>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p><strong>In depth guides and examples can be found at <a class="reference internal" href="n00b-gettingStarted.html"><span class="doc std std-doc">Getting Started</span></a> and <a class="reference internal" href="usage.html"><span class="doc std std-doc">Usage</span></a>.</strong></p>
+<p><strong>It would also be helpful to learn more about mermaid’s <a class="reference internal" href="n00b-syntaxReference.html"><span class="doc std std-doc">Syntax</span></a>.</strong></p>
+<div class="section" id="cdn">
+<h3>CDN<a class="headerlink" href="#cdn" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">unpkg</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">mermaid</span><span class="o">@&lt;</span><span class="n">version</span><span class="o">&gt;/</span><span class="n">dist</span><span class="o">/</span>
+</pre></div>
+</div>
+<p>To select a version:</p>
+<p>Replace <code class="docutils literal notranslate"><span class="pre">&lt;version&gt;</span></code> with the desired version number.</p>
+<p>Latest Version: <a class="reference external" href="https://unpkg.com/browse/mermaid&#64;8.8.0/">https://unpkg.com/browse/mermaid&#64;8.8.0/</a></p>
+</div>
+</div>
+<div class="section" id="deploying-mermaid">
+<h2>Deploying Mermaid<a class="headerlink" href="#deploying-mermaid" title="Permalink to this headline">¶</a></h2>
+<p>To Deploy Mermaid:</p>
+<ol class="simple">
+<li><p>You will need to install node v16, which would have npm</p></li>
+<li><p>Download yarn using npm</p></li>
+<li><p>Enter the following command: <code class="docutils literal notranslate"><span class="pre">yarn</span> <span class="pre">add</span> <span class="pre">mermaid</span></code></p></li>
+<li><p>You can then add mermaid as a dev dependency using this command:
+<code class="docutils literal notranslate"><span class="pre">yarn</span> <span class="pre">add</span> <span class="pre">--dev</span> <span class="pre">mermaid</span></code></p></li>
+</ol>
+<div class="section" id="mermaid-api">
+<h3><a class="reference internal" href="Setup.html"><span class="doc std std-doc">Mermaid API</span></a>:<a class="headerlink" href="#mermaid-api" title="Permalink to this headline">¶</a></h3>
+<p><strong>To deploy mermaid without a bundler, one can insert a <code class="docutils literal notranslate"><span class="pre">script</span></code> tag with an absolute address and a <code class="docutils literal notranslate"><span class="pre">mermaidAPI</span></code> call into the HTML like so:</strong></p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span><span class="nx">mermaid</span><span class="p">.</span><span class="nx">initialize</span><span class="p">({</span><span class="nx">startOnLoad</span><span class="o">:</span><span class="kc">true</span><span class="p">});&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p><strong>Doing so will command the mermaid parser to look for the <code class="docutils literal notranslate"><span class="pre">&lt;div&gt;</span></code> tags with <code class="docutils literal notranslate"><span class="pre">class=&quot;mermaid&quot;</span></code>. From these tags mermaid will try to read the diagram/chart definitions and render them into svg charts.</strong></p>
+<p><strong>Examples can be found at</strong> <a class="reference internal" href="examples.html"><span class="doc std std-doc">Other examples</span></a></p>
+</div>
+</div>
+<div class="section" id="sibling-projects">
+<h2>Sibling projects<a class="headerlink" href="#sibling-projects" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/mermaid-js/mermaid-live-editor">Mermaid Live Editor</a></p></li>
+<li><p><a class="reference external" href="https://github.com/mermaid-js/mermaid-cli">Mermaid CLI</a></p></li>
+<li><p><a class="reference external" href="https://github.com/mermaidjs/mermaid-webpack-demo">Mermaid Webpack Demo</a></p></li>
+<li><p><a class="reference external" href="https://github.com/mermaidjs/mermaid-parcel-demo">Mermaid Parcel Demo</a></p></li>
+</ul>
+<div class="section" id="request-for-assistance">
+<h3>Request for Assistance<a class="headerlink" href="#request-for-assistance" title="Permalink to this headline">¶</a></h3>
+<p>Things are piling up and I have a hard time keeping up. It would be great if we could form a core team of developers to cooperate
+with the future development of mermaid.</p>
+<p>As part of this team you would get write access to the repository and would
+represent the project when answering questions and issues.</p>
+<p>Together we could continue the work with things like:</p>
+<ul class="simple">
+<li><p>Adding more types of diagrams like mindmaps, ert diagrams, etc.</p></li>
+<li><p>Improving existing diagrams</p></li>
+</ul>
+<p>Don’t hesitate to contact me if you want to get involved!</p>
+</div>
+</div>
+<div class="section" id="for-contributors">
+<h2>For contributors<a class="headerlink" href="#for-contributors" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="setup">
+<h3>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>yarn install
+</pre></div>
+</div>
+</div>
+<div class="section" id="build">
+<h3>Build<a class="headerlink" href="#build" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>yarn build:watch
+</pre></div>
+</div>
+</div>
+<div class="section" id="lint">
+<h3>Lint<a class="headerlink" href="#lint" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>yarn lint
+</pre></div>
+</div>
+<p>We use <a class="reference external" href="https://eslint.org/">eslint</a>.
+We recommend you to install <a class="reference external" href="https://eslint.org/docs/user-guide/integrations">editor plugins</a> to get real time lint result.</p>
+</div>
+<div class="section" id="test">
+<h3>Test<a class="headerlink" href="#test" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>yarn <span class="nb">test</span>
+</pre></div>
+</div>
+<p>Manual test in browser: open <code class="docutils literal notranslate"><span class="pre">dist/index.html</span></code></p>
+</div>
+<div class="section" id="release">
+<h3>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h3>
+<p>For those who have the permission to do so:</p>
+<p>Update version number in <code class="docutils literal notranslate"><span class="pre">package.json</span></code>.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>npm publish
+</pre></div>
+</div>
+<p>The above command generates files into the <code class="docutils literal notranslate"><span class="pre">dist</span></code> folder and publishes them to npmjs.org.</p>
+</div>
+</div>
+<div class="section" id="credits">
+<h2>Credits<a class="headerlink" href="#credits" title="Permalink to this headline">¶</a></h2>
+<p>Many thanks to the <a class="reference external" href="http://d3js.org/">d3</a> and <a class="reference external" href="https://github.com/cpettitt/dagre-d3">dagre-d3</a> projects for providing the graphical layout and drawing libraries!</p>
+<p>Thanks also to the <a class="reference external" href="http://bramp.github.io/js-sequence-diagrams">js-sequence-diagram</a> project for usage of the grammar for the sequence diagrams. Thanks to Jessica Peter for the inspiration and for the starting point of gantt rendering.</p>
+<p><em>Mermaid was created by Knut Sveidqvist for easier documentation.</em></p>
+<p>Here is the full list of the projects <a class="reference external" href="https://github.com/knsv/mermaid/graphs/contributors">contributors</a>.</p>
+</div>
+</div>
+
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="intro/index.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">📔 Introduction</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="n00b-gettingStarted.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">A Mermaid User-Guide for Beginners</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By xinetzone<br/>
+        
+            &copy; Copyright 2021, xinetzone.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

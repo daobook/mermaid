@@ -1,0 +1,617 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Requirement Diagram &#8212; mermaid 0.0.1 documentation</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Examples" href="examples.html" />
+    <link rel="prev" title="Pie chart diagrams" href="pie.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">mermaid 0.0.1 documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="intro/index.html">
+   📔 Introduction
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="README.html">
+     About Mermaid
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-gettingStarted.html">
+     A Mermaid User-Guide for Beginners
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-syntaxReference.html">
+     Diagram Syntax
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="syntax/index.html">
+   📊 Diagram Syntax
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="flowchart.html">
+     Flowcharts - Basic Syntax
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sequenceDiagram.html">
+     Sequence diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="classDiagram.html">
+     Class diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="stateDiagram.html">
+     State diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="entityRelationshipDiagram.html">
+     Entity Relationship Diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="user-journey.html">
+     User Journey Diagram
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gantt.html">
+     Gantt diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="pie.html">
+     Pie chart diagrams
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Requirement Diagram
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="examples.html">
+     Examples
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="deploy-config/index.html">
+   ⚙️ Deployment and Configuration
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Tutorials.html">
+     Tutorials
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="usage.html">
+     Usage
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Setup.html">
+     mermaidAPI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="directives.html">
+     Directives
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="theming.html">
+     Theme Configuration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="mermaidCLI.html">
+     mermaid CLI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-advanced.html">
+     Advanced n00b mermaid (Coming soon..)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="misc/index.html">
+   📚 Misc
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="integrations.html">
+     Integrations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="faq.html">
+     Frequently Asked Questions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="contributions-community/index.html">
+   🙌 Contributions and Community
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-overview.html">
+     Overview for Beginners
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="development.html">
+     Development and Contribution 🙌
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CHANGELOG.html">
+     Change Log
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="newDiagram.html">
+     Adding a New Diagram/Chart 📊
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Configuration.html">
+   Configuration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="8.6.0_docs.html">
+   Version 8.6.0 Changes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="SUMMARY.html">
+   Summary
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="breakingChanges.html">
+   Breaking changes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="developer-docs/configuration.html">
+   Configuration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="diagrams-and-syntax-and-examples/flowchart.html">
+   Flowcharts - Basic Syntax
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="upgrading.html">
+   Upgrading
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/requirementDiagram.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#syntax">
+   Syntax
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#requirement">
+     Requirement
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#element">
+     Element
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#relationship">
+     Relationship
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#larger-example">
+   Larger Example
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="requirement-diagram">
+<h1>Requirement Diagram<a class="headerlink" href="#requirement-diagram" title="Permalink to this headline">¶</a></h1>
+<p><strong>Edit this Page</strong> <a class="reference external" href="https://github.com/mermaid-js/mermaid/blob/develop/docs/requirementDiagram.md"><img alt="N|Solid" src="_images/GitHub-Mark-32px.png" /></a></p>
+<blockquote>
+<div><p>A Requirement diagram provides a visualization for requirements and their connections, to each other and other documented elements. The modeling specs follow those defined by SysML v1.6.</p>
+</div></blockquote>
+<p>Rendering requirements is straightforward.</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>    requirementDiagram
+
+    requirement test_req {
+    id: 1
+    text: the test text.
+    risk: high
+    verifymethod: test
+    }
+
+    element test_entity {
+    type: simulation
+    }
+
+    test_entity - satisfies -&gt; test_req
+</pre></div>
+</div>
+<div class="section" id="syntax">
+<h2>Syntax<a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h2>
+<p>There are three types of components to a requirement diagram: requirement, element, and relationship.</p>
+<p>The grammar for defining each is defined below. Words denoted in angle brackets, such as <code class="docutils literal notranslate"><span class="pre">&lt;word&gt;</span></code>, are enumerated keywords that have options elaborated in a table. <code class="docutils literal notranslate"><span class="pre">user_defined_...</span></code> is use in any place where user input is expected.</p>
+<p>An important note on user text: all input can be surrounded in quotes or not. For example, both <code class="docutils literal notranslate"><span class="pre">Id:</span> <span class="pre">&quot;here</span> <span class="pre">is</span> <span class="pre">an</span> <span class="pre">example&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">Id:</span> <span class="pre">here</span> <span class="pre">is</span> <span class="pre">an</span> <span class="pre">example</span></code> are both valid. However, users must be careful with unquoted input. The parser will fail if another keyword is detected.</p>
+<div class="section" id="requirement">
+<h3>Requirement<a class="headerlink" href="#requirement" title="Permalink to this headline">¶</a></h3>
+<p>A requirement definition contains a requirement type, name, id, text, risk, and verification method. The syntax follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="nb">type</span><span class="o">&gt;</span> <span class="n">user_defined_name</span> <span class="p">{</span>
+    <span class="nb">id</span><span class="p">:</span> <span class="n">user_defined_id</span>
+    <span class="n">text</span><span class="p">:</span> <span class="n">user_defined</span> <span class="n">text</span>
+    <span class="n">risk</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">risk</span><span class="o">&gt;</span>
+    <span class="n">verifymethod</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">method</span><span class="o">&gt;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Type, risk, and method are enumerations defined in SysML.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Keyword</p></th>
+<th class="head"><p>Options</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Type</p></td>
+<td><p>requirement, functionalRequirement, interfaceRequirement, performanceRequirement, physicalRequirement, designConstraint</p></td>
+</tr>
+<tr class="row-odd"><td><p>Risk</p></td>
+<td><p>Low, Medium, High</p></td>
+</tr>
+<tr class="row-even"><td><p>VerificationMethod</p></td>
+<td><p>Analysis, Inspection, Test, Demonstration</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="element">
+<h3>Element<a class="headerlink" href="#element" title="Permalink to this headline">¶</a></h3>
+<p>An element definition contains an element name, type, and document reference. These three are all user defined. The element feature is intended to be lightweight but allow requirements to be connected to portions of other documents.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">element</span> <span class="n">user_defined_name</span> <span class="p">{</span>
+    <span class="nb">type</span><span class="p">:</span> <span class="n">user_defined_type</span>
+    <span class="n">docref</span><span class="p">:</span> <span class="n">user_defined_ref</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="relationship">
+<h3>Relationship<a class="headerlink" href="#relationship" title="Permalink to this headline">¶</a></h3>
+<p>Relationships are comprised of a source node, destination node, and relationship type.</p>
+<p>Each follows the definition format of</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="n">name</span> <span class="n">of</span> <span class="n">source</span><span class="p">}</span> <span class="o">-</span> <span class="o">&lt;</span><span class="nb">type</span><span class="o">&gt;</span> <span class="o">-&gt;</span> <span class="p">{</span><span class="n">name</span> <span class="n">of</span> <span class="n">destination</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="n">name</span> <span class="n">of</span> <span class="n">destination</span><span class="p">}</span> <span class="o">&lt;-</span> <span class="o">&lt;</span><span class="nb">type</span><span class="o">&gt;</span> <span class="o">-</span> <span class="p">{</span><span class="n">name</span> <span class="n">of</span> <span class="n">source</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>“name of source” and “name of destination” should be names of requirement or element nodes defined elsewhere.</p>
+<p>A relationship type can be one of contains, copies, derives, satisfies, verifies, refines, or traces.</p>
+<p>Each relationship is labeled in the diagram.</p>
+</div>
+</div>
+<div class="section" id="larger-example">
+<h2>Larger Example<a class="headerlink" href="#larger-example" title="Permalink to this headline">¶</a></h2>
+<p>This example uses all features of the diagram.</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>    requirementDiagram
+
+    requirement test_req {
+    id: 1
+    text: the test text.
+    risk: high
+    verifymethod: test
+    }
+
+    functionalRequirement test_req2 {
+    id: 1.1
+    text: the second test text.
+    risk: low
+    verifymethod: inspection
+    }
+
+    performanceRequirement test_req3 {
+    id: 1.2
+    text: the third test text.
+    risk: medium
+    verifymethod: demonstration
+    }
+
+    interfaceRequirement test_req4 {
+    id: 1.2.1
+    text: the fourth test text.
+    risk: medium
+    verifymethod: analysis
+    }
+
+    physicalRequirement test_req5 {
+    id: 1.2.2
+    text: the fifth test text.
+    risk: medium
+    verifymethod: analysis
+    }
+
+    designConstraint test_req6 {
+    id: 1.2.3
+    text: the sixth test text.
+    risk: medium
+    verifymethod: analysis
+    }
+
+    element test_entity {
+    type: simulation
+    }
+
+    element test_entity2 {
+    type: word doc
+    docRef: reqs/test_entity
+    }
+
+    element test_entity3 {
+    type: &quot;test suite&quot;
+    docRef: github.com/all_the_tests
+    }
+
+
+    test_entity - satisfies -&gt; test_req2
+    test_req - traces -&gt; test_req2
+    test_req - contains -&gt; test_req3
+    test_req3 - contains -&gt; test_req4
+    test_req4 - derives -&gt; test_req5
+    test_req5 - refines -&gt; test_req6
+    test_entity3 - verifies -&gt; test_req5
+    test_req &lt;- copies - test_entity2
+</pre></div>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="pie.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Pie chart diagrams</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="examples.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Examples</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By xinetzone<br/>
+        
+            &copy; Copyright 2021, xinetzone.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

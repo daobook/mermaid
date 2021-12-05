@@ -1,0 +1,576 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adding a New Diagram/Chart 📊 &#8212; mermaid 0.0.1 documentation</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Configuration" href="Configuration.html" />
+    <link rel="prev" title="Change Log" href="CHANGELOG.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">mermaid 0.0.1 documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="intro/index.html">
+   📔 Introduction
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="README.html">
+     About Mermaid
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-gettingStarted.html">
+     A Mermaid User-Guide for Beginners
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-syntaxReference.html">
+     Diagram Syntax
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="syntax/index.html">
+   📊 Diagram Syntax
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="flowchart.html">
+     Flowcharts - Basic Syntax
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sequenceDiagram.html">
+     Sequence diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="classDiagram.html">
+     Class diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="stateDiagram.html">
+     State diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="entityRelationshipDiagram.html">
+     Entity Relationship Diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="user-journey.html">
+     User Journey Diagram
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gantt.html">
+     Gantt diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="pie.html">
+     Pie chart diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="requirementDiagram.html">
+     Requirement Diagram
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="examples.html">
+     Examples
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="deploy-config/index.html">
+   ⚙️ Deployment and Configuration
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Tutorials.html">
+     Tutorials
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="usage.html">
+     Usage
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Setup.html">
+     mermaidAPI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="directives.html">
+     Directives
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="theming.html">
+     Theme Configuration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="mermaidCLI.html">
+     mermaid CLI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-advanced.html">
+     Advanced n00b mermaid (Coming soon..)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="misc/index.html">
+   📚 Misc
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="integrations.html">
+     Integrations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="faq.html">
+     Frequently Asked Questions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="contributions-community/index.html">
+   🙌 Contributions and Community
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-overview.html">
+     Overview for Beginners
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="development.html">
+     Development and Contribution 🙌
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CHANGELOG.html">
+     Change Log
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Adding a New Diagram/Chart 📊
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Configuration.html">
+   Configuration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="8.6.0_docs.html">
+   Version 8.6.0 Changes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="SUMMARY.html">
+   Summary
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="breakingChanges.html">
+   Breaking changes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="developer-docs/configuration.html">
+   Configuration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="diagrams-and-syntax-and-examples/flowchart.html">
+   Flowcharts - Basic Syntax
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="upgrading.html">
+   Upgrading
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/newDiagram.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#step-1-grammar-parsing">
+   Step 1: Grammar &amp; Parsing
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#grammar">
+     Grammar
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#store-data-found-during-parsing">
+     Store data found during parsing
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#step-2-rendering">
+   Step 2: Rendering
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#step-3-detection-of-the-new-diagram-type">
+   Step 3: Detection of the new diagram type
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#step-4-the-final-piece-triggering-the-rendering">
+   Step 4: The final piece - triggering the rendering
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#usage-of-the-parser-as-a-separate-module">
+   Usage of the parser as a separate module
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setup">
+     Setup
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#parsing">
+     Parsing
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-extraction">
+     Data extraction
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="adding-a-new-diagram-chart">
+<h1>Adding a New Diagram/Chart 📊<a class="headerlink" href="#adding-a-new-diagram-chart" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="step-1-grammar-parsing">
+<h2>Step 1: Grammar &amp; Parsing<a class="headerlink" href="#step-1-grammar-parsing" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="grammar">
+<h3>Grammar<a class="headerlink" href="#grammar" title="Permalink to this headline">¶</a></h3>
+<p>This would be to define a jison grammar for the new diagram type. That should start with a way to identify that the text in the mermaid tag is a diagram of that type. Create a new folder under diagrams for your new diagram type and a parser folder in it. This leads us to step 2.</p>
+<p>For instance:</p>
+<ul class="simple">
+<li><p>the flowchart starts with the keyword graph.</p></li>
+<li><p>the sequence diagram starts with the keyword sequenceDiagram</p></li>
+</ul>
+</div>
+<div class="section" id="store-data-found-during-parsing">
+<h3>Store data found during parsing<a class="headerlink" href="#store-data-found-during-parsing" title="Permalink to this headline">¶</a></h3>
+<p>There are some jison specific sub steps here where the parser stores the data encountered when parsing the diagram, this data is later used by the renderer. You can during the parsing call a object provided to the parser by the user of the parser. This object can be called during parsing for storing data.</p>
+<div class="highlight-jison notranslate"><div class="highlight"><pre><span></span>statement
+	: &#39;participant&#39; actor  { $$=&#39;actor&#39;; }
+	| signal               { $$=&#39;signal&#39;; }
+	| note_statement       { $$=&#39;note&#39;;  }
+	| &#39;title&#39; message      { yy.setTitle($2);  }
+	;
+</pre></div>
+</div>
+<p>In the extract of the grammar above, it is defined that a call to the setTitle method in the data object will be done when parsing and the title keyword is encountered.</p>
+<div class="highlight-tip notranslate"><div class="highlight"><pre><span></span>Make sure that the `parseError` function for the parser is defined and calling `mermaidPAI.parseError`. This way a common way of detecting parse errors is provided for the end-user.
+</pre></div>
+</div>
+<p>For more info look in the example diagram type:</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">yy</span></code> object has the following function:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">exports</span><span class="p">.</span><span class="nx">parseError</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">hash</span><span class="p">){</span>
+   <span class="nx">mermaidAPI</span><span class="p">.</span><span class="nx">parseError</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">hash</span><span class="p">)</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+<p>when parsing the <code class="docutils literal notranslate"><span class="pre">yy</span></code> object is initialized as per below:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">parser</span>
+<span class="nx">parser</span> <span class="o">=</span> <span class="nx">exampleParser</span><span class="p">.</span><span class="nx">parser</span>
+<span class="nx">parser</span><span class="p">.</span><span class="nx">yy</span> <span class="o">=</span> <span class="nx">db</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="step-2-rendering">
+<h2>Step 2: Rendering<a class="headerlink" href="#step-2-rendering" title="Permalink to this headline">¶</a></h2>
+<p>Write a renderer that given the data found during parsing renders the diagram. To look at an example look at sequendeRenderer.js rather then the flowchart renderer as this is a more generic example.</p>
+<p>Place the renderer in the diagram folder.</p>
+</div>
+<div class="section" id="step-3-detection-of-the-new-diagram-type">
+<h2>Step 3: Detection of the new diagram type<a class="headerlink" href="#step-3-detection-of-the-new-diagram-type" title="Permalink to this headline">¶</a></h2>
+<p>The second thing to do is to add the capability to detect the new new diagram to type to the detectType in utils.js. The detection should return a key for the new diagram type.</p>
+</div>
+<div class="section" id="step-4-the-final-piece-triggering-the-rendering">
+<h2>Step 4: The final piece - triggering the rendering<a class="headerlink" href="#step-4-the-final-piece-triggering-the-rendering" title="Permalink to this headline">¶</a></h2>
+<p>At this point when mermaid is trying to render the diagram, it will detect it as being of the new type but there will be no match when trying to render the diagram. To fix this add a new case in the switch statement in main.js:init this should match the diagram type returned from step #2. The code in this new case statement should call the renderer for the diagram type with the data found by the parser as an argument.</p>
+</div>
+<div class="section" id="usage-of-the-parser-as-a-separate-module">
+<h2>Usage of the parser as a separate module<a class="headerlink" href="#usage-of-the-parser-as-a-separate-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="setup">
+<h3>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">graph</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./graphDb&#39;</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">flow</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./parser/flow&#39;</span><span class="p">)</span>
+<span class="nx">flow</span><span class="p">.</span><span class="nx">parser</span><span class="p">.</span><span class="nx">yy</span> <span class="o">=</span> <span class="nx">graph</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="parsing">
+<h3>Parsing<a class="headerlink" href="#parsing" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">flow</span><span class="p">.</span><span class="nx">parser</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">text</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="data-extraction">
+<h3>Data extraction<a class="headerlink" href="#data-extraction" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">graph</span><span class="p">.</span><span class="nx">getDirection</span><span class="p">()</span>
+<span class="nx">graph</span><span class="p">.</span><span class="nx">getVertices</span><span class="p">()</span>
+<span class="nx">graph</span><span class="p">.</span><span class="nx">getEdges</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>The parser is also exposed in the mermaid api by calling:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">parser</span> <span class="o">=</span> <span class="nx">mermaid</span><span class="p">.</span><span class="nx">getParser</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Note that the parse needs a graph object to store the data as per:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">flow</span><span class="p">.</span><span class="nx">parser</span><span class="p">.</span><span class="nx">yy</span> <span class="o">=</span> <span class="nx">graph</span>
+</pre></div>
+</div>
+<p>Look at <code class="docutils literal notranslate"><span class="pre">graphDb.js</span></code> for more details on that object.</p>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="CHANGELOG.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Change Log</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Configuration.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Configuration</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By xinetzone<br/>
+        
+            &copy; Copyright 2021, xinetzone.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

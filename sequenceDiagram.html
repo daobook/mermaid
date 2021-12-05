@@ -1,0 +1,1108 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sequence diagrams &#8212; mermaid 0.0.1 documentation</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Class diagrams" href="classDiagram.html" />
+    <link rel="prev" title="Flowcharts - Basic Syntax" href="flowchart.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">mermaid 0.0.1 documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="intro/index.html">
+   📔 Introduction
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="README.html">
+     About Mermaid
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-gettingStarted.html">
+     A Mermaid User-Guide for Beginners
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-syntaxReference.html">
+     Diagram Syntax
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="syntax/index.html">
+   📊 Diagram Syntax
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="flowchart.html">
+     Flowcharts - Basic Syntax
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Sequence diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="classDiagram.html">
+     Class diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="stateDiagram.html">
+     State diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="entityRelationshipDiagram.html">
+     Entity Relationship Diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="user-journey.html">
+     User Journey Diagram
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gantt.html">
+     Gantt diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="pie.html">
+     Pie chart diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="requirementDiagram.html">
+     Requirement Diagram
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="examples.html">
+     Examples
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="deploy-config/index.html">
+   ⚙️ Deployment and Configuration
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Tutorials.html">
+     Tutorials
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="usage.html">
+     Usage
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Setup.html">
+     mermaidAPI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="directives.html">
+     Directives
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="theming.html">
+     Theme Configuration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="mermaidCLI.html">
+     mermaid CLI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-advanced.html">
+     Advanced n00b mermaid (Coming soon..)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="misc/index.html">
+   📚 Misc
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="integrations.html">
+     Integrations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="faq.html">
+     Frequently Asked Questions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="contributions-community/index.html">
+   🙌 Contributions and Community
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-overview.html">
+     Overview for Beginners
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="development.html">
+     Development and Contribution 🙌
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CHANGELOG.html">
+     Change Log
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="newDiagram.html">
+     Adding a New Diagram/Chart 📊
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Configuration.html">
+   Configuration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="8.6.0_docs.html">
+   Version 8.6.0 Changes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="SUMMARY.html">
+   Summary
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="breakingChanges.html">
+   Breaking changes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="developer-docs/configuration.html">
+   Configuration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="diagrams-and-syntax-and-examples/flowchart.html">
+   Flowcharts - Basic Syntax
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="upgrading.html">
+   Upgrading
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/sequenceDiagram.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#syntax">
+   Syntax
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#participants">
+     Participants
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#actors">
+     Actors
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#aliases">
+     Aliases
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#messages">
+   Messages
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#activations">
+   Activations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#notes">
+   Notes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#loops">
+   Loops
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#alt">
+   Alt
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#parallel">
+   Parallel
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#background-highlighting">
+   Background Highlighting
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comments">
+   Comments
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#entity-codes-to-escape-characters">
+   Entity codes to escape characters
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sequencenumbers">
+   sequenceNumbers
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#actor-menus">
+   Actor Menus
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#advanced-menu-syntax">
+     Advanced Menu Syntax
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#styling">
+   Styling
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#classes-used">
+     Classes used
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sample-stylesheet">
+     Sample stylesheet
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#configuration">
+   Configuration
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#possible-configuration-parameters">
+     Possible configuration parameters:
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="sequence-diagrams">
+<h1>Sequence diagrams<a class="headerlink" href="#sequence-diagrams" title="Permalink to this headline">¶</a></h1>
+<p><strong>Edit this Page</strong> <a class="reference external" href="https://github.com/mermaid-js/mermaid/blob/develop/docs/sequenceDiagram.md"><img alt="N|Solid" src="_images/GitHub-Mark-32px.png" /></a></p>
+<blockquote>
+<div><p>A Sequence diagram is an interaction diagram that shows how processes operate with one another and in what order.</p>
+</div></blockquote>
+<p>Mermaid can render sequence diagrams.</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>sequenceDiagram
+    Alice-&gt;&gt;John: Hello John, how are you?
+    John--&gt;&gt;Alice: Great!
+    Alice-)John: See you later!
+</pre></div>
+</div>
+<div class="highlight-note notranslate"><div class="highlight"><pre><span></span>A note on nodes, the word &quot;end&quot; could potentially break the diagram, due to the way that the mermaid language is scripted.
+
+If unavoidable, one must use parentheses(), quotation marks &quot;&quot;, or brackets {},[], to enclose the word &quot;end&quot;. i.e : (end), [end], {end}.
+</pre></div>
+</div>
+<div class="section" id="syntax">
+<h2>Syntax<a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="participants">
+<h3>Participants<a class="headerlink" href="#participants" title="Permalink to this headline">¶</a></h3>
+<p>The participants can be defined implicitly as in the first example on this page. The participants or actors are
+rendered in order of appearance in the diagram source text. Sometimes you might want to show the participants in a
+different order than how they appear in the first message. It is possible to specify the actor’s order of
+appearance by doing the following:</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&gt;&gt;Bob: Hi Bob
+    Bob-&gt;&gt;Alice: Hi Alice
+</pre></div>
+</div>
+</div>
+<div class="section" id="actors">
+<h3>Actors<a class="headerlink" href="#actors" title="Permalink to this headline">¶</a></h3>
+<p>If you specifically want to use the actor symbol instead of a rectangle with text you can do so by using actor statements as per below.</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>sequenceDiagram
+    actor Alice
+    actor Bob
+    Alice-&gt;&gt;Bob: Hi Bob
+    Bob-&gt;&gt;Alice: Hi Alice
+</pre></div>
+</div>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>sequenceDiagram
+    actor Alice
+    actor Bob
+    Alice-&gt;&gt;Bob: Hi Bob
+    Bob-&gt;&gt;Alice: Hi Alice
+</pre></div>
+</div>
+</div>
+<div class="section" id="aliases">
+<h3>Aliases<a class="headerlink" href="#aliases" title="Permalink to this headline">¶</a></h3>
+<p>The actor can have a convenient identifier and a descriptive label.</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>sequenceDiagram
+    participant A as Alice
+    participant J as John
+    A-&gt;&gt;J: Hello John, how are you?
+    J-&gt;&gt;A: Great!
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="messages">
+<h2>Messages<a class="headerlink" href="#messages" title="Permalink to this headline">¶</a></h2>
+<p>Messages can be of two displayed either solid or with a dotted line.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">Actor</span><span class="p">][</span><span class="n">Arrow</span><span class="p">][</span><span class="n">Actor</span><span class="p">]:</span><span class="n">Message</span> <span class="n">text</span>
+</pre></div>
+</div>
+<p>There are six types of arrows currently supported:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>-&gt;</p></td>
+<td><p>Solid line without arrow</p></td>
+</tr>
+<tr class="row-odd"><td><p>–&gt;</p></td>
+<td><p>Dotted line without arrow</p></td>
+</tr>
+<tr class="row-even"><td><p>-&gt;&gt;</p></td>
+<td><p>Solid line with arrowhead</p></td>
+</tr>
+<tr class="row-odd"><td><p>–&gt;&gt;</p></td>
+<td><p>Dotted line with arrowhead</p></td>
+</tr>
+<tr class="row-even"><td><p>-x</p></td>
+<td><p>Solid line with a cross at the end</p></td>
+</tr>
+<tr class="row-odd"><td><p>–x</p></td>
+<td><p>Dotted line with a cross at the end.</p></td>
+</tr>
+<tr class="row-even"><td><p>-)</p></td>
+<td><p>Solid line with an open arrow at the end (async)</p></td>
+</tr>
+<tr class="row-odd"><td><p>–)</p></td>
+<td><p>Dotted line with a open arrow at the end (async)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="activations">
+<h2>Activations<a class="headerlink" href="#activations" title="Permalink to this headline">¶</a></h2>
+<p>It is possible to activate and deactivate an actor. (de)activation can be dedicated declarations:</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>sequenceDiagram
+    Alice-&gt;&gt;John: Hello John, how are you?
+    activate John
+    John--&gt;&gt;Alice: Great!
+    deactivate John
+</pre></div>
+</div>
+<p>There is also a shortcut notation by appending <code class="docutils literal notranslate"><span class="pre">+</span></code>/<code class="docutils literal notranslate"><span class="pre">-</span></code> suffix to the message arrow:</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>sequenceDiagram
+    Alice-&gt;&gt;+John: Hello John, how are you?
+    John--&gt;&gt;-Alice: Great!
+</pre></div>
+</div>
+<p>Activations can be stacked for same actor:</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>sequenceDiagram
+    Alice-&gt;&gt;+John: Hello John, how are you?
+    Alice-&gt;&gt;+John: John, can you hear me?
+    John--&gt;&gt;-Alice: Hi Alice, I can hear you!
+    John--&gt;&gt;-Alice: I feel great!
+</pre></div>
+</div>
+</div>
+<div class="section" id="notes">
+<h2>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h2>
+<p>It is possible to add notes to a sequence diagram. This is done by the notation
+Note [ right of | left of | over ] [Actor]: Text in note content</p>
+<p>See the example below:</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>sequenceDiagram
+    participant John
+    Note right of John: Text in note
+</pre></div>
+</div>
+<p>It is also possible to create notes spanning two participants:</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>sequenceDiagram
+    Alice-&gt;John: Hello John, how are you?
+    Note over Alice,John: A typical interaction
+</pre></div>
+</div>
+</div>
+<div class="section" id="loops">
+<h2>Loops<a class="headerlink" href="#loops" title="Permalink to this headline">¶</a></h2>
+<p>It is possible to express loops in a sequence diagram. This is done by the notation</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">loop</span> <span class="n">Loop</span> <span class="n">text</span>
+<span class="o">...</span> <span class="n">statements</span> <span class="o">...</span>
+<span class="n">end</span>
+</pre></div>
+</div>
+<p>See the example below:</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>sequenceDiagram
+    Alice-&gt;John: Hello John, how are you?
+    loop Every minute
+        John--&gt;Alice: Great!
+    end
+</pre></div>
+</div>
+</div>
+<div class="section" id="alt">
+<h2>Alt<a class="headerlink" href="#alt" title="Permalink to this headline">¶</a></h2>
+<p>It is possible to express alternative paths in a sequence diagram. This is done by the notation</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">alt</span> <span class="n">Describing</span> <span class="n">text</span>
+<span class="o">...</span> <span class="n">statements</span> <span class="o">...</span>
+<span class="k">else</span>
+<span class="o">...</span> <span class="n">statements</span> <span class="o">...</span>
+<span class="n">end</span>
+</pre></div>
+</div>
+<p>or if there is sequence that is optional (if without else).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">opt</span> <span class="n">Describing</span> <span class="n">text</span>
+<span class="o">...</span> <span class="n">statements</span> <span class="o">...</span>
+<span class="n">end</span>
+</pre></div>
+</div>
+<p>See the example below:</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>sequenceDiagram
+    Alice-&gt;&gt;Bob: Hello Bob, how are you?
+    alt is sick
+        Bob-&gt;&gt;Alice: Not so good :(
+    else is well
+        Bob-&gt;&gt;Alice: Feeling fresh like a daisy
+    end
+    opt Extra response
+        Bob-&gt;&gt;Alice: Thanks for asking
+    end
+</pre></div>
+</div>
+</div>
+<div class="section" id="parallel">
+<h2>Parallel<a class="headerlink" href="#parallel" title="Permalink to this headline">¶</a></h2>
+<p>It is possible to show actions that are happening in parallel.</p>
+<p>This is done by the notation</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">par</span> <span class="p">[</span><span class="n">Action</span> <span class="mi">1</span><span class="p">]</span>
+<span class="o">...</span> <span class="n">statements</span> <span class="o">...</span>
+<span class="ow">and</span> <span class="p">[</span><span class="n">Action</span> <span class="mi">2</span><span class="p">]</span>
+<span class="o">...</span> <span class="n">statements</span> <span class="o">...</span>
+<span class="ow">and</span> <span class="p">[</span><span class="n">Action</span> <span class="n">N</span><span class="p">]</span>
+<span class="o">...</span> <span class="n">statements</span> <span class="o">...</span>
+<span class="n">end</span>
+</pre></div>
+</div>
+<p>See the example below:</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>sequenceDiagram
+    par Alice to Bob
+        Alice-&gt;&gt;Bob: Hello guys!
+    and Alice to John
+        Alice-&gt;&gt;John: Hello guys!
+    end
+    Bob--&gt;&gt;Alice: Hi Alice!
+    John--&gt;&gt;Alice: Hi Alice!
+</pre></div>
+</div>
+<p>It is also possible to nest parallel blocks.</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>sequenceDiagram
+    par Alice to Bob
+        Alice-&gt;&gt;Bob: Go help John
+    and Alice to John
+        Alice-&gt;&gt;John: I want this done today
+        par John to Charlie
+            John-&gt;&gt;Charlie: Can we do this today?
+        and John to Diana
+            John-&gt;&gt;Diana: Can you help us today?
+        end
+    end
+</pre></div>
+</div>
+</div>
+<div class="section" id="background-highlighting">
+<h2>Background Highlighting<a class="headerlink" href="#background-highlighting" title="Permalink to this headline">¶</a></h2>
+<p>It is possible to highlight flows by providing colored background rects. This is done by the notation</p>
+<p>The colors are defined using rgb and rgba syntax.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rect</span> <span class="n">rgb</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="o">...</span> <span class="n">content</span> <span class="o">...</span>
+<span class="n">end</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rect</span> <span class="n">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mf">.1</span><span class="p">)</span>
+<span class="o">...</span> <span class="n">content</span> <span class="o">...</span>
+<span class="n">end</span>
+</pre></div>
+</div>
+<p>See the examples below:</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>sequenceDiagram
+    participant Alice
+    participant John
+
+    rect rgb(191, 223, 255)
+    note right of Alice: Alice calls John.
+    Alice-&gt;&gt;+John: Hello John, how are you?
+    rect rgb(200, 150, 255)
+    Alice-&gt;&gt;+John: John, can you hear me?
+    John--&gt;&gt;-Alice: Hi Alice, I can hear you!
+    end
+    John--&gt;&gt;-Alice: I feel great!
+    end
+    Alice -&gt;&gt;+ John: Did you want to go to the game tonight?
+    John --&gt;&gt;- Alice: Yeah! See you there.
+
+</pre></div>
+</div>
+</div>
+<div class="section" id="comments">
+<h2>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h2>
+<p>Comments can be entered within a sequence diagram, which will be ignored by the parser.  Comments need to be on their own line, and must be prefaced with <code class="docutils literal notranslate"><span class="pre">%%</span></code> (double percent signs). Any text after the start of the comment to the next newline will be treated as a comment, including any diagram syntax</p>
+<div class="highlight-mmd notranslate"><div class="highlight"><pre><span></span>sequenceDiagram
+    Alice-&gt;&gt;John: Hello John, how are you?
+    %% this is a comment
+    John--&gt;&gt;Alice: Great!
+</pre></div>
+</div>
+</div>
+<div class="section" id="entity-codes-to-escape-characters">
+<h2>Entity codes to escape characters<a class="headerlink" href="#entity-codes-to-escape-characters" title="Permalink to this headline">¶</a></h2>
+<p>It is possible to escape characters using the syntax exemplified here.</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>sequenceDiagram
+    A-&gt;&gt;B: I #9829; you!
+    B-&gt;&gt;A: I #9829; you #infin; times more!
+</pre></div>
+</div>
+<p>Numbers given are base 10, so <code class="docutils literal notranslate"><span class="pre">#</span></code> can be encoded as <code class="docutils literal notranslate"><span class="pre">#35;</span></code>. It is also supported to use HTML character names.</p>
+<p>Because semicolons can be used instead of line breaks to define the markup, you need to use <code class="docutils literal notranslate"><span class="pre">#59;</span></code> to include a semicolon in message text.</p>
+</div>
+<div class="section" id="sequencenumbers">
+<h2>sequenceNumbers<a class="headerlink" href="#sequencenumbers" title="Permalink to this headline">¶</a></h2>
+<p>It is possible to get a sequence number attached to each arrow in a sequence diagram. This can be configured when adding mermaid to the website as shown below:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+      <span class="nx">mermaid</span><span class="p">.</span><span class="nx">initialize</span><span class="p">({</span>
+        <span class="nx">sequence</span><span class="o">:</span> <span class="p">{</span> <span class="nx">showSequenceNumbers</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+      <span class="p">});</span>
+    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>It can also be be turned on via the diagram code as in the diagram:</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>sequenceDiagram
+    autonumber
+    Alice-&gt;&gt;John: Hello John, how are you?
+    loop Healthcheck
+        John-&gt;&gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts!
+    John--&gt;&gt;Alice: Great!
+    John-&gt;&gt;Bob: How about you?
+    Bob--&gt;&gt;John: Jolly good!
+</pre></div>
+</div>
+</div>
+<div class="section" id="actor-menus">
+<h2>Actor Menus<a class="headerlink" href="#actor-menus" title="Permalink to this headline">¶</a></h2>
+<p>Actors can have popup-menus containing individualized links to external pages.  For example, if an actor represented a web service, useful links might include a link to the service health dashboard, repo containing the code for the service, or a wiki page describing the service.</p>
+<p>This can be configured by adding one or more link lines with the format:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">link</span> <span class="o">&lt;</span><span class="n">actor</span><span class="o">&gt;</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">link</span><span class="o">-</span><span class="n">label</span><span class="o">&gt;</span> <span class="o">@</span> <span class="o">&lt;</span><span class="n">link</span><span class="o">-</span><span class="n">url</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<div class="highlight-mmd notranslate"><div class="highlight"><pre><span></span>sequenceDiagram
+    participant Alice
+    participant John
+    link Alice: Dashboard @ https://dashboard.contoso.com/alice
+    link Alice: Wiki @ https://wiki.contoso.com/alice
+    link John: Dashboard @ https://dashboard.contoso.com/john
+    link John: Wiki @ https://wiki.contoso.com/john
+    Alice-&gt;&gt;John: Hello John, how are you?
+    John--&gt;&gt;Alice: Great!
+    Alice-)John: See you later!
+</pre></div>
+</div>
+<div class="section" id="advanced-menu-syntax">
+<h3>Advanced Menu Syntax<a class="headerlink" href="#advanced-menu-syntax" title="Permalink to this headline">¶</a></h3>
+<p>There is an advanced syntax that relies on JSON formatting. If you are comfortable with JSON format, then this exists as well.</p>
+<p>This can be configured by adding the links lines with the format:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">links</span> <span class="o">&lt;</span><span class="n">actor</span><span class="o">&gt;</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">json</span><span class="o">-</span><span class="n">formatted</span> <span class="n">link</span><span class="o">-</span><span class="n">name</span> <span class="n">link</span><span class="o">-</span><span class="n">url</span> <span class="n">pairs</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>An example is below:</p>
+<div class="highlight-mmd notranslate"><div class="highlight"><pre><span></span>sequenceDiagram
+    participant Alice
+    participant John
+    links Alice: {&quot;Dashboard&quot;: &quot;https://dashboard.contoso.com/alice&quot;, &quot;Wiki&quot;: &quot;https://wiki.contoso.com/alice&quot;}
+    links John: {&quot;Dashboard&quot;: &quot;https://dashboard.contoso.com/john&quot;, &quot;Wiki&quot;: &quot;https://wiki.contoso.com/john&quot;}
+    Alice-&gt;&gt;John: Hello John, how are you?
+    John--&gt;&gt;Alice: Great!
+    Alice-)John: See you later!
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="styling">
+<h2>Styling<a class="headerlink" href="#styling" title="Permalink to this headline">¶</a></h2>
+<p>Styling of a sequence diagram is done by defining a number of css classes. During rendering these classes are extracted from the file located at src/themes/sequence.scss</p>
+<div class="section" id="classes-used">
+<h3>Classes used<a class="headerlink" href="#classes-used" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Class</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>actor</p></td>
+<td><p>Style for the actor box at the top of the diagram.</p></td>
+</tr>
+<tr class="row-odd"><td><p>text.actor</p></td>
+<td><p>Styles for text in the actor box at the top of the diagram.</p></td>
+</tr>
+<tr class="row-even"><td><p>actor-line</p></td>
+<td><p>The vertical line for an actor.</p></td>
+</tr>
+<tr class="row-odd"><td><p>messageLine0</p></td>
+<td><p>Styles for the solid message line.</p></td>
+</tr>
+<tr class="row-even"><td><p>messageLine1</p></td>
+<td><p>Styles for the dotted message line.</p></td>
+</tr>
+<tr class="row-odd"><td><p>messageText</p></td>
+<td><p>Defines styles for the text on the message arrows.</p></td>
+</tr>
+<tr class="row-even"><td><p>labelBox</p></td>
+<td><p>Defines styles label to left in a loop.</p></td>
+</tr>
+<tr class="row-odd"><td><p>labelText</p></td>
+<td><p>Styles for the text in label for loops.</p></td>
+</tr>
+<tr class="row-even"><td><p>loopText</p></td>
+<td><p>Styles for the text in the loop box.</p></td>
+</tr>
+<tr class="row-odd"><td><p>loopLine</p></td>
+<td><p>Defines styles for the lines in the loop box.</p></td>
+</tr>
+<tr class="row-even"><td><p>note</p></td>
+<td><p>Styles for the note box.</p></td>
+</tr>
+<tr class="row-odd"><td><p>noteText</p></td>
+<td><p>Styles for the text on in the note boxes.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="sample-stylesheet">
+<h3>Sample stylesheet<a class="headerlink" href="#sample-stylesheet" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">body</span> <span class="p">{</span>
+    <span class="k">background</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">actor</span> <span class="p">{</span>
+    <span class="n">stroke</span><span class="p">:</span> <span class="mh">#ccccff</span><span class="p">;</span>
+    <span class="n">fill</span><span class="p">:</span> <span class="mh">#ececff</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">text</span><span class="p">.</span><span class="nc">actor</span> <span class="p">{</span>
+    <span class="n">fill</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
+    <span class="n">stroke</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+    <span class="k">font-family</span><span class="p">:</span> <span class="n">Helvetica</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">actor-line</span> <span class="p">{</span>
+    <span class="n">stroke</span><span class="p">:</span> <span class="kc">grey</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">messageLine0</span> <span class="p">{</span>
+    <span class="n">stroke-width</span><span class="p">:</span> <span class="mf">1.5</span><span class="p">;</span>
+    <span class="n">stroke-dasharray</span><span class="p">:</span> <span class="s1">&#39;2 2&#39;</span><span class="p">;</span>
+    <span class="n">marker-end</span><span class="p">:</span> <span class="s1">&#39;url(#arrowhead)&#39;</span><span class="p">;</span>
+    <span class="n">stroke</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">messageLine1</span> <span class="p">{</span>
+    <span class="n">stroke-width</span><span class="p">:</span> <span class="mf">1.5</span><span class="p">;</span>
+    <span class="n">stroke-dasharray</span><span class="p">:</span> <span class="s1">&#39;2 2&#39;</span><span class="p">;</span>
+    <span class="n">stroke</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">arrowhead</span> <span class="p">{</span>
+    <span class="n">fill</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">messageText</span> <span class="p">{</span>
+    <span class="n">fill</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
+    <span class="n">stroke</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+    <span class="k">font-family</span><span class="p">:</span> <span class="s1">&#39;trebuchet ms&#39;</span><span class="p">,</span> <span class="n">verdana</span><span class="p">,</span> <span class="n">arial</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">14</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">labelBox</span> <span class="p">{</span>
+    <span class="n">stroke</span><span class="p">:</span> <span class="mh">#ccccff</span><span class="p">;</span>
+    <span class="n">fill</span><span class="p">:</span> <span class="mh">#ececff</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">labelText</span> <span class="p">{</span>
+    <span class="n">fill</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
+    <span class="n">stroke</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+    <span class="k">font-family</span><span class="p">:</span> <span class="s1">&#39;trebuchet ms&#39;</span><span class="p">,</span> <span class="n">verdana</span><span class="p">,</span> <span class="n">arial</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">loopText</span> <span class="p">{</span>
+    <span class="n">fill</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
+    <span class="n">stroke</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+    <span class="k">font-family</span><span class="p">:</span> <span class="s1">&#39;trebuchet ms&#39;</span><span class="p">,</span> <span class="n">verdana</span><span class="p">,</span> <span class="n">arial</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">loopLine</span> <span class="p">{</span>
+    <span class="n">stroke-width</span><span class="p">:</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="n">stroke-dasharray</span><span class="p">:</span> <span class="s1">&#39;2 2&#39;</span><span class="p">;</span>
+    <span class="n">marker-end</span><span class="p">:</span> <span class="s1">&#39;url(#arrowhead)&#39;</span><span class="p">;</span>
+    <span class="n">stroke</span><span class="p">:</span> <span class="mh">#ccccff</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">note</span> <span class="p">{</span>
+    <span class="n">stroke</span><span class="p">:</span> <span class="mh">#decc93</span><span class="p">;</span>
+    <span class="n">fill</span><span class="p">:</span> <span class="mh">#fff5ad</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">noteText</span> <span class="p">{</span>
+    <span class="n">fill</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
+    <span class="n">stroke</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+    <span class="k">font-family</span><span class="p">:</span> <span class="s1">&#39;trebuchet ms&#39;</span><span class="p">,</span> <span class="n">verdana</span><span class="p">,</span> <span class="n">arial</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">14</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<p>Is it possible to adjust the margins for rendering the sequence diagram.</p>
+<p>This is done by defining <code class="docutils literal notranslate"><span class="pre">mermaid.sequenceConfig</span></code> or by the CLI to use a json file with the configuration.
+How to use the CLI is described in the <a class="reference internal" href="mermaidCLI.html"><span class="doc std std-doc">mermaidCLI</span></a> page.
+<code class="docutils literal notranslate"><span class="pre">mermaid.sequenceConfig</span></code> can be set to a JSON string with config parameters or the corresponding object.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">mermaid</span><span class="p">.</span><span class="nx">sequenceConfig</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">diagramMarginX</span><span class="o">:</span> <span class="mf">50</span><span class="p">,</span>
+    <span class="nx">diagramMarginY</span><span class="o">:</span> <span class="mf">10</span><span class="p">,</span>
+    <span class="nx">boxTextMargin</span><span class="o">:</span> <span class="mf">5</span><span class="p">,</span>
+    <span class="nx">noteMargin</span><span class="o">:</span> <span class="mf">10</span><span class="p">,</span>
+    <span class="nx">messageMargin</span><span class="o">:</span> <span class="mf">35</span><span class="p">,</span>
+    <span class="nx">mirrorActors</span><span class="o">:</span> <span class="kc">true</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+<div class="section" id="possible-configuration-parameters">
+<h3>Possible configuration parameters:<a class="headerlink" href="#possible-configuration-parameters" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Default value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>mirrorActors</p></td>
+<td><p>Turns on/off the rendering of actors below the diagram as well as above it</p></td>
+<td><p>false</p></td>
+</tr>
+<tr class="row-odd"><td><p>bottomMarginAdj</p></td>
+<td><p>Adjusts how far down the graph ended. Wide borders styles with css could generate unwanted clipping which is why this config param exists.</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>actorFontSize</p></td>
+<td><p>Sets the font size for the actor’s description</p></td>
+<td><p>14</p></td>
+</tr>
+<tr class="row-odd"><td><p>actorFontFamily</p></td>
+<td><p>Sets the font family for the actor’s description</p></td>
+<td><p>“Open-Sans”, “sans-serif”</p></td>
+</tr>
+<tr class="row-even"><td><p>actorFontWeight</p></td>
+<td><p>Sets the font weight for the actor’s description</p></td>
+<td><p>“Open-Sans”, “sans-serif”</p></td>
+</tr>
+<tr class="row-odd"><td><p>noteFontSize</p></td>
+<td><p>Sets the font size for actor-attached notes</p></td>
+<td><p>14</p></td>
+</tr>
+<tr class="row-even"><td><p>noteFontFamily</p></td>
+<td><p>Sets the font family for actor-attached notes</p></td>
+<td><p>“trebuchet ms”, verdana, arial</p></td>
+</tr>
+<tr class="row-odd"><td><p>noteFontWeight</p></td>
+<td><p>Sets the font weight for actor-attached notes</p></td>
+<td><p>“trebuchet ms”, verdana, arial</p></td>
+</tr>
+<tr class="row-even"><td><p>noteAlign</p></td>
+<td><p>Sets the text alignment for text in actor-attached notes</p></td>
+<td><p>center</p></td>
+</tr>
+<tr class="row-odd"><td><p>messageFontSize</p></td>
+<td><p>Sets the font size for actor&lt;-&gt;actor messages</p></td>
+<td><p>16</p></td>
+</tr>
+<tr class="row-even"><td><p>messageFontFamily</p></td>
+<td><p>Sets the font family for actor&lt;-&gt;actor messages</p></td>
+<td><p>“trebuchet ms”, verdana, arial</p></td>
+</tr>
+<tr class="row-odd"><td><p>messageFontWeight</p></td>
+<td><p>Sets the font weight for actor&lt;-&gt;actor messages</p></td>
+<td><p>“trebuchet ms”, verdana, arial</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="flowchart.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Flowcharts - Basic Syntax</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="classDiagram.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Class diagrams</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By xinetzone<br/>
+        
+            &copy; Copyright 2021, xinetzone.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,1303 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flowcharts - Basic Syntax &#8212; mermaid 0.0.1 documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Upgrading" href="../upgrading.html" />
+    <link rel="prev" title="Configuration" href="../developer-docs/configuration.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">mermaid 0.0.1 documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../intro/index.html">
+   📔 Introduction
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../README.html">
+     About Mermaid
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../n00b-gettingStarted.html">
+     A Mermaid User-Guide for Beginners
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../n00b-syntaxReference.html">
+     Diagram Syntax
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../syntax/index.html">
+   📊 Diagram Syntax
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../flowchart.html">
+     Flowcharts - Basic Syntax
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../sequenceDiagram.html">
+     Sequence diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../classDiagram.html">
+     Class diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../stateDiagram.html">
+     State diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../entityRelationshipDiagram.html">
+     Entity Relationship Diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../user-journey.html">
+     User Journey Diagram
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../gantt.html">
+     Gantt diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../pie.html">
+     Pie chart diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../requirementDiagram.html">
+     Requirement Diagram
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../examples.html">
+     Examples
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../deploy-config/index.html">
+   ⚙️ Deployment and Configuration
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Tutorials.html">
+     Tutorials
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../usage.html">
+     Usage
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Setup.html">
+     mermaidAPI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../directives.html">
+     Directives
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../theming.html">
+     Theme Configuration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../mermaidCLI.html">
+     mermaid CLI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../n00b-advanced.html">
+     Advanced n00b mermaid (Coming soon..)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../misc/index.html">
+   📚 Misc
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../integrations.html">
+     Integrations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../faq.html">
+     Frequently Asked Questions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../contributions-community/index.html">
+   🙌 Contributions and Community
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../n00b-overview.html">
+     Overview for Beginners
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../development.html">
+     Development and Contribution 🙌
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CHANGELOG.html">
+     Change Log
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../newDiagram.html">
+     Adding a New Diagram/Chart 📊
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Configuration.html">
+   Configuration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../8.6.0_docs.html">
+   Version 8.6.0 Changes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../SUMMARY.html">
+   Summary
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../breakingChanges.html">
+   Breaking changes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../developer-docs/configuration.html">
+   Configuration
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Flowcharts - Basic Syntax
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../upgrading.html">
+   Upgrading
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/diagrams-and-syntax-and-examples/flowchart.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#graph">
+   Graph
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#flowchart-orientation">
+   Flowchart Orientation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#flowcharts">
+   Flowcharts
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#nodes-shapes">
+   Nodes &amp; shapes
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-node-default">
+     A node (default)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-node-with-text">
+     A node with text
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#node-shapes">
+   Node Shapes
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-node-with-round-edges">
+     A node with round edges
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-stadium-shaped-node">
+     A stadium-shaped node
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-node-in-a-subroutine-shape">
+     A node in a subroutine shape
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-node-in-a-cylindrical-shape">
+     A node in a cylindrical shape
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-node-in-the-form-of-a-circle">
+     A node in the form of a circle
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-node-in-an-asymmetric-shape">
+     A node in an asymmetric shape
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-node-rhombus">
+     A node (rhombus)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-hexagon-node">
+     A hexagon node
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#parallelogram">
+     Parallelogram
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#parallelogram-alt">
+     Parallelogram alt
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#trapezoid">
+     Trapezoid
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#trapezoid-alt">
+     Trapezoid alt
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#links-between-nodes">
+   Links between nodes
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-link-with-arrow-head">
+     A link with arrow head
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#an-open-link">
+     An open link
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#text-on-links">
+     Text on links
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-link-with-arrow-head-and-text">
+     A link with arrow head and text
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dotted-link">
+     Dotted link
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dotted-link-with-text">
+     Dotted link with text
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#thick-link">
+     Thick link
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#thick-link-with-text">
+     Thick link with text
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chaining-of-links">
+     Chaining of links
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#beta-new-arrow-types">
+     Beta: New arrow types
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#beta-multi-directional-arrows">
+     Beta: Multi directional arrows
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#minimum-length-of-a-link">
+     Minimum length of a link
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#special-characters-that-break-syntax">
+   Special characters that break syntax
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#entity-codes-to-escape-characters">
+     Entity codes to escape characters
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#subgraphs">
+   Subgraphs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#beta-flowcharts">
+   Beta: flowcharts
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interaction">
+   Interaction
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#comments">
+     Comments
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#styling-and-classes">
+   Styling and classes
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#styling-links">
+     Styling links
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#styling-a-node">
+     Styling a node
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#classes">
+       Classes
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#css-classes">
+     Css classes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#default-class">
+     Default class
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#basic-support-for-fontawesome">
+   Basic support for fontawesome
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#graph-declarations-with-spaces-between-vertices-and-link-and-without-semicolon">
+   Graph declarations with spaces between vertices and link and without semicolon
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#configuration">
+   Configuration…
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="flowcharts-basic-syntax">
+<h1>Flowcharts - Basic Syntax<a class="headerlink" href="#flowcharts-basic-syntax" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="graph">
+<h2>Graph<a class="headerlink" href="#graph" title="Permalink to this headline">¶</a></h2>
+<p>This statement declares the direction of the Flowchart.</p>
+<p>This declares the graph is oriented from top to bottom (<code class="docutils literal notranslate"><span class="pre">TD</span></code> or <code class="docutils literal notranslate"><span class="pre">TB</span></code>).</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph TD
+    Start --&gt; Stop
+</pre></div>
+</div>
+<p>This declares the graph is oriented from left to right (<code class="docutils literal notranslate"><span class="pre">LR</span></code>).</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR
+    Start --&gt; Stop
+</pre></div>
+</div>
+</div>
+<div class="section" id="flowchart-orientation">
+<h2>Flowchart Orientation<a class="headerlink" href="#flowchart-orientation" title="Permalink to this headline">¶</a></h2>
+<p>Possible FlowChart orientations are:</p>
+<ul class="simple">
+<li><p>TB - top to bottom</p></li>
+<li><p>TD - top-down/ same as top to bottom</p></li>
+<li><p>BT - bottom to top</p></li>
+<li><p>RL - right to left</p></li>
+<li><p>LR - left to right</p></li>
+</ul>
+</div>
+<div class="section" id="flowcharts">
+<h2>Flowcharts<a class="headerlink" href="#flowcharts" title="Permalink to this headline">¶</a></h2>
+<p>This renders a flowchart that allows for features such as: more arrow types, multi directional arrows, and linking to and from subgraphs.</p>
+<p>Apart from the graph type, the syntax is the same. This is currently experimental but when the beta period is over, both the graph and flowchart keywords will render in the new way. This means it is ok to start beta testing flowcharts.</p>
+<blockquote>
+<div><p><strong>Important note</strong> Do not type the word “end” as a Flowchart node. Capitalize all or any one the letters to keep the flowchart from breaking, i.e, “End” or “END”. Or you can apply this <a class="reference external" href="https://github.com/mermaid-js/mermaid/issues/1444#issuecomment-639528897">workaround</a>.**</p>
+</div></blockquote>
+</div>
+<div class="section" id="nodes-shapes">
+<h2>Nodes &amp; shapes<a class="headerlink" href="#nodes-shapes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="a-node-default">
+<h3>A node (default)<a class="headerlink" href="#a-node-default" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR
+    id
+</pre></div>
+</div>
+<blockquote>
+<div><p><strong>Note</strong> The id is what is displayed in the box.</p>
+</div></blockquote>
+</div>
+<div class="section" id="a-node-with-text">
+<h3>A node with text<a class="headerlink" href="#a-node-with-text" title="Permalink to this headline">¶</a></h3>
+<p>It is also possible to set text in the box that differs from the id. If this is done several times, it is the last text
+found for the node that will be used. Also if you define edges for the node later on, you can omit text definitions. The
+one previously defined will be used when rendering the box.</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR
+    id1[This is the text in the box]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="node-shapes">
+<h2>Node Shapes<a class="headerlink" href="#node-shapes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="a-node-with-round-edges">
+<h3>A node with round edges<a class="headerlink" href="#a-node-with-round-edges" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR
+    id1(This is the text in the box)
+</pre></div>
+</div>
+</div>
+<div class="section" id="a-stadium-shaped-node">
+<h3>A stadium-shaped node<a class="headerlink" href="#a-stadium-shaped-node" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR
+    id1([This is the text in the box])
+</pre></div>
+</div>
+</div>
+<div class="section" id="a-node-in-a-subroutine-shape">
+<h3>A node in a subroutine shape<a class="headerlink" href="#a-node-in-a-subroutine-shape" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR
+    id1[[This is the text in the box]]
+</pre></div>
+</div>
+</div>
+<div class="section" id="a-node-in-a-cylindrical-shape">
+<h3>A node in a cylindrical shape<a class="headerlink" href="#a-node-in-a-cylindrical-shape" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR
+    id1[(Database)]
+</pre></div>
+</div>
+</div>
+<div class="section" id="a-node-in-the-form-of-a-circle">
+<h3>A node in the form of a circle<a class="headerlink" href="#a-node-in-the-form-of-a-circle" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR
+    id1((This is the text in the circle))
+</pre></div>
+</div>
+</div>
+<div class="section" id="a-node-in-an-asymmetric-shape">
+<h3>A node in an asymmetric shape<a class="headerlink" href="#a-node-in-an-asymmetric-shape" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR
+    id1&gt;This is the text in the box]
+</pre></div>
+</div>
+<p>Currently only the shape above is possible and not its mirror. <em>This might change with future releases.</em></p>
+</div>
+<div class="section" id="a-node-rhombus">
+<h3>A node (rhombus)<a class="headerlink" href="#a-node-rhombus" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR
+    id1{This is the text in the box}
+</pre></div>
+</div>
+</div>
+<div class="section" id="a-hexagon-node">
+<h3>A hexagon node<a class="headerlink" href="#a-hexagon-node" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR
+    id1{{This is the text in the box}}
+</pre></div>
+</div>
+</div>
+<div class="section" id="parallelogram">
+<h3>Parallelogram<a class="headerlink" href="#parallelogram" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph TD
+    id1[/This is the text in the box/]
+</pre></div>
+</div>
+</div>
+<div class="section" id="parallelogram-alt">
+<h3>Parallelogram alt<a class="headerlink" href="#parallelogram-alt" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph TD
+    id1[\This is the text in the box\]
+</pre></div>
+</div>
+</div>
+<div class="section" id="trapezoid">
+<h3>Trapezoid<a class="headerlink" href="#trapezoid" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph TD
+    A[/Christmas\]
+</pre></div>
+</div>
+</div>
+<div class="section" id="trapezoid-alt">
+<h3>Trapezoid alt<a class="headerlink" href="#trapezoid-alt" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph TD
+    B[\Go shopping/]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="links-between-nodes">
+<h2>Links between nodes<a class="headerlink" href="#links-between-nodes" title="Permalink to this headline">¶</a></h2>
+<p>Nodes can be connected with links/edges. It is possible to have different types of links or attach a text string to a link.</p>
+<div class="section" id="a-link-with-arrow-head">
+<h3>A link with arrow head<a class="headerlink" href="#a-link-with-arrow-head" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR
+    A--&gt;B
+</pre></div>
+</div>
+</div>
+<div class="section" id="an-open-link">
+<h3>An open link<a class="headerlink" href="#an-open-link" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR
+    A --- B
+</pre></div>
+</div>
+</div>
+<div class="section" id="text-on-links">
+<h3>Text on links<a class="headerlink" href="#text-on-links" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR
+    A-- This is the text! ---B
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR
+    A---|This is the text|B
+</pre></div>
+</div>
+</div>
+<div class="section" id="a-link-with-arrow-head-and-text">
+<h3>A link with arrow head and text<a class="headerlink" href="#a-link-with-arrow-head-and-text" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR
+    A--&gt;|text|B
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR
+    A-- text --&gt;B
+</pre></div>
+</div>
+</div>
+<div class="section" id="dotted-link">
+<h3>Dotted link<a class="headerlink" href="#dotted-link" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR;
+   A-.-&gt;B;
+</pre></div>
+</div>
+</div>
+<div class="section" id="dotted-link-with-text">
+<h3>Dotted link with text<a class="headerlink" href="#dotted-link-with-text" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR
+   A-. text .-&gt; B
+</pre></div>
+</div>
+</div>
+<div class="section" id="thick-link">
+<h3>Thick link<a class="headerlink" href="#thick-link" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR
+   A ==&gt; B
+</pre></div>
+</div>
+</div>
+<div class="section" id="thick-link-with-text">
+<h3>Thick link with text<a class="headerlink" href="#thick-link-with-text" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR
+   A == text ==&gt; B
+</pre></div>
+</div>
+</div>
+<div class="section" id="chaining-of-links">
+<h3>Chaining of links<a class="headerlink" href="#chaining-of-links" title="Permalink to this headline">¶</a></h3>
+<p>It is possible to declare many links in the same line as per below:</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR
+   A -- text --&gt; B -- text2 --&gt; C
+</pre></div>
+</div>
+<p>It is also possible to declare multiple nodes links in the same line as per below:</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR
+   a --&gt; b &amp; c--&gt; d
+</pre></div>
+</div>
+<p>You can then describe dependencies in a very expressive way. Like the one-liner below:</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph TB
+    A &amp; B--&gt; C &amp; D
+</pre></div>
+</div>
+<p>If you describe the same diagram using the the basic syntax, it will take four lines. A
+word of warning, one could go overboard with this making the graph harder to read in
+markdown form. The Swedish word <code class="docutils literal notranslate"><span class="pre">lagom</span></code> comes to mind. It means, not too much and not too little.
+This goes for expressive syntaxes as well.</p>
+<div class="highlight-mmd notranslate"><div class="highlight"><pre><span></span>graph TB
+    A --&gt; C
+    A --&gt; D
+    B --&gt; C
+    B --&gt; D
+</pre></div>
+</div>
+</div>
+<div class="section" id="beta-new-arrow-types">
+<h3>Beta: New arrow types<a class="headerlink" href="#beta-new-arrow-types" title="Permalink to this headline">¶</a></h3>
+<p>When using flowchart instead of graph there are new types of arrows supported as per below:</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>flowchart LR
+    A --o B
+    B --x C
+</pre></div>
+</div>
+</div>
+<div class="section" id="beta-multi-directional-arrows">
+<h3>Beta: Multi directional arrows<a class="headerlink" href="#beta-multi-directional-arrows" title="Permalink to this headline">¶</a></h3>
+<p>When using flowchart instead of graph there is the possibility to use multidirectional arrows.</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>flowchart LR
+    A o--o B
+    B &lt;--&gt; C
+    C x--x D
+</pre></div>
+</div>
+</div>
+<div class="section" id="minimum-length-of-a-link">
+<h3>Minimum length of a link<a class="headerlink" href="#minimum-length-of-a-link" title="Permalink to this headline">¶</a></h3>
+<p>Each node in the flowchart is ultimately assigned to a rank in the rendered
+graph, i.e. to a vertical or horizontal level (depending on the flowchart
+orientation), based on the nodes to which it is linked. By default, links
+can span any number of ranks, but you can ask for any link to be longer
+than the others by adding extra dashes in the link definition.</p>
+<p>In the following example, two extra dashes are added in the link from node <em>B</em>
+to node <em>E</em>, so that it spans two more ranks than regular links:</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph TD
+    A[Start] --&gt; B{Is it?};
+    B --&gt;|Yes| C[OK];
+    C --&gt; D[Rethink];
+    D --&gt; B;
+    B ----&gt;|No| E[End];
+</pre></div>
+</div>
+<blockquote>
+<div><p><strong>Note</strong> Links may still be made longer than the requested number of ranks
+by the rendering engine to accommodate other requests.</p>
+</div></blockquote>
+<p>When the link label is written in the middle of the link, the extra dashes must
+be added on the right side of the link. The following example is equivalent to
+the previous one:</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph TD
+    A[Start] --&gt; B{Is it?};
+    B -- Yes --&gt; C[OK];
+    C --&gt; D[Rethink];
+    D --&gt; B;
+    B -- No ----&gt; E[End];
+</pre></div>
+</div>
+<p>For dotted or thick links, the characters to add are equals signs or dots,
+as summed up in the following table:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Length</p></th>
+<th class="text-align:center head"><p>1</p></th>
+<th class="text-align:center head"><p>2</p></th>
+<th class="text-align:center head"><p>3</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Normal</p></td>
+<td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">---</span></code></p></td>
+<td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">----</span></code></p></td>
+<td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">-----</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Normal with arrow</p></td>
+<td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">--&gt;</span></code></p></td>
+<td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">---&gt;</span></code></p></td>
+<td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">----&gt;</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Thick</p></td>
+<td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">===</span></code></p></td>
+<td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">====</span></code></p></td>
+<td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">=====</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Thick with arrow</p></td>
+<td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">==&gt;</span></code></p></td>
+<td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">===&gt;</span></code></p></td>
+<td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">====&gt;</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Dotted</p></td>
+<td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">-.-</span></code></p></td>
+<td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">-..-</span></code></p></td>
+<td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">-...-</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Dotted with arrow</p></td>
+<td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">-.-&gt;</span></code></p></td>
+<td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">-..-&gt;</span></code></p></td>
+<td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">-...-&gt;</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="special-characters-that-break-syntax">
+<h2>Special characters that break syntax<a class="headerlink" href="#special-characters-that-break-syntax" title="Permalink to this headline">¶</a></h2>
+<p>It is possible to put text within quotes in order to render more troublesome characters. As in the example below:</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR
+    id1[&quot;This is the (text) in the box&quot;]
+</pre></div>
+</div>
+<div class="section" id="entity-codes-to-escape-characters">
+<h3>Entity codes to escape characters<a class="headerlink" href="#entity-codes-to-escape-characters" title="Permalink to this headline">¶</a></h3>
+<p>It is possible to escape characters using the syntax exemplified here.</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>    graph LR
+        A[&quot;A double quote:#quot;&quot;] --&gt;B[&quot;A dec char:#9829;&quot;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="subgraphs">
+<h2>Subgraphs<a class="headerlink" href="#subgraphs" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">subgraph</span> <span class="n">title</span>
+    <span class="n">graph</span> <span class="n">definition</span>
+<span class="n">end</span>
+</pre></div>
+</div>
+<p>An example below:</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph TB
+    c1--&gt;a2
+    subgraph one
+    a1--&gt;a2
+    end
+    subgraph two
+    b1--&gt;b2
+    end
+    subgraph three
+    c1--&gt;c2
+    end
+</pre></div>
+</div>
+<p>You can also set an explicit id for the subgraph.</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph TB
+    c1--&gt;a2
+    subgraph ide1 [one]
+    a1--&gt;a2
+    end
+</pre></div>
+</div>
+</div>
+<div class="section" id="beta-flowcharts">
+<h2>Beta: flowcharts<a class="headerlink" href="#beta-flowcharts" title="Permalink to this headline">¶</a></h2>
+<p>With the graphtype flowcharts it is also possible to set edges to and from subgraphs as in the graph below.</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>flowchart TB
+    c1--&gt;a2
+    subgraph one
+    a1--&gt;a2
+    end
+    subgraph two
+    b1--&gt;b2
+    end
+    subgraph three
+    c1--&gt;c2
+    end
+    one --&gt; two
+    three --&gt; two
+    two --&gt; c2
+</pre></div>
+</div>
+</div>
+<div class="section" id="interaction">
+<h2>Interaction<a class="headerlink" href="#interaction" title="Permalink to this headline">¶</a></h2>
+<p>It is possible to bind a click event to a node, the click can lead to either a javascript callback or to a link which will be opened in a new browser tab. <strong>Note</strong>: This functionality is disabled when using <code class="docutils literal notranslate"><span class="pre">securityLevel='strict'</span></code> and enabled when using <code class="docutils literal notranslate"><span class="pre">securityLevel='loose'</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">click</span> <span class="n">nodeId</span> <span class="n">callback</span>
+<span class="n">click</span> <span class="n">nodeId</span> <span class="n">call</span> <span class="n">callback</span><span class="p">()</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>nodeId is the id of the node</p></li>
+<li><p>callback is the name of a javascript function defined on the page displaying the graph, the function will be called with the nodeId as parameter.</p></li>
+</ul>
+<p>Examples of tooltip usage below:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="kd">var</span> <span class="nx">callback</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+      <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;A callback was triggered&#39;</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>The tooltip text is surrounded in double quotes. The styles of the tooltip are set by the class .mermaidTooltip.</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR;
+    A--&gt;B;
+    B--&gt;C;
+    C--&gt;D;
+    click A callback &quot;Tooltip for a callback&quot;
+    click B &quot;http://www.github.com&quot; &quot;This is a tooltip for a link&quot;
+    click A call callback() &quot;Tooltip for a callback&quot;
+    click B href &quot;http://www.github.com&quot; &quot;This is a tooltip for a link&quot;
+</pre></div>
+</div>
+<blockquote>
+<div><p><strong>Success</strong> The tooltip functionality and the ability to link to urls are available from version 0.5.2.</p>
+</div></blockquote>
+<p>?&gt; Due to limitations with how Docsify handles JavaScript callback functions, an alternate working demo for the above code can be viewed at <a class="reference external" href="https://jsfiddle.net/s37cjoau/3/">this jsfiddle</a>.</p>
+<p>Links are opened in the same browser tab/window by default. It is possible to change this by adding a link target to the click definition (<code class="docutils literal notranslate"><span class="pre">_self</span></code>, <code class="docutils literal notranslate"><span class="pre">_blank</span></code>, <code class="docutils literal notranslate"><span class="pre">_parent</span></code> and <code class="docutils literal notranslate"><span class="pre">_top</span></code> are supported):</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR;
+    A--&gt;B;
+    B--&gt;C;
+    C--&gt;D;
+    D--&gt;E;
+    click A &quot;http://www.github.com&quot; _blank
+    click B &quot;http://www.github.com&quot; &quot;Open this in a new tab&quot; _blank
+    click C href &quot;http://www.github.com&quot; _blank
+    click D href &quot;http://www.github.com&quot; &quot;Open this in a new tab&quot; _blank
+</pre></div>
+</div>
+<p>Beginners tip, a full example using interactive links in a html context:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;mermaid&quot;</span><span class="p">&gt;</span>
+    graph LR;
+        A--&gt;B;
+        B--&gt;C;
+        C--&gt;D;
+        click A callback &quot;Tooltip&quot;
+        click B &quot;http://www.github.com&quot; &quot;This is a link&quot;
+        click C call callback() &quot;Tooltip&quot;
+        click D href &quot;http://www.github.com&quot; &quot;This is a link&quot;
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="kd">var</span> <span class="nx">callback</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;A callback was triggered&#39;</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="kd">var</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="nx">startOnLoad</span><span class="o">:</span><span class="kc">true</span><span class="p">,</span>
+        <span class="nx">flowchart</span><span class="o">:</span><span class="p">{</span>
+            <span class="nx">useMaxWidth</span><span class="o">:</span><span class="kc">true</span><span class="p">,</span>
+            <span class="nx">htmlLabels</span><span class="o">:</span><span class="kc">true</span><span class="p">,</span>
+            <span class="nx">curve</span><span class="o">:</span><span class="s1">&#39;cardinal&#39;</span><span class="p">,</span>
+        <span class="p">},</span>
+        <span class="nx">securityLevel</span><span class="o">:</span><span class="s1">&#39;loose&#39;</span><span class="p">,</span>
+    <span class="p">};</span>
+
+    <span class="nx">mermaid</span><span class="p">.</span><span class="nx">initialize</span><span class="p">(</span><span class="nx">config</span><span class="p">);</span>
+  <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="section" id="comments">
+<h3>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h3>
+<p>Comments can be entered within a flow diagram, which will be ignored by the parser.  Comments need to be on their own line, and must be prefaced with <code class="docutils literal notranslate"><span class="pre">%%</span></code> (double percent signs). Any text after the start of the comment to the next newline will be treated as a comment, including any flow syntax</p>
+<div class="highlight-mmd notranslate"><div class="highlight"><pre><span></span>graph LR
+%% this is a comment A -- text --&gt; B{node}
+   A -- text --&gt; B -- text2 --&gt; C
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="styling-and-classes">
+<h2>Styling and classes<a class="headerlink" href="#styling-and-classes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="styling-links">
+<h3>Styling links<a class="headerlink" href="#styling-links" title="Permalink to this headline">¶</a></h3>
+<p>It is possible to style links. For instance you might want to style a link that is going backwards in the flow. As links
+have no ids in the same way as nodes, some other way of deciding what style the links should be attached to is required.
+Instead of ids, the order number of when the link was defined in the graph is used. In the example below the style
+defined in the linkStyle statement will belong to the fourth link in the graph:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">linkStyle</span> <span class="mi">3</span> <span class="n">stroke</span><span class="p">:</span><span class="c1">#ff3,stroke-width:4px,color:red;</span>
+</pre></div>
+</div>
+<p>You can specify default to apply to all links, or you can give a list of link order numbers seperated by a comma.</p>
+<p>Instead of giving a styles option, you can also use custom d3 curve types with the following syntax:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">linkStyle</span> <span class="n">default</span><span class="o">|</span><span class="n">numList</span><span class="o">|</span><span class="n">num</span> <span class="n">interpolate</span> <span class="n">curveType</span>
+</pre></div>
+</div>
+<p>If you want to add style options too, instead of writing:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">linkStyle</span> <span class="n">default</span> <span class="n">interpolate</span> <span class="n">cardinal</span>
+<span class="n">linkStyle</span> <span class="n">default</span> <span class="n">stroke</span><span class="p">:</span><span class="c1">#ff3,stroke-width:4px,color:red;</span>
+</pre></div>
+</div>
+<p>You can combine them into:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">linkStyle</span> <span class="n">default</span> <span class="n">interpolate</span> <span class="n">cardinal</span> <span class="n">stroke</span><span class="p">:</span><span class="c1">#ff3,stroke-width:4px,color:red;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="styling-a-node">
+<h3>Styling a node<a class="headerlink" href="#styling-a-node" title="Permalink to this headline">¶</a></h3>
+<p>It is possible to apply specific styles such as a thicker border or a different background color to a node.</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR
+    id1(Start)--&gt;id2(Stop)
+    style id1 fill:#f9f,stroke:#333,stroke-width:4px
+    style id2 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+</pre></div>
+</div>
+<div class="section" id="classes">
+<h4>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h4>
+<p>More convenient then defining the style every time is to define a class of styles and attach this class to the nodes that
+should have a different look.</p>
+<p>a class definition looks like the example below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">classDef</span> <span class="n">className</span> <span class="n">fill</span><span class="p">:</span><span class="c1">#f9f,stroke:#333,stroke-width:4px;</span>
+</pre></div>
+</div>
+<p>Attachment of a class to a node is done as per below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="k">class</span> <span class="nc">nodeId1</span> <span class="n">className</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>It is also possible to attach a class to a list of nodes in one statement:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="k">class</span> <span class="nc">nodeId1</span><span class="p">,</span><span class="n">nodeId2</span> <span class="n">className</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>A shorter form of adding a class is to attach the classname to the node using the <code class="docutils literal notranslate"><span class="pre">:::</span></code>operator as per below:</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR
+    A:::someclass --&gt; B
+    classDef someclass fill:#f96;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="css-classes">
+<h3>Css classes<a class="headerlink" href="#css-classes" title="Permalink to this headline">¶</a></h3>
+<p>It is also possible to predefine classes in css styles that can be applied from the graph definition as in the example
+below:</p>
+<p><strong>Example style</strong></p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+    <span class="p">.</span><span class="nc">cssClass</span> <span class="o">&gt;</span> <span class="nt">rect</span><span class="p">{</span>
+        <span class="n">fill</span><span class="p">:</span><span class="mh">#FF0000</span><span class="p">;</span>
+        <span class="n">stroke</span><span class="p">:</span><span class="mh">#FFFF00</span><span class="p">;</span>
+        <span class="n">stroke-width</span><span class="p">:</span><span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p><strong>Example definition</strong></p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR;
+    A--&gt;B[AAA&lt;span&gt;BBB&lt;/span&gt;];
+    B--&gt;D;
+    class A cssClass;
+</pre></div>
+</div>
+</div>
+<div class="section" id="default-class">
+<h3>Default class<a class="headerlink" href="#default-class" title="Permalink to this headline">¶</a></h3>
+<p>If a class is named default it will be assigned to all classes without specific class definitions.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">classDef</span> <span class="n">default</span> <span class="n">fill</span><span class="p">:</span><span class="c1">#f9f,stroke:#333,stroke-width:4px;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="basic-support-for-fontawesome">
+<h2>Basic support for fontawesome<a class="headerlink" href="#basic-support-for-fontawesome" title="Permalink to this headline">¶</a></h2>
+<p>It is possible to add icons from fontawesome.</p>
+<p>The icons are accessed via the syntax fa:#icon class name#.</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph TD
+    B[&quot;fa:fa-twitter for peace&quot;]
+    B--&gt;C[fa:fa-ban forbidden]
+    B--&gt;D(fa:fa-spinner);
+    B--&gt;E(A fa:fa-camera-retro perhaps?);
+</pre></div>
+</div>
+</div>
+<div class="section" id="graph-declarations-with-spaces-between-vertices-and-link-and-without-semicolon">
+<h2>Graph declarations with spaces between vertices and link and without semicolon<a class="headerlink" href="#graph-declarations-with-spaces-between-vertices-and-link-and-without-semicolon" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>In graph declarations, the statements also can now end without a semicolon. After release 0.2.16, ending a graph statement with semicolon is just optional. So the below graph declaration is also valid along with the old declarations of the graph.</p></li>
+<li><p>A single space is allowed between vertices and the link. However there should not be any space between a vertex and its text and a link and its text. The old syntax of graph declaration will also work and hence this new feature is optional and is introduce to improve readability.</p></li>
+</ul>
+<p>Below is the new declaration of the graph edges which is also valid along with the old declaration of the graph edges.</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>graph LR
+    A[Hard edge] --&gt;|Link text| B(Round edge)
+    B --&gt; C{Decision}
+    C --&gt;|One| D[Result one]
+    C --&gt;|Two| E[Result two]
+</pre></div>
+</div>
+</div>
+<div class="section" id="configuration">
+<h2>Configuration…<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<p>Is it possible to adjust the width of the rendered flowchart.</p>
+<p>This is done by defining <strong>mermaid.flowchartConfig</strong> or by the CLI to use a json file with the configuration. How to use
+the CLI is described in the mermaidCLI page.
+mermaid.flowchartConfig can be set to a JSON string with config parameters or the corresponding object.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">mermaid</span><span class="p">.</span><span class="nx">flowchartConfig</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">width</span><span class="o">:</span> <span class="mf">100</span><span class="o">%</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../developer-docs/configuration.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Configuration</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../upgrading.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Upgrading</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By xinetzone<br/>
+        
+            &copy; Copyright 2021, xinetzone.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

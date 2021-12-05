@@ -1,0 +1,1222 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class diagrams &#8212; mermaid 0.0.1 documentation</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="State diagrams" href="stateDiagram.html" />
+    <link rel="prev" title="Sequence diagrams" href="sequenceDiagram.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">mermaid 0.0.1 documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="intro/index.html">
+   📔 Introduction
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="README.html">
+     About Mermaid
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-gettingStarted.html">
+     A Mermaid User-Guide for Beginners
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-syntaxReference.html">
+     Diagram Syntax
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="syntax/index.html">
+   📊 Diagram Syntax
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="flowchart.html">
+     Flowcharts - Basic Syntax
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sequenceDiagram.html">
+     Sequence diagrams
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Class diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="stateDiagram.html">
+     State diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="entityRelationshipDiagram.html">
+     Entity Relationship Diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="user-journey.html">
+     User Journey Diagram
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gantt.html">
+     Gantt diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="pie.html">
+     Pie chart diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="requirementDiagram.html">
+     Requirement Diagram
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="examples.html">
+     Examples
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="deploy-config/index.html">
+   ⚙️ Deployment and Configuration
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Tutorials.html">
+     Tutorials
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="usage.html">
+     Usage
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Setup.html">
+     mermaidAPI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="directives.html">
+     Directives
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="theming.html">
+     Theme Configuration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="mermaidCLI.html">
+     mermaid CLI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-advanced.html">
+     Advanced n00b mermaid (Coming soon..)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="misc/index.html">
+   📚 Misc
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="integrations.html">
+     Integrations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="faq.html">
+     Frequently Asked Questions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="contributions-community/index.html">
+   🙌 Contributions and Community
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-overview.html">
+     Overview for Beginners
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="development.html">
+     Development and Contribution 🙌
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CHANGELOG.html">
+     Change Log
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="newDiagram.html">
+     Adding a New Diagram/Chart 📊
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Configuration.html">
+   Configuration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="8.6.0_docs.html">
+   Version 8.6.0 Changes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="SUMMARY.html">
+   Summary
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="breakingChanges.html">
+   Breaking changes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="developer-docs/configuration.html">
+   Configuration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="diagrams-and-syntax-and-examples/flowchart.html">
+   Flowcharts - Basic Syntax
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="upgrading.html">
+   Upgrading
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/classDiagram.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#syntax">
+   Syntax
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#class">
+     Class
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#define-a-class">
+   Define a class
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#defining-members-of-a-class">
+   Defining Members of a class
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#return-type">
+     Return Type
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#generic-types">
+     Generic Types
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Return Type
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visibility">
+     Visibility
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#defining-relationship">
+   Defining Relationship
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#labels-on-relations">
+     Labels on Relations
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#two-way-relations">
+     Two-way relations
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cardinality-multiplicity-on-relations">
+   Cardinality / Multiplicity on relations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#annotations-on-classes">
+   Annotations on classes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comments">
+   Comments
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#setting-the-direction-of-the-diagram">
+   Setting the direction of the diagram
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interaction">
+   Interaction
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#examples">
+     Examples
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#styling">
+   Styling
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#styling-a-node">
+     Styling a node
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#default-styles">
+     Default Styles
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#sample-stylesheet">
+       Sample stylesheet
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#configuration">
+   Configuration
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="class-diagrams">
+<h1>Class diagrams<a class="headerlink" href="#class-diagrams" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>“In software engineering, a class diagram in the Unified Modeling Language (UML) is a type of static structure diagram that describes the structure of a system by showing the system’s classes, their attributes, operations (or methods), and the relationships among objects.”
+Wikipedia</p>
+</div></blockquote>
+<p>The class diagram is the main building block of object-oriented modeling. It is used for general conceptual modeling of the structure of the application, and for detailed modeling translating the models into programming code. Class diagrams can also be used for data modeling. The classes in a class diagram represent both the main elements, interactions in the application, and the classes to be programmed.</p>
+<p>Mermaid can render class diagrams.</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span> classDiagram
+      Animal &lt;|-- Duck
+      Animal &lt;|-- Fish
+      Animal &lt;|-- Zebra
+      Animal : +int age
+      Animal : +String gender
+      Animal: +isMammal()
+      Animal: +mate()
+      class Duck{
+          +String beakColor
+          +swim()
+          +quack()
+      }
+      class Fish{
+          -int sizeInFeet
+          -canEat()
+      }
+      class Zebra{
+          +bool is_wild
+          +run()
+      }
+
+</pre></div>
+</div>
+<div class="section" id="syntax">
+<h2>Syntax<a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="class">
+<h3>Class<a class="headerlink" href="#class" title="Permalink to this headline">¶</a></h3>
+<p>UML provides mechanisms to represent class members, such as attributes and methods, and additional information about them.
+A single instance of a class in the diagram contains three compartments:</p>
+<ul class="simple">
+<li><p>The top compartment contains the name of the class. It is printed in bold and centered, and the first letter is capitalized. It may also contain optional annotation text describing the nature of the class.</p></li>
+<li><p>The middle compartment contains the attributes of the class. They are left-aligned and the first letter is lowercase.
+The bottom compartment contains the operations the class can execute. They are also left-aligned and the first letter is lowercase.</p></li>
+</ul>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>classDiagram
+    class BankAccount
+    BankAccount : +String owner
+    BankAccount : +Bigdecimal balance
+    BankAccount : +deposit(amount)
+    BankAccount : +withdrawl(amount)
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="define-a-class">
+<h2>Define a class<a class="headerlink" href="#define-a-class" title="Permalink to this headline">¶</a></h2>
+<p>There are two ways to define a class:</p>
+<ul class="simple">
+<li><p>Explicitly defining a class using keyword <strong>class</strong> like <code class="docutils literal notranslate"><span class="pre">class</span> <span class="pre">Animal</span></code>. This defines the Animal class</p></li>
+<li><p>Define two classes via a <strong>relationship</strong> between them <code class="docutils literal notranslate"><span class="pre">Vehicle</span> <span class="pre">&lt;|--</span> <span class="pre">Car</span></code>. This defines two classes Vehicle and Car along with their relationship.</p></li>
+</ul>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>classDiagram
+    class Animal
+    Vehicle &lt;|-- Car
+</pre></div>
+</div>
+<p>Naming convention: a class name should be composed of alphanumeric (unicode allowed) and underscore characters.</p>
+</div>
+<div class="section" id="defining-members-of-a-class">
+<h2>Defining Members of a class<a class="headerlink" href="#defining-members-of-a-class" title="Permalink to this headline">¶</a></h2>
+<p>UML provides mechanisms to represent class members, such as attributes and methods, and additional information about them.</p>
+<p>Mermaid distinguishes between attributes and functions/methods based on if the <strong>parenthesis</strong> <code class="docutils literal notranslate"><span class="pre">()</span></code> are present or not. The ones with <code class="docutils literal notranslate"><span class="pre">()</span></code> are treated as functions/methods, and others as attributes.</p>
+<p>There are two ways to define the members of a class, and regardless of whichever syntax is used to define the members, the output will still be same. The two different ways are :</p>
+<ul class="simple">
+<li><p>Associate a member of a class using <strong>:</strong> (colon) followed by member name, useful to define one member at a time. For example:</p></li>
+</ul>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span> classDiagram
+ class BankAccount
+ BankAccount : +String owner
+ BankAccount : +BigDecimal balance
+ BankAccount : +deposit(amount)
+ BankAccount : +withdrawal(amount)
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Associate members of a class using <strong>{}</strong> brackets, where members are grouped within curly brackets. Suitable for defining multiple members at once. For example:</p></li>
+</ul>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>classDiagram
+class BankAccount{
+    +String owner
+    +BigDecimal balance
+    +deposit(amount)
+    +withdrawl(amount)
+}
+</pre></div>
+</div>
+<div class="section" id="return-type">
+<h3>Return Type<a class="headerlink" href="#return-type" title="Permalink to this headline">¶</a></h3>
+<p>Optionally you can end the method/function definition with the data type that will be returned (note: there must be a space between the final <code class="docutils literal notranslate"><span class="pre">)</span></code> of the method definition and return type
+example:</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>classDiagram
+class BankAccount{
+    +String owner
+    +BigDecimal balance
+    +deposit(amount) bool
+    +withdrawl(amount) int
+}
+</pre></div>
+</div>
+</div>
+<div class="section" id="generic-types">
+<h3>Generic Types<a class="headerlink" href="#generic-types" title="Permalink to this headline">¶</a></h3>
+<p>Members can be defined using generic types, such as <code class="docutils literal notranslate"><span class="pre">List&lt;int&gt;</span></code>, for fields, parameters and return types by enclosing the type within <code class="docutils literal notranslate"><span class="pre">~</span></code> (<strong>tilde</strong>). Note: <strong>nested</strong> type declarations (such as <code class="docutils literal notranslate"><span class="pre">List&lt;List&lt;int&gt;&gt;</span></code>) are not currently supported</p>
+<p>This can be done as part of either class definition method:</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>classDiagram
+class Square~Shape~{
+    int id
+    List~int~ position
+    setPoints(List~int~ points)
+    getPoints() List~int~
+}
+
+Square : -List~string~ messages
+Square : +setMessages(List~string~ messages)
+Square : +getMessages() List~string~
+</pre></div>
+</div>
+</div>
+<div class="section" id="id1">
+<h3>Return Type<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Optionally you can end the method/function definition with the data type that will be returned</p>
+</div>
+<div class="section" id="visibility">
+<h3>Visibility<a class="headerlink" href="#visibility" title="Permalink to this headline">¶</a></h3>
+<p>To specify the visibility of a class member (i.e. any attribute or method), these notations may be placed before the member’s name, but it is optional:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">+</span></code> Public</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-</span></code> Private</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">#</span></code> Protected</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">~</span></code> Package/Internal</p></li>
+</ul>
+<blockquote>
+<div><p><em>note</em> you can also include additional <em>classifiers</em> to a method definition by adding the following notations to the end of the method, i.e.: after the <code class="docutils literal notranslate"><span class="pre">()</span></code>:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">*</span></code> Abstract e.g.: <code class="docutils literal notranslate"><span class="pre">someAbstractMethod()*</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">$</span></code> Static e.g.: <code class="docutils literal notranslate"><span class="pre">someStaticMethod()$</span></code></p></li>
+</ul>
+</div></blockquote>
+<blockquote>
+<div><p><em>note</em> you can also include additional <em>classifiers</em> to a field definition by adding the following notations to the end of the field name:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">$</span></code> Static e.g.: <code class="docutils literal notranslate"><span class="pre">String</span> <span class="pre">someField$</span></code></p></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="defining-relationship">
+<h2>Defining Relationship<a class="headerlink" href="#defining-relationship" title="Permalink to this headline">¶</a></h2>
+<p>A relationship is a general term covering the specific types of logical connections found on class and object diagrams.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">classA</span><span class="p">][</span><span class="n">Arrow</span><span class="p">][</span><span class="n">ClassB</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>There are different types of relations defined for classes under UML which are currently supported:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>&lt;|–</p></td>
+<td><p>Inheritance</p></td>
+</tr>
+<tr class="row-odd"><td><p>*–</p></td>
+<td><p>Composition</p></td>
+</tr>
+<tr class="row-even"><td><p>o–</p></td>
+<td><p>Aggregation</p></td>
+</tr>
+<tr class="row-odd"><td><p>–&gt;</p></td>
+<td><p>Association</p></td>
+</tr>
+<tr class="row-even"><td><p>–</p></td>
+<td><p>Link (Solid)</p></td>
+</tr>
+<tr class="row-odd"><td><p>..&gt;</p></td>
+<td><p>Dependency</p></td>
+</tr>
+<tr class="row-even"><td><p>..|&gt;</p></td>
+<td><p>Realization</p></td>
+</tr>
+<tr class="row-odd"><td><p>..</p></td>
+<td><p>Link (Dashed)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>classDiagram
+classA &lt;|-- classB
+classC *-- classD
+classE o-- classF
+classG &lt;-- classH
+classI -- classJ
+classK &lt;.. classL
+classM &lt;|.. classN
+classO .. classP
+
+</pre></div>
+</div>
+<p>We can use the labels to describe nature of relation between two classes. Also, arrowheads can be used in opposite directions as well :</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>classDiagram
+classA --|&gt; classB : Inheritance
+classC --* classD : Composition
+classE --o classF : Aggregation
+classG --&gt; classH : Association
+classI -- classJ : Link(Solid)
+classK ..&gt; classL : Dependency
+classM ..|&gt; classN : Realization
+classO .. classP : Link(Dashed)
+
+</pre></div>
+</div>
+<div class="section" id="labels-on-relations">
+<h3>Labels on Relations<a class="headerlink" href="#labels-on-relations" title="Permalink to this headline">¶</a></h3>
+<p>It is possible to add a label text to a relation:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">classA</span><span class="p">][</span><span class="n">Arrow</span><span class="p">][</span><span class="n">ClassB</span><span class="p">]:</span><span class="n">LabelText</span>
+</pre></div>
+</div>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>classDiagram
+classA &lt;|-- classB : implements
+classC *-- classD : composition
+classE o-- classF : association
+</pre></div>
+</div>
+</div>
+<div class="section" id="two-way-relations">
+<h3>Two-way relations<a class="headerlink" href="#two-way-relations" title="Permalink to this headline">¶</a></h3>
+<p>Relations can go in multiple ways:</p>
+<div class="highlight-mmd notranslate"><div class="highlight"><pre><span></span>classDiagram
+    Animal &lt;|--|&gt; Zebra
+</pre></div>
+</div>
+<p>Here is the syntax:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">Relation</span> <span class="n">Type</span><span class="p">][</span><span class="n">Link</span><span class="p">][</span><span class="n">Relation</span> <span class="n">Type</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Where <code class="docutils literal notranslate"><span class="pre">Relation</span> <span class="pre">Type</span></code> can be one of:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>&lt;|</p></td>
+<td><p>Inheritance</p></td>
+</tr>
+<tr class="row-odd"><td><p>*</p></td>
+<td><p>Composition</p></td>
+</tr>
+<tr class="row-even"><td><p>o</p></td>
+<td><p>Aggregation</p></td>
+</tr>
+<tr class="row-odd"><td><p>&gt;</p></td>
+<td><p>Association</p></td>
+</tr>
+<tr class="row-even"><td><p>&lt;</p></td>
+<td><p>Association</p></td>
+</tr>
+<tr class="row-odd"><td><p>|&gt;</p></td>
+<td><p>Realization</p></td>
+</tr>
+</tbody>
+</table>
+<p>And <code class="docutils literal notranslate"><span class="pre">Link</span></code> can be one of:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>–</p></td>
+<td><p>Solid</p></td>
+</tr>
+<tr class="row-odd"><td><p>..</p></td>
+<td><p>Dashed</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="cardinality-multiplicity-on-relations">
+<h2>Cardinality / Multiplicity on relations<a class="headerlink" href="#cardinality-multiplicity-on-relations" title="Permalink to this headline">¶</a></h2>
+<p>Multiplicity or cardinality in class diagrams indicates the number of instances of one class linked to one instance of the other class. For example, one company will have one or more employees, but each employee works for just one company.</p>
+<p>Multiplicity notations are placed near the ends of an association.</p>
+<p>The different cardinality options are :</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">1</span></code> Only 1</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">0..1</span></code> Zero or One</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">1..*</span></code> One or more</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">*</span></code> Many</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">n</span></code> n {where n&gt;1}</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">0..n</span></code> zero to n {where n&gt;1}</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">1..n</span></code> one to n {where n&gt;1}</p></li>
+</ul>
+<p>Cardinality can be easily defined by placing cardinality text within quotes <code class="docutils literal notranslate"><span class="pre">&quot;</span></code> before(optional) and after(optional) a given arrow.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">classA</span><span class="p">]</span> <span class="s2">&quot;cardinality1&quot;</span> <span class="p">[</span><span class="n">Arrow</span><span class="p">]</span> <span class="s2">&quot;cardinality2&quot;</span> <span class="p">[</span><span class="n">ClassB</span><span class="p">]:</span><span class="n">LabelText</span>
+</pre></div>
+</div>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>classDiagram
+    Customer &quot;1&quot; --&gt; &quot;*&quot; Ticket
+    Student &quot;1&quot; --&gt; &quot;1..*&quot; Course
+    Galaxy --&gt; &quot;many&quot; Star : Contains
+</pre></div>
+</div>
+</div>
+<div class="section" id="annotations-on-classes">
+<h2>Annotations on classes<a class="headerlink" href="#annotations-on-classes" title="Permalink to this headline">¶</a></h2>
+<p>It is possible to annotate classes with a specific marker text which is like meta-data for the class, giving a clear indication about its nature. Some common annotations examples could be:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;&lt;Interface&gt;&gt;</span></code> To represent an Interface class</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;&lt;abstract&gt;&gt;</span></code> To represent an abstract class</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;&lt;Service&gt;&gt;</span></code> To represent a service class</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;&lt;enumeration&gt;&gt;</span></code> To represent an enum</p></li>
+</ul>
+<p>Annotations are defined within the opening <code class="docutils literal notranslate"><span class="pre">&lt;&lt;</span></code> and closing <code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span></code>. There are two ways to add an annotation to a class and regardless of the syntax used output will be same. The two ways are :</p>
+<ul class="simple">
+<li><p>In a <strong><em>separate line</em></strong> after a class is defined. For example:</p></li>
+</ul>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>classDiagram
+class Shape
+&lt;&lt;interface&gt;&gt; Shape
+Shape : noOfVertices
+Shape : draw()
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>In a <strong><em>nested structure</em></strong> along with class definition. For example:</p></li>
+</ul>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>classDiagram
+class Shape{
+    &lt;&lt;interface&gt;&gt;
+    noOfVertices
+    draw()
+}
+class Color{
+    &lt;&lt;enumeration&gt;&gt;
+    RED
+    BLUE
+    GREEN
+    WHITE
+    BLACK
+}
+
+</pre></div>
+</div>
+</div>
+<div class="section" id="comments">
+<h2>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h2>
+<p>Comments can be entered within a class diagram, which will be ignored by the parser. Comments need to be on their own line, and must be prefaced with <code class="docutils literal notranslate"><span class="pre">%%</span></code> (double percent signs). Any text after the start of the comment to the next newline will be treated as a comment, including any class diagram syntax</p>
+<div class="highlight-mmd notranslate"><div class="highlight"><pre><span></span>classDiagram
+%% This whole line is a comment classDiagram class Shape &lt;&lt;interface&gt;&gt;
+class Shape{
+    &lt;&lt;interface&gt;&gt;
+    noOfVertices
+    draw()
+}
+
+</pre></div>
+</div>
+</div>
+<div class="section" id="setting-the-direction-of-the-diagram">
+<h2>Setting the direction of the diagram<a class="headerlink" href="#setting-the-direction-of-the-diagram" title="Permalink to this headline">¶</a></h2>
+<p>With class diagrams you can use the direction statement to set the direction which the diagram will render like in this example.</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>classDiagram
+  direction RL
+  class Student {
+    -idCard : IdCard
+  }
+  class IdCard{
+    -id : int
+    -name : string
+  }
+  class Bike{
+    -id : int
+    -name : string
+  }
+  Student &quot;1&quot; --o &quot;1&quot; IdCard : carries
+  Student &quot;1&quot; --o &quot;1&quot; Bike : rides
+</pre></div>
+</div>
+</div>
+<div class="section" id="interaction">
+<h2>Interaction<a class="headerlink" href="#interaction" title="Permalink to this headline">¶</a></h2>
+<p>It is possible to bind a click event to a node, the click can lead to either a javascript callback or to a link which will be opened in a new browser tab. <strong>Note</strong>: This functionality is disabled when using <code class="docutils literal notranslate"><span class="pre">securityLevel='strict'</span></code> and enabled when using <code class="docutils literal notranslate"><span class="pre">securityLevel='loose'</span></code>.</p>
+<p>You would define these actions on a separate line after all classes have been declared.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">action</span> <span class="n">className</span> <span class="s2">&quot;reference&quot;</span> <span class="s2">&quot;tooltip&quot;</span>
+<span class="n">click</span> <span class="n">className</span> <span class="n">call</span> <span class="n">callback</span><span class="p">()</span> <span class="s2">&quot;tooltip&quot;</span>
+<span class="n">click</span> <span class="n">className</span> <span class="n">href</span> <span class="s2">&quot;url&quot;</span> <span class="s2">&quot;tooltip&quot;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><em>action</em> is either <code class="docutils literal notranslate"><span class="pre">link</span></code> or <code class="docutils literal notranslate"><span class="pre">callback</span></code>, depending on which type of interaction you want to have called</p></li>
+<li><p><em>className</em> is the id of the node that the action will be associated with</p></li>
+<li><p><em>reference</em> is either the url link, or the function name for callback.</p></li>
+<li><p>(<em>optional</em>) tooltip is a string to be displayed when hovering over element (note: The styles of the tooltip are set by the class .mermaidTooltip.)</p></li>
+<li><p>note: callback function will be called with the nodeId as parameter.</p></li>
+</ul>
+<div class="section" id="examples">
+<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h3>
+<p><em>URL Link:</em></p>
+<div class="highlight-mmd notranslate"><div class="highlight"><pre><span></span>classDiagram
+class Shape
+link Shape &quot;http://www.github.com&quot; &quot;This is a tooltip for a link&quot;
+class Shape2
+click Shape2 href &quot;http://www.github.com&quot; &quot;This is a tooltip for a link&quot;
+</pre></div>
+</div>
+<p><em>Callback:</em></p>
+<div class="highlight-mmd notranslate"><div class="highlight"><pre><span></span>classDiagram
+class Shape
+callback Shape &quot;callbackFunction&quot; &quot;This is a tooltip for a callback&quot;
+class Shape2
+click Shape2 call callbackFunction() &quot;This is a tooltip for a callback&quot;
+</pre></div>
+</div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="kd">var</span> <span class="nx">callbackFunction</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+        alert(&#39;A callback was triggered&#39;);
+    }
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="highlight-mermaid notranslate"><div class="highlight"><pre><span></span>classDiagram
+    class Class01
+    class Class02
+    callback Class01 &quot;callbackFunction&quot; &quot;Callback tooltip&quot;
+    link Class02 &quot;http://www.github.com&quot; &quot;This is a link&quot;
+    class Class03
+    class Class04
+    click Class03 call callbackFunction() &quot;Callback tooltip&quot;
+    click Class04 href &quot;http://www.github.com&quot; &quot;This is a link&quot;
+</pre></div>
+</div>
+<blockquote>
+<div><p><strong>Success</strong> The tooltip functionality and the ability to link to urls are available from version 0.5.2.</p>
+</div></blockquote>
+<p>Beginners tip, a full example using interactive links in an html context:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>&lt;body&gt;
+  &lt;div class=&quot;mermaid&quot;&gt;
+    classDiagram
+    Animal &lt;|-- Duck
+    Animal &lt;|-- Fish
+    Animal &lt;|-- Zebra
+    Animal : +int age
+    Animal : +String gender
+    Animal: +isMammal()
+    Animal: +mate()
+    class Duck{
+      +String beakColor
+      +swim()
+      +quack()
+      }
+    class Fish{
+      -int sizeInFeet
+      -canEat()
+      }
+    class Zebra{
+      +bool is_wild
+      +run()
+      }
+
+      callback Duck callback &quot;Tooltip&quot;
+      link Zebra &quot;http://www.github.com&quot; &quot;This is a link&quot;
+  &lt;/div&gt;
+
+  &lt;script&gt;
+    var callback = function(){
+        alert(&#39;A callback was triggered&#39;);
+    }
+    var config = {
+      startOnLoad:true,
+      securityLevel:&#39;loose&#39;,
+    };
+
+    mermaid.initialize(config);
+  &lt;/script&gt;
+&lt;/body&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="styling">
+<h2>Styling<a class="headerlink" href="#styling" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="styling-a-node">
+<h3>Styling a node<a class="headerlink" href="#styling-a-node" title="Permalink to this headline">¶</a></h3>
+<p>It is possible to apply specific styles such as a thicker border or a different background color to individual nodes. This is done by predefining classes in css styles that can be applied from the graph definition as in the example
+below:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+    <span class="p">.</span><span class="nc">cssClass</span> <span class="o">&gt;</span> <span class="nt">rect</span><span class="p">{</span>
+        <span class="n">fill</span><span class="p">:</span><span class="mh">#FF0000</span><span class="p">;</span>
+        <span class="n">stroke</span><span class="p">:</span><span class="mh">#FFFF00</span><span class="p">;</span>
+        <span class="n">stroke-width</span><span class="p">:</span><span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>Then attaching that class to a specific node as per below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">cssClass</span> <span class="s2">&quot;nodeId1&quot;</span> <span class="n">cssClass</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>It is also possible to attach a class to a list of nodes in one statement:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">cssClass</span> <span class="s2">&quot;nodeId1,nodeId2&quot;</span> <span class="n">cssClass</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>A shorter form of adding a class is to attach the classname to the node using the <code class="docutils literal notranslate"><span class="pre">:::</span></code> operator as per below:</p>
+<div class="highlight-mmd notranslate"><div class="highlight"><pre><span></span>classDiagram
+    class Animal:::cssClass
+</pre></div>
+</div>
+<p>Or:</p>
+<div class="highlight-mmd notranslate"><div class="highlight"><pre><span></span>classDiagram
+    class Animal:::cssClass {
+        -int sizeInFeet
+        -canEat()
+    }
+</pre></div>
+</div>
+<p>?&gt; cssClasses cannot be added using this shorthand method at the same time as a relation statement.</p>
+<p>?&gt; Due to limitations with existing markup for class diagrams, it is not currently possible to define css classes within the diagram itself.  <em><strong>Coming soon!</strong></em></p>
+</div>
+<div class="section" id="default-styles">
+<h3>Default Styles<a class="headerlink" href="#default-styles" title="Permalink to this headline">¶</a></h3>
+<p>The main styling of the class diagram is done with a preset number of css classes. During rendering these classes are extracted from the file located at src/themes/class.scss. The classes used here are described below:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Class</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>g.classGroup text</p></td>
+<td><p>Styles for general class text</p></td>
+</tr>
+<tr class="row-odd"><td><p>classGroup .title</p></td>
+<td><p>Styles for general class title</p></td>
+</tr>
+<tr class="row-even"><td><p>g.classGroup rect</p></td>
+<td><p>Styles for class diagram rectangle</p></td>
+</tr>
+<tr class="row-odd"><td><p>g.classGroup line</p></td>
+<td><p>Styles for class diagram line</p></td>
+</tr>
+<tr class="row-even"><td><p>.classLabel .box</p></td>
+<td><p>Styles for class label box</p></td>
+</tr>
+<tr class="row-odd"><td><p>.classLabel .label</p></td>
+<td><p>Styles for class label text</p></td>
+</tr>
+<tr class="row-even"><td><p>composition</p></td>
+<td><p>Styles for composition arrow head and arrow line</p></td>
+</tr>
+<tr class="row-odd"><td><p>aggregation</p></td>
+<td><p>Styles for aggregation arrow head and arrow line(dashed or solid)</p></td>
+</tr>
+<tr class="row-even"><td><p>dependency</p></td>
+<td><p>Styles for dependency arrow head and arrow line</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="sample-stylesheet">
+<h4>Sample stylesheet<a class="headerlink" href="#sample-stylesheet" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span>body {
+    background: white;
+}
+
+g.classGroup text {
+    fill: $nodeBorder;
+    stroke: none;
+    font-family: &#39;trebuchet ms&#39;, verdana, arial;
+    font-family: var(--mermaid-font-family);
+    font-size: 10px;
+
+    .title {
+        font-weight: bolder;
+    }
+}
+
+g.classGroup rect {
+    fill: $nodeBkg;
+    stroke: $nodeBorder;
+}
+
+g.classGroup line {
+    stroke: $nodeBorder;
+    stroke-width: 1;
+}
+
+.classLabel .box {
+    stroke: none;
+    stroke-width: 0;
+    fill: $nodeBkg;
+    opacity: 0.5;
+}
+
+.classLabel .label {
+    fill: $nodeBorder;
+    font-size: 10px;
+}
+
+.relation {
+    stroke: $nodeBorder;
+    stroke-width: 1;
+    fill: none;
+}
+
+@mixin composition {
+    fill: $nodeBorder;
+    stroke: $nodeBorder;
+    stroke-width: 1;
+}
+
+#compositionStart {
+    @include composition;
+}
+
+#compositionEnd {
+    @include composition;
+}
+
+@mixin aggregation {
+    fill: $nodeBkg;
+    stroke: $nodeBorder;
+    stroke-width: 1;
+}
+
+#aggregationStart {
+    @include aggregation;
+}
+
+#aggregationEnd {
+    @include aggregation;
+}
+
+#dependencyStart {
+    @include composition;
+}
+
+#dependencyEnd {
+    @include composition;
+}
+
+#extensionStart {
+    @include composition;
+}
+
+#extensionEnd {
+    @include composition;
+}
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">Coming</span> <span class="pre">soon</span></code></p>
+</div>
+</div>
+
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="sequenceDiagram.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Sequence diagrams</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="stateDiagram.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">State diagrams</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By xinetzone<br/>
+        
+            &copy; Copyright 2021, xinetzone.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

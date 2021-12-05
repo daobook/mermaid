@@ -1,0 +1,882 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Version 8.6.0 Changes &#8212; mermaid 0.0.1 documentation</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Summary" href="SUMMARY.html" />
+    <link rel="prev" title="Configuration" href="Configuration.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">mermaid 0.0.1 documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="intro/index.html">
+   📔 Introduction
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="README.html">
+     About Mermaid
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-gettingStarted.html">
+     A Mermaid User-Guide for Beginners
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-syntaxReference.html">
+     Diagram Syntax
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="syntax/index.html">
+   📊 Diagram Syntax
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="flowchart.html">
+     Flowcharts - Basic Syntax
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sequenceDiagram.html">
+     Sequence diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="classDiagram.html">
+     Class diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="stateDiagram.html">
+     State diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="entityRelationshipDiagram.html">
+     Entity Relationship Diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="user-journey.html">
+     User Journey Diagram
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gantt.html">
+     Gantt diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="pie.html">
+     Pie chart diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="requirementDiagram.html">
+     Requirement Diagram
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="examples.html">
+     Examples
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="deploy-config/index.html">
+   ⚙️ Deployment and Configuration
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Tutorials.html">
+     Tutorials
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="usage.html">
+     Usage
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Setup.html">
+     mermaidAPI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="directives.html">
+     Directives
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="theming.html">
+     Theme Configuration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="mermaidCLI.html">
+     mermaid CLI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-advanced.html">
+     Advanced n00b mermaid (Coming soon..)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="misc/index.html">
+   📚 Misc
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="integrations.html">
+     Integrations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="faq.html">
+     Frequently Asked Questions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="contributions-community/index.html">
+   🙌 Contributions and Community
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-overview.html">
+     Overview for Beginners
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="development.html">
+     Development and Contribution 🙌
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CHANGELOG.html">
+     Change Log
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="newDiagram.html">
+     Adding a New Diagram/Chart 📊
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Configuration.html">
+   Configuration
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Version 8.6.0 Changes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="SUMMARY.html">
+   Summary
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="breakingChanges.html">
+   Breaking changes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="developer-docs/configuration.html">
+   Configuration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="diagrams-and-syntax-and-examples/flowchart.html">
+   Flowcharts - Basic Syntax
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="upgrading.html">
+   Upgrading
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/8.6.0_docs.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Version 8.6.0 Changes
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#new-mermaid-live-editor-beta">
+     New Mermaid Live-Editor Beta
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cdn">
+     CDN
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#limits-to-modifying-configurations">
+   Limits to Modifying Configurations
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#secure-arrays">
+   Secure Arrays
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#modifying-configurations-and-directives">
+   Modifying Configurations and directives:
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#init">
+   Init
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wrap">
+   Wrap
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#resetting-configurations">
+   Resetting Configurations:
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#additional-utils-to-mermaid">
+   Additional Utils to mermaid
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#new-api-requests-introduced-in-version-8-6-0">
+   New API Requests Introduced in Version 8.6.0
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setsiteconfig">
+     setSiteConfig
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getsiteconfig">
+     getSiteConfig
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setconfig">
+     setConfig
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getconfig">
+     getConfig
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sanitize">
+     sanitize
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reset">
+     reset
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conf">
+     conf
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#for-more-information-read-setup">
+     For more information, read
+     <span class="xref myst">
+      Setup
+     </span>
+     .
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="version-8-6-0-changes">
+<h1>Version 8.6.0 Changes<a class="headerlink" href="#version-8-6-0-changes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="new-mermaid-live-editor-beta">
+<h2><a class="reference external" href="https://mermaid-js.github.io/docs/mermaid-live-editor-beta/#/edit/eyJjb2RlIjoiJSV7aW5pdDoge1widGhlbWVcIjogXCJmb3Jlc3RcIiwgXCJsb2dMZXZlbFwiOiAxIH19JSVcbmdyYXBoIFREXG4gIEFbQ2hyaXN0bWFzXSAtLT58R2V0IG1vbmV5fCBCKEdvIHNob3BwaW5nKVxuICBCIC0tPiBDe0xldCBtZSB0aGlua31cbiAgQyAtLT58T25lfCBEW0xhcHRvcF1cbiAgQyAtLT58VHdvfCBFW2lQaG9uZV1cbiAgQyAtLT58VGhyZWV8IEZbZmE6ZmEtY2FyIENhcl1cblx0XHQiLCJtZXJtYWlkIjp7InRoZW1lIjoiZGFyayJ9fQ">New Mermaid Live-Editor Beta</a><a class="headerlink" href="#new-mermaid-live-editor-beta" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="cdn">
+<h2><a class="reference external" href="https://unpkg.com/mermaid/">CDN</a><a class="headerlink" href="#cdn" title="Permalink to this headline">¶</a></h2>
+<p>With version 8.6.0 comes the release of directives for mermaid, a new system for modifying configurations, with the aim of establishing centralized, sane defaults and simple implementation.</p>
+<p><code class="docutils literal notranslate"><span class="pre">directives</span></code> allow for a single-use overwriting of <code class="docutils literal notranslate"><span class="pre">config</span></code>, as it has been discussed in <a class="reference internal" href="Setup.html"><span class="doc std std-doc">Configurations</span></a>.
+This allows site Diagram Authors to instantiate temporary modifications to <code class="docutils literal notranslate"><span class="pre">config</span></code> through the use of <span class="xref myst">Directives</span>, which are parsed before rendering diagram definitions. This allows the Diagram Authors to alter the appearance of the diagrams.</p>
+<p><strong>A likely application for this is in the creation of diagrams/charts inside company/organizational webpages, that rely on mermaid for diagram and chart rendering.</strong></p>
+<p>the <code class="docutils literal notranslate"><span class="pre">init</span></code> directive is the main method of configuration for Site and Current Levels.</p>
+<p>The three levels of are Configuration, Global, Site and Current.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Level of Configuration</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Global Configuration</p></td>
+<td><p>Default Mermaid Configurations</p></td>
+</tr>
+<tr class="row-odd"><td><p>Site Configuration</p></td>
+<td><p>Configurations made by site owner</p></td>
+</tr>
+<tr class="row-even"><td><p>Current Configuration</p></td>
+<td><p>Configurations made by Implementors</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="limits-to-modifying-configurations">
+<h1>Limits to Modifying Configurations<a class="headerlink" href="#limits-to-modifying-configurations" title="Permalink to this headline">¶</a></h1>
+<p><strong>secure Array</strong></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Values</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>secure</p></td>
+<td><p>Array of parameters excluded from init directive</p></td>
+<td><p>Array</p></td>
+<td><p>Required</p></td>
+<td><p>Any parameters</p></td>
+</tr>
+</tbody>
+</table>
+<p>The modifiable parts of the Configuration are limited by the secure array, which is an array of immutable parameters, this array can be expanded by site owners.</p>
+<p><strong>Notes</strong>: secure arrays work like nesting dolls, with the Global Configurations’ secure array being the default and immutable list of immutable parameters, or the smallest doll, to which site owners may add to, but implementors may not modify it.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="secure-arrays">
+<h1>Secure Arrays<a class="headerlink" href="#secure-arrays" title="Permalink to this headline">¶</a></h1>
+<p>Site owners can add to the <strong>secure</strong> array using this command:
+mermaidAPI.initialize( { startOnLoad: true, secure: [‘parameter1’, ‘parameter2’] } );</p>
+<p>default values for the <code class="docutils literal notranslate"><span class="pre">secure</span> <span class="pre">array</span></code> consists of: [‘secure’, ‘securityLevel’, ‘startOnLoad’, ‘maxTextSize’]. These default values are immutable.</p>
+<p>Implementors can only modify configurations using directives, but cannot change the <code class="docutils literal notranslate"><span class="pre">secure</span></code> array.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="modifying-configurations-and-directives">
+<h1>Modifying Configurations and directives:<a class="headerlink" href="#modifying-configurations-and-directives" title="Permalink to this headline">¶</a></h1>
+<p>The Two types of directives: are <code class="docutils literal notranslate"><span class="pre">init</span></code> or <code class="docutils literal notranslate"><span class="pre">initialize</span></code> and <code class="docutils literal notranslate"><span class="pre">wrap</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All directives are enclosed in <code class="docutils literal notranslate"><span class="pre">%%{</span> <span class="pre">}%%</span></code></p>
+</div>
+<p>Older versions of mermaid will not parse directives because <code class="docutils literal notranslate"><span class="pre">%%</span></code> will comment out the directive. This makes the update backward compatible.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="init">
+<h1>Init<a class="headerlink" href="#init" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">init</span></code>, or <code class="docutils literal notranslate"><span class="pre">initialize</span></code>: the init or initialize directive gives the user the ability to overwrite and change the values for configuration parameters, with respect to the secure array that is in effect.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Values</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>init</p></td>
+<td><p>modifies configurations</p></td>
+<td><p>Directive</p></td>
+<td><p>Optional</p></td>
+<td><p>Any parameters not included in the secure array</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>init would be an argument-directive: <code class="docutils literal notranslate"><span class="pre">%%{init:</span> <span class="pre">{</span> <span class="pre">**insert</span> <span class="pre">argument</span> <span class="pre">here**}}%%</span></code></p>
+<p>The json object that is passed as {<strong>argument</strong> } must be valid, quoted json or it will be ignored.
+<strong>for example</strong>:</p>
+<p><code class="docutils literal notranslate"><span class="pre">%%{init:</span> <span class="pre">{&quot;theme&quot;:</span> <span class="pre">default,</span> <span class="pre">&quot;logLevel&quot;:</span> <span class="pre">1</span> <span class="pre">}}%%</span></code></p>
+<p>Configurations that are passed through init cannot change the parameters in secure arrays of higher levels. In the event of a conflict, mermaid will give priority to secure arrays and parse the request, without changing the values of the parameters in conflict.</p>
+<p>When deployed within code, init is called before the graph/diagram description.</p>
+</div>
+<p><strong>for example</strong>:</p>
+<div class="highlight-mmd notranslate"><div class="highlight"><pre><span></span>%%{init: {&quot;theme&quot;: &quot;default&quot;, &quot;logLevel&quot;: 1 }}%%
+ graph LR
+  a--&gt;b
+  b--&gt;c
+  c--&gt;d
+  d--&gt;e
+  e--&gt;f
+  f--&gt;g
+  g--&gt;
+</pre></div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="wrap">
+<h1>Wrap<a class="headerlink" href="#wrap" title="Permalink to this headline">¶</a></h1>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Values</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>wrap</p></td>
+<td><p>a callable text-wrap function</p></td>
+<td><p>Directive</p></td>
+<td><p>Optional</p></td>
+<td><p>%%{wrap}%%</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Wrap is a function that is currently only deployable for sequence diagrams.</p>
+<p>wrap respects manually added &lt;br&gt; so if the user wants to break up their text, they have full control over those breaks by adding their own &lt;br&gt; tags.</p>
+<p>It is a non-argument directive and can be executed thusly:</p>
+<p><code class="docutils literal notranslate"><span class="pre">%%{wrap}%%</span></code> .</p>
+</div>
+<p><strong>an example of text wrapping in a sequence diagram</strong>:</p>
+<p><img alt="Image showing wrapped text" src="_images/wrapped-text.png" /></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="resetting-configurations">
+<h1>Resetting Configurations:<a class="headerlink" href="#resetting-configurations" title="Permalink to this headline">¶</a></h1>
+<p>There are two more functions in the mermaidAPI that can be called by site owners: <strong>reset</strong> and <strong>globalReset</strong>.</p>
+<p><strong>reset</strong>: resets the configuration to whatever the last configuration was. This can be done to undo more recent changes to the last mermaidAPI.initialize({…}) configuration.</p>
+<p><strong>globalReset</strong> will reset both the current configuration AND the site configuration back to the global defaults.</p>
+<p><strong>Notes</strong>:  both reset and globalReset are only available to site owners, as such implementors would have to edit their configs with init.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="additional-utils-to-mermaid">
+<h1>Additional Utils to mermaid<a class="headerlink" href="#additional-utils-to-mermaid" title="Permalink to this headline">¶</a></h1>
+<p>•	<strong>memoize</strong>: simple caching for computationally expensive functions. It reduces the rendering time for computationally intensive diagrams by about 90%.</p>
+<p>•	<strong>assignWithDepth</strong> - this is an improvement on previous functions with config.js and Object.assign. The purpose of this function is to provide a sane mechanism for merging objects, similar to object.assign, but with depth.</p>
+<p>Example of <strong>assignWithDepth</strong>:</p>
+<p><img alt="Image showing assignWithDepth" src="_images/assignWithDepth.png" /></p>
+<p>Example of <strong>object.Assign</strong>:</p>
+<p><img alt="Image showing object.assign without depth" src="_images/object.assign-without-depth.png" /></p>
+<p>•	<strong>calculateTextDimensions, calculateTextWidth,</strong> and <strong>calculateTextHeight</strong> - for measuring text dimensions, width and height.</p>
+<p><strong>Notes</strong>:For more information on usage, parameters, and return info for these new functions take a look at the jsdocs for them in the utils package.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="new-api-requests-introduced-in-version-8-6-0">
+<h1>New API Requests Introduced in Version 8.6.0<a class="headerlink" href="#new-api-requests-introduced-in-version-8-6-0" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="setsiteconfig">
+<h2>setSiteConfig<a class="headerlink" href="#setsiteconfig" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Function</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Values</p></th>
+<th class="head"><p>Parameters</p></th>
+<th class="head"><p>Returns</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>setSiteConfig</p></td>
+<td><p>Sets the siteConfig to desired values</p></td>
+<td><p>Put Request</p></td>
+<td><p>Any Values, except ones in secure array</p></td>
+<td><p>conf</p></td>
+<td><p>siteConfig</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Sets the siteConfig. The siteConfig is a protected configuration for repeat use. Calls to reset() will reset
+the currentConfig to siteConfig. Calls to reset(configApi.defaultConfig) will reset siteConfig and currentConfig
+to the defaultConfig
+Note: currentConfig is set in this function
+Default value: At default, will mirror Global Config</p>
+</div>
+</div>
+<div class="section" id="getsiteconfig">
+<h2>getSiteConfig<a class="headerlink" href="#getsiteconfig" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Function</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Values</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>setSiteConfig</p></td>
+<td><p>Returns the current siteConfig base configuration</p></td>
+<td><p>Get Request</p></td>
+<td><p>Returns Any Values  in siteConfig</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Returns   any   values in siteConfig.</p>
+</div>
+</div>
+<div class="section" id="setconfig">
+<h2>setConfig<a class="headerlink" href="#setconfig" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Function</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Values</p></th>
+<th class="head"><p>Parameters</p></th>
+<th class="head"><p>Returns</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>setSiteConfig</p></td>
+<td><p>Sets the siteConfig to desired values</p></td>
+<td><p>Put Request</p></td>
+<td><p>Any Values, those in secure array</p></td>
+<td><p>conf</p></td>
+<td><p>currentConfig merged with the sanitized conf</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Sets the currentConfig. The parameter conf is sanitized based on the siteConfig.secure keys. Any
+values found in conf with key found in siteConfig.secure will be replaced with the corresponding
+siteConfig value.</p>
+</div>
+</div>
+<div class="section" id="getconfig">
+<h2>getConfig<a class="headerlink" href="#getconfig" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Function</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Return Values</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>getConfig</p></td>
+<td><p>Obtains the currentConfig</p></td>
+<td><p>Get Request</p></td>
+<td><p>Any Values from currentConfig</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Returns any values in currentConfig.</p>
+</div>
+</div>
+<div class="section" id="sanitize">
+<h2>sanitize<a class="headerlink" href="#sanitize" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Function</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Values</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>sanitize</p></td>
+<td><p>Sets the siteConfig to desired values.</p></td>
+<td><p>Put Request(?)</p></td>
+<td><p>None</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>modifies options in-place
+Ensures options parameter does not attempt to override siteConfig secure keys.</p>
+</div>
+</div>
+<div class="section" id="reset">
+<h2>reset<a class="headerlink" href="#reset" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Function</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Values</p></th>
+<th class="head"><p>Parameter</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>reset</p></td>
+<td><p>Resets currentConfig to conf</p></td>
+<td><p>Put Request</p></td>
+<td><p>Required</p></td>
+<td><p>None</p></td>
+<td><p>conf</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="conf">
+<h2>conf<a class="headerlink" href="#conf" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Values</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>conf</p></td>
+<td><p>base set of values, which currentConfig coul be   reset   to.</p></td>
+<td><p>Dictionary</p></td>
+<td><p>Required</p></td>
+<td><p>Any Values, with respect to the secure Array</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>default: current siteConfig  (optional, default <code class="docutils literal notranslate"><span class="pre">getSiteConfig()</span></code>)</p>
+</div>
+</div>
+<div class="section" id="for-more-information-read-setup">
+<h2>For more information, read <a class="reference internal" href="Setup.html"><span class="doc std std-doc">Setup</span></a>.<a class="headerlink" href="#for-more-information-read-setup" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="Configuration.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Configuration</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="SUMMARY.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Summary</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By xinetzone<br/>
+        
+            &copy; Copyright 2021, xinetzone.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

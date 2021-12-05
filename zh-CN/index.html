@@ -1,0 +1,612 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to mermaid’s documentation! &#8212; mermaid 0.0.1 文档</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/translations.js"></script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="📔 介绍" href="intro/index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="#">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">mermaid 0.0.1 文档</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="intro/index.html">
+   📔 介绍
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="README.html">
+     关于 Mermaid
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-gettingStarted.html">
+     Mermaid 用户指南 – 为初学者而设
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-syntaxReference.html">
+     图表语法
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="syntax/index.html">
+   📊 Diagram Syntax
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="flowchart.html">
+     Flowcharts - Basic Syntax
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sequenceDiagram.html">
+     Sequence diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="classDiagram.html">
+     Class diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="stateDiagram.html">
+     State diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="entityRelationshipDiagram.html">
+     Entity Relationship Diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="user-journey.html">
+     User Journey Diagram
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gantt.html">
+     甘特图
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="pie.html">
+     Pie chart diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="requirementDiagram.html">
+     Requirement Diagram
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="examples.html">
+     Examples
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="deploy-config/index.html">
+   ⚙️ Deployment and Configuration
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Tutorials.html">
+     Tutorials
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="usage.html">
+     Usage
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Setup.html">
+     mermaidAPI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="directives.html">
+     Directives
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="theming.html">
+     Theme Configuration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="mermaidCLI.html">
+     mermaid CLI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-advanced.html">
+     Advanced n00b mermaid (Coming soon..)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="misc/index.html">
+   📚 Misc
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="integrations.html">
+     集成
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="faq.html">
+     Frequently Asked Questions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="contributions-community/index.html">
+   🙌 Contributions and Community
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-overview.html">
+     Overview for Beginners
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="development.html">
+     Development and Contribution 🙌
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CHANGELOG.html">
+     Change Log
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="newDiagram.html">
+     Adding a New Diagram/Chart 📊
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Configuration.html">
+   Configuration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="8.6.0_docs.html">
+   Version 8.6.0 Changes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="SUMMARY.html">
+   Summary
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="breakingChanges.html">
+   Breaking changes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="developer-docs/configuration.html">
+   Configuration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="diagrams-and-syntax-and-examples/flowchart.html">
+   Flowcharts - Basic Syntax
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="upgrading.html">
+   Upgrading
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/index.rst.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.rst</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Welcome to mermaid’s documentation!
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#indices-and-tables">
+   Indices and tables
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="welcome-to-mermaid-s-documentation">
+<h1>Welcome to mermaid’s documentation!<a class="headerlink" href="#welcome-to-mermaid-s-documentation" title="永久链接至标题">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro/index.html">📔 介绍</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="README.html">关于 Mermaid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="n00b-gettingStarted.html">Mermaid 用户指南 – 为初学者而设</a></li>
+<li class="toctree-l2"><a class="reference internal" href="n00b-syntaxReference.html">图表语法</a></li>
+<li class="toctree-l2"><a class="reference internal" href="n00b-syntaxReference.html#configuration">Configuration</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="syntax/index.html">📊 Diagram Syntax</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="flowchart.html">Flowcharts - Basic Syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sequenceDiagram.html">Sequence diagrams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classDiagram.html">Class diagrams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stateDiagram.html">State diagrams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="entityRelationshipDiagram.html">Entity Relationship Diagrams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user-journey.html">User Journey Diagram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gantt.html">甘特图</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pie.html">Pie chart diagrams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="requirementDiagram.html">Requirement Diagram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="deploy-config/index.html">⚙️ Deployment and Configuration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Tutorials.html">Tutorials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html">mermaidAPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#configuration">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#what-follows-are-config-instructions-for-older-versions"><strong>What follows are config instructions for older versions</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#theme">theme</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#fontfamily">fontFamily</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#loglevel">logLevel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#securitylevel">securityLevel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#startonload">startOnLoad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#arrowmarkerabsolute">arrowMarkerAbsolute</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#secure">secure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#deterministicids">deterministicIds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#deterministicidseed">deterministicIDSeed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#flowchart">flowchart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#sequence">sequence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#gantt">gantt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#journey">journey</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#id16">useMaxWidth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#id17">defaultRenderer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#id18">useMaxWidth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#id19">useMaxWidth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#id20">defaultRenderer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#er">er</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#pie">pie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#requirement">requirement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#setsiteconfig">setSiteConfig</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#id26">setSiteConfig</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#parse">parse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#getsiteconfig">getSiteConfig</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#id28">getSiteConfig</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#setconfig">setConfig</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#id29">setConfig</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#getconfig">getConfig</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#id31">getConfig</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#sanitize">sanitize</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#id32">sanitize</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#adddirective">addDirective</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#reset">reset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#id35">reset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#conf">conf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#render">render</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#updaterendererconfigs">updateRendererConfigs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#initialize">initialize</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#id39"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="Setup.html#mermaidapi-configuration-defaults">mermaidAPI configuration defaults</a></li>
+<li class="toctree-l2"><a class="reference internal" href="directives.html">Directives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="directives.html#example">example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theming.html">Theme Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theming.html#making-a-custom-theme-with-themevariables">Making a Custom Theme  with <code class="docutils literal notranslate"><span class="pre">themeVariables</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="theming.html#what-follows-are-variables-specific-to-different-diagrams-and-charts">What follows are Variables, specific to different diagrams and charts.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theming.html#sequence-diagram">sequence diagram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theming.html#state-colors">state colors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theming.html#class-colors">class colors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theming.html#user-journey-colors">User journey colors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theming.html#here-is-an-example-of-overriding-primarycolor-and-giving-everything-a-different-look-using-init">Here is an example of overriding <code class="docutils literal notranslate"><span class="pre">primaryColor</span></code> and giving everything a different look, using <code class="docutils literal notranslate"><span class="pre">%%init%%</span></code>.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theming.html#common-theming-activities">Common theming activities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theming.html#examples">Examples:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mermaidCLI.html">mermaid CLI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="n00b-advanced.html">Advanced n00b mermaid (Coming soon..)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="misc/index.html">📚 Misc</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="integrations.html">集成</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributions-community/index.html">🙌 Contributions and Community</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="n00b-overview.html">Overview for Beginners</a></li>
+<li class="toctree-l2"><a class="reference internal" href="n00b-overview.html#doc-rot-in-diagrams">Doc Rot in Diagrams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="n00b-overview.html#definition-of-terms-dictionary">Definition of Terms/ Dictionary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development.html">Development and Contribution 🙌</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CHANGELOG.html">Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newDiagram.html">Adding a New Diagram/Chart 📊</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Configuration.html">Configuration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Configuration.html#configuration-section-in-the-live-editor">Configuration Section in the Live Editor.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Configuration.html#the-initialize-call-for-when-mermaid-is-called-via-an-api-or-through-a-script-tag">The <code class="docutils literal notranslate"><span class="pre">initialize()</span></code> call, for when Mermaid is called via an API, or through a <script> tag.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Configuration.html#directives"><span class="xref myst">Directives</span>,</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Configuration.html#theme-creation">Theme Creation:</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="8.6.0_docs.html">Version 8.6.0 Changes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="8.6.0_docs.html#new-mermaid-live-editor-beta">New Mermaid Live-Editor Beta</a></li>
+<li class="toctree-l2"><a class="reference internal" href="8.6.0_docs.html#cdn">CDN</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="8.6.0_docs.html#limits-to-modifying-configurations">Limits to Modifying Configurations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="8.6.0_docs.html#secure-arrays">Secure Arrays</a></li>
+<li class="toctree-l1"><a class="reference internal" href="8.6.0_docs.html#modifying-configurations-and-directives">Modifying Configurations and directives:</a></li>
+<li class="toctree-l1"><a class="reference internal" href="8.6.0_docs.html#init">Init</a></li>
+<li class="toctree-l1"><a class="reference internal" href="8.6.0_docs.html#wrap">Wrap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="8.6.0_docs.html#resetting-configurations">Resetting Configurations:</a></li>
+<li class="toctree-l1"><a class="reference internal" href="8.6.0_docs.html#additional-utils-to-mermaid">Additional Utils to mermaid</a></li>
+<li class="toctree-l1"><a class="reference internal" href="8.6.0_docs.html#new-api-requests-introduced-in-version-8-6-0">New API Requests Introduced in Version 8.6.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="8.6.0_docs.html#setsiteconfig">setSiteConfig</a></li>
+<li class="toctree-l2"><a class="reference internal" href="8.6.0_docs.html#getsiteconfig">getSiteConfig</a></li>
+<li class="toctree-l2"><a class="reference internal" href="8.6.0_docs.html#setconfig">setConfig</a></li>
+<li class="toctree-l2"><a class="reference internal" href="8.6.0_docs.html#getconfig">getConfig</a></li>
+<li class="toctree-l2"><a class="reference internal" href="8.6.0_docs.html#sanitize">sanitize</a></li>
+<li class="toctree-l2"><a class="reference internal" href="8.6.0_docs.html#reset">reset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="8.6.0_docs.html#conf">conf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="8.6.0_docs.html#for-more-information-read-setup">For more information, read <span class="xref myst">Setup</span>.</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SUMMARY.html">Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="breakingChanges.html">Breaking changes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="breakingChanges.html#breaking-changes-from-history-version-to-latest-version">Breaking changes from history version to latest version:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="breakingChanges.html#id1">#1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="breakingChanges.html#id2">#2</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="developer-docs/configuration.html">Configuration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="developer-docs/configuration.html#theme-configuration">Theme configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="developer-docs/configuration.html#starting-mermaid">Starting mermaid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="developer-docs/configuration.html#initialize">Initialize</a></li>
+<li class="toctree-l2"><a class="reference internal" href="developer-docs/configuration.html#configapi-reset">configApi.reset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="developer-docs/configuration.html#id1"></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="diagrams-and-syntax-and-examples/flowchart.html">Flowcharts - Basic Syntax</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="diagrams-and-syntax-and-examples/flowchart.html#graph">Graph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diagrams-and-syntax-and-examples/flowchart.html#flowchart-orientation">Flowchart Orientation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diagrams-and-syntax-and-examples/flowchart.html#flowcharts">Flowcharts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diagrams-and-syntax-and-examples/flowchart.html#nodes-shapes">Nodes &amp; shapes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diagrams-and-syntax-and-examples/flowchart.html#node-shapes">Node Shapes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diagrams-and-syntax-and-examples/flowchart.html#links-between-nodes">Links between nodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diagrams-and-syntax-and-examples/flowchart.html#special-characters-that-break-syntax">Special characters that break syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diagrams-and-syntax-and-examples/flowchart.html#subgraphs">Subgraphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diagrams-and-syntax-and-examples/flowchart.html#beta-flowcharts">Beta: flowcharts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diagrams-and-syntax-and-examples/flowchart.html#interaction">Interaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diagrams-and-syntax-and-examples/flowchart.html#styling-and-classes">Styling and classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diagrams-and-syntax-and-examples/flowchart.html#basic-support-for-fontawesome">Basic support for fontawesome</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diagrams-and-syntax-and-examples/flowchart.html#graph-declarations-with-spaces-between-vertices-and-link-and-without-semicolon">Graph declarations with spaces between vertices and link and without semicolon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diagrams-and-syntax-and-examples/flowchart.html#configuration">Configuration…</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="upgrading.html">Upgrading</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="upgrading.html#from-version-0-4-0-to-0-5-0">From version 0.4.0 to 0.5.0</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="永久链接至标题">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">索引</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">模块索引</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">搜索页面</span></a></p></li>
+</ul>
+</div>
+
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='right-next' id="next-link" href="intro/index.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">📔 介绍</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By xinetzone<br/>
+        
+            &copy; Copyright 2021, xinetzone.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

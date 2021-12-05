@@ -1,0 +1,872 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gantt diagrams &#8212; mermaid 0.0.1 documentation</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Pie chart diagrams" href="pie.html" />
+    <link rel="prev" title="User Journey Diagram" href="user-journey.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">mermaid 0.0.1 documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="intro/index.html">
+   📔 Introduction
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="README.html">
+     About Mermaid
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-gettingStarted.html">
+     A Mermaid User-Guide for Beginners
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-syntaxReference.html">
+     Diagram Syntax
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="syntax/index.html">
+   📊 Diagram Syntax
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="flowchart.html">
+     Flowcharts - Basic Syntax
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sequenceDiagram.html">
+     Sequence diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="classDiagram.html">
+     Class diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="stateDiagram.html">
+     State diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="entityRelationshipDiagram.html">
+     Entity Relationship Diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="user-journey.html">
+     User Journey Diagram
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Gantt diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="pie.html">
+     Pie chart diagrams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="requirementDiagram.html">
+     Requirement Diagram
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="examples.html">
+     Examples
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="deploy-config/index.html">
+   ⚙️ Deployment and Configuration
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Tutorials.html">
+     Tutorials
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="usage.html">
+     Usage
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Setup.html">
+     mermaidAPI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="directives.html">
+     Directives
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="theming.html">
+     Theme Configuration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="mermaidCLI.html">
+     mermaid CLI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-advanced.html">
+     Advanced n00b mermaid (Coming soon..)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="misc/index.html">
+   📚 Misc
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="integrations.html">
+     Integrations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="faq.html">
+     Frequently Asked Questions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="contributions-community/index.html">
+   🙌 Contributions and Community
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="n00b-overview.html">
+     Overview for Beginners
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="development.html">
+     Development and Contribution 🙌
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CHANGELOG.html">
+     Change Log
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="newDiagram.html">
+     Adding a New Diagram/Chart 📊
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Configuration.html">
+   Configuration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="8.6.0_docs.html">
+   Version 8.6.0 Changes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="SUMMARY.html">
+   Summary
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="breakingChanges.html">
+   Breaking changes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="developer-docs/configuration.html">
+   Configuration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="diagrams-and-syntax-and-examples/flowchart.html">
+   Flowcharts - Basic Syntax
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="upgrading.html">
+   Upgrading
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/gantt.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-note-to-users">
+   A note to users
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#syntax">
+   Syntax
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#title">
+     Title
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#section-statements">
+     Section statements
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#milestones">
+     Milestones
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#setting-dates">
+   Setting dates
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#input-date-format">
+     Input date format
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#output-date-format-on-the-axis">
+     Output date format on the axis
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comments">
+   Comments
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#styling">
+   Styling
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#classes-used">
+     Classes used
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sample-stylesheet">
+     Sample stylesheet
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#today-marker">
+   Today marker
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#configuration">
+   Configuration
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#possible-configuration-params">
+     Possible configuration params:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interaction">
+   Interaction
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="gantt-diagrams">
+<h1>Gantt diagrams<a class="headerlink" href="#gantt-diagrams" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>A Gantt chart is a type of bar chart, first developed by Karol Adamiecki in 1896, and independently by Henry Gantt in the 1910s, that illustrates a project schedule and the amount of time it would take for any one project to finish. Gantt charts illustrate number of days between the start and finish dates of the terminal elements and summary elements of a project.</p>
+</div></blockquote>
+<div class="section" id="a-note-to-users">
+<h2>A note to users<a class="headerlink" href="#a-note-to-users" title="Permalink to this headline">¶</a></h2>
+<p>Gantt Charts will record each scheduled task as one continuous bar that extends from the left to the right. The x axis represents time and the y records the different tasks and the order in which they are to be completed.</p>
+<p>It is important to remember that when a date, day, or collection of dates specific to a task are “excluded”, the Gantt Chart will accomodate those changes by extending an equal number of days, towards the right, not by creating a gap inside the task.
+As shown here <img alt="" src="_images/Gantt-excluded-days-within.png" /></p>
+<p>However, if the excluded dates are between two tasks that are set to start consecutively, the excluded dates will be skipped graphically and left blank, and the following task will begin after the end of the excluded dates.
+As shown here <img alt="" src="_images/Gantt-long-weekend-look.png" /></p>
+<p>A Gantt chart is useful for tracking the amount of time it would take before a project is finished, but it can also be used to graphically represent “non-working days”, with a few tweaks.</p>
+<p>Mermaid can render Gantt diagrams as SVG, PNG or a MarkDown link that can be pasted into docs.</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>gantt
+    title A Gantt Diagram
+    dateFormat  YYYY-MM-DD
+    section Section
+    A task           :a1, 2014-01-01, 30d
+    Another task     :after a1  , 20d
+    section Another
+    Task in sec      :2014-01-12  , 12d
+    another task      : 24d
+</pre></div>
+</div>
+</div>
+<div class="section" id="syntax">
+<h2>Syntax<a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>gantt
+    dateFormat  YYYY-MM-DD
+    title       Adding GANTT diagram functionality to mermaid
+    excludes    weekends
+    %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week (&quot;sunday&quot;) or &quot;weekends&quot;, but not the word &quot;weekdays&quot;.)
+
+    section A section
+    Completed task            :done,    des1, 2014-01-06,2014-01-08
+    Active task               :active,  des2, 2014-01-09, 3d
+    Future task               :         des3, after des2, 5d
+    Future task2              :         des4, after des3, 5d
+
+    section Critical tasks
+    Completed task in the critical line :crit, done, 2014-01-06,24h
+    Implement parser and jison          :crit, done, after des1, 2d
+    Create tests for parser             :crit, active, 3d
+    Future task in critical line        :crit, 5d
+    Create tests for renderer           :2d
+    Add to mermaid                      :1d
+    Functionality added                 :milestone, 2014-01-25, 0d
+
+    section Documentation
+    Describe gantt syntax               :active, a1, after des1, 3d
+    Add gantt diagram to demo page      :after a1  , 20h
+    Add another diagram to demo page    :doc1, after a1  , 48h
+
+    section Last section
+    Describe gantt syntax               :after doc1, 3d
+    Add gantt diagram to demo page      :20h
+    Add another diagram to demo page    :48h
+</pre></div>
+</div>
+<p>It is possible to set multiple dependencies separated by space:</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>    gantt
+        apple :a, 2017-07-20, 1w
+        banana :crit, b, 2017-07-23, 1d
+        cherry :active, c, after b a, 1d
+</pre></div>
+</div>
+<div class="section" id="title">
+<h3>Title<a class="headerlink" href="#title" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">title</span></code> is an <em>optional</em> string to be displayed at the top of the Gantt chart to describe the chart as a whole.</p>
+</div>
+<div class="section" id="section-statements">
+<h3>Section statements<a class="headerlink" href="#section-statements" title="Permalink to this headline">¶</a></h3>
+<p>You can divide the chart into various sections, for example to separate different parts of a project like development and documentation.</p>
+<p>To do so, start a line with the <code class="docutils literal notranslate"><span class="pre">section</span></code> keyword and give it a name. (Note that unlike with the <a class="reference external" href="#title">title for the entire chart</a>, this name is <em>required</em>.</p>
+</div>
+<div class="section" id="milestones">
+<h3>Milestones<a class="headerlink" href="#milestones" title="Permalink to this headline">¶</a></h3>
+<p>You can add milestones to the diagrams. Milestones differ from tasks as they represent a single instant in time and are identified by the keyword <code class="docutils literal notranslate"><span class="pre">milestone</span></code>. Below is an example on how to use milestones. As you may notice, the exact location of the milestone is determined by the initial date for the milestone and the “duration” of the task this way: <em>initial date</em>+<em>duration</em>/2.</p>
+<div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>gantt 
+dateFormat HH:mm
+axisFormat %H:%M
+Initial milestone : milestone, m1, 17:49,2min
+taska2 : 10min
+taska3 : 5min 
+Final milestone : milestone, m2, 18:14, 2min
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="setting-dates">
+<h2>Setting dates<a class="headerlink" href="#setting-dates" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">dateFormat</span></code> defines the format of the date <strong>input</strong> of your gantt elements. How these dates are represented in the rendered chart <strong>output</strong> are defined by <code class="docutils literal notranslate"><span class="pre">axisFormat</span></code>.</p>
+<div class="section" id="input-date-format">
+<h3>Input date format<a class="headerlink" href="#input-date-format" title="Permalink to this headline">¶</a></h3>
+<p>The default input date format is <code class="docutils literal notranslate"><span class="pre">YYYY-MM-DD</span></code>. You can define your custom <code class="docutils literal notranslate"><span class="pre">dateFormat</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dateFormat</span> <span class="n">YYYY</span><span class="o">-</span><span class="n">MM</span><span class="o">-</span><span class="n">DD</span>
+</pre></div>
+</div>
+<p>The following formating options are supported:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Input</span>       <span class="n">Example</span>             <span class="n">Description</span><span class="p">:</span>
+<span class="n">YYYY</span>        <span class="mi">2014</span>                <span class="mi">4</span> <span class="n">digit</span> <span class="n">year</span>
+<span class="n">YY</span>          <span class="mi">14</span>                  <span class="mi">2</span> <span class="n">digit</span> <span class="n">year</span>
+<span class="n">Q</span>           <span class="mf">1..4</span>                <span class="n">Quarter</span> <span class="n">of</span> <span class="n">year</span><span class="o">.</span> <span class="n">Sets</span> <span class="n">month</span> <span class="n">to</span> <span class="n">first</span> <span class="n">month</span> <span class="ow">in</span> <span class="n">quarter</span><span class="o">.</span>
+<span class="n">M</span> <span class="n">MM</span>        <span class="mf">1..12</span>               <span class="n">Month</span> <span class="n">number</span>
+<span class="n">MMM</span> <span class="n">MMMM</span>    <span class="n">January</span><span class="o">..</span><span class="n">Dec</span>        <span class="n">Month</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">locale</span> <span class="nb">set</span> <span class="n">by</span> <span class="n">moment</span><span class="o">.</span><span class="n">locale</span><span class="p">()</span>
+<span class="n">D</span> <span class="n">DD</span>        <span class="mf">1..31</span>               <span class="n">Day</span> <span class="n">of</span> <span class="n">month</span>
+<span class="n">Do</span>          <span class="mi">1</span><span class="n">st</span><span class="o">.</span><span class="mf">.31</span><span class="n">st</span>           <span class="n">Day</span> <span class="n">of</span> <span class="n">month</span> <span class="k">with</span> <span class="n">ordinal</span>
+<span class="n">DDD</span> <span class="n">DDDD</span>    <span class="mf">1..365</span>              <span class="n">Day</span> <span class="n">of</span> <span class="n">year</span>
+<span class="n">X</span>           <span class="mf">1410715640.579</span>      <span class="n">Unix</span> <span class="n">timestamp</span>
+<span class="n">x</span>           <span class="mi">1410715640579</span>       <span class="n">Unix</span> <span class="n">ms</span> <span class="n">timestamp</span>
+<span class="n">H</span> <span class="n">HH</span>        <span class="mf">0..23</span>               <span class="mi">24</span> <span class="n">hour</span> <span class="n">time</span>
+<span class="n">h</span> <span class="n">hh</span>        <span class="mf">1..12</span>               <span class="mi">12</span> <span class="n">hour</span> <span class="n">time</span> <span class="n">used</span> <span class="k">with</span> <span class="n">a</span> <span class="n">A</span><span class="o">.</span>
+<span class="n">a</span> <span class="n">A</span>         <span class="n">am</span> <span class="n">pm</span>               <span class="n">Post</span> <span class="ow">or</span> <span class="n">ante</span> <span class="n">meridiem</span>
+<span class="n">m</span> <span class="n">mm</span>        <span class="mf">0..59</span>               <span class="n">Minutes</span>
+<span class="n">s</span> <span class="n">ss</span>        <span class="mf">0..59</span>               <span class="n">Seconds</span>
+<span class="n">S</span>           <span class="mf">0..9</span>                <span class="n">Tenths</span> <span class="n">of</span> <span class="n">a</span> <span class="n">second</span>
+<span class="n">SS</span>          <span class="mf">0..99</span>               <span class="n">Hundreds</span> <span class="n">of</span> <span class="n">a</span> <span class="n">second</span>
+<span class="n">SSS</span>         <span class="mf">0..999</span>              <span class="n">Thousandths</span> <span class="n">of</span> <span class="n">a</span> <span class="n">second</span>
+<span class="n">Z</span> <span class="n">ZZ</span>        <span class="o">+</span><span class="mi">12</span><span class="p">:</span><span class="mi">00</span>              <span class="n">Offset</span> <span class="kn">from</span> <span class="nn">UTC</span> <span class="k">as</span> <span class="o">+-</span><span class="n">HH</span><span class="p">:</span><span class="n">mm</span><span class="p">,</span> <span class="o">+-</span><span class="n">HHmm</span><span class="p">,</span> <span class="ow">or</span> <span class="n">Z</span>
+</pre></div>
+</div>
+<p>More info in: http://momentjs.com/docs/#/parsing/string-format/</p>
+</div>
+<div class="section" id="output-date-format-on-the-axis">
+<h3>Output date format on the axis<a class="headerlink" href="#output-date-format-on-the-axis" title="Permalink to this headline">¶</a></h3>
+<p>The default output date format is YYYY-MM-DD. You can define your custom <code class="docutils literal notranslate"><span class="pre">axisFormat</span></code>, like <code class="docutils literal notranslate"><span class="pre">2020-Q1</span></code> for the first quarter of the year 2020.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">axisFormat</span>  <span class="o">%</span><span class="n">Y</span><span class="o">-%</span><span class="n">m</span><span class="o">-%</span><span class="n">d</span>
+</pre></div>
+</div>
+<p>The following formating strings are supported:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">a</span> <span class="o">-</span> <span class="n">abbreviated</span> <span class="n">weekday</span> <span class="n">name</span><span class="o">.</span>
+<span class="o">%</span><span class="n">A</span> <span class="o">-</span> <span class="n">full</span> <span class="n">weekday</span> <span class="n">name</span><span class="o">.</span>
+<span class="o">%</span><span class="n">b</span> <span class="o">-</span> <span class="n">abbreviated</span> <span class="n">month</span> <span class="n">name</span><span class="o">.</span>
+<span class="o">%</span><span class="n">B</span> <span class="o">-</span> <span class="n">full</span> <span class="n">month</span> <span class="n">name</span><span class="o">.</span>
+<span class="o">%</span><span class="n">c</span> <span class="o">-</span> <span class="n">date</span> <span class="ow">and</span> <span class="n">time</span><span class="p">,</span> <span class="k">as</span> <span class="s2">&quot;</span><span class="si">%a</span><span class="s2"> %b </span><span class="si">%e</span><span class="s2"> %H:%M:%S %Y&quot;</span><span class="o">.</span>
+<span class="o">%</span><span class="n">d</span> <span class="o">-</span> <span class="n">zero</span><span class="o">-</span><span class="n">padded</span> <span class="n">day</span> <span class="n">of</span> <span class="n">the</span> <span class="n">month</span> <span class="k">as</span> <span class="n">a</span> <span class="n">decimal</span> <span class="n">number</span> <span class="p">[</span><span class="mi">01</span><span class="p">,</span><span class="mi">31</span><span class="p">]</span><span class="o">.</span>
+<span class="o">%</span><span class="n">e</span> <span class="o">-</span> <span class="n">space</span><span class="o">-</span><span class="n">padded</span> <span class="n">day</span> <span class="n">of</span> <span class="n">the</span> <span class="n">month</span> <span class="k">as</span> <span class="n">a</span> <span class="n">decimal</span> <span class="n">number</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span><span class="mi">31</span><span class="p">];</span> <span class="n">equivalent</span> <span class="n">to</span> <span class="o">%</span><span class="n">_d</span><span class="o">.</span>
+<span class="o">%</span><span class="n">H</span> <span class="o">-</span> <span class="n">hour</span> <span class="p">(</span><span class="mi">24</span><span class="o">-</span><span class="n">hour</span> <span class="n">clock</span><span class="p">)</span> <span class="k">as</span> <span class="n">a</span> <span class="n">decimal</span> <span class="n">number</span> <span class="p">[</span><span class="mi">00</span><span class="p">,</span><span class="mi">23</span><span class="p">]</span><span class="o">.</span>
+<span class="o">%</span><span class="n">I</span> <span class="o">-</span> <span class="n">hour</span> <span class="p">(</span><span class="mi">12</span><span class="o">-</span><span class="n">hour</span> <span class="n">clock</span><span class="p">)</span> <span class="k">as</span> <span class="n">a</span> <span class="n">decimal</span> <span class="n">number</span> <span class="p">[</span><span class="mi">01</span><span class="p">,</span><span class="mi">12</span><span class="p">]</span><span class="o">.</span>
+<span class="o">%</span><span class="n">j</span> <span class="o">-</span> <span class="n">day</span> <span class="n">of</span> <span class="n">the</span> <span class="n">year</span> <span class="k">as</span> <span class="n">a</span> <span class="n">decimal</span> <span class="n">number</span> <span class="p">[</span><span class="mi">001</span><span class="p">,</span><span class="mi">366</span><span class="p">]</span><span class="o">.</span>
+<span class="o">%</span><span class="n">m</span> <span class="o">-</span> <span class="n">month</span> <span class="k">as</span> <span class="n">a</span> <span class="n">decimal</span> <span class="n">number</span> <span class="p">[</span><span class="mi">01</span><span class="p">,</span><span class="mi">12</span><span class="p">]</span><span class="o">.</span>
+<span class="o">%</span><span class="n">M</span> <span class="o">-</span> <span class="n">minute</span> <span class="k">as</span> <span class="n">a</span> <span class="n">decimal</span> <span class="n">number</span> <span class="p">[</span><span class="mi">00</span><span class="p">,</span><span class="mi">59</span><span class="p">]</span><span class="o">.</span>
+<span class="o">%</span><span class="n">L</span> <span class="o">-</span> <span class="n">milliseconds</span> <span class="k">as</span> <span class="n">a</span> <span class="n">decimal</span> <span class="n">number</span> <span class="p">[</span><span class="mi">000</span><span class="p">,</span> <span class="mi">999</span><span class="p">]</span><span class="o">.</span>
+<span class="o">%</span><span class="n">p</span> <span class="o">-</span> <span class="n">either</span> <span class="n">AM</span> <span class="ow">or</span> <span class="n">PM</span><span class="o">.</span>
+<span class="o">%</span><span class="n">S</span> <span class="o">-</span> <span class="n">second</span> <span class="k">as</span> <span class="n">a</span> <span class="n">decimal</span> <span class="n">number</span> <span class="p">[</span><span class="mi">00</span><span class="p">,</span><span class="mi">61</span><span class="p">]</span><span class="o">.</span>
+<span class="o">%</span><span class="n">U</span> <span class="o">-</span> <span class="n">week</span> <span class="n">number</span> <span class="n">of</span> <span class="n">the</span> <span class="n">year</span> <span class="p">(</span><span class="n">Sunday</span> <span class="k">as</span> <span class="n">the</span> <span class="n">first</span> <span class="n">day</span> <span class="n">of</span> <span class="n">the</span> <span class="n">week</span><span class="p">)</span> <span class="k">as</span> <span class="n">a</span> <span class="n">decimal</span> <span class="n">number</span> <span class="p">[</span><span class="mi">00</span><span class="p">,</span><span class="mi">53</span><span class="p">]</span><span class="o">.</span>
+<span class="o">%</span><span class="n">w</span> <span class="o">-</span> <span class="n">weekday</span> <span class="k">as</span> <span class="n">a</span> <span class="n">decimal</span> <span class="n">number</span> <span class="p">[</span><span class="mi">0</span><span class="p">(</span><span class="n">Sunday</span><span class="p">),</span><span class="mi">6</span><span class="p">]</span><span class="o">.</span>
+<span class="o">%</span><span class="n">W</span> <span class="o">-</span> <span class="n">week</span> <span class="n">number</span> <span class="n">of</span> <span class="n">the</span> <span class="n">year</span> <span class="p">(</span><span class="n">Monday</span> <span class="k">as</span> <span class="n">the</span> <span class="n">first</span> <span class="n">day</span> <span class="n">of</span> <span class="n">the</span> <span class="n">week</span><span class="p">)</span> <span class="k">as</span> <span class="n">a</span> <span class="n">decimal</span> <span class="n">number</span> <span class="p">[</span><span class="mi">00</span><span class="p">,</span><span class="mi">53</span><span class="p">]</span><span class="o">.</span>
+<span class="o">%</span><span class="n">x</span> <span class="o">-</span> <span class="n">date</span><span class="p">,</span> <span class="k">as</span> <span class="s2">&quot;%m/</span><span class="si">%d</span><span class="s2">/%Y&quot;</span><span class="o">.</span>
+<span class="o">%</span><span class="n">X</span> <span class="o">-</span> <span class="n">time</span><span class="p">,</span> <span class="k">as</span> <span class="s2">&quot;%H:%M:%S&quot;</span><span class="o">.</span>
+<span class="o">%</span><span class="n">y</span> <span class="o">-</span> <span class="n">year</span> <span class="n">without</span> <span class="n">century</span> <span class="k">as</span> <span class="n">a</span> <span class="n">decimal</span> <span class="n">number</span> <span class="p">[</span><span class="mi">00</span><span class="p">,</span><span class="mi">99</span><span class="p">]</span><span class="o">.</span>
+<span class="o">%</span><span class="n">Y</span> <span class="o">-</span> <span class="n">year</span> <span class="k">with</span> <span class="n">century</span> <span class="k">as</span> <span class="n">a</span> <span class="n">decimal</span> <span class="n">number</span><span class="o">.</span>
+<span class="o">%</span><span class="n">Z</span> <span class="o">-</span> <span class="n">time</span> <span class="n">zone</span> <span class="n">offset</span><span class="p">,</span> <span class="n">such</span> <span class="k">as</span> <span class="s2">&quot;-0700&quot;</span><span class="o">.</span>
+<span class="o">%%</span> <span class="o">-</span> <span class="n">a</span> <span class="n">literal</span> <span class="s2">&quot;%&quot;</span> <span class="n">character</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>More info in: https://github.com/mbostock/d3/wiki/Time-Formatting</p>
+</div>
+</div>
+<div class="section" id="comments">
+<h2>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h2>
+<p>Comments can be entered within a gantt chart, which will be ignored by the parser. Comments need to be on their own line and must be prefaced with <code class="docutils literal notranslate"><span class="pre">%%</span></code> (double percent signs). Any text after the start of the comment to the next newline will be treated as a comment, including any diagram syntax</p>
+<div class="highlight-mmd notranslate"><div class="highlight"><pre><span></span>gantt
+    title A Gantt Diagram
+    %% this is a comment
+    dateFormat  YYYY-MM-DD
+    section Section
+    A task           :a1, 2014-01-01, 30d
+    Another task     :after a1  , 20d
+    section Another
+    Task in sec      :2014-01-12  , 12d
+    another task      : 24d
+
+</pre></div>
+</div>
+</div>
+<div class="section" id="styling">
+<h2>Styling<a class="headerlink" href="#styling" title="Permalink to this headline">¶</a></h2>
+<p>Styling of the a gantt diagram is done by defining a number of css classes. During rendering, these classes are extracted from the file located at src/themes/gantt.scss</p>
+<div class="section" id="classes-used">
+<h3>Classes used<a class="headerlink" href="#classes-used" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Class</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>grid.tick</p></td>
+<td><p>Styling for the Grid Lines</p></td>
+</tr>
+<tr class="row-odd"><td><p>grid.path</p></td>
+<td><p>Styling for the Grid’s borders</p></td>
+</tr>
+<tr class="row-even"><td><p>.taskText</p></td>
+<td><p>Task Text Styling</p></td>
+</tr>
+<tr class="row-odd"><td><p>.taskTextOutsideRight</p></td>
+<td><p>Styling for Task Text that exceeds the activity bar towards the right.</p></td>
+</tr>
+<tr class="row-even"><td><p>.taskTextOutsideLeft</p></td>
+<td><p>Styling for Task Text that exceeds the activity bar, towards the left.</p></td>
+</tr>
+<tr class="row-odd"><td><p>todayMarker</p></td>
+<td><p>Toggle and Styling for the “Today Marker”</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="sample-stylesheet">
+<h3>Sample stylesheet<a class="headerlink" href="#sample-stylesheet" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="nc">grid</span> <span class="p">.</span><span class="nc">tick</span> <span class="p">{</span>
+    <span class="n">stroke</span><span class="p">:</span> <span class="kc">lightgrey</span><span class="p">;</span>
+    <span class="k">opacity</span><span class="p">:</span> <span class="mf">0.3</span><span class="p">;</span>
+    <span class="n">shape-rendering</span><span class="p">:</span> <span class="n">crispEdges</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">.</span><span class="nc">grid</span> <span class="nt">path</span> <span class="p">{</span>
+    <span class="n">stroke-width</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">tag</span> <span class="p">{</span>
+    <span class="k">color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
+    <span class="k">background</span><span class="p">:</span> <span class="mh">#FA283D</span><span class="p">;</span>
+    <span class="k">width</span><span class="p">:</span> <span class="mi">150</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+    <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+    <span class="k">padding</span><span class="p">:</span><span class="mi">3</span><span class="kt">px</span> <span class="mi">6</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">margin-left</span><span class="p">:</span> <span class="mi">-80</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">11</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">tag</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+    <span class="k">border</span><span class="p">:</span> <span class="kc">solid</span> <span class="kc">transparent</span><span class="p">;</span>
+    <span class="k">content</span><span class="p">:</span> <span class="s1">&#39; &#39;</span><span class="p">;</span>
+    <span class="k">height</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">left</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
+    <span class="k">margin-left</span><span class="p">:</span> <span class="mi">-5</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+    <span class="k">width</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">border-width</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">border-bottom-color</span><span class="p">:</span> <span class="mh">#FA283D</span><span class="p">;</span>
+    <span class="k">top</span><span class="p">:</span> <span class="mi">-20</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">.</span><span class="nc">taskText</span> <span class="p">{</span>
+    <span class="n">fill</span><span class="p">:</span><span class="kc">white</span><span class="p">;</span>
+    <span class="n">text-anchor</span><span class="p">:</span><span class="kc">middle</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">.</span><span class="nc">taskTextOutsideRight</span> <span class="p">{</span>
+    <span class="n">fill</span><span class="p">:</span><span class="kc">black</span><span class="p">;</span>
+    <span class="n">text-anchor</span><span class="p">:</span><span class="kc">start</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">.</span><span class="nc">taskTextOutsideLeft</span> <span class="p">{</span>
+    <span class="n">fill</span><span class="p">:</span><span class="kc">black</span><span class="p">;</span>
+    <span class="n">text-anchor</span><span class="p">:</span><span class="kc">end</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="today-marker">
+<h2>Today marker<a class="headerlink" href="#today-marker" title="Permalink to this headline">¶</a></h2>
+<p>You can style or hide the marker for the current date. To style it, add a value for the <code class="docutils literal notranslate"><span class="pre">todayMarker</span></code> key.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">todayMarker</span> <span class="n">stroke</span><span class="o">-</span><span class="n">width</span><span class="p">:</span><span class="mi">5</span><span class="n">px</span><span class="p">,</span><span class="n">stroke</span><span class="p">:</span><span class="c1">#0f0,opacity:0.5</span>
+</pre></div>
+</div>
+<p>To hide the marker, set <code class="docutils literal notranslate"><span class="pre">todayMarker</span></code> to <code class="docutils literal notranslate"><span class="pre">off</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">todayMarker</span> <span class="n">off</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<p>It is possible to adjust the margins for rendering the gantt diagram.</p>
+<p>This is done by defining the <code class="docutils literal notranslate"><span class="pre">ganttConfig</span></code> part of the configuration object.
+How to use the CLI is described in the <span class="xref myst">mermaidCLI</span> page.</p>
+<p>mermaid.ganttConfig can be set to a JSON string with config parameters or the corresponding object.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">mermaid</span><span class="p">.</span><span class="nx">ganttConfig</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">titleTopMargin</span><span class="o">:</span><span class="mf">25</span><span class="p">,</span>
+    <span class="nx">barHeight</span><span class="o">:</span><span class="mf">20</span><span class="p">,</span>
+    <span class="nx">barGap</span><span class="o">:</span><span class="mf">4</span><span class="p">,</span>
+    <span class="nx">topPadding</span><span class="o">:</span><span class="mf">75</span><span class="p">,</span>
+    <span class="nx">sidePadding</span><span class="o">:</span><span class="mf">75</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="section" id="possible-configuration-params">
+<h3>Possible configuration params:<a class="headerlink" href="#possible-configuration-params" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Param</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Default value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>mirrorActor</p></td>
+<td><p>Turns on/off the rendering of actors below the diagram as well as above it</p></td>
+<td><p>false</p></td>
+</tr>
+<tr class="row-odd"><td><p>bottomMarginAdj</p></td>
+<td><p>Adjusts how far down the graph ended. Wide borders styles with css could generate unwanted clipping which is why this config param exists.</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="interaction">
+<h2>Interaction<a class="headerlink" href="#interaction" title="Permalink to this headline">¶</a></h2>
+<p>It is possible to bind a click event to a task. The click can lead to either a javascript callback or to a link which will be opened in the current browser tab. <strong>Note</strong>: This functionality is disabled when using <code class="docutils literal notranslate"><span class="pre">securityLevel='strict'</span></code> and enabled when using <code class="docutils literal notranslate"><span class="pre">securityLevel='loose'</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">click</span> <span class="n">taskId</span> <span class="n">call</span> <span class="n">callback</span><span class="p">(</span><span class="n">arguments</span><span class="p">)</span>
+<span class="n">click</span> <span class="n">taskId</span> <span class="n">href</span> <span class="n">URL</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>taskId is the id of the task</p></li>
+<li><p>callback is the name of a javascript function defined on the page displaying the graph, the function will be called with the taskId as the parameter if no other arguments are specified.</p></li>
+</ul>
+<p>Beginners tip, a full example using interactive links in an html context:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;mermaid&quot;</span><span class="p">&gt;</span>
+    gantt
+      dateFormat  YYYY-MM-DD
+
+      section Clickable
+      Visit mermaidjs           :active, cl1, 2014-01-07, 3d
+      Print arguments         :cl2, after cl1, 3d
+      Print task              :cl3, after cl2, 3d
+
+      click cl1 href &quot;https://mermaidjs.github.io/&quot;
+      click cl2 call printArguments(&quot;test1&quot;, &quot;test2&quot;, test3)
+      click cl3 call printTask()
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="kd">var</span> <span class="nx">printArguments</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">arg1</span><span class="p">,</span> <span class="nx">arg2</span><span class="p">,</span> <span class="nx">arg3</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;printArguments called with arguments: &#39;</span> <span class="o">+</span> <span class="nx">arg1</span> <span class="o">+</span> <span class="s1">&#39;, &#39;</span> <span class="o">+</span> <span class="nx">arg2</span> <span class="o">+</span> <span class="s1">&#39;, &#39;</span> <span class="o">+</span> <span class="nx">arg3</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="kd">var</span> <span class="nx">printTask</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">taskId</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;taskId: &#39;</span> <span class="o">+</span> <span class="nx">taskId</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="kd">var</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="nx">startOnLoad</span><span class="o">:</span><span class="kc">true</span><span class="p">,</span>
+      <span class="nx">securityLevel</span><span class="o">:</span><span class="s1">&#39;loose&#39;</span><span class="p">,</span>
+    <span class="p">};</span>
+    <span class="nx">mermaid</span><span class="p">.</span><span class="nx">initialize</span><span class="p">(</span><span class="nx">config</span><span class="p">);</span>
+  <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="user-journey.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">User Journey Diagram</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="pie.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Pie chart diagrams</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By xinetzone<br/>
+        
+            &copy; Copyright 2021, xinetzone.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
