@@ -1,11 +1,11 @@
 
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="zh_CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mermaidAPI &#8212; mermaid 0.0.1 documentation</title>
+    <title>mermaidAPI &#8212; mermaid 0.0.1 文档</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -37,16 +37,17 @@
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
+    <script src="_static/translations.js"></script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
     <link rel="next" title="Directives" href="directives.html" />
     <link rel="prev" title="Usage" href="usage.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en">
+    <meta name="docsearch:language" content="zh_CN">
     
 
     <!-- Google Analytics -->
@@ -68,7 +69,7 @@
       
       
       
-      <h1 class="site-logo" id="site-title">mermaid 0.0.1 documentation</h1>
+      <h1 class="site-logo" id="site-title">mermaid 0.0.1 文档</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -79,7 +80,7 @@
         <ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="intro/index.html">
-   📔 Introduction
+   📔 介绍
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -89,17 +90,17 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="README.html">
-     About Mermaid
+     关于 Mermaid
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="n00b-gettingStarted.html">
-     A Mermaid User-Guide for Beginners
+     Mermaid 用户指南 – 为初学者而设
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="n00b-syntaxReference.html">
-     Diagram Syntax
+     图表语法
     </a>
    </li>
   </ul>
@@ -146,7 +147,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="gantt.html">
-     Gantt diagrams
+     甘特图
     </a>
    </li>
    <li class="toctree-l2">
@@ -225,7 +226,7 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="integrations.html">
-     Integrations
+     集成
     </a>
    </li>
    <li class="toctree-l2">
@@ -277,15 +278,52 @@
    Version 8.6.0 Changes
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="SUMMARY.html">
    Summary
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="breakingChanges.html">
-   Breaking changes
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="faq.html">
+     Frequently Asked Questions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="breakingChanges.html">
+     Breaking changes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="usage.html">
+     Usage
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="mermaidCLI.html">
+     mermaid CLI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="development.html">
+     Development and Contribution 🙌
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="upgrading.html">
+     Upgrading
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://github.com/mermaidjs/mermaid-gitbook">
+     Contribute to this website
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="developer-docs/configuration.html">
@@ -295,11 +333,6 @@
  <li class="toctree-l1">
   <a class="reference internal" href="diagrams-and-syntax-and-examples/flowchart.html">
    Flowcharts - Basic Syntax
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="upgrading.html">
-   Upgrading
   </a>
  </li>
 </ul>
@@ -354,6 +387,24 @@
 
             <!-- Source interaction buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/daobook/mermaid"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/daobook/mermaid/issues/new?title=Issue%20on%20page%20%2FSetup.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/daobook/mermaid/edit/main/web/Setup.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
             <!-- Full screen (wrap in <a> to have style consistency -->
 
 <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
@@ -369,7 +420,7 @@
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
             <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+                <i class="fas fa-list"></i> 导航
             </div>
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
@@ -1057,7 +1108,7 @@
                 
   <!-- Generated by documentation.js. Update this documentation by updating the source code. -->
 <div class="section" id="mermaidapi">
-<h1>mermaidAPI<a class="headerlink" href="#mermaidapi" title="Permalink to this headline">¶</a></h1>
+<h1>mermaidAPI<a class="headerlink" href="#mermaidapi" title="永久链接至标题">¶</a></h1>
 <p>Edit this
 Page<a class="reference external" href="https://github.com/mermaid-js/mermaid/blob/develop/src/mermaidAPI.js">[N|Solid](img/GitHub-Mark-32px.png)</a></p>
 <p>This is the API to be used when optionally handling the integration with the web page, instead of
@@ -1069,12 +1120,12 @@ page or do something completely different.</p>
 <p>In addition to the render function, a number of behavioral configuration options are available.</p>
 </div>
 <div class="section" id="configuration">
-<h1>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h1>
+<h1>Configuration<a class="headerlink" href="#configuration" title="永久链接至标题">¶</a></h1>
 <p><strong>Configuration methods in Mermaid version 8.6.0 have been updated, to learn more[<a class="reference internal" href="8.6.0_docs.html"><span class="doc std std-doc">click
 here</span></a>].</strong></p>
 </div>
 <div class="section" id="what-follows-are-config-instructions-for-older-versions">
-<h1><strong>What follows are config instructions for older versions</strong><a class="headerlink" href="#what-follows-are-config-instructions-for-older-versions" title="Permalink to this headline">¶</a></h1>
+<h1><strong>What follows are config instructions for older versions</strong><a class="headerlink" href="#what-follows-are-config-instructions-for-older-versions" title="永久链接至标题">¶</a></h1>
 <p>These are the default options which can be overridden with the initialization call like so:</p>
 <p><strong>Example 1:</strong><pre> mermaid.initialize({ flowchart:{ htmlLabels: false } }); </pre></p>
 <p><strong>Example 2:</strong><pre> <script> var config = { startOnLoad:true, flowchart:{ useMaxWidth:true,
@@ -1087,7 +1138,7 @@ htmlLabels:true, curve:’cardinal’, },</p>
 A description of each option follows below.</p>
 </div>
 <div class="section" id="theme">
-<h1>theme<a class="headerlink" href="#theme" title="Permalink to this headline">¶</a></h1>
+<h1>theme<a class="headerlink" href="#theme" title="永久链接至标题">¶</a></h1>
 <p>Theme , the CSS style sheet</p>
 <table class="colwidths-auto table">
 <thead>
@@ -1111,7 +1162,7 @@ A description of each option follows below.</p>
 “themeCSS”: “.node rect { fill: red; }” </pre></p>
 </div>
 <div class="section" id="fontfamily">
-<h1>fontFamily<a class="headerlink" href="#fontfamily" title="Permalink to this headline">¶</a></h1>
+<h1>fontFamily<a class="headerlink" href="#fontfamily" title="永久链接至标题">¶</a></h1>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1133,7 +1184,7 @@ A description of each option follows below.</p>
 <p><strong>Notes:</strong> Default value: ‘“trebuchet ms”, verdana, arial, sans-serif;’.</p>
 </div>
 <div class="section" id="loglevel">
-<h1>logLevel<a class="headerlink" href="#loglevel" title="Permalink to this headline">¶</a></h1>
+<h1>logLevel<a class="headerlink" href="#loglevel" title="永久链接至标题">¶</a></h1>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1162,7 +1213,7 @@ A description of each option follows below.</p>
 </ul>
 </div>
 <div class="section" id="securitylevel">
-<h1>securityLevel<a class="headerlink" href="#securitylevel" title="Permalink to this headline">¶</a></h1>
+<h1>securityLevel<a class="headerlink" href="#securitylevel" title="永久链接至标题">¶</a></h1>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1190,7 +1241,7 @@ functionality is enabled</p></li>
 </ul>
 </div>
 <div class="section" id="startonload">
-<h1>startOnLoad<a class="headerlink" href="#startonload" title="Permalink to this headline">¶</a></h1>
+<h1>startOnLoad<a class="headerlink" href="#startonload" title="永久链接至标题">¶</a></h1>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1212,7 +1263,7 @@ functionality is enabled</p></li>
 <p><strong>Notes:</strong> Default value: true</p>
 </div>
 <div class="section" id="arrowmarkerabsolute">
-<h1>arrowMarkerAbsolute<a class="headerlink" href="#arrowmarkerabsolute" title="Permalink to this headline">¶</a></h1>
+<h1>arrowMarkerAbsolute<a class="headerlink" href="#arrowmarkerabsolute" title="永久链接至标题">¶</a></h1>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1236,7 +1287,7 @@ functionality is enabled</p></li>
 <p>Default value: false</p>
 </div>
 <div class="section" id="secure">
-<h1>secure<a class="headerlink" href="#secure" title="Permalink to this headline">¶</a></h1>
+<h1>secure<a class="headerlink" href="#secure" title="永久链接至标题">¶</a></h1>
 <p>This option controls which currentConfig keys are considered <em>secure</em> and can only be changed
 via call to mermaidAPI.initialize. Calls to mermaidAPI.reinitialize cannot make changes to the
 <code class="docutils literal notranslate"><span class="pre">secure</span></code> keys in the current currentConfig. This prevents malicious graph directives from
@@ -1245,7 +1296,7 @@ overriding a site’s default security.</p>
 <p>Default value: [‘secure’, ‘securityLevel’, ‘startOnLoad’, ‘maxTextSize’]</p>
 </div>
 <div class="section" id="deterministicids">
-<h1>deterministicIds<a class="headerlink" href="#deterministicids" title="Permalink to this headline">¶</a></h1>
+<h1>deterministicIds<a class="headerlink" href="#deterministicids" title="永久链接至标题">¶</a></h1>
 <p>This option controls if the generated ids of nodes in the SVG are generated randomly or based
 on a seed. If set to false, the IDs are generated based on the current date and thus are not
 deterministic. This is the default behaviour.</p>
@@ -1255,16 +1306,16 @@ content is changed.</p>
 <p>Default value: false</p>
 </div>
 <div class="section" id="deterministicidseed">
-<h1>deterministicIDSeed<a class="headerlink" href="#deterministicidseed" title="Permalink to this headline">¶</a></h1>
+<h1>deterministicIDSeed<a class="headerlink" href="#deterministicidseed" title="永久链接至标题">¶</a></h1>
 <p>This option is the optional seed for deterministic ids. if set to undefined but
 deterministicIds is true, a simple number iterator is used. You can set this attribute to base
 the seed on a static string.</p>
 </div>
 <div class="section" id="flowchart">
-<h1>flowchart<a class="headerlink" href="#flowchart" title="Permalink to this headline">¶</a></h1>
+<h1>flowchart<a class="headerlink" href="#flowchart" title="永久链接至标题">¶</a></h1>
 <p>The object containing configurations specific for flowcharts</p>
 <div class="section" id="diagrampadding">
-<h2>diagramPadding<a class="headerlink" href="#diagrampadding" title="Permalink to this headline">¶</a></h2>
+<h2>diagramPadding<a class="headerlink" href="#diagrampadding" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1289,7 +1340,7 @@ expressed in pixels</p>
 <p>Default value: 8</p>
 </div>
 <div class="section" id="htmllabels">
-<h2>htmlLabels<a class="headerlink" href="#htmllabels" title="Permalink to this headline">¶</a></h2>
+<h2>htmlLabels<a class="headerlink" href="#htmllabels" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1311,7 +1362,7 @@ expressed in pixels</p>
 <p><strong>Notes:</strong> Default value: true.</p>
 </div>
 <div class="section" id="nodespacing">
-<h2>nodeSpacing<a class="headerlink" href="#nodespacing" title="Permalink to this headline">¶</a></h2>
+<h2>nodeSpacing<a class="headerlink" href="#nodespacing" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1336,7 +1387,7 @@ vertical spacing for LR as well as RL graphs.**</p>
 <p>Default value: 50</p>
 </div>
 <div class="section" id="rankspacing">
-<h2>rankSpacing<a class="headerlink" href="#rankspacing" title="Permalink to this headline">¶</a></h2>
+<h2>rankSpacing<a class="headerlink" href="#rankspacing" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1361,7 +1412,7 @@ spacing for LR as well as RL graphs.</p>
 <p>Default value 50</p>
 </div>
 <div class="section" id="curve">
-<h2>curve<a class="headerlink" href="#curve" title="Permalink to this headline">¶</a></h2>
+<h2>curve<a class="headerlink" href="#curve" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1384,7 +1435,7 @@ spacing for LR as well as RL graphs.</p>
 <p>Default Value: ‘basis’</p>
 </div>
 <div class="section" id="usemaxwidth">
-<h2>useMaxWidth<a class="headerlink" href="#usemaxwidth" title="Permalink to this headline">¶</a></h2>
+<h2>useMaxWidth<a class="headerlink" href="#usemaxwidth" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1409,7 +1460,7 @@ available space if not the absolute space required is used.</p>
 <p>Default value: true</p>
 </div>
 <div class="section" id="defaultrenderer">
-<h2>defaultRenderer<a class="headerlink" href="#defaultrenderer" title="Permalink to this headline">¶</a></h2>
+<h2>defaultRenderer<a class="headerlink" href="#defaultrenderer" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1435,10 +1486,10 @@ dagre-d3 dagre-wrapper - wrapper for dagre implemented in mermaid</p>
 </div>
 </div>
 <div class="section" id="sequence">
-<h1>sequence<a class="headerlink" href="#sequence" title="Permalink to this headline">¶</a></h1>
+<h1>sequence<a class="headerlink" href="#sequence" title="永久链接至标题">¶</a></h1>
 <p>The object containing configurations specific for sequence diagrams</p>
 <div class="section" id="activationwidth">
-<h2>activationWidth<a class="headerlink" href="#activationwidth" title="Permalink to this headline">¶</a></h2>
+<h2>activationWidth<a class="headerlink" href="#activationwidth" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1460,7 +1511,7 @@ dagre-d3 dagre-wrapper - wrapper for dagre implemented in mermaid</p>
 <p><strong>Notes:</strong> Default value :10</p>
 </div>
 <div class="section" id="diagrammarginx">
-<h2>diagramMarginX<a class="headerlink" href="#diagrammarginx" title="Permalink to this headline">¶</a></h2>
+<h2>diagramMarginX<a class="headerlink" href="#diagrammarginx" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1482,7 +1533,7 @@ dagre-d3 dagre-wrapper - wrapper for dagre implemented in mermaid</p>
 <p><strong>Notes:</strong> Default value: 50</p>
 </div>
 <div class="section" id="diagrammarginy">
-<h2>diagramMarginY<a class="headerlink" href="#diagrammarginy" title="Permalink to this headline">¶</a></h2>
+<h2>diagramMarginY<a class="headerlink" href="#diagrammarginy" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1504,7 +1555,7 @@ dagre-d3 dagre-wrapper - wrapper for dagre implemented in mermaid</p>
 <p><strong>Notes:</strong> Default value: 10</p>
 </div>
 <div class="section" id="actormargin">
-<h2>actorMargin<a class="headerlink" href="#actormargin" title="Permalink to this headline">¶</a></h2>
+<h2>actorMargin<a class="headerlink" href="#actormargin" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1526,7 +1577,7 @@ dagre-d3 dagre-wrapper - wrapper for dagre implemented in mermaid</p>
 <p><strong>Notes:</strong> Default value: 50</p>
 </div>
 <div class="section" id="width">
-<h2>width<a class="headerlink" href="#width" title="Permalink to this headline">¶</a></h2>
+<h2>width<a class="headerlink" href="#width" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1548,7 +1599,7 @@ dagre-d3 dagre-wrapper - wrapper for dagre implemented in mermaid</p>
 <p><strong>Notes:</strong> Default value: 150</p>
 </div>
 <div class="section" id="height">
-<h2>height<a class="headerlink" href="#height" title="Permalink to this headline">¶</a></h2>
+<h2>height<a class="headerlink" href="#height" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1570,7 +1621,7 @@ dagre-d3 dagre-wrapper - wrapper for dagre implemented in mermaid</p>
 <p><strong>Notes:</strong> Default value: 65</p>
 </div>
 <div class="section" id="boxmargin">
-<h2>boxMargin<a class="headerlink" href="#boxmargin" title="Permalink to this headline">¶</a></h2>
+<h2>boxMargin<a class="headerlink" href="#boxmargin" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1592,7 +1643,7 @@ dagre-d3 dagre-wrapper - wrapper for dagre implemented in mermaid</p>
 <p><strong>Notes:</strong> Default value: 10</p>
 </div>
 <div class="section" id="boxtextmargin">
-<h2>boxTextMargin<a class="headerlink" href="#boxtextmargin" title="Permalink to this headline">¶</a></h2>
+<h2>boxTextMargin<a class="headerlink" href="#boxtextmargin" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1614,7 +1665,7 @@ dagre-d3 dagre-wrapper - wrapper for dagre implemented in mermaid</p>
 <p><strong>Notes:</strong> Default value: 5</p>
 </div>
 <div class="section" id="notemargin">
-<h2>noteMargin<a class="headerlink" href="#notemargin" title="Permalink to this headline">¶</a></h2>
+<h2>noteMargin<a class="headerlink" href="#notemargin" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1636,7 +1687,7 @@ dagre-d3 dagre-wrapper - wrapper for dagre implemented in mermaid</p>
 <p><strong>Notes:</strong> Default value: 10</p>
 </div>
 <div class="section" id="messagemargin">
-<h2>messageMargin<a class="headerlink" href="#messagemargin" title="Permalink to this headline">¶</a></h2>
+<h2>messageMargin<a class="headerlink" href="#messagemargin" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1658,7 +1709,7 @@ dagre-d3 dagre-wrapper - wrapper for dagre implemented in mermaid</p>
 <p><strong>Notes:</strong> Default value: 35</p>
 </div>
 <div class="section" id="messagealign">
-<h2>messageAlign<a class="headerlink" href="#messagealign" title="Permalink to this headline">¶</a></h2>
+<h2>messageAlign<a class="headerlink" href="#messagealign" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1680,7 +1731,7 @@ dagre-d3 dagre-wrapper - wrapper for dagre implemented in mermaid</p>
 <p><strong>Notes:</strong> Default value: ‘center’</p>
 </div>
 <div class="section" id="mirroractors">
-<h2>mirrorActors<a class="headerlink" href="#mirroractors" title="Permalink to this headline">¶</a></h2>
+<h2>mirrorActors<a class="headerlink" href="#mirroractors" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1702,7 +1753,7 @@ dagre-d3 dagre-wrapper - wrapper for dagre implemented in mermaid</p>
 <p><strong>Notes:</strong> Default value: true</p>
 </div>
 <div class="section" id="forcemenus">
-<h2>forceMenus<a class="headerlink" href="#forcemenus" title="Permalink to this headline">¶</a></h2>
+<h2>forceMenus<a class="headerlink" href="#forcemenus" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1725,7 +1776,7 @@ dagre-d3 dagre-wrapper - wrapper for dagre implemented in mermaid</p>
 <p>Default value: false.</p>
 </div>
 <div class="section" id="bottommarginadj">
-<h2>bottomMarginAdj<a class="headerlink" href="#bottommarginadj" title="Permalink to this headline">¶</a></h2>
+<h2>bottomMarginAdj<a class="headerlink" href="#bottommarginadj" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1749,7 +1800,7 @@ dagre-d3 dagre-wrapper - wrapper for dagre implemented in mermaid</p>
 <p>Default value: 1</p>
 </div>
 <div class="section" id="id1">
-<h2>useMaxWidth<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2>useMaxWidth<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1773,7 +1824,7 @@ scaling with the available space. If set to false, the absolute space required i
 <p>Default value: true</p>
 </div>
 <div class="section" id="rightangles">
-<h2>rightAngles<a class="headerlink" href="#rightangles" title="Permalink to this headline">¶</a></h2>
+<h2>rightAngles<a class="headerlink" href="#rightangles" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1797,7 +1848,7 @@ scaling with the available space. If set to false, the absolute space required i
 <p>Default value: false</p>
 </div>
 <div class="section" id="showsequencenumbers">
-<h2>showSequenceNumbers<a class="headerlink" href="#showsequencenumbers" title="Permalink to this headline">¶</a></h2>
+<h2>showSequenceNumbers<a class="headerlink" href="#showsequencenumbers" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1819,7 +1870,7 @@ scaling with the available space. If set to false, the absolute space required i
 <p><strong>Notes:</strong> Default value: false</p>
 </div>
 <div class="section" id="actorfontsize">
-<h2>actorFontSize<a class="headerlink" href="#actorfontsize" title="Permalink to this headline">¶</a></h2>
+<h2>actorFontSize<a class="headerlink" href="#actorfontsize" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1841,7 +1892,7 @@ scaling with the available space. If set to false, the absolute space required i
 <p><strong>Notes:</strong> <strong>Default value 14</strong>..</p>
 </div>
 <div class="section" id="actorfontfamily">
-<h2>actorFontFamily<a class="headerlink" href="#actorfontfamily" title="Permalink to this headline">¶</a></h2>
+<h2>actorFontFamily<a class="headerlink" href="#actorfontfamily" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1863,12 +1914,12 @@ scaling with the available space. If set to false, the absolute space required i
 <p><strong>Notes:</strong> Default value: “‘Open-Sans”, “sans-serif”’</p>
 </div>
 <div class="section" id="actorfontweight">
-<h2>actorFontWeight<a class="headerlink" href="#actorfontweight" title="Permalink to this headline">¶</a></h2>
+<h2>actorFontWeight<a class="headerlink" href="#actorfontweight" title="永久链接至标题">¶</a></h2>
 <p>This sets the font weight of the actor’s description</p>
 <p><strong>Notes:</strong> Default value: 400.</p>
 </div>
 <div class="section" id="notefontsize">
-<h2>noteFontSize<a class="headerlink" href="#notefontsize" title="Permalink to this headline">¶</a></h2>
+<h2>noteFontSize<a class="headerlink" href="#notefontsize" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1890,7 +1941,7 @@ scaling with the available space. If set to false, the absolute space required i
 <p><strong>Notes:</strong> Default value: 14</p>
 </div>
 <div class="section" id="notefontfamily">
-<h2>noteFontFamily<a class="headerlink" href="#notefontfamily" title="Permalink to this headline">¶</a></h2>
+<h2>noteFontFamily<a class="headerlink" href="#notefontfamily" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1912,12 +1963,12 @@ scaling with the available space. If set to false, the absolute space required i
 <p><strong>Notes:</strong> Default value: ‘‘“trebuchet ms”, verdana, arial, sans-serif’</p>
 </div>
 <div class="section" id="notefontweight">
-<h2>noteFontWeight<a class="headerlink" href="#notefontweight" title="Permalink to this headline">¶</a></h2>
+<h2>noteFontWeight<a class="headerlink" href="#notefontweight" title="永久链接至标题">¶</a></h2>
 <p>This sets the font weight of the note’s description</p>
 <p><strong>Notes:</strong> Default value: 400</p>
 </div>
 <div class="section" id="notealign">
-<h2>noteAlign<a class="headerlink" href="#notealign" title="Permalink to this headline">¶</a></h2>
+<h2>noteAlign<a class="headerlink" href="#notealign" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1939,7 +1990,7 @@ scaling with the available space. If set to false, the absolute space required i
 <p><strong>Notes:</strong> Default value: ‘center’</p>
 </div>
 <div class="section" id="messagefontsize">
-<h2>messageFontSize<a class="headerlink" href="#messagefontsize" title="Permalink to this headline">¶</a></h2>
+<h2>messageFontSize<a class="headerlink" href="#messagefontsize" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1961,7 +2012,7 @@ scaling with the available space. If set to false, the absolute space required i
 <p><strong>Notes:</strong> Default value: 16</p>
 </div>
 <div class="section" id="messagefontfamily">
-<h2>messageFontFamily<a class="headerlink" href="#messagefontfamily" title="Permalink to this headline">¶</a></h2>
+<h2>messageFontFamily<a class="headerlink" href="#messagefontfamily" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -1983,39 +2034,39 @@ scaling with the available space. If set to false, the absolute space required i
 <p><strong>Notes:</strong> Default value: ‘“trebuchet ms”, verdana, arial, sans-serif’</p>
 </div>
 <div class="section" id="messagefontweight">
-<h2>messageFontWeight<a class="headerlink" href="#messagefontweight" title="Permalink to this headline">¶</a></h2>
+<h2>messageFontWeight<a class="headerlink" href="#messagefontweight" title="永久链接至标题">¶</a></h2>
 <p>This sets the font weight of the message’s description</p>
 <p><strong>Notes:</strong> Default value: 400.</p>
 </div>
 <div class="section" id="wrap">
-<h2>wrap<a class="headerlink" href="#wrap" title="Permalink to this headline">¶</a></h2>
+<h2>wrap<a class="headerlink" href="#wrap" title="永久链接至标题">¶</a></h2>
 <p>This sets the auto-wrap state for the diagram</p>
 <p><strong>Notes:</strong> Default value: false.</p>
 </div>
 <div class="section" id="wrappadding">
-<h2>wrapPadding<a class="headerlink" href="#wrappadding" title="Permalink to this headline">¶</a></h2>
+<h2>wrapPadding<a class="headerlink" href="#wrappadding" title="永久链接至标题">¶</a></h2>
 <p>This sets the auto-wrap padding for the diagram (sides only)</p>
 <p><strong>Notes:</strong> Default value: 0.</p>
 </div>
 <div class="section" id="labelboxwidth">
-<h2>labelBoxWidth<a class="headerlink" href="#labelboxwidth" title="Permalink to this headline">¶</a></h2>
+<h2>labelBoxWidth<a class="headerlink" href="#labelboxwidth" title="永久链接至标题">¶</a></h2>
 <p>This sets the width of the loop-box (loop, alt, opt, par)</p>
 <p><strong>Notes:</strong> Default value: 50.</p>
 </div>
 <div class="section" id="labelboxheight">
-<h2>labelBoxHeight<a class="headerlink" href="#labelboxheight" title="Permalink to this headline">¶</a></h2>
+<h2>labelBoxHeight<a class="headerlink" href="#labelboxheight" title="永久链接至标题">¶</a></h2>
 <p>This sets the height of the loop-box (loop, alt, opt, par)</p>
 <p><strong>Notes:</strong> Default value: 20.</p>
 </div>
 </div>
 <div class="section" id="gantt">
-<h1>gantt<a class="headerlink" href="#gantt" title="Permalink to this headline">¶</a></h1>
+<h1>gantt<a class="headerlink" href="#gantt" title="永久链接至标题">¶</a></h1>
 <p>The object containing configurations specific for gantt diagrams</p>
 <div class="section" id="titletopmargin">
-<h2>titleTopMargin<a class="headerlink" href="#titletopmargin" title="Permalink to this headline">¶</a></h2>
+<h2>titleTopMargin<a class="headerlink" href="#titletopmargin" title="永久链接至标题">¶</a></h2>
 </div>
 <div class="section" id="id2">
-<h2>titleTopMargin<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2>titleTopMargin<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2037,7 +2088,7 @@ scaling with the available space. If set to false, the absolute space required i
 <p><strong>Notes:</strong> Default value: 25</p>
 </div>
 <div class="section" id="barheight">
-<h2>barHeight<a class="headerlink" href="#barheight" title="Permalink to this headline">¶</a></h2>
+<h2>barHeight<a class="headerlink" href="#barheight" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2059,7 +2110,7 @@ scaling with the available space. If set to false, the absolute space required i
 <p><strong>Notes:</strong> Default value: 20</p>
 </div>
 <div class="section" id="bargap">
-<h2>barGap<a class="headerlink" href="#bargap" title="Permalink to this headline">¶</a></h2>
+<h2>barGap<a class="headerlink" href="#bargap" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2081,7 +2132,7 @@ scaling with the available space. If set to false, the absolute space required i
 <p><strong>Notes:</strong> Default value: 4</p>
 </div>
 <div class="section" id="toppadding">
-<h2>topPadding<a class="headerlink" href="#toppadding" title="Permalink to this headline">¶</a></h2>
+<h2>topPadding<a class="headerlink" href="#toppadding" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2103,7 +2154,7 @@ scaling with the available space. If set to false, the absolute space required i
 <p><strong>Notes:</strong> Default value: 50</p>
 </div>
 <div class="section" id="rightpadding">
-<h2>rightPadding<a class="headerlink" href="#rightpadding" title="Permalink to this headline">¶</a></h2>
+<h2>rightPadding<a class="headerlink" href="#rightpadding" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2125,7 +2176,7 @@ scaling with the available space. If set to false, the absolute space required i
 <p><strong>Notes:</strong> Default value: 75</p>
 </div>
 <div class="section" id="leftpadding">
-<h2>leftPadding<a class="headerlink" href="#leftpadding" title="Permalink to this headline">¶</a></h2>
+<h2>leftPadding<a class="headerlink" href="#leftpadding" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2147,7 +2198,7 @@ scaling with the available space. If set to false, the absolute space required i
 <p><strong>Notes:</strong> Default value: 75</p>
 </div>
 <div class="section" id="gridlinestartpadding">
-<h2>gridLineStartPadding<a class="headerlink" href="#gridlinestartpadding" title="Permalink to this headline">¶</a></h2>
+<h2>gridLineStartPadding<a class="headerlink" href="#gridlinestartpadding" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2169,7 +2220,7 @@ scaling with the available space. If set to false, the absolute space required i
 <p><strong>Notes:</strong> Default value: 35</p>
 </div>
 <div class="section" id="fontsize">
-<h2>fontSize<a class="headerlink" href="#fontsize" title="Permalink to this headline">¶</a></h2>
+<h2>fontSize<a class="headerlink" href="#fontsize" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2191,7 +2242,7 @@ scaling with the available space. If set to false, the absolute space required i
 <p><strong>Notes:</strong> Default value: 11</p>
 </div>
 <div class="section" id="sectionfontsize">
-<h2>sectionFontSize<a class="headerlink" href="#sectionfontsize" title="Permalink to this headline">¶</a></h2>
+<h2>sectionFontSize<a class="headerlink" href="#sectionfontsize" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2213,7 +2264,7 @@ scaling with the available space. If set to false, the absolute space required i
 <p><strong>Notes:</strong> Default value: 11</p>
 </div>
 <div class="section" id="numbersectionstyles">
-<h2>numberSectionStyles<a class="headerlink" href="#numbersectionstyles" title="Permalink to this headline">¶</a></h2>
+<h2>numberSectionStyles<a class="headerlink" href="#numbersectionstyles" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2235,7 +2286,7 @@ scaling with the available space. If set to false, the absolute space required i
 <p><strong>Notes:</strong> Default value: 4</p>
 </div>
 <div class="section" id="axisformat">
-<h2>axisFormat<a class="headerlink" href="#axisformat" title="Permalink to this headline">¶</a></h2>
+<h2>axisFormat<a class="headerlink" href="#axisformat" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2259,7 +2310,7 @@ scaling with the available space. If set to false, the absolute space required i
 <p>Default value: ‘%Y-%m-%d’.</p>
 </div>
 <div class="section" id="id3">
-<h2>useMaxWidth<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<h2>useMaxWidth<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2284,7 +2335,7 @@ available space if not the absolute space required is used.</p>
 <p>Default value: true</p>
 </div>
 <div class="section" id="topaxis">
-<h2>topAxis<a class="headerlink" href="#topaxis" title="Permalink to this headline">¶</a></h2>
+<h2>topAxis<a class="headerlink" href="#topaxis" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2308,10 +2359,10 @@ available space if not the absolute space required is used.</p>
 </div>
 </div>
 <div class="section" id="journey">
-<h1>journey<a class="headerlink" href="#journey" title="Permalink to this headline">¶</a></h1>
+<h1>journey<a class="headerlink" href="#journey" title="永久链接至标题">¶</a></h1>
 <p>The object containing configurations specific for journey diagrams</p>
 <div class="section" id="id4">
-<h2>diagramMarginX<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<h2>diagramMarginX<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2333,7 +2384,7 @@ available space if not the absolute space required is used.</p>
 <p><strong>Notes:</strong> Default value: 50</p>
 </div>
 <div class="section" id="id5">
-<h2>diagramMarginY<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<h2>diagramMarginY<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2355,7 +2406,7 @@ available space if not the absolute space required is used.</p>
 <p><strong>Notes:</strong> Default value: 10</p>
 </div>
 <div class="section" id="leftmargin">
-<h2>leftMargin<a class="headerlink" href="#leftmargin" title="Permalink to this headline">¶</a></h2>
+<h2>leftMargin<a class="headerlink" href="#leftmargin" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2377,7 +2428,7 @@ available space if not the absolute space required is used.</p>
 <p><strong>Notes:</strong> Default value: 50</p>
 </div>
 <div class="section" id="id6">
-<h2>width<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<h2>width<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2399,7 +2450,7 @@ available space if not the absolute space required is used.</p>
 <p><strong>Notes:</strong> Default value: 150</p>
 </div>
 <div class="section" id="id7">
-<h2>height<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<h2>height<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2421,7 +2472,7 @@ available space if not the absolute space required is used.</p>
 <p><strong>Notes:</strong> Default value: 65</p>
 </div>
 <div class="section" id="id8">
-<h2>boxMargin<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<h2>boxMargin<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2443,7 +2494,7 @@ available space if not the absolute space required is used.</p>
 <p><strong>Notes:</strong> Default value: 10</p>
 </div>
 <div class="section" id="id9">
-<h2>boxTextMargin<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<h2>boxTextMargin<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2465,7 +2516,7 @@ available space if not the absolute space required is used.</p>
 <p><strong>Notes:</strong> Default value: 5</p>
 </div>
 <div class="section" id="id10">
-<h2>noteMargin<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<h2>noteMargin<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2487,7 +2538,7 @@ available space if not the absolute space required is used.</p>
 <p><strong>Notes:</strong> Default value: 10</p>
 </div>
 <div class="section" id="id11">
-<h2>messageMargin<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<h2>messageMargin<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2511,7 +2562,7 @@ available space if not the absolute space required is used.</p>
 <p>Default value: 35</p>
 </div>
 <div class="section" id="id12">
-<h2>messageAlign<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<h2>messageAlign<a class="headerlink" href="#id12" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2533,7 +2584,7 @@ available space if not the absolute space required is used.</p>
 <p><strong>Notes:</strong> Default value: ‘center’</p>
 </div>
 <div class="section" id="id13">
-<h2>bottomMarginAdj<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<h2>bottomMarginAdj<a class="headerlink" href="#id13" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2557,7 +2608,7 @@ available space if not the absolute space required is used.</p>
 <p>Default value: 1</p>
 </div>
 <div class="section" id="id14">
-<h2>useMaxWidth<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+<h2>useMaxWidth<a class="headerlink" href="#id14" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2582,7 +2633,7 @@ available space if not the absolute space required is used.</p>
 <p>Default value: true</p>
 </div>
 <div class="section" id="id15">
-<h2>rightAngles<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<h2>rightAngles<a class="headerlink" href="#id15" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2607,7 +2658,7 @@ available space if not the absolute space required is used.</p>
 </div>
 </div>
 <div class="section" id="id16">
-<h1>useMaxWidth<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h1>
+<h1>useMaxWidth<a class="headerlink" href="#id16" title="永久链接至标题">¶</a></h1>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2632,7 +2683,7 @@ available space if not the absolute space required is used.</p>
 <p>Default value: true</p>
 </div>
 <div class="section" id="id17">
-<h1>defaultRenderer<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h1>
+<h1>defaultRenderer<a class="headerlink" href="#id17" title="永久链接至标题">¶</a></h1>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2657,7 +2708,7 @@ dagre-d3 dagre-wrapper - wrapper for dagre implemented in mermaid</p>
 <p>Default value: ‘dagre-d3’</p>
 </div>
 <div class="section" id="id18">
-<h1>useMaxWidth<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h1>
+<h1>useMaxWidth<a class="headerlink" href="#id18" title="永久链接至标题">¶</a></h1>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2682,7 +2733,7 @@ available space if not the absolute space required is used.</p>
 <p>Default value: true</p>
 </div>
 <div class="section" id="id19">
-<h1>useMaxWidth<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h1>
+<h1>useMaxWidth<a class="headerlink" href="#id19" title="永久链接至标题">¶</a></h1>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2707,7 +2758,7 @@ available space if not the absolute space required is used.</p>
 <p>Default value: true</p>
 </div>
 <div class="section" id="id20">
-<h1>defaultRenderer<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h1>
+<h1>defaultRenderer<a class="headerlink" href="#id20" title="永久链接至标题">¶</a></h1>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2732,10 +2783,10 @@ dagre-d3 dagre-wrapper - wrapper for dagre implemented in mermaid</p>
 <p>Default value: ‘dagre-d3’</p>
 </div>
 <div class="section" id="er">
-<h1>er<a class="headerlink" href="#er" title="Permalink to this headline">¶</a></h1>
+<h1>er<a class="headerlink" href="#er" title="永久链接至标题">¶</a></h1>
 <p>The object containing configurations specific for entity relationship diagrams</p>
 <div class="section" id="id21">
-<h2>diagramPadding<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h2>
+<h2>diagramPadding<a class="headerlink" href="#id21" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2760,7 +2811,7 @@ expressed in pixels</p>
 <p>Default value: 20</p>
 </div>
 <div class="section" id="layoutdirection">
-<h2>layoutDirection<a class="headerlink" href="#layoutdirection" title="Permalink to this headline">¶</a></h2>
+<h2>layoutDirection<a class="headerlink" href="#layoutdirection" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2785,7 +2836,7 @@ expressed in pixels</p>
 <p>Default value: ‘TB’</p>
 </div>
 <div class="section" id="minentitywidth">
-<h2>minEntityWidth<a class="headerlink" href="#minentitywidth" title="Permalink to this headline">¶</a></h2>
+<h2>minEntityWidth<a class="headerlink" href="#minentitywidth" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2807,7 +2858,7 @@ expressed in pixels</p>
 <p><strong>Notes:</strong> Expressed in pixels. Default value: 100</p>
 </div>
 <div class="section" id="minentityheight">
-<h2>minEntityHeight<a class="headerlink" href="#minentityheight" title="Permalink to this headline">¶</a></h2>
+<h2>minEntityHeight<a class="headerlink" href="#minentityheight" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2829,7 +2880,7 @@ expressed in pixels</p>
 <p><strong>Notes:</strong> Expressed in pixels Default value: 75</p>
 </div>
 <div class="section" id="entitypadding">
-<h2>entityPadding<a class="headerlink" href="#entitypadding" title="Permalink to this headline">¶</a></h2>
+<h2>entityPadding<a class="headerlink" href="#entitypadding" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2854,7 +2905,7 @@ expressed in pixels.</p>
 <p>Default value: 15</p>
 </div>
 <div class="section" id="stroke">
-<h2>stroke<a class="headerlink" href="#stroke" title="Permalink to this headline">¶</a></h2>
+<h2>stroke<a class="headerlink" href="#stroke" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2876,7 +2927,7 @@ expressed in pixels.</p>
 <p><strong>Notes:</strong> Default value: ‘gray’</p>
 </div>
 <div class="section" id="fill">
-<h2>fill<a class="headerlink" href="#fill" title="Permalink to this headline">¶</a></h2>
+<h2>fill<a class="headerlink" href="#fill" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2898,7 +2949,7 @@ expressed in pixels.</p>
 <p><strong>Notes:</strong> Default value: ‘honeydew’</p>
 </div>
 <div class="section" id="id22">
-<h2>fontSize<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h2>
+<h2>fontSize<a class="headerlink" href="#id22" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2921,7 +2972,7 @@ expressed in pixels.</p>
 <p>Font size (expressed as an integer representing a number of pixels) Default value: 12</p>
 </div>
 <div class="section" id="id23">
-<h2>useMaxWidth<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h2>
+<h2>useMaxWidth<a class="headerlink" href="#id23" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2947,10 +2998,10 @@ available space. If set to false, the diagram reserves its absolute width.</p>
 </div>
 </div>
 <div class="section" id="pie">
-<h1>pie<a class="headerlink" href="#pie" title="Permalink to this headline">¶</a></h1>
+<h1>pie<a class="headerlink" href="#pie" title="永久链接至标题">¶</a></h1>
 <p>The object containing configurations specific for pie diagrams</p>
 <div class="section" id="id24">
-<h2>useMaxWidth<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h2>
+<h2>useMaxWidth<a class="headerlink" href="#id24" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -2976,10 +3027,10 @@ available space. If set to false, the diagram reserves its absolute width.</p>
 </div>
 </div>
 <div class="section" id="requirement">
-<h1>requirement<a class="headerlink" href="#requirement" title="Permalink to this headline">¶</a></h1>
+<h1>requirement<a class="headerlink" href="#requirement" title="永久链接至标题">¶</a></h1>
 <p>The object containing configurations specific for req diagrams</p>
 <div class="section" id="id25">
-<h2>useMaxWidth<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h2>
+<h2>useMaxWidth<a class="headerlink" href="#id25" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -3005,10 +3056,10 @@ available space. If set to false, the diagram reserves its absolute width.</p>
 </div>
 </div>
 <div class="section" id="setsiteconfig">
-<h1>setSiteConfig<a class="headerlink" href="#setsiteconfig" title="Permalink to this headline">¶</a></h1>
+<h1>setSiteConfig<a class="headerlink" href="#setsiteconfig" title="永久链接至标题">¶</a></h1>
 </div>
 <div class="section" id="id26">
-<h1>setSiteConfig<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h1>
+<h1>setSiteConfig<a class="headerlink" href="#id26" title="永久链接至标题">¶</a></h1>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Function</p></th>
@@ -3030,7 +3081,7 @@ to reset() will reset the currentConfig to siteConfig. Calls to reset(configApi.
 will reset siteConfig and currentConfig to the defaultConfig Note: currentConfig is set in this
 function *Default value: At default, will mirror Global Config**</p>
 <div class="section" id="parameters">
-<h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h2>
+<h2>Parameters<a class="headerlink" href="#parameters" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">conf</span></code>  The base currentConfig to use as siteConfig</p></li>
 </ul>
@@ -3038,9 +3089,9 @@ function *Default value: At default, will mirror Global Config**</p>
 </div>
 </div>
 <div class="section" id="parse">
-<h1>parse<a class="headerlink" href="#parse" title="Permalink to this headline">¶</a></h1>
+<h1>parse<a class="headerlink" href="#parse" title="永久链接至标题">¶</a></h1>
 <div class="section" id="id27">
-<h2>Parameters<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h2>
+<h2>Parameters<a class="headerlink" href="#id27" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">text</span></code></p></li>
 </ul>
@@ -3048,10 +3099,10 @@ function *Default value: At default, will mirror Global Config**</p>
 </div>
 </div>
 <div class="section" id="getsiteconfig">
-<h1>getSiteConfig<a class="headerlink" href="#getsiteconfig" title="Permalink to this headline">¶</a></h1>
+<h1>getSiteConfig<a class="headerlink" href="#getsiteconfig" title="永久链接至标题">¶</a></h1>
 </div>
 <div class="section" id="id28">
-<h1>getSiteConfig<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h1>
+<h1>getSiteConfig<a class="headerlink" href="#id28" title="永久链接至标题">¶</a></h1>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Function</p></th>
@@ -3072,10 +3123,10 @@ function *Default value: At default, will mirror Global Config**</p>
 <p>Returns <strong><a class="reference external" href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></strong> The siteConfig</p>
 </div>
 <div class="section" id="setconfig">
-<h1>setConfig<a class="headerlink" href="#setconfig" title="Permalink to this headline">¶</a></h1>
+<h1>setConfig<a class="headerlink" href="#setconfig" title="永久链接至标题">¶</a></h1>
 </div>
 <div class="section" id="id29">
-<h1>setConfig<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h1>
+<h1>setConfig<a class="headerlink" href="#id29" title="永久链接至标题">¶</a></h1>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Function</p></th>
@@ -3096,7 +3147,7 @@ function *Default value: At default, will mirror Global Config**</p>
 keys. Any values found in conf with key found in siteConfig.secure will be replaced with the
 corresponding siteConfig value.</p>
 <div class="section" id="id30">
-<h2>Parameters<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h2>
+<h2>Parameters<a class="headerlink" href="#id30" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">conf</span></code> <strong>any</strong> The potential currentConfig</p></li>
 </ul>
@@ -3104,10 +3155,10 @@ corresponding siteConfig value.</p>
 </div>
 </div>
 <div class="section" id="getconfig">
-<h1>getConfig<a class="headerlink" href="#getconfig" title="Permalink to this headline">¶</a></h1>
+<h1>getConfig<a class="headerlink" href="#getconfig" title="永久链接至标题">¶</a></h1>
 </div>
 <div class="section" id="id31">
-<h1>getConfig<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h1>
+<h1>getConfig<a class="headerlink" href="#id31" title="永久链接至标题">¶</a></h1>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Function</p></th>
@@ -3128,10 +3179,10 @@ corresponding siteConfig value.</p>
 <p>Returns <strong>any</strong> The currentConfig</p>
 </div>
 <div class="section" id="sanitize">
-<h1>sanitize<a class="headerlink" href="#sanitize" title="Permalink to this headline">¶</a></h1>
+<h1>sanitize<a class="headerlink" href="#sanitize" title="永久链接至标题">¶</a></h1>
 </div>
 <div class="section" id="id32">
-<h1>sanitize<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h1>
+<h1>sanitize<a class="headerlink" href="#id32" title="永久链接至标题">¶</a></h1>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Function</p></th>
@@ -3151,27 +3202,27 @@ corresponding siteConfig value.</p>
 <p>Ensures options parameter does not attempt to override siteConfig secure keys <strong>Notes</strong>: modifies
 options in-place</p>
 <div class="section" id="id33">
-<h2>Parameters<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h2>
+<h2>Parameters<a class="headerlink" href="#id33" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">options</span></code> <strong>any</strong> The potential setConfig parameter</p></li>
 </ul>
 </div>
 </div>
 <div class="section" id="adddirective">
-<h1>addDirective<a class="headerlink" href="#adddirective" title="Permalink to this headline">¶</a></h1>
+<h1>addDirective<a class="headerlink" href="#adddirective" title="永久链接至标题">¶</a></h1>
 <p>Pushes in a directive to the configuration</p>
 <div class="section" id="id34">
-<h2>Parameters<a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h2>
+<h2>Parameters<a class="headerlink" href="#id34" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">directive</span></code> <strong><a class="reference external" href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></strong> The directive to push in</p></li>
 </ul>
 </div>
 </div>
 <div class="section" id="reset">
-<h1>reset<a class="headerlink" href="#reset" title="Permalink to this headline">¶</a></h1>
+<h1>reset<a class="headerlink" href="#reset" title="永久链接至标题">¶</a></h1>
 </div>
 <div class="section" id="id35">
-<h1>reset<a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h1>
+<h1>reset<a class="headerlink" href="#id35" title="永久链接至标题">¶</a></h1>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Function</p></th>
@@ -3192,7 +3243,7 @@ options in-place</p>
 </table>
 </div>
 <div class="section" id="conf">
-<h1>conf<a class="headerlink" href="#conf" title="Permalink to this headline">¶</a></h1>
+<h1>conf<a class="headerlink" href="#conf" title="永久链接至标题">¶</a></h1>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -3214,7 +3265,7 @@ options in-place</p>
 <p><strong>Notes</strong>: (default: current siteConfig ) (optional, default <code class="docutils literal notranslate"><span class="pre">getSiteConfig()</span></code>)</p>
 </div>
 <div class="section" id="render">
-<h1>render<a class="headerlink" href="#render" title="Permalink to this headline">¶</a></h1>
+<h1>render<a class="headerlink" href="#render" title="永久链接至标题">¶</a></h1>
 <p>Function that renders an svg with a graph from a chart definition. Usage example below.</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">mermaidAPI</span><span class="p">.</span><span class="nx">initialize</span><span class="p">({</span>
   <span class="nx">startOnLoad</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
@@ -3229,7 +3280,7 @@ options in-place</p>
 </pre></div>
 </div>
 <div class="section" id="id36">
-<h2>Parameters<a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h2>
+<h2>Parameters<a class="headerlink" href="#id36" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">id</span></code> <strong>any</strong> The id of the element to be rendered</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">_txt</span></code> <strong>any</strong> The graph definition</p></li>
@@ -3242,28 +3293,28 @@ element will be removed when rendering is completed.</p></li>
 </div>
 </div>
 <div class="section" id="updaterendererconfigs">
-<h1>updateRendererConfigs<a class="headerlink" href="#updaterendererconfigs" title="Permalink to this headline">¶</a></h1>
+<h1>updateRendererConfigs<a class="headerlink" href="#updaterendererconfigs" title="永久链接至标题">¶</a></h1>
 <div class="section" id="id37">
-<h2>Parameters<a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h2>
+<h2>Parameters<a class="headerlink" href="#id37" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">conf</span></code> <strong>any</strong></p></li>
 </ul>
 </div>
 </div>
 <div class="section" id="initialize">
-<h1>initialize<a class="headerlink" href="#initialize" title="Permalink to this headline">¶</a></h1>
+<h1>initialize<a class="headerlink" href="#initialize" title="永久链接至标题">¶</a></h1>
 <div class="section" id="id38">
-<h2>Parameters<a class="headerlink" href="#id38" title="Permalink to this headline">¶</a></h2>
+<h2>Parameters<a class="headerlink" href="#id38" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">options</span></code> <strong>any</strong></p></li>
 </ul>
 </div>
 </div>
 <div class="section" id="id39">
-<h1><a class="headerlink" href="#id39" title="Permalink to this headline">¶</a></h1>
+<h1><a class="headerlink" href="#id39" title="永久链接至标题">¶</a></h1>
 </div>
 <div class="section" id="mermaidapi-configuration-defaults">
-<h1>mermaidAPI configuration defaults<a class="headerlink" href="#mermaidapi-configuration-defaults" title="Permalink to this headline">¶</a></h1>
+<h1>mermaidAPI configuration defaults<a class="headerlink" href="#mermaidapi-configuration-defaults" title="永久链接至标题">¶</a></h1>
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
   <span class="kd">var</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
     <span class="nx">theme</span><span class="o">:</span> <span class="s1">&#39;default&#39;</span><span class="p">,</span>
@@ -3331,16 +3382,16 @@ element will be removed when rendering is completed.</p></li>
         
             <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="usage.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="usage.html" title="上一页 页">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-subtitle">上一页</p>
             <p class="prev-next-title">Usage</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="directives.html" title="next page">
+    <a class='right-next' id="next-link" href="directives.html" title="下一页 页">
     <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-subtitle">下一页</p>
         <p class="prev-next-title">Directives</p>
     </div>
     <i class="fas fa-angle-right"></i>

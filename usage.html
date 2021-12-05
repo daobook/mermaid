@@ -1,11 +1,11 @@
 
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="zh_CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Usage &#8212; mermaid 0.0.1 documentation</title>
+    <title>Usage &#8212; mermaid 0.0.1 文档</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -37,16 +37,17 @@
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
+    <script src="_static/translations.js"></script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
     <link rel="next" title="mermaidAPI" href="Setup.html" />
     <link rel="prev" title="Tutorials" href="Tutorials.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en">
+    <meta name="docsearch:language" content="zh_CN">
     
 
     <!-- Google Analytics -->
@@ -68,7 +69,7 @@
       
       
       
-      <h1 class="site-logo" id="site-title">mermaid 0.0.1 documentation</h1>
+      <h1 class="site-logo" id="site-title">mermaid 0.0.1 文档</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -79,7 +80,7 @@
         <ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="intro/index.html">
-   📔 Introduction
+   📔 介绍
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -89,17 +90,17 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="README.html">
-     About Mermaid
+     关于 Mermaid
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="n00b-gettingStarted.html">
-     A Mermaid User-Guide for Beginners
+     Mermaid 用户指南 – 为初学者而设
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="n00b-syntaxReference.html">
-     Diagram Syntax
+     图表语法
     </a>
    </li>
   </ul>
@@ -146,7 +147,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="gantt.html">
-     Gantt diagrams
+     甘特图
     </a>
    </li>
    <li class="toctree-l2">
@@ -225,7 +226,7 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="integrations.html">
-     Integrations
+     集成
     </a>
    </li>
    <li class="toctree-l2">
@@ -277,15 +278,52 @@
    Version 8.6.0 Changes
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="SUMMARY.html">
    Summary
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="breakingChanges.html">
-   Breaking changes
-  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="faq.html">
+     Frequently Asked Questions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="breakingChanges.html">
+     Breaking changes
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Usage
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="mermaidCLI.html">
+     mermaid CLI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="development.html">
+     Development and Contribution 🙌
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="upgrading.html">
+     Upgrading
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://github.com/mermaidjs/mermaid-gitbook">
+     Contribute to this website
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="developer-docs/configuration.html">
@@ -295,11 +333,6 @@
  <li class="toctree-l1">
   <a class="reference internal" href="diagrams-and-syntax-and-examples/flowchart.html">
    Flowcharts - Basic Syntax
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="upgrading.html">
-   Upgrading
   </a>
  </li>
 </ul>
@@ -354,6 +387,24 @@
 
             <!-- Source interaction buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/daobook/mermaid"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/daobook/mermaid/issues/new?title=Issue%20on%20page%20%2Fusage.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/daobook/mermaid/edit/main/web/usage.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
             <!-- Full screen (wrap in <a> to have style consistency -->
 
 <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
@@ -369,7 +420,7 @@
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
             <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+                <i class="fas fa-list"></i> 导航
             </div>
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
@@ -503,17 +554,17 @@
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="usage">
-<h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
+<h1>Usage<a class="headerlink" href="#usage" title="永久链接至标题">¶</a></h1>
 <p><strong>Edit this Page</strong> <a class="reference external" href="https://github.com/mermaid-js/mermaid/blob/develop/docs/usage.md"><img alt="N|Solid" src="_images/GitHub-Mark-32px.png" /></a></p>
 <p>Mermaid is a Javascript tool that makes use of a markdown based syntax to render customizable diagrams, charts and visualizations.</p>
 <p>Diagrams can be re-rendered/modified by modifying their descriptions.</p>
 <div class="section" id="cdn">
-<h2>CDN<a class="headerlink" href="#cdn" title="Permalink to this headline">¶</a></h2>
+<h2>CDN<a class="headerlink" href="#cdn" title="永久链接至标题">¶</a></h2>
 <p><a class="reference external" href="https://unpkg.com/mermaid/">https://unpkg.com/mermaid/</a></p>
 <p>Please note that you can switch versions through the dropdown box at the top right.</p>
 </div>
 <div class="section" id="using-mermaid">
-<h2>Using mermaid<a class="headerlink" href="#using-mermaid" title="Permalink to this headline">¶</a></h2>
+<h2>Using mermaid<a class="headerlink" href="#using-mermaid" title="永久链接至标题">¶</a></h2>
 <p>For the majority of users, Using the <a class="reference external" href="https://mermaid-js.github.io/mermaid-live-editor/">Live Editor</a> would be sufficient, however you may also opt to deploy mermaid as a dependency or using the <a class="reference internal" href="Setup.html"><span class="doc std std-doc">Mermaid API</span></a>.</p>
 <p>We have compiled some Video <a class="reference internal" href="Tutorials.html"><span class="doc std std-doc">Tutorials</span></a> on how to use the mermaid Live Editor.</p>
 <p><strong>Installing and Hosting Mermaid on a Webpage</strong></p>
@@ -563,7 +614,7 @@
 locate the graph definitions inside the <code class="docutils literal notranslate"><span class="pre">div</span></code> tags with <code class="docutils literal notranslate"><span class="pre">class=&quot;mermaid&quot;</span></code> and return diagrams in SVG form, following given definitions.</strong></p>
 </div>
 <div class="section" id="simple-full-example">
-<h2>Simple full example:<a class="headerlink" href="#simple-full-example" title="Permalink to this headline">¶</a></h2>
+<h2>Simple full example:<a class="headerlink" href="#simple-full-example" title="永久链接至标题">¶</a></h2>
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
@@ -584,7 +635,7 @@ locate the graph definitions inside the <code class="docutils literal notranslat
 </div>
 </div>
 <div class="section" id="notes">
-<h2>Notes:<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h2>
+<h2>Notes:<a class="headerlink" href="#notes" title="永久链接至标题">¶</a></h2>
 <p>An id attribute is also added to mermaid tags without one.</p>
 <p>Mermaid can load multiple diagrams, in the same page.</p>
 <blockquote>
@@ -592,12 +643,12 @@ locate the graph definitions inside the <code class="docutils literal notranslat
 </div></blockquote>
 </div>
 <div class="section" id="enabling-click-event-and-tags-in-nodes">
-<h2>Enabling Click Event and Tags in Nodes<a class="headerlink" href="#enabling-click-event-and-tags-in-nodes" title="Permalink to this headline">¶</a></h2>
+<h2>Enabling Click Event and Tags in Nodes<a class="headerlink" href="#enabling-click-event-and-tags-in-nodes" title="永久链接至标题">¶</a></h2>
 <p>A <code class="docutils literal notranslate"><span class="pre">securityLevel</span></code> configuration has to first be cleared, <code class="docutils literal notranslate"><span class="pre">securityLevel</span></code> sets the level of trust for the parsed diagrams and limits click functionality. This was introduce in version 8.2 as a security improvement, aimed at preventing malicious use.</p>
 <p><strong>It is the site owner’s responsibility to discriminate between trustworthy and untrustworthy user-bases and we encourage the use of discretion.</strong></p>
 </div>
 <div class="section" id="securitylevel">
-<h2>securityLevel<a class="headerlink" href="#securitylevel" title="Permalink to this headline">¶</a></h2>
+<h2>securityLevel<a class="headerlink" href="#securitylevel" title="永久链接至标题">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -633,7 +684,7 @@ locate the graph definitions inside the <code class="docutils literal notranslat
 </pre></div>
 </div>
 <div class="section" id="labels-out-of-bounds">
-<h3>Labels out of bounds<a class="headerlink" href="#labels-out-of-bounds" title="Permalink to this headline">¶</a></h3>
+<h3>Labels out of bounds<a class="headerlink" href="#labels-out-of-bounds" title="永久链接至标题">¶</a></h3>
 <p>If you use dynamically loaded fonts that are loaded through CSS, such as Google fonts, mermaid should wait for the
 whole page to load (dom + assets, particularly the fonts file).</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">load</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
@@ -656,7 +707,7 @@ whole page to load (dom + assets, particularly the fonts file).</p>
 </div>
 </div>
 <div class="section" id="calling-mermaid-init">
-<h3>Calling <code class="docutils literal notranslate"><span class="pre">mermaid.init</span></code><a class="headerlink" href="#calling-mermaid-init" title="Permalink to this headline">¶</a></h3>
+<h3>Calling <code class="docutils literal notranslate"><span class="pre">mermaid.init</span></code><a class="headerlink" href="#calling-mermaid-init" title="永久链接至标题">¶</a></h3>
 <p>By default, <code class="docutils literal notranslate"><span class="pre">mermaid.init</span></code> will be called when the document is ready, finding all elements with
 <code class="docutils literal notranslate"><span class="pre">class=&quot;mermaid&quot;</span></code>. If you are adding content after mermaid is loaded, or otherwise need
 finer-grained control of this behavior, you can call <code class="docutils literal notranslate"><span class="pre">init</span></code> yourself with:</p>
@@ -684,11 +735,11 @@ finer-grained control of this behavior, you can call <code class="docutils liter
 </div>
 </div>
 <div class="section" id="usage-with-webpack">
-<h2>Usage with webpack<a class="headerlink" href="#usage-with-webpack" title="Permalink to this headline">¶</a></h2>
+<h2>Usage with webpack<a class="headerlink" href="#usage-with-webpack" title="永久链接至标题">¶</a></h2>
 <p>mermaid fully supports webpack. Here is a <a class="reference external" href="https://github.com/mermaidjs/mermaid-webpack-demo">working demo</a>.</p>
 </div>
 <div class="section" id="api-usage">
-<h2>API usage<a class="headerlink" href="#api-usage" title="Permalink to this headline">¶</a></h2>
+<h2>API usage<a class="headerlink" href="#api-usage" title="永久链接至标题">¶</a></h2>
 <p>The main idea of the API is to be able to call a render function with the graph definition as a string. The render function
 will render the graph and call a callback with the resulting svg code. With this approach it is up to the site creator to
 fetch the graph definition from the site (perhaps from a textarea), render it and place the graph somewhere in the site.</p>
@@ -714,7 +765,7 @@ fetch the graph definition from the site (perhaps from a textarea), render it an
 </pre></div>
 </div>
 <div class="section" id="binding-events">
-<h3>Binding events<a class="headerlink" href="#binding-events" title="Permalink to this headline">¶</a></h3>
+<h3>Binding events<a class="headerlink" href="#binding-events" title="永久链接至标题">¶</a></h3>
 <p>Sometimes the generated graph also has defined interactions like tooltip and click events. When using the API one must
 add those events after the graph has been inserted into the DOM.</p>
 <p>The example code below is an extract of what mermaid does when using the API. The example shows how it is possible to
@@ -743,7 +794,7 @@ bind events to an svg when using the API for rendering.</p>
 </div>
 </div>
 <div class="section" id="example-of-a-marked-renderer">
-<h2>Example of a marked renderer<a class="headerlink" href="#example-of-a-marked-renderer" title="Permalink to this headline">¶</a></h2>
+<h2>Example of a marked renderer<a class="headerlink" href="#example-of-a-marked-renderer" title="永久链接至标题">¶</a></h2>
 <p>This is the renderer used for transforming the documentation from markdown to html with mermaid diagrams in the html.</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">renderer</span> <span class="o">=</span> <span class="ow">new</span> <span class="nx">marked</span><span class="p">.</span><span class="nx">Renderer</span><span class="p">();</span>
 <span class="nx">renderer</span><span class="p">.</span><span class="nx">code</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">code</span><span class="p">,</span> <span class="nx">language</span><span class="p">)</span> <span class="p">{</span>
@@ -778,7 +829,7 @@ bind events to an svg when using the API for rendering.</p>
 </div>
 </div>
 <div class="section" id="advanced-usage">
-<h2>Advanced usage<a class="headerlink" href="#advanced-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Advanced usage<a class="headerlink" href="#advanced-usage" title="永久链接至标题">¶</a></h2>
 <p><strong>Syntax validation without rendering (Work in Progress)</strong></p>
 <p>The <strong>mermaid.parse(txt)</strong> function validates graph definitions without rendering a graph. <strong><a class="reference external" href="https://github.com/mermaid-js/mermaid/issues/1066">This function is still a work in progress</a>, find alternatives below.</strong></p>
 <p>The function <strong>mermaid.parse(txt)</strong>, takes a text string as an argument and returns true if the definition follows mermaid’s syntax and
@@ -805,7 +856,7 @@ function in order to handle the error in an application-specific way.</p>
 One effective and more future-proof method of validating your graph definitions, is to paste and render them via the <a class="reference external" href="https://mermaid-js.github.io/mermaid-live-editor/">Mermaid Live Editor</a>. This will ensure that your code is compliant with the syntax of Mermaid’s most recent version.</p>
 </div>
 <div class="section" id="configuration">
-<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<h2>Configuration<a class="headerlink" href="#configuration" title="永久链接至标题">¶</a></h2>
 <p>Mermaid takes a number of options which lets you tweak the rendering of the diagrams. Currently there are three ways of
 setting the options in mermaid.</p>
 <ol class="simple">
@@ -818,7 +869,7 @@ setting the options in mermaid.</p>
 configuration objects are described <a class="reference internal" href="Setup.html"><span class="doc std std-doc">in the mermaidAPI documentation</span></a>.</p>
 </div>
 <div class="section" id="using-the-mermaidapi-initialize-mermaid-initialize-call">
-<h2>Using the <code class="docutils literal notranslate"><span class="pre">mermaidAPI.initialize</span></code>/<code class="docutils literal notranslate"><span class="pre">mermaid.initialize</span></code> call<a class="headerlink" href="#using-the-mermaidapi-initialize-mermaid-initialize-call" title="Permalink to this headline">¶</a></h2>
+<h2>Using the <code class="docutils literal notranslate"><span class="pre">mermaidAPI.initialize</span></code>/<code class="docutils literal notranslate"><span class="pre">mermaid.initialize</span></code> call<a class="headerlink" href="#using-the-mermaidapi-initialize-mermaid-initialize-call" title="永久链接至标题">¶</a></h2>
 <p>The future proof way of setting the configuration is by using the initialization call to mermaid or mermaidAPI depending
 on what kind of integration you use.</p>
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;../dist/mermaid.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
@@ -838,11 +889,11 @@ on what kind of integration you use.</p>
 </pre></div>
 </div>
 <div class="section" id="the-following-methods-are-deprecated-and-are-kept-only-for-backwards-compatibility">
-<h3>The following methods are deprecated and are kept only for backwards compatibility.<a class="headerlink" href="#the-following-methods-are-deprecated-and-are-kept-only-for-backwards-compatibility" title="Permalink to this headline">¶</a></h3>
+<h3>The following methods are deprecated and are kept only for backwards compatibility.<a class="headerlink" href="#the-following-methods-are-deprecated-and-are-kept-only-for-backwards-compatibility" title="永久链接至标题">¶</a></h3>
 </div>
 </div>
 <div class="section" id="using-the-mermaid-object">
-<h2>Using the mermaid object<a class="headerlink" href="#using-the-mermaid-object" title="Permalink to this headline">¶</a></h2>
+<h2>Using the mermaid object<a class="headerlink" href="#using-the-mermaid-object" title="永久链接至标题">¶</a></h2>
 <p>Is it possible to set some configuration via the mermaid object. The two parameters that are supported using this
 approach are:</p>
 <ul class="simple">
@@ -857,7 +908,7 @@ approach are:</p>
 </div>
 </div>
 <div class="section" id="using-the-mermaid-config">
-<h2>Using the mermaid_config<a class="headerlink" href="#using-the-mermaid-config" title="Permalink to this headline">¶</a></h2>
+<h2>Using the mermaid_config<a class="headerlink" href="#using-the-mermaid-config" title="永久链接至标题">¶</a></h2>
 <p>It is possible to set some configuration via the mermaid object. The two parameters that are supported using this
 approach are:</p>
 <ul class="simple">
@@ -872,7 +923,7 @@ approach are:</p>
 </div>
 </div>
 <div class="section" id="using-the-mermaid-init-call">
-<h2>Using the mermaid.init call<a class="headerlink" href="#using-the-mermaid-init-call" title="Permalink to this headline">¶</a></h2>
+<h2>Using the mermaid.init call<a class="headerlink" href="#using-the-mermaid-init-call" title="永久链接至标题">¶</a></h2>
 <p>To set some configuration via the mermaid object. The two parameters that are supported using this approach are:</p>
 <ul class="simple">
 <li><p>mermaid_config.startOnLoad</p></li>
@@ -893,16 +944,16 @@ approach are:</p>
         
             <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="Tutorials.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="Tutorials.html" title="上一页 页">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-subtitle">上一页</p>
             <p class="prev-next-title">Tutorials</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="Setup.html" title="next page">
+    <a class='right-next' id="next-link" href="Setup.html" title="下一页 页">
     <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-subtitle">下一页</p>
         <p class="prev-next-title">mermaidAPI</p>
     </div>
     <i class="fas fa-angle-right"></i>

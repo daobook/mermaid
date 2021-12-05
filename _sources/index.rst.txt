@@ -17,10 +17,9 @@ Welcome to mermaid's documentation!
    Configuration
    8.6.0_docs
    SUMMARY
-   breakingChanges
+
    developer-docs/configuration
    diagrams-and-syntax-and-examples/flowchart
-   upgrading
 
 
 Indices and tables

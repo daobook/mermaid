@@ -1,11 +1,11 @@
 
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="zh_CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>State diagrams &#8212; mermaid 0.0.1 documentation</title>
+    <title>State diagrams &#8212; mermaid 0.0.1 文档</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -37,16 +37,17 @@
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
+    <script src="_static/translations.js"></script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
     <link rel="next" title="Entity Relationship Diagrams" href="entityRelationshipDiagram.html" />
     <link rel="prev" title="Class diagrams" href="classDiagram.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en">
+    <meta name="docsearch:language" content="zh_CN">
     
 
     <!-- Google Analytics -->
@@ -68,7 +69,7 @@
       
       
       
-      <h1 class="site-logo" id="site-title">mermaid 0.0.1 documentation</h1>
+      <h1 class="site-logo" id="site-title">mermaid 0.0.1 文档</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -79,7 +80,7 @@
         <ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="intro/index.html">
-   📔 Introduction
+   📔 介绍
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -89,17 +90,17 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="README.html">
-     About Mermaid
+     关于 Mermaid
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="n00b-gettingStarted.html">
-     A Mermaid User-Guide for Beginners
+     Mermaid 用户指南 – 为初学者而设
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="n00b-syntaxReference.html">
-     Diagram Syntax
+     图表语法
     </a>
    </li>
   </ul>
@@ -146,7 +147,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="gantt.html">
-     Gantt diagrams
+     甘特图
     </a>
    </li>
    <li class="toctree-l2">
@@ -225,7 +226,7 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="integrations.html">
-     Integrations
+     集成
     </a>
    </li>
    <li class="toctree-l2">
@@ -277,15 +278,52 @@
    Version 8.6.0 Changes
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="SUMMARY.html">
    Summary
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="breakingChanges.html">
-   Breaking changes
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="faq.html">
+     Frequently Asked Questions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="breakingChanges.html">
+     Breaking changes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="usage.html">
+     Usage
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="mermaidCLI.html">
+     mermaid CLI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="development.html">
+     Development and Contribution 🙌
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="upgrading.html">
+     Upgrading
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://github.com/mermaidjs/mermaid-gitbook">
+     Contribute to this website
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="developer-docs/configuration.html">
@@ -295,11 +333,6 @@
  <li class="toctree-l1">
   <a class="reference internal" href="diagrams-and-syntax-and-examples/flowchart.html">
    Flowcharts - Basic Syntax
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="upgrading.html">
-   Upgrading
   </a>
  </li>
 </ul>
@@ -354,6 +387,24 @@
 
             <!-- Source interaction buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/daobook/mermaid"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/daobook/mermaid/issues/new?title=Issue%20on%20page%20%2FstateDiagram.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/daobook/mermaid/edit/main/web/stateDiagram.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
             <!-- Full screen (wrap in <a> to have style consistency -->
 
 <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
@@ -369,7 +420,7 @@
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
             <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+                <i class="fas fa-list"></i> 导航
             </div>
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
@@ -440,7 +491,7 @@
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="state-diagrams">
-<h1>State diagrams<a class="headerlink" href="#state-diagrams" title="Permalink to this headline">¶</a></h1>
+<h1>State diagrams<a class="headerlink" href="#state-diagrams" title="永久链接至标题">¶</a></h1>
 <blockquote>
 <div><p>“A state diagram is a type of diagram used in computer science and related fields to describe the behavior of systems. State diagrams require that the system described is composed of a finite number of states; sometimes, this is indeed the case, while at other times this is a reasonable abstraction.” Wikipedia</p>
 </div></blockquote>
@@ -468,7 +519,7 @@
 </div>
 <p>In state diagrams systems are described in terms of its states and how the systems state can change to another state via a transitions. The example diagram above shows three states <strong>Still</strong>, <strong>Moving</strong> and <strong>Crash</strong>. You start in the state of Still. From Still you can change the state to Moving. In Moving you can change the state either back to Still or to Crash. There is no transition from Still to Crash.</p>
 <div class="section" id="states">
-<h2>States<a class="headerlink" href="#states" title="Permalink to this headline">¶</a></h2>
+<h2>States<a class="headerlink" href="#states" title="永久链接至标题">¶</a></h2>
 <p>A state can be declared in multiple ways. The simplest way is to define a state id as a description.</p>
 <div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>stateDiagram-v2
     s1
@@ -486,7 +537,7 @@
 </div>
 </div>
 <div class="section" id="transitions">
-<h2>Transitions<a class="headerlink" href="#transitions" title="Permalink to this headline">¶</a></h2>
+<h2>Transitions<a class="headerlink" href="#transitions" title="永久链接至标题">¶</a></h2>
 <p>Transitions are path/edges when one state passes into another. This is represented using text arrow, “–&gt;”.</p>
 <p>When you define a transition between two states and the states are not already defined the undefined states are defined with the id from the transition. You can later add descriptions to states defined this way.</p>
 <div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>stateDiagram-v2
@@ -500,7 +551,7 @@
 </div>
 </div>
 <div class="section" id="start-and-end">
-<h2>Start and End<a class="headerlink" href="#start-and-end" title="Permalink to this headline">¶</a></h2>
+<h2>Start and End<a class="headerlink" href="#start-and-end" title="永久链接至标题">¶</a></h2>
 <p>There are two special states indicating the start and stop of the diagram. These are written with the [*] syntax and the direction of the transition to it defines it either as a start or a stop state.</p>
 <div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>stateDiagram-v2
     [*] --&gt; s1
@@ -509,7 +560,7 @@
 </div>
 </div>
 <div class="section" id="composite-states">
-<h2>Composite states<a class="headerlink" href="#composite-states" title="Permalink to this headline">¶</a></h2>
+<h2>Composite states<a class="headerlink" href="#composite-states" title="永久链接至标题">¶</a></h2>
 <p>In a real world use of state diagrams you often end up with diagrams that are multi-dimensional as one state can
 have several internal states. These are called composite states in this terminology.</p>
 <p>In order to define a composite state you need to use the state keyword followed by an id and the body of the composite state between {}. See the example below:</p>
@@ -563,7 +614,7 @@ have several internal states. These are called composite states in this terminol
 <p><em>You can not define transitions between internal states belonging to different composite states</em></p>
 </div>
 <div class="section" id="choice">
-<h2>Choice<a class="headerlink" href="#choice" title="Permalink to this headline">¶</a></h2>
+<h2>Choice<a class="headerlink" href="#choice" title="永久链接至标题">¶</a></h2>
 <p>Sometimes you need to model a choice between two or more paths, you can do so using &lt;&lt;choice&gt;&gt;.</p>
 <div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>stateDiagram-v2
     state if_state &lt;&lt;choice&gt;&gt;
@@ -575,7 +626,7 @@ have several internal states. These are called composite states in this terminol
 </div>
 </div>
 <div class="section" id="forks">
-<h2>Forks<a class="headerlink" href="#forks" title="Permalink to this headline">¶</a></h2>
+<h2>Forks<a class="headerlink" href="#forks" title="永久链接至标题">¶</a></h2>
 <p>It is possible to specify a fork in the diagram using &lt;&lt;fork&gt;&gt; &lt;&lt;join&gt;&gt;.</p>
 <div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>   stateDiagram-v2
     state fork_state &lt;&lt;fork&gt;&gt;
@@ -592,7 +643,7 @@ have several internal states. These are called composite states in this terminol
 </div>
 </div>
 <div class="section" id="notes">
-<h2>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h2>
+<h2>Notes<a class="headerlink" href="#notes" title="永久链接至标题">¶</a></h2>
 <p>Sometimes nothing says it better then a Post-it note. That is also the case in state diagrams.</p>
 <p>Here you can choose to put the note to the <em>right of</em> or to the <em>left of</em> a node.</p>
 <div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>    stateDiagram-v2
@@ -607,7 +658,7 @@ have several internal states. These are called composite states in this terminol
 </div>
 </div>
 <div class="section" id="concurrency">
-<h2>Concurrency<a class="headerlink" href="#concurrency" title="Permalink to this headline">¶</a></h2>
+<h2>Concurrency<a class="headerlink" href="#concurrency" title="永久链接至标题">¶</a></h2>
 <p>As in plantUml you can specify concurrency using the – symbol.</p>
 <div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>stateDiagram-v2
     [*] --&gt; Active
@@ -629,7 +680,7 @@ have several internal states. These are called composite states in this terminol
 </div>
 </div>
 <div class="section" id="setting-the-direction-of-the-diagram">
-<h2>Setting the direction of the diagram<a class="headerlink" href="#setting-the-direction-of-the-diagram" title="Permalink to this headline">¶</a></h2>
+<h2>Setting the direction of the diagram<a class="headerlink" href="#setting-the-direction-of-the-diagram" title="永久链接至标题">¶</a></h2>
 <p>With state diagrams you can use the direction statement to set the direction which the diagram will render like in this example.</p>
 <div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>stateDiagram
     direction LR
@@ -645,7 +696,7 @@ have several internal states. These are called composite states in this terminol
 </div>
 </div>
 <div class="section" id="comments">
-<h2>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h2>
+<h2>Comments<a class="headerlink" href="#comments" title="永久链接至标题">¶</a></h2>
 <p>Comments can be entered within a state diagram chart, which will be ignored by the parser.  Comments need to be on their own line, and must be prefaced with <code class="docutils literal notranslate"><span class="pre">%%</span></code> (double percent signs). Any text after the start of the comment to the next newline will be treated as a comment, including any diagram syntax</p>
 <div class="highlight-mmd notranslate"><div class="highlight"><pre><span></span>stateDiagram-v2
     [*] --&gt; Still
@@ -659,7 +710,7 @@ have several internal states. These are called composite states in this terminol
 </div>
 </div>
 <div class="section" id="styling">
-<h2>Styling<a class="headerlink" href="#styling" title="Permalink to this headline">¶</a></h2>
+<h2>Styling<a class="headerlink" href="#styling" title="永久链接至标题">¶</a></h2>
 <p>Styling of the a state diagram is done by defining a number of css classes.  During rendering these classes are extracted from the file located at src/themes/state.scss</p>
 </div>
 </div>
@@ -670,16 +721,16 @@ have several internal states. These are called composite states in this terminol
         
             <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="classDiagram.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="classDiagram.html" title="上一页 页">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-subtitle">上一页</p>
             <p class="prev-next-title">Class diagrams</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="entityRelationshipDiagram.html" title="next page">
+    <a class='right-next' id="next-link" href="entityRelationshipDiagram.html" title="下一页 页">
     <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-subtitle">下一页</p>
         <p class="prev-next-title">Entity Relationship Diagrams</p>
     </div>
     <i class="fas fa-angle-right"></i>
