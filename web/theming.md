@@ -235,7 +235,7 @@ The Theming Engine does not admit color codes and will only accept proper color 
 
 ## How to change the color of the arrows
 
-# Examples:
+## Examples:
 
 When adjusting a theme it might be helpful to look at how your preferred theme goes with the diagrams, to evaluate whether everything is visible and looks good.
 In the following examples, the directive `init` is used, with the `theme` being declared as `base`. For more information on using directives, read the documentation for [Version 8.6.0](/8.6.0_docs.md)

@@ -44,8 +44,7 @@ jobs:
           cd web
           sphinx-build -b gettext ./ _build/gettext
           sphinx-intl update -p _build/gettext -l zh_CN
-          sphinx-build -D language=en -b html ./ _build/html/
-          sphinx-build -D language=zh_CN -b html ./ _build/html/zh-CN
+          sphinx-build -D language=zh_CN -b html ./ _build/html/
           cd ..
           cp -rf web/_build/ _build/
           rm -rf web/_build/
