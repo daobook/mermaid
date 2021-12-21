@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>State diagrams &#8212; mermaid 0.0.1 文档</title>
+    <title>状态图 &#8212; mermaid 0.0.1 文档</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -132,7 +132,7 @@
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     State diagrams
+     状态图
     </a>
    </li>
    <li class="toctree-l2">
@@ -426,57 +426,57 @@
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#states">
-   States
+   状态
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#transitions">
-   Transitions
+   过渡
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#start-and-end">
-   Start and End
+   开始与结束
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#composite-states">
-   Composite states
+   复合状态
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#choice">
-   Choice
+   选择
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#forks">
-   Forks
+   分叉
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#notes">
-   Notes
+   便利贴
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#concurrency">
-   Concurrency
+   并发
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#setting-the-direction-of-the-diagram">
-   Setting the direction of the diagram
+   设定图的方向
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#comments">
-   Comments
+   注释
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#styling">
-   Styling
+   风格
   </a>
  </li>
 </ul>
@@ -491,11 +491,11 @@
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="state-diagrams">
-<h1>State diagrams<a class="headerlink" href="#state-diagrams" title="永久链接至标题">¶</a></h1>
+<h1>状态图<a class="headerlink" href="#state-diagrams" title="永久链接至标题">¶</a></h1>
 <blockquote>
-<div><p>“A state diagram is a type of diagram used in computer science and related fields to describe the behavior of systems. State diagrams require that the system described is composed of a finite number of states; sometimes, this is indeed the case, while at other times this is a reasonable abstraction.” Wikipedia</p>
+<div><p>“状态图是计算机科学和相关领域中用来描述系统行为的一种图示。状态图要求所描述的系统是由有限数量的 “状态” 组成的。有时，情况确实如此，而在其他时候，这是一个合理的抽象。” Wikipedia</p>
 </div></blockquote>
-<p>Mermaid can render state diagrams. The syntax tries to be compliant with the syntax used in plantUml as this will make it easier for users to share diagrams between mermaid and plantUml.</p>
+<p>Mermaid 可以渲染状态图。语法试图与 plantUml 中使用的语法相一致，因为这将使用户更容易在 mermaid 和 plantUml 之间分享图表。</p>
 <div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>stateDiagram-v2
     [*] --&gt; Still
     Still --&gt; [*]
@@ -506,7 +506,7 @@
     Crash --&gt; [*]
 </pre></div>
 </div>
-<p>Older renderer:</p>
+<p>较旧的渲染器：</p>
 <div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>stateDiagram
     [*] --&gt; Still
     Still --&gt; [*]
@@ -517,42 +517,42 @@
     Crash --&gt; [*]
 </pre></div>
 </div>
-<p>In state diagrams systems are described in terms of its states and how the systems state can change to another state via a transitions. The example diagram above shows three states <strong>Still</strong>, <strong>Moving</strong> and <strong>Crash</strong>. You start in the state of Still. From Still you can change the state to Moving. In Moving you can change the state either back to Still or to Crash. There is no transition from Still to Crash.</p>
+<p>在状态图中，系统被描述为它的状态，以及系统的状态如何通过变换而改变为另一个状态。上面的示例图显示了三种状态：<strong>Still</strong>、<strong>Moving</strong> 和 <strong>Crash</strong>。你从 Still 状态开始。从 Still 状态，你可以改变状态为 Moving。在 Moving 状态下，你可以把状态变回 Still 或 Crash。从 Still 到 Crash 是没有过渡的。</p>
 <div class="section" id="states">
-<h2>States<a class="headerlink" href="#states" title="永久链接至标题">¶</a></h2>
-<p>A state can be declared in multiple ways. The simplest way is to define a state id as a description.</p>
+<h2>状态<a class="headerlink" href="#states" title="永久链接至标题">¶</a></h2>
+<p>一个状态可以用多种方式声明。最简单的方法是定义一个状态 ID 作为描述。</p>
 <div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>stateDiagram-v2
     s1
 </pre></div>
 </div>
-<p>Another way is by using the state keyword with a description as per below:</p>
+<p>另一种方法是使用带有描述的状态关键词，如下所述：</p>
 <div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>stateDiagram-v2
     state &quot;This is a state description&quot; as s2
 </pre></div>
 </div>
-<p>Another way to define a state with a description is to define the state id followed by a colon and the description:</p>
+<p>另一种定义带有描述的状态的方法是定义状态 ID，后面是冒号和描述：</p>
 <div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>stateDiagram-v2
     s2 : This is a state description
 </pre></div>
 </div>
 </div>
 <div class="section" id="transitions">
-<h2>Transitions<a class="headerlink" href="#transitions" title="永久链接至标题">¶</a></h2>
-<p>Transitions are path/edges when one state passes into another. This is represented using text arrow, “–&gt;”.</p>
-<p>When you define a transition between two states and the states are not already defined the undefined states are defined with the id from the transition. You can later add descriptions to states defined this way.</p>
+<h2>过渡<a class="headerlink" href="#transitions" title="永久链接至标题">¶</a></h2>
+<p>过渡是指一个状态进入另一个状态的路径/边沿。这用文本箭头 “–&gt;” 来表示。</p>
+<p>当你在两个状态之间定义了一个过渡，并且这些状态还没有被定义，那么未定义的状态就会用过渡的 id 来定义。你以后可以为这样定义的状态添加描述。</p>
 <div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>stateDiagram-v2
     s1 --&gt; s2
 </pre></div>
 </div>
-<p>It is possible to add text to a transition. To describe what it represents.</p>
+<p>可以为过渡添加文字。来描述它所代表的内容。</p>
 <div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>stateDiagram-v2
     s1 --&gt; s2: A transition
 </pre></div>
 </div>
 </div>
 <div class="section" id="start-and-end">
-<h2>Start and End<a class="headerlink" href="#start-and-end" title="永久链接至标题">¶</a></h2>
-<p>There are two special states indicating the start and stop of the diagram. These are written with the [*] syntax and the direction of the transition to it defines it either as a start or a stop state.</p>
+<h2>开始与结束<a class="headerlink" href="#start-and-end" title="永久链接至标题">¶</a></h2>
+<p>有两个特殊的状态表示图表的开始和停止。这些都是用 [*] 的语法来写的，过渡到它的方向决定了它是一个开始或一个停止的状态。</p>
 <div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>stateDiagram-v2
     [*] --&gt; s1
     s1 --&gt; [*]
@@ -560,10 +560,9 @@
 </div>
 </div>
 <div class="section" id="composite-states">
-<h2>Composite states<a class="headerlink" href="#composite-states" title="永久链接至标题">¶</a></h2>
-<p>In a real world use of state diagrams you often end up with diagrams that are multi-dimensional as one state can
-have several internal states. These are called composite states in this terminology.</p>
-<p>In order to define a composite state you need to use the state keyword followed by an id and the body of the composite state between {}. See the example below:</p>
+<h2>复合状态<a class="headerlink" href="#composite-states" title="永久链接至标题">¶</a></h2>
+<p>在现实世界中使用状态图时，你常常会发现图是多维的，因为一个状态可以有几个内部状态。在这个术语中，这些被称为复合状态”</p>
+<p>为了定义一个复合状态，你需要使用 <code class="docutils literal notranslate"><span class="pre">state</span></code> 关键字，后面跟一个 id，以及复合状态的主体在 {} 之间。请看下面的例子：</p>
 <div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>stateDiagram-v2
     [*] --&gt; First
     state First {
@@ -572,7 +571,7 @@ have several internal states. These are called composite states in this terminol
     }
 </pre></div>
 </div>
-<p>You can do this in several layers:</p>
+<p>你可以分几层来做这件事：</p>
 <div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>stateDiagram-v2
     [*] --&gt; First
 
@@ -591,7 +590,7 @@ have several internal states. These are called composite states in this terminol
     }
 </pre></div>
 </div>
-<p>You can also define transitions also between composite states:</p>
+<p>你也可以定义复合状态之间的过渡：</p>
 <div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>stateDiagram-v2
     [*] --&gt; First
     First --&gt; Second
@@ -611,11 +610,11 @@ have several internal states. These are called composite states in this terminol
     }
 </pre></div>
 </div>
-<p><em>You can not define transitions between internal states belonging to different composite states</em></p>
+<p><em>你不能定义属于不同复合状态的内部状态之间的过渡</em></p>
 </div>
 <div class="section" id="choice">
-<h2>Choice<a class="headerlink" href="#choice" title="永久链接至标题">¶</a></h2>
-<p>Sometimes you need to model a choice between two or more paths, you can do so using &lt;&lt;choice&gt;&gt;.</p>
+<h2>选择<a class="headerlink" href="#choice" title="永久链接至标题">¶</a></h2>
+<p>有时你需要在两条或多条路径之间建立一个选择模型，你可以使用 &lt;&lt;choice&gt;&gt; 来实现。</p>
 <div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>stateDiagram-v2
     state if_state &lt;&lt;choice&gt;&gt;
     [*] --&gt; IsPositive
@@ -626,8 +625,8 @@ have several internal states. These are called composite states in this terminol
 </div>
 </div>
 <div class="section" id="forks">
-<h2>Forks<a class="headerlink" href="#forks" title="永久链接至标题">¶</a></h2>
-<p>It is possible to specify a fork in the diagram using &lt;&lt;fork&gt;&gt; &lt;&lt;join&gt;&gt;.</p>
+<h2>分叉<a class="headerlink" href="#forks" title="永久链接至标题">¶</a></h2>
+<p>可以使用 &lt;&lt;fork&gt;&gt; &lt;&lt;join&gt;&gt; 在图中指定一个分叉。</p>
 <div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>   stateDiagram-v2
     state fork_state &lt;&lt;fork&gt;&gt;
       [*] --&gt; fork_state
@@ -643,9 +642,9 @@ have several internal states. These are called composite states in this terminol
 </div>
 </div>
 <div class="section" id="notes">
-<h2>Notes<a class="headerlink" href="#notes" title="永久链接至标题">¶</a></h2>
-<p>Sometimes nothing says it better then a Post-it note. That is also the case in state diagrams.</p>
-<p>Here you can choose to put the note to the <em>right of</em> or to the <em>left of</em> a node.</p>
+<h2>便利贴<a class="headerlink" href="#notes" title="永久链接至标题">¶</a></h2>
+<p>有时，没有什么比一张便利贴更能说明问题。在状态图中也是如此。</p>
+<p>在这里，你可以选择把注解放在一个节点的 <em>右边</em> 或 <em>左边</em>。</p>
 <div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>    stateDiagram-v2
         State1: The state with a note
         note right of State1
@@ -658,8 +657,8 @@ have several internal states. These are called composite states in this terminol
 </div>
 </div>
 <div class="section" id="concurrency">
-<h2>Concurrency<a class="headerlink" href="#concurrency" title="永久链接至标题">¶</a></h2>
-<p>As in plantUml you can specify concurrency using the – symbol.</p>
+<h2>并发<a class="headerlink" href="#concurrency" title="永久链接至标题">¶</a></h2>
+<p>如同在 plantUml 中，你可以使用 <code class="docutils literal notranslate"><span class="pre">--</span></code> 符号指定并发性。</p>
 <div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>stateDiagram-v2
     [*] --&gt; Active
 
@@ -680,8 +679,8 @@ have several internal states. These are called composite states in this terminol
 </div>
 </div>
 <div class="section" id="setting-the-direction-of-the-diagram">
-<h2>Setting the direction of the diagram<a class="headerlink" href="#setting-the-direction-of-the-diagram" title="永久链接至标题">¶</a></h2>
-<p>With state diagrams you can use the direction statement to set the direction which the diagram will render like in this example.</p>
+<h2>设定图的方向<a class="headerlink" href="#setting-the-direction-of-the-diagram" title="永久链接至标题">¶</a></h2>
+<p>对于状态图，你可以使用方向语句来设置图的呈现方向，就像本例中一样。</p>
 <div class="highlight-mermaid-example notranslate"><div class="highlight"><pre><span></span>stateDiagram
     direction LR
     [*] --&gt; A
@@ -696,8 +695,8 @@ have several internal states. These are called composite states in this terminol
 </div>
 </div>
 <div class="section" id="comments">
-<h2>Comments<a class="headerlink" href="#comments" title="永久链接至标题">¶</a></h2>
-<p>Comments can be entered within a state diagram chart, which will be ignored by the parser.  Comments need to be on their own line, and must be prefaced with <code class="docutils literal notranslate"><span class="pre">%%</span></code> (double percent signs). Any text after the start of the comment to the next newline will be treated as a comment, including any diagram syntax</p>
+<h2>注释<a class="headerlink" href="#comments" title="永久链接至标题">¶</a></h2>
+<p>可以在状态图中输入注释，解析器会忽略这些注释。注释需要在自己的行上，并且必须以 <code class="docutils literal notranslate"><span class="pre">%%</span></code> （双百分号）为前导。从注释开始到下一个换行的任何文本都将被视为注释，包括任何图表语法</p>
 <div class="highlight-mmd notranslate"><div class="highlight"><pre><span></span>stateDiagram-v2
     [*] --&gt; Still
     Still --&gt; [*]
@@ -710,8 +709,8 @@ have several internal states. These are called composite states in this terminol
 </div>
 </div>
 <div class="section" id="styling">
-<h2>Styling<a class="headerlink" href="#styling" title="永久链接至标题">¶</a></h2>
-<p>Styling of the a state diagram is done by defining a number of css classes.  During rendering these classes are extracted from the file located at src/themes/state.scss</p>
+<h2>风格<a class="headerlink" href="#styling" title="永久链接至标题">¶</a></h2>
+<p>状态图的造型是通过定义一些css类来完成的。在渲染过程中，这些类从位于 <code class="docutils literal notranslate"><span class="pre">src/themes/state.scss</span></code> 的文件中提取出来</p>
 </div>
 </div>
 
