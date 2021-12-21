@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../stateDiagram.md:1
 msgid "State diagrams"
-msgstr ""
+msgstr "状态图"
 
 #: ../../stateDiagram.md:3
 msgid ""
@@ -29,6 +29,9 @@ msgid ""
 "states; sometimes, this is indeed the case, while at other times this is "
 "a reasonable abstraction.\" Wikipedia"
 msgstr ""
+"\"状态图是计算机科学和相关领域中用来描述系统行为的一种图示。"
+"状态图要求所描述的系统是由有限数量的 \"状态\" 组成的。"
+"有时，情况确实如此，而在其他时候，这是一个合理的抽象。\" Wikipedia"
 
 #: ../../stateDiagram.md:5
 msgid ""
@@ -36,10 +39,12 @@ msgid ""
 "the syntax used in plantUml as this will make it easier for users to "
 "share diagrams between mermaid and plantUml."
 msgstr ""
+"Mermaid 可以渲染状态图。"
+"语法试图与 plantUml 中使用的语法相一致，因为这将使用户更容易在 mermaid 和 plantUml 之间分享图表。"
 
 #: ../../stateDiagram.md:18
 msgid "Older renderer:"
-msgstr ""
+msgstr "较旧的渲染器："
 
 #: ../../stateDiagram.md:31
 msgid ""
@@ -50,36 +55,43 @@ msgid ""
 " state to Moving. In Moving you can change the state either back to Still"
 " or to Crash. There is no transition from Still to Crash."
 msgstr ""
+"在状态图中，系统被描述为它的状态，以及系统的状态如何通过变换而改变为另一个状态。"
+"上面的示例图显示了三种状态：**Still**、**Moving** 和 **Crash**。"
+"你从 Still 状态开始。从 Still 状态，你可以改变状态为 Moving。"
+"在 Moving 状态下，你可以把状态变回 Still 或 Crash。从 Still 到 Crash 是没有过渡的。"
 
 #: ../../stateDiagram.md:33
 msgid "States"
-msgstr ""
+msgstr "状态"
 
 #: ../../stateDiagram.md:35
 msgid ""
 "A state can be declared in multiple ways. The simplest way is to define a"
 " state id as a description."
 msgstr ""
+"一个状态可以用多种方式声明。最简单的方法是定义一个状态 ID 作为描述。"
 
 #: ../../stateDiagram.md:42
 msgid "Another way is by using the state keyword with a description as per below:"
-msgstr ""
+msgstr "另一种方法是使用带有描述的状态关键词，如下所述："
 
 #: ../../stateDiagram.md:49
 msgid ""
 "Another way to define a state with a description is to define the state "
 "id followed by a colon and the description:"
 msgstr ""
+"另一种定义带有描述的状态的方法是定义状态 ID，后面是冒号和描述："
 
 #: ../../stateDiagram.md:56
 msgid "Transitions"
-msgstr ""
+msgstr "过渡"
 
 #: ../../stateDiagram.md:58
 msgid ""
 "Transitions are path/edges when one state passes into another. This is "
 "represented using text arrow, \"\\-\\-\\>\"."
 msgstr ""
+"过渡是指一个状态进入另一个状态的路径/边沿。这用文本箭头 \"\\-\\-\\>\" 来表示。"
 
 #: ../../stateDiagram.md:60
 msgid ""
@@ -87,16 +99,19 @@ msgid ""
 "already defined the undefined states are defined with the id from the "
 "transition. You can later add descriptions to states defined this way."
 msgstr ""
+"当你在两个状态之间定义了一个过渡，并且这些状态还没有被定义，"
+"那么未定义的状态就会用过渡的 id 来定义。你以后可以为这样定义的状态添加描述。"
 
 #: ../../stateDiagram.md:67
 msgid ""
 "It is possible to add text to a transition. To describe what it "
 "represents."
 msgstr ""
+"可以为过渡添加文字。来描述它所代表的内容。"
 
 #: ../../stateDiagram.md:74
 msgid "Start and End"
-msgstr ""
+msgstr "开始与结束"
 
 #: ../../stateDiagram.md:76
 msgid ""
@@ -104,10 +119,12 @@ msgid ""
 "diagram. These are written with the [\\*] syntax and the direction of the"
 " transition to it defines it either as a start or a stop state."
 msgstr ""
+"有两个特殊的状态表示图表的开始和停止。这些都是用 [\\*] 的语法来写的，"
+"过渡到它的方向决定了它是一个开始或一个停止的状态。"
 
 #: ../../stateDiagram.md:84
 msgid "Composite states"
-msgstr ""
+msgstr "复合状态"
 
 #: ../../stateDiagram.md:86
 msgid ""
@@ -115,6 +132,8 @@ msgid ""
 " are multi-dimensional as one state can have several internal states. "
 "These are called composite states in this terminology."
 msgstr ""
+"在现实世界中使用状态图时，你常常会发现图是多维的，因为一个状态可以有几个内部状态。"
+"在这个术语中，这些被称为复合状态"。
 
 #: ../../stateDiagram.md:89
 msgid ""
@@ -122,78 +141,86 @@ msgid ""
 "followed by an id and the body of the composite state between \\{\\}. See"
 " the example below:"
 msgstr ""
+"为了定义一个复合状态，你需要使用 `state` 关键字，"
+"后面跟一个 id，以及复合状态的主体在 \\{\\} 之间。请看下面的例子："
 
 #: ../../stateDiagram.md:100
 msgid "You can do this in several layers:"
-msgstr ""
+msgstr "你可以分几层来做这件事："
 
 #: ../../stateDiagram.md:121
 msgid "You can also define transitions also between composite states:"
-msgstr ""
+msgstr "你也可以定义复合状态之间的过渡："
 
 #: ../../stateDiagram.md:143
 msgid ""
 "*You can not define transitions between internal states belonging to "
 "different composite states*"
 msgstr ""
+"*你不能定义属于不同复合状态的内部状态之间的过渡*"
 
 #: ../../stateDiagram.md:145
 msgid "Choice"
-msgstr ""
+msgstr "选择"
 
 #: ../../stateDiagram.md:147
 msgid ""
 "Sometimes you need to model a choice between two or more paths, you can "
 "do so using &lt;&lt;choice&gt;&gt;."
 msgstr ""
+"有时你需要在两条或多条路径之间建立一个选择模型，你可以使用 &lt;&lt;choice&gt;&gt; 来实现。"
 
 #: ../../stateDiagram.md:158
 msgid "Forks"
-msgstr ""
+msgstr "分叉"
 
 #: ../../stateDiagram.md:160
 msgid ""
 "It is possible to specify a fork in the diagram using "
 "&lt;&lt;fork&gt;&gt; &lt;&lt;join&gt;&gt;."
 msgstr ""
+"可以使用 &lt;&lt;fork&gt;&gt; &lt;&lt;join&gt;&gt; 在图中指定一个分叉。"
 
 #: ../../stateDiagram.md:176
 msgid "Notes"
-msgstr ""
+msgstr "便利贴"
 
 #: ../../stateDiagram.md:178
 msgid ""
 "Sometimes nothing says it better then a Post-it note. That is also the "
 "case in state diagrams."
 msgstr ""
+"有时，没有什么比一张便利贴更能说明问题。在状态图中也是如此。"
 
 #: ../../stateDiagram.md:180
 msgid ""
 "Here you can choose to put the note to the *right of* or to the *left of*"
 " a node."
 msgstr ""
+"在这里，你可以选择把注解放在一个节点的 *右边* 或 *左边*。"
 
 #: ../../stateDiagram.md:193
 msgid "Concurrency"
-msgstr ""
+msgstr "并发"
 
 #: ../../stateDiagram.md:195
 msgid "As in plantUml you can specify concurrency using the -- symbol."
-msgstr ""
+msgstr "如同在 plantUml 中，你可以使用 `--` 符号指定并发性。"
 
 #: ../../stateDiagram.md:216
 msgid "Setting the direction of the diagram"
-msgstr ""
+msgstr "设定图的方向"
 
 #: ../../stateDiagram.md:218
 msgid ""
 "With state diagrams you can use the direction statement to set the "
 "direction which the diagram will render like in this example."
 msgstr ""
+"对于状态图，你可以使用方向语句来设置图的呈现方向，就像本例中一样。"
 
 #: ../../stateDiagram.md:234
 msgid "Comments"
-msgstr ""
+msgstr "注释"
 
 #: ../../stateDiagram.md:236
 #, python-format
@@ -204,10 +231,13 @@ msgid ""
 " the comment to the next newline will be treated as a comment, including "
 "any diagram syntax"
 msgstr ""
+"可以在状态图中输入注释，解析器会忽略这些注释。"
+"注释需要在自己的行上，并且必须以 `%%` （双百分号）为前导。"
+"从注释开始到下一个换行的任何文本都将被视为注释，包括任何图表语法"
 
 #: ../../stateDiagram.md:249
 msgid "Styling"
-msgstr ""
+msgstr "风格"
 
 #: ../../stateDiagram.md:251
 msgid ""
@@ -215,4 +245,5 @@ msgid ""
 "classes.  During rendering these classes are extracted from the file "
 "located at src/themes/state.scss"
 msgstr ""
-
+"状态图的造型是通过定义一些css类来完成的。"
+"在渲染过程中，这些类从位于 `src/themes/state.scss` 的文件中提取出来"
